@@ -1,0 +1,57 @@
+E:\Project\YourTribute\Source\Modules\Shell\bin\Debug\Shell.dll
+E:\Project\YourTribute\Source\Modules\Shell\bin\Debug\Shell.pdb
+E:\Project\YourTribute\Source\Modules\Shell\bin\Debug\Microsoft.Practices.CompositeWeb.dll
+E:\Project\YourTribute\Source\Modules\Shell\bin\Debug\Microsoft.Practices.CompositeWeb.EnterpriseLibrary.dll
+E:\Project\YourTribute\Source\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YourTribute\Source\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Project\YourTribute\Source\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YourTribute\Source\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\Project\YourTribute\Source\Modules\Shell\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\Modules\Shell\obj\Debug\Shell.dll
+E:\Project\YourTribute\Source\Modules\Shell\obj\Debug\Shell.pdb
+E:\Source\Modules\Shell\bin\Debug\Shell.dll
+E:\Source\Modules\Shell\bin\Debug\Shell.pdb
+E:\Source\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+E:\Source\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Source\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Source\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Source\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Source\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Source\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\Source\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Source\Modules\Shell\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\Modules\Shell\obj\Debug\Shell.dll
+E:\Source\Modules\Shell\obj\Debug\Shell.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\bin\Debug\Shell.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\bin\Debug\Shell.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\obj\Debug\Shell.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Modules\Shell\obj\Debug\Shell.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Modules\Shell\bin\Debug\Shell.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Modules\Shell\bin\Debug\Shell.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Modules\Shell\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Modules\Shell\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Modules\Shell\obj\Debug\Shell.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Modules\Shell\obj\Debug\Shell.pdb
+E:\YourTribute\EnhancementPhase1\Source\Modules\Shell\bin\Debug\Shell.dll
+E:\YourTribute\EnhancementPhase1\Source\Modules\Shell\bin\Debug\Shell.pdb
+E:\YourTribute\EnhancementPhase1\Source\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\YourTribute\EnhancementPhase1\Source\Modules\Shell\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\EnhancementPhase1\Source\Modules\Shell\obj\Debug\Shell.dll
+E:\YourTribute\EnhancementPhase1\Source\Modules\Shell\obj\Debug\Shell.pdb

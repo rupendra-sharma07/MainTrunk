@@ -1,0 +1,120 @@
+12/27/2012 12:20:25 Error: Object reference not set to an instance of an object.
+   at TributesPortal.Photo.Views.PhotoGalleryPresenter.GetPhotoGallery(PhotoAlbum objPhotoAlbum) in E:\YourTribute\EnhancementPhase1\Source\Photo\Views\PhotoGalleryPresenter.cs:line 52
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 211
+12/27/2012 12:20:25 Error: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 217
+12/27/2012 12:23:42 Error: Object reference not set to an instance of an object.
+   at TributesPortal.Photo.Views.PhotoGalleryPresenter.GetPhotoGallery(PhotoAlbum objPhotoAlbum) in E:\YourTribute\EnhancementPhase1\Source\Photo\Views\PhotoGalleryPresenter.cs:line 52
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 211
+12/27/2012 12:23:42 Error: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 217
+12/27/2012 12:31:49 Error: Object reference not set to an instance of an object.
+   at TributesPortal.Photo.Views.PhotoGalleryPresenter.GetPhotoGallery(PhotoAlbum objPhotoAlbum) in E:\YourTribute\EnhancementPhase1\Source\Photo\Views\PhotoGalleryPresenter.cs:line 52
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 211
+12/27/2012 12:31:49 Error: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 217
+12/27/2012 12:49:43 Error: Object reference not set to an instance of an object.
+   at TributesPortal.Photo.Views.PhotoGalleryPresenter.GetPhotoGallery(PhotoAlbum objPhotoAlbum) in E:\YourTribute\EnhancementPhase1\Source\Photo\Views\PhotoGalleryPresenter.cs:line 52
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 211
+12/27/2012 12:49:43 Error: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 217
+12/27/2012 12:53:05 Error: Object reference not set to an instance of an object.
+   at TributesPortal.Photo.Views.PhotoGalleryPresenter.GetPhotoGallery(PhotoAlbum objPhotoAlbum) in E:\YourTribute\EnhancementPhase1\Source\Photo\Views\PhotoGalleryPresenter.cs:line 52
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 211
+12/27/2012 12:53:05 Error: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 217
+12/27/2012 12:54:33 Error: Object reference not set to an instance of an object.
+   at TributesPortal.Photo.Views.PhotoGalleryPresenter.GetPhotoGallery(PhotoAlbum objPhotoAlbum) in E:\YourTribute\EnhancementPhase1\Source\Photo\Views\PhotoGalleryPresenter.cs:line 52
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 211
+12/27/2012 12:54:33 Error: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 217
+12/27/2012 13:10:48 Error: Object reference not set to an instance of an object.
+   at TributesPortal.Photo.Views.PhotoGalleryPresenter.GetPhotoGallery(PhotoAlbum objPhotoAlbum) in E:\YourTribute\EnhancementPhase1\Source\Photo\Views\PhotoGalleryPresenter.cs:line 52
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 211
+12/27/2012 13:10:48 Error: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 217
+12/27/2012 13:13:27 Error: Object reference not set to an instance of an object.
+   at TributesPortal.Photo.Views.PhotoGalleryPresenter.GetPhotoGallery(PhotoAlbum objPhotoAlbum) in E:\YourTribute\EnhancementPhase1\Source\Photo\Views\PhotoGalleryPresenter.cs:line 52
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 211
+12/27/2012 13:13:27 Error: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 217
+12/27/2012 13:14:32 Error: Object reference not set to an instance of an object.
+   at TributesPortal.Photo.Views.PhotoGalleryPresenter.GetPhotoGallery(PhotoAlbum objPhotoAlbum) in E:\YourTribute\EnhancementPhase1\Source\Photo\Views\PhotoGalleryPresenter.cs:line 52
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 211
+12/27/2012 13:14:32 Error: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 217
+12/27/2012 13:17:48 Error: Object reference not set to an instance of an object.
+   at TributesPortal.Photo.Views.PhotoGalleryPresenter.GetPhotoGallery(PhotoAlbum objPhotoAlbum) in E:\YourTribute\EnhancementPhase1\Source\Photo\Views\PhotoGalleryPresenter.cs:line 52
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 211
+12/27/2012 13:17:48 Error: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 217
+12/27/2012 13:19:18 Error: Object reference not set to an instance of an object.
+   at TributesPortal.Photo.Views.PhotoGalleryPresenter.GetPhotoGallery(PhotoAlbum objPhotoAlbum) in E:\YourTribute\EnhancementPhase1\Source\Photo\Views\PhotoGalleryPresenter.cs:line 52
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 211
+12/27/2012 13:19:18 Error: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 217
+12/27/2012 18:39:52 Error: Object reference not set to an instance of an object.
+   at TributesPortal.Photo.Views.PhotoGalleryPresenter.GetPhotoGallery(PhotoAlbum objPhotoAlbum) in E:\YourTribute\EnhancementPhase1\Source\Photo\Views\PhotoGalleryPresenter.cs:line 52
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 211
+12/27/2012 18:39:52 Error: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Photo_PhotoGallery.Page_Load(Object sender, EventArgs e) in e:\YourTribute\EnhancementPhase1\Source\WebSites\DevelopmentWebsite\Photo\PhotoGallery.aspx.cs:line 217

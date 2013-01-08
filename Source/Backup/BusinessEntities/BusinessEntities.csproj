@@ -1,0 +1,173 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6398B94-F757-4592-B5ED-2297B66D651D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TributesPortal.BusinessEntities</RootNamespace>
+    <AssemblyName>TributesPortal.BusinessEntities</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddRemoveCreditInfo.cs" />
+    <Compile Include="AddToFavorite.cs" />
+    <Compile Include="AdminTributeUpdate.cs" />
+    <Compile Include="BillingHistory.cs" />
+    <Compile Include="Comments.cs" />
+    <Compile Include="CommentTributeAdministrator.cs" />
+    <Compile Include="CompleteGuestList.cs" />
+    <Compile Include="Contacts.cs" />
+    <Compile Include="Couponmaster.cs" />
+    <Compile Include="Coupons.cs" />
+    <Compile Include="CouponsAvailable.cs" />
+    <Compile Include="CreditCostMapping.cs" />
+    <Compile Include="CreditPointTransaction.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerCountry.cs" />
+    <Compile Include="CustomerState.cs" />
+    <Compile Include="DeviceManager.cs" />
+    <Compile Include="Donation.cs" />
+    <Compile Include="EmailLink.cs" />
+    <Compile Include="EmailNotification.cs" />
+    <Compile Include="EnableRSSFeedInfo.cs" />
+    <Compile Include="Errors.cs" />
+    <Compile Include="EventInvitationCategory.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="EventTheme.cs" />
+    <Compile Include="FeaturedTribute.cs" />
+    <Compile Include="GeneralUser.cs" />
+    <Compile Include="GenralUserInfo.cs" />
+    <Compile Include="GetCoupondetails.cs" />
+    <Compile Include="GetMyTributes.cs" />
+    <Compile Include="GetTributesFeed.cs" />
+    <Compile Include="GiftImage.cs" />
+    <Compile Include="Gifts.cs" />
+    <Compile Include="GuestList.cs" />
+    <Compile Include="LinkVideoMemorialTribute.cs" />
+    <Compile Include="Locations.cs" />
+    <Compile Include="MailMessage.cs" />
+    <Compile Include="Note.cs" />
+    <Compile Include="Package.cs" />
+    <Compile Include="Paging.cs" />
+    <Compile Include="ParameterTypesCodes.cs" />
+    <Compile Include="Photo.cs" />
+    <Compile Include="PhotoAlbum.cs" />
+    <Compile Include="SearchTribute.cs" />
+    <Compile Include="SessionValue.cs" />
+    <Compile Include="Stories.cs" />
+    <Compile Include="StoryMoreAbout.cs" />
+    <Compile Include="Templates.cs" />
+    <Compile Include="Themes.cs" />
+    <Compile Include="TributeActivityReport.cs" />
+    <Compile Include="TributeAdministrator.cs" />
+    <Compile Include="TributeLatest.cs" />
+    <Compile Include="TributePackage.cs" />
+    <Compile Include="Tributes.cs" />
+    <Compile Include="TributeSearch.cs" />
+    <Compile Include="TributesUserInfo.cs" />
+    <Compile Include="TributeVisitCount.cs" />
+    <Compile Include="UpdateTribute.cs" />
+    <Compile Include="UserAdminOwnerInfo.cs" />
+    <Compile Include="UserBusiness.cs" />
+    <Compile Include="UserCreditcardDetails.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="UserProfile.cs" />
+    <Compile Include="UserRegistration.cs" />
+    <Compile Include="UserRole.cs" />
+    <Compile Include="Users.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PaymentReceipt.cs" />
+    <Compile Include="UserSummary.cs" />
+    <Compile Include="Video.cs" />
+    <Compile Include="VideoGallery.cs" />
+    <Compile Include="VideoToken.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BusinessEntities.csproj.vspscc" />
+    <Content Include="BusinessEntities.sln" />
+    <Content Include="obj\Debug\BusinessEntities.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Refactor\TributesPortal.BusinessEntities.dll" />
+    <Content Include="obj\Debug\TributesPortal.BusinessEntities.dll" />
+    <Content Include="obj\Debug\TributesPortal.BusinessEntities.pdb" />
+    <Content Include="obj\x86\Debug\BusinessEntities.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\Refactor\TributesPortal.BusinessEntities.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BusinessEntities.suo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
+    <Folder Include="obj\x86\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

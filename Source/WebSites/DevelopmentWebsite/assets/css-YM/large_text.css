@@ -1,0 +1,50 @@
+/*------------------------------------------------------------
+
+large_text.css
+large text size Screen media CSS common to all stylesheets.
+
+author: Mark Bice
+last modified: November 27, 2007
+------------------------------------------------------------*/
+
+
+h1.yt-tributeTitle,
+.yt-ProcessSteps{
+	font-size: inherit !important;
+}
+
+.yt-ContentContainer {
+	font-size: large;
+}
+
+.yt-TypeSizeControl a.large {
+	background-color: #e6dbd2;
+	background-position: 0px -25px;
+}
+.yt-TypeSizeControl a.large:hover {
+	background-color: #e6dbd2;
+}
+.yt-TypeSizeControl a.medium, .yt-TypeSizeControl a.small {
+	background-color: #f5ede7;
+	background-position: 0px 0px;
+}
+
+.yt-TypeSizeControl a.medium:hover, .yt-TypeSizeControl a.small:hover {
+	background-color: #fcf9f6;
+}
+
+/*.yt-NavPrimary a {
+	padding-top: 7px;
+	height: 40px;
+voice-family: "\"}\"";
+voice-family:inherit;
+	height: 33px;
+}
+html>body .yt-NavPrimary a {
+	height: 33px;
+}
+
+.yt-NavSecondary a {
+	font-size: large;
+}
+*/

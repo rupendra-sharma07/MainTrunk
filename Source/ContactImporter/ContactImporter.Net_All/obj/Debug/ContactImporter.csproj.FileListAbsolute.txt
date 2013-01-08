@@ -1,0 +1,40 @@
+E:\Project\YourTribute\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.dll
+E:\Project\YourTribute\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.pdb
+E:\Project\YourTribute\Source\ContactImporter\ContactImporter.Net_All\bin\Interop.WinHttp.dll
+E:\Project\YourTribute\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\Interop.WinHttp.dll
+E:\Project\YourTribute\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.csproj.ResolveComReference.cache
+E:\Project\YourTribute\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.dll
+E:\Project\YourTribute\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.pdb
+E:\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.dll
+E:\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.pdb
+E:\Source\ContactImporter\ContactImporter.Net_All\bin\Interop.WinHttp.dll
+E:\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\Interop.WinHttp.dll
+E:\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.csproj.ResolveComReference.cache
+E:\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.dll
+E:\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ContactImporter\ContactImporter.Net_All\bin\Interop.WinHttp.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ContactImporter\ContactImporter.Net_All\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ContactImporter\ContactImporter.Net_All\obj\Debug\Interop.WinHttp.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.csproj.ResolveComReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ContactImporter\ContactImporter.Net_All\bin\Interop.WinHttp.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ContactImporter\ContactImporter.Net_All\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ContactImporter\ContactImporter.Net_All\obj\Debug\Interop.WinHttp.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.csproj.ResolveComReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.pdb
+E:\YourTribute\EnhancementPhase1\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.dll
+E:\YourTribute\EnhancementPhase1\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.pdb
+E:\YourTribute\EnhancementPhase1\Source\ContactImporter\ContactImporter.Net_All\bin\Interop.WinHttp.dll
+E:\YourTribute\EnhancementPhase1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\EnhancementPhase1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\Interop.WinHttp.dll
+E:\YourTribute\EnhancementPhase1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.csproj.ResolveComReference.cache
+E:\YourTribute\EnhancementPhase1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.dll
+E:\YourTribute\EnhancementPhase1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.pdb

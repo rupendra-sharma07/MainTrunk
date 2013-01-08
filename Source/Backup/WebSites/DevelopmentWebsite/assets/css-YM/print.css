@@ -1,0 +1,257 @@
+/*------------------------------------------------------------
+
+print.css
+Print media CSS for use with modern, CSS-capable browsers.
+
+author: Sing Chan
+version: 0.7
+last modified: March 16, 2007
+
+------------------------------------------------------------*/
+
+@media print {
+
+
+
+
+
+/*------------------------------------------------------------
+
+the follow elements are hidden from print
+
+------------------------------------------------------------*/
+
+.upgrade, .printPreview, .yt-ContentTertiary, .yt-NavSecondary, 
+.yt-NavPrimary, .yt-NavHeader, .yt-NavFooter, .yt-LayoutSwitcher, 
+.yt-NoPrint, .yt-PrintButton, #mb_close_link{
+	display: none;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+HTML elements
+
+------------------------------------------------------------*/
+
+body {
+	background: transparent;
+}
+
+a {
+	color: #000;
+}
+
+p, address {
+	margin: 0 0 0.8em 0;
+}
+
+code {
+	font-size: 105%;
+	line-height: 1.4em;
+}
+
+
+/* images */
+img.floatLeft {
+	margin: 0 10px 10px 0;
+}
+
+img.floatRight {
+	margin: 0 0 10px 10px;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+headers
+
+------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2em;
+}
+
+h1 {
+	margin: 0 0 0.6em 0;
+	line-height: 1.2em;
+}
+
+h2 {
+	font-size: 160%;
+	margin: 1.4em 0 0.4em 0;
+}
+
+h3, h4, h5, h6 {
+	margin: 1em 0 0.4em 0;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 130%;
+}
+
+h4 {
+	font-size: 120%;
+}
+
+h5 {
+	font-size: 110%;
+}
+
+h6 {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+lists
+
+------------------------------------------------------------*/
+
+ul {
+	list-style: square;
+	margin: 0 0 0.8em 0;
+	padding: 0 0 0 25px;
+}
+html>body ul {
+	padding: 0;
+	margin-left: 25px;
+}
+
+ol {
+	margin: 0 0 0.8em 0;
+	padding: 0 0 0 32px;
+}
+html>body ol {
+	padding: 0;
+	margin-left: 32px;
+}
+
+li {
+	margin-bottom: 0.2em;
+}
+
+dd {
+	margin: 0 15px 0.8em 15px;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+generic classes
+
+------------------------------------------------------------*/
+
+.hack-clearBoth {
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+print layout grid rules below
+
+------------------------------------------------------------*/
+
+.yt-ContentContainer {
+	margin-top: 2em;
+	padding-bottom: 2em;
+}
+
+.yt-ContentPrimary {
+	float: left;
+	width: 70%;
+}
+
+.yt-ContentSecondary {
+	float: right;
+	width: 27%;
+}
+
+.yt-Footer {
+	border-top: 1px dashed #999;
+	padding-top: 1em;
+	clear: both;
+}
+
+
+
+#mb_center {
+	margin:0!important;
+}
+
+
+
+/*------------------------------------------------------------
+
+code guide definition list
+
+------------------------------------------------------------*/
+
+dl.yt-CodeGuide dt {
+	margin: 1.4em 0 0.2em 0;
+	font-size: 150%;
+}
+
+dl.yt-CodeGuide dd {
+	border-bottom: 1px dashed #CCC;
+	padding-bottom: 1em;
+}
+
+dl.yt-CodeGuide dl dt {
+	margin-top: auto;
+	font-size: 100%;
+}
+
+dl.yt-CodeGuide dl dd {
+	border-bottom: none;
+	padding-bottom: 0.2em;
+	margin-right: auto;
+}
+
+
+
+
+/*------------------------------------------------------------
+
+grid presentation and/or override rules
+
+------------------------------------------------------------*/
+
+.yt-Logo {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 120%;
+	color: #000;
+}
+
+/* secondary content */
+
+.yt-ContentSecondary h2.first {
+	margin-top: 0;
+}
+
+
+
+
+}

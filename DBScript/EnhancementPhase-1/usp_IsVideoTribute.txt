@@ -1,0 +1,6 @@
+CREATE PROCEDURE [dbo].[usp_IsVideoTribute]
+@tributeId int
+AS
+SELECT count(*)
+FROM dbo.VIDEOS
+WHERE UserTributeId=@tributeId and videotypeid is null and videoUrl is null and IsDeleted=0 and IsActive=1

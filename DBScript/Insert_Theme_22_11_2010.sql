@@ -1,0 +1,7 @@
+
+INSERT INTO [Themes] ([ThemeName],[ThemePath],[Tributetype],[ThemeClassId],[ThemeValue],[IsActive])VALUES('Legacy','http://172.26.176.214/DevelopmentWebsite/assets/images/Default Video.JPG','Video','yt-MemorialDefault','MemorialDefault',1)
+INSERT INTO [Themes] ([ThemeName],[ThemePath],[Tributetype],[ThemeClassId],[ThemeValue],[IsActive])VALUES('Flowers','http://172.26.176.214/DevelopmentWebsite/assets/images/Default Video.JPG','Video','yt-MemorialFlowers','MemorialFlowers',1)
+INSERT INTO [Themes] ([ThemeName],[ThemePath],[Tributetype],[ThemeClassId],[ThemeValue],[IsActive])VALUES('Patriotic','http://172.26.176.214/DevelopmentWebsite/assets/images/Default Video.JPG','Video','yt-MemorialPatriotic','MemorialPatriotic',1)
+INSERT INTO [Themes] ([ThemeName],[ThemePath],[Tributetype],[ThemeClassId],[ThemeValue],[IsActive])VALUES('Religious','http://172.26.176.214/DevelopmentWebsite/assets/images/Default Video.JPG','Video','yt-MemorialReligious','MemorialReligious',1)
+INSERT INTO [Themes] ([ThemeName],[ThemePath],[Tributetype],[ThemeClassId],[ThemeValue],[IsActive])VALUES('Celestial','http://172.26.176.214/DevelopmentWebsite/assets/images/Default Video.JPG','Video','yt-MemorialReligiousII','MemorialReligiousII',1)
+INSERT INTO [Themes] ([ThemeName],[ThemePath],[Tributetype],[ThemeClassId],[ThemeValue],[IsActive])VALUES('Sky','http://172.26.176.214/DevelopmentWebsite/assets/images/Default Video.JPG','Video','yt-MemorialSky','MemorialSky',1)

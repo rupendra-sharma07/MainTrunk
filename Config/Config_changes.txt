@@ -1,0 +1,39 @@
+	<RewriterRule>
+        <LookFor>~/(.*)/ManageNote\.aspx</LookFor>
+        <SendTo>~/Notes/ManageNote.aspx?TributeUrl=$1</SendTo>
+      </RewriterRule>
+	<RewriterRule>
+        <LookFor>~/(.*)/ManagePhotoAlbum\.aspx</LookFor>
+        <SendTo>~/Photo/ManagePhotoAlbum.aspx?TributeUrl=$1</SendTo>
+      </RewriterRule>
+      <RewriterRule>
+        <LookFor>~/(.*)/ManageEvent\.aspx</LookFor>
+        <SendTo>~/Event/ManageEvent.aspx?TributeUrl=$1</SendTo>
+      </RewriterRule>
+
+    <add key="PhotoOneyearAmount" value="$19.95"/>
+    <add key="PhotoLifeTimeAmount" value="$49.95"/>
+
+    <add key="TributeOneyearAmount" value="$39.95"/>
+    <add key="TributeLifeTimeAmount" value="$99.95"/>
+
+    <add key="PhotoYearlyCreditCost" value="1 Credit"/>
+    <add key="PhotoLifeTimeCreditCost" value="2 Credits"/>
+
+    <add key="TributeYearlyCreditCost" value="2 Credit"/>
+    <add key="TributeLifeTimeCreditCost" value="4 Credits"/>
+
+    <add key="PhotoEventLimit" value="1"/>
+    <add key="PhotoVideoLimit" value="2"/>
+    <add key="PhotoAlbumLimit" value="2"/>
+    <add key="PhotoNotesLimit" value="2"/>
+
+    <add key="LifeTimePhotoTypeUpgrade" value="$ 49.95"/>
+    <add key="YearlyPhotoTypeUpgrade" value="$ 29.95"/>
+    <add key="LifeTimeTributeTypeUpgrade" value="$ 149.95"/>
+    <add key="YearlyTributeTypeUpgrade" value="$ 59.95"/>
+
+
+
+
+    <add key="LifeTime_CreditCost" value="2"/>

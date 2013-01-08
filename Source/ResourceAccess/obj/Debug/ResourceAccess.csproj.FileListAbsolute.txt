@@ -1,0 +1,152 @@
+E:\Project\YourTribute\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\Source\ResourceAccess\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\Source\ResourceAccess\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source\ResourceAccess\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.pdb
+E:\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+E:\Source\ResourceAccess\bin\Debug\TributePortalSecurity.dll
+E:\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Source\ResourceAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Source\ResourceAccess\bin\Debug\TributePortalSecurity.pdb
+E:\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Source\ResourceAccess\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.dll
+E:\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.pdb
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\TributePortalSecurity.dll
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\TributePortalSecurity.pdb
+E:\Yourtribute Source\Source\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Yourtribute Source\Source\Source\ResourceAccess\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.dll
+E:\Yourtribute Source\Source\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\TributePortalSecurity.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\TributePortalSecurity.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\bin\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\bin\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.pdb
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\obj\Debug\ResolveAssemblyReference.cache
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.dll
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.pdb
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributePortalSecurity.dll
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.dll
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.pdb
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributePortalSecurity.pdb
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.dll
+D:\OptimusRepository\YourTribute\YT_VideoTribute\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.pdb
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.dll
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.pdb
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\TributePortalSecurity.dll
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.dll
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.pdb
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\TributePortalSecurity.pdb
+G:\YT-2\14Jan\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+G:\YT-2\14Jan\Source\ResourceAccess\obj\Debug\ResolveAssemblyReference.cache
+G:\YT-2\14Jan\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.dll
+G:\YT-2\14Jan\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.pdb
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.dll
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.pdb
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributePortalSecurity.dll
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.dll
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.pdb
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributePortalSecurity.pdb
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\obj\Debug\ResolveAssemblyReference.cache
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.dll
+G:\YT-2\4Feb\YT_VideoTribute\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.pdb
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributePortalSecurity.dll
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\TributePortalSecurity.pdb
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.dll
+E:\YourTribute\YT_VideoTribute\Source\ResourceAccess\obj\Debug\TributesPortal.ResourceAccess.pdb

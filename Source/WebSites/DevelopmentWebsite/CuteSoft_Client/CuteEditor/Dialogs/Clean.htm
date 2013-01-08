@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>[[CleanCode]]</title>		
+		<meta name="content-type" content="text/html ;charset=Unicode" />
+		<meta http-equiv="Page-Enter" content="blendTrans(Duration=0.1)" />
+		<meta http-equiv="Page-Exit" content="blendTrans(Duration=0.1)" />
+		<link href='Load.ashx?type=themecss&file=dialog.css&theme=[[_Theme_]]' type="text/css" rel="stylesheet" />
+		<!--[if IE]>
+			<link href="Load.ashx?type=style&file=IE.css" type="text/css" rel="stylesheet" />
+		<![endif]-->
+		<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1003&file=DialogHead.js"></script>
+		<style type="text/css">
+			html, body,#ajaxdiv {height: 100%;}       
+            .codebutton
+			{
+				width:200px;
+				margin: 0 3px 3px 0;
+				height:17px;
+				text-decoration: none;
+				background-color:#f5f5f5;
+				background: url(Load.ashx?type=image&file=formbg.gif) repeat-x left top;
+				border-top:solid 1px #cccccc;
+				border-left:solid 1px #cccccc;
+				border-right:solid 1px #aaaaaa;
+				border-bottom:solid 1px #aaaaaa;
+				padding: 5px 12px 5px 5px;
+				display: block;
+				cursor: pointer;
+				font:normal 11px Tahoma;
+				line-height: 120%;
+				color: #333;
+			}
+			.codebutton img
+			{
+				margin: 0 3px -3px 0 !important;
+				padding: 0 !important;
+				border: none !important;
+				display: inline !important;
+				vertical-align:middle;
+			}
+			.codebutton:hover
+			{
+                border: #ff0000 1px solid; background-color: #c0c0c0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="ajaxdiv">
+			<table cellspacing="0" cellpadding="5" width="100%" class="normal">
+				<tr>
+					<td>
+					    <a href="###" class="codebutton" onclick="codeCleaner('allhtml');">					
+					        <img src="Load.ashx?type=image&file=code.gif" title="[[RemoveHTMLTags]]" />
+							[[RemoveHTMLTags]] 
+					    </a>
+					</td>
+				</tr>
+				<tr>
+					<td><a href="###" class="codebutton" onclick="codeCleaner('word');">					
+					        <img src="Load.ashx?type=image&file=doc.gif" title="[[RemoveWordMarkup]]" />
+							[[RemoveWordMarkup]] 
+					    </a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					    <a href="###" class="codebutton" onclick="codeCleaner('css');">					
+					        <img src="Load.ashx?type=image&file=style.font.gif" title="[[CleanupCSS]]" />
+							[[CleanupCSS]] 
+					    </a>
+					</td>
+				</tr>
+				<tr>
+					<td>					    
+					    <a href="###" class="codebutton" onclick="codeCleaner('font');">					
+					        <img src="Load.ashx?type=image&file=fontend.gif" title="[[CleanupFont]]" />
+							[[CleanupFont]] 
+					    </a>
+					</td>
+				</tr>
+				<tr>
+					<td>					    			    
+					    <a href="###" class="codebutton" onclick="codeCleaner('span');">					
+					        <img src="Load.ashx?type=image&file=spanend.gif" title="[[CleanupSpan]]" />
+							[[CleanupSpan]] 
+					    </a>
+					</td>
+				</tr>
+			</table>
+			<br />
+			<div align="center">
+				<input type="button" value="[[Cancel]]" class="formbutton" onclick="Close()" ID="Button1" NAME="Button1">
+			</div>					
+		</div>
+	</body>
+	<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1003&file=DialogFoot.js"></script>
+	<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1003&file=Dialog_Clean.js"></script>
+</html>

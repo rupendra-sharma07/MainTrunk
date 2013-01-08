@@ -1,0 +1,216 @@
+/*------------------------------------------------------------
+
+common_screen.css
+Screen media CSS common to all stylesheets.
+
+------------------------------------------------------------*/
+
+@media screen {
+
+
+
+
+/*------------------------------------------------------------
+
+	ANNIVERSARY DEFAULT
+
+	Primary Color: #6f8038;
+	Secondary: #979797;
+
+------------------------------------------------------------*/
+body {
+	background: #cecffb;
+}
+
+.yt-ContentContainerImage {
+	background: url(bg_containerInner.png) no-repeat;
+	width: 100%;
+	height: 160px;  /* was 235 */
+	width: 902px;
+	margin:20px -120px 0;
+}
+.yt-Logo {
+	background-image: url(logo.gif)!important;
+	height:53px;
+	width:260px!important;
+}
+.yt-Footer {
+	background: #6c58b8;  /* 7ed3f0 blue */
+	position: absolute;
+	width: 872px;
+	clear: both;
+	margin: -85px 7px 0 7px;
+	padding: 15px;
+	color: #fff;
+	font-size: 12px;
+	filter: alpha(opacity=80);
+	opacity: .80;
+	-moz-opacity: .80;
+}
+.yt-Tribute-Photo .yt-PhotoFrame {
+	background:url(bg_StoryPhoto2.gif) no-repeat 0 0;
+}
+/*.yt-ContentPrimaryContainer a, .yt-ContentPrimaryContainer a:visited, em.required, .yt-ContentContainerInner a, .yt-ContentContainerInner a:visited, .yt-Breadcrumbs a, .yt-Breadcrumbs a:visited {
+	color: #6f8038;
+}*/
+
+.yt-ContentPrimaryContainer a, .yt-ContentPrimaryContainer a:visited, em.required, .yt-ContentContainerInner a, .yt-ContentContainerInner a:visited, .yt-Breadcrumbs a, .yt-Breadcrumbs a:visited {
+	color: #644ac0;
+}
+
+.yt-ContentContainerInner {
+	background-color: #efeefc;
+}
+
+h1.yt-tributeTitle {
+	background: url(bg_tributeTitle.gif) no-repeat top left;
+}
+
+.yt-NavPrimary li.yt-Story a {
+	background: url(bg_navPrimary_story.gif) no-repeat;
+	width: 90px;
+}
+.yt-NavPrimary li.yt-Notes a {
+	background: url(bg_navPrimary_notes.gif) no-repeat;
+	width: 87px;
+}
+.yt-NavPrimary li.yt-Events a {
+	background: url(bg_navPrimary_events.gif) no-repeat;
+	width: 93px;
+}
+.yt-NavPrimary li.yt-GuestBook a {
+	background: url(bg_navPrimary_guestbook.gif) no-repeat;
+	width: 118px;
+}
+.yt-NavPrimary li.yt-Gifts a {
+	background: url(bg_navPrimary_gifts.gif) no-repeat;
+	width: 81px;
+}
+.yt-NavPrimary li.yt-Photos a {
+	background: url(bg_navPrimary_photos.gif) no-repeat;
+	width: 94px;
+}
+.yt-NavPrimary li.yt-Videos a {
+	background: url(bg_navPrimary_videos.gif) no-repeat;
+	width: 89px;
+}
+
+.yt-ContentPrimary a.yt-Button, .yt-ContentPrimary a.yt-Button:visited, .yt-Panel-Primary a.yt-Button, .yt-Panel-Primary a.yt-Button:visited {
+	background-color: #ddd8e4!important;
+	color: #644ac0 !important;
+}
+.yt-ContentPrimary a.yt-Button:hover, .yt-Panel-Primary a.yt-Button:hover {
+	background-color: #644ac0!important;
+	color: #ffffff !important;
+}
+
+.yt-ContentSecondary .yt-Panel-Body {
+	background:transparent url(bg_secondaryPanel.gif) no-repeat scroll -210px 0pt;
+}
+.yt-ContentSecondary .yt-Panel {
+	background:transparent url(bg_secondaryPanel.gif) no-repeat scroll left bottom;
+}
+
+.yt-ContentSecondary .yt-Panel-Tools .yt-Panel-Body {
+	background:transparent url(bg_secondaryPanel-Tools.gif) no-repeat scroll -210px 0pt;
+}
+.yt-ContentSecondary .yt-Panel-Tools {
+	background:transparent url(bg_secondaryPanel-Tools.gif) no-repeat scroll left bottom;
+}
+.yt-ContentSecondary .yt-Panel h2{
+	background: #644ac0;   /* tribute tools heading color */
+}
+.yt-ContentTertiary .yt-Panel h3 {
+	color: #5b4b70;
+	background:url(icon_Announcement.gif) no-repeat 0 5px;
+		padding-left:28px;
+}
+.yt-ContentTertiary .yt-Panel-About a.yt-Button {
+	background-color:#17780d;
+	color:#ffffff!important;
+}
+.yt-ContentTertiary .yt-Panel-About a.yt-Button:hover {
+	color:#ffffff!important;
+	background-color:#3F2921 ;
+}
+.yt-ContentTertiary .yt-Panel-About h2 {
+	background:url(bg_panelAbout.gif) no-repeat right top;
+}
+.yt-ContentTertiary .yt-Panel-Announcement a.yt-Button {
+	color:#5b4b70 !important;
+	background-color:#ddd8e4;
+}
+.yt-ContentTertiary .yt-Panel-Announcement a.yt-Button:hover {
+	color:#ddd8e4 !important;
+	background-color:#5b4b70;
+}
+.yt-ContentTertiary .yt-Panel-Announcement h2 {
+	background-color:#a293b5;
+}
+
+.yt-Panel-Primary {
+	background:#fff url(bg_Panel.gif) no-repeat right 300px;
+}
+.yt-Panel-Primary h2 {
+	color:#fff;
+	background-color:#17780d;
+}
+
+.yt-Panel-Primary h3 {
+	padding-top:1px;
+	padding-left: 22px;
+	color:#17780d;
+	background:transparent url(icon_Bullet-Small.gif) no-repeat 0 2px;
+}
+
+.yt-Panel-Primary dt {
+	color:#17780d;
+}
+
+.yt-Details dt {
+	color:#17780d;
+}
+
+.yt-Feed dt {
+	background:transparent url(icon_FeedBullet.gif) no-repeat scroll 0pt 4px;
+	padding-left:12px;
+}
+
+.yt-Bullet {
+	background:transparent url(icon_Bullet-Small.gif) no-repeat 0 3px;
+}
+
+.yt-Welcome h2 {
+	background:transparent url(bg_welcome.png) no-repeat 0 0;
+	behavior: url(assets/css/iepngfix.htc);
+}
+
+
+.yt-TributeHome .yt-ContentPrimary {
+	background-color:#644ac0;
+	background-image: url(bg_intro.gif);
+}
+
+/*------------------------------------------------------------
+
+Related Link Styles
+
+------------------------------------------------------------*/
+
+
+.yt-ContentSecondary .yt-Panel-Links h2 {
+	background-color:#A293B5; /* should be same color as .yt-ContentTertiary .yt-Panel-Announcement h2 on line 110 of this file! */
+}
+
+
+/********************************
+CSS Added for Video Tribute
+*****************************/
+.yt-theme-color
+{
+	color:#979797;
+}
+.yt-theme-link-color a
+{
+	color:#979797;
+}

@@ -1,0 +1,12 @@
+D:\TributeService\TributeService\bin\TributeService.dll
+D:\TributeService\TributeService\bin\TributeService.pdb
+D:\TributeService\TributeService\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\TributeService\TributeService\obj\Debug\ResolveAssemblyReference.cache
+D:\TributeService\TributeService\obj\Debug\TributeService.dll
+D:\TributeService\TributeService\obj\Debug\TributeService.pdb
+D:\Projects\YourTribute\TributeService\TributeService\bin\TributeService.dll
+D:\Projects\YourTribute\TributeService\TributeService\bin\TributeService.pdb
+D:\Projects\YourTribute\TributeService\TributeService\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\Projects\YourTribute\TributeService\TributeService\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\YourTribute\TributeService\TributeService\obj\Debug\TributeService.dll
+D:\Projects\YourTribute\TributeService\TributeService\obj\Debug\TributeService.pdb

@@ -1,0 +1,154 @@
+<%@ Skin %>
+
+<asp:Label runat="server" ForeColor="#660000" BackColor="transparent"></asp:Label>
+
+<asp:TextBox runat="server" ForeColor="#660000" BorderWidth="1px" BorderStyle="Solid" BorderColor="#660000" BackColor="Transparent"></asp:TextBox>
+
+<asp:Button runat="server" BorderStyle="Solid" BorderColor="#660000" BorderWidth="1pt" ForeColor="#660000" BackColor="#ffe5e5"></asp:Button>
+
+<asp:HyperLink runat="server" Font-Underline="True" BorderStyle="None" Backc></asp:HyperLink>
+
+<asp:WebPartZone runat="server" BackColor="#E6E6FA" DragHighlightColor="#FF0000" ShowIconInPartTitle="True" BorderStyle="Solid" BorderWidth="2pt" BorderColor="#660000">
+  <FooterStyle BackColor="#ffcccc"></FooterStyle>
+  <HelpVerb imageurl="images/UglyRed_help.gif"></HelpVerb>
+  <PartStyle ForeColor="#000000" BorderColor="#660000" BackColor="#FFFFFF"></PartStyle>
+  <PartTitleStyle ForeColor="#FFFFFF" BorderColor="#660000" BackColor="#660000"></PartTitleStyle>
+  <VerbStyle ForeColor="Navy" BackColor="#ffe5e5" BorderWidth="1px" BorderStyle="solid" BorderColor="Navy"></VerbStyle>
+  <CloseVerb imageurl="images/UglyRed_close.gif"></CloseVerb>
+  <RestoreVerb imageurl="images/UglyRed_restore.gif"></RestoreVerb>
+  <MinimizeVerb imageurl="images/UglyRed_minimize.gif"></MinimizeVerb>
+  <EditVerb imageurl="images/UglyRed_edit.gif"></EditVerb>
+</asp:WebPartZone>
+
+<asp:CatalogZone runat="server" DragHighlightColor="#FF0000" ShowIconInPartTitle="True" BorderStyle="solid" BorderColor="#660000" BorderWidth="2pt" BackColor="#E6E6FA">
+  <FooterStyle BackColor="#ffe5e5"></FooterStyle>
+  <PartStyle ForeColor="#FFFFFF" BorderColor="#660000" BackColor="#ffe5e5"></PartStyle>
+  <PartTitleStyle ForeColor="#FFFFFF" BorderColor="#660000" BackColor="#660000"></PartTitleStyle>
+  <VerbStyle ForeColor="#660000" BackColor="#ffe5e5" BorderColor="#660000" BorderStyle="solid" BorderWidth="1"></VerbStyle>
+</asp:CatalogZone>
+
+<asp:EditorZone runat="server" DragHighlightColor="#FF0000" ShowIconInPartTitle="True" BorderStyle="solid" BorderColor="#660000" BorderWidth="2pt" BackColor="#E6E6FA">
+  <FooterStyle BackColor="#ffe5e5"></FooterStyle>
+  <PartStyle ForeColor="#FFFFFF" BorderColor="#660000" BackColor="#FFFFFF"></PartStyle>
+  <PartTitleStyle ForeColor="#FFFFFF" BorderColor="#660000" BackColor="#660000"></PartTitleStyle>
+  <VerbStyle ForeColor="#660000" BackColor="#ffe5e5" BorderColor="#660000" BorderStyle="solid" BorderWidth="1"></VerbStyle>
+</asp:EditorZone>
+
+<asp:Calendar runat="server" BorderWidth="2px" BorderColor="#ffcccc" BackColor="#ffe5e5">
+  <TodayDayStyle BackColor="#ffcccc" Forecolor="#dd0000"></TodayDayStyle>
+  <SelectedDayStyle ForeColor="#FF0000" BorderColor="#660000" BackColor="#FFFFFF"></SelectedDayStyle>
+  <TitleStyle Font-Bold="True" ForeColor="#FFFFFF" BackColor="#660000"></TitleStyle>
+  <DayHeaderStyle Font-Bold="True" ForeColor="#660000" BackColor="#ffe5e5"></DayHeaderStyle>
+  <NextPrevStyle ForeColor="#FFFFFF" BackColor="#660000"></NextPrevStyle>
+  <OtherMonthDayStyle BackColor="#ffe5e5" ForeColor="#AAAAAA"></OtherMonthDayStyle>
+  <DayStyle ForeColor="#000000" BackColor="#ffe5e5"></DayStyle>
+  <WeekEndDayStyle BackColor="#ffe5e5" ForeColor="#000000"></WeekEndDayStyle>
+</asp:Calendar>
+
+<asp:DataGrid runat="server" BackColor="#ffcccc" BorderWidth="2pt" BorderStyle="Solid" BorderColor="#ffcccc" GridLines="None" HorizontalAlign="Left">
+  <PagerStyle ForeColor="#FFFFFF" BackColor="#ffcccc"></PagerStyle>
+  <AlternatingItemStyle BackColor="#ffe5e5" ForeColor="#000000"></AlternatingItemStyle>
+  <EditItemStyle ForeColor="#FFFFFF" BackColor="#FFFFE0" BorderColor="#FFFFFF"></EditItemStyle>
+  <FooterStyle ForeColor="#FFFFFF" BackColor="#AAAAAA"></FooterStyle>
+  <ItemStyle ForeColor="#000000" BackColor="#FFFFFF"></ItemStyle>
+  <HeaderStyle ForeColor="#FFFFFF" BackColor="#660000"></HeaderStyle>
+  <SelectedItemStyle BorderColor="#ffcccc" BackColor="#FFFFE0" ForeColor="#000000"></SelectedItemStyle>
+</asp:DataGrid>
+
+<asp:GridView runat="server" BackColor="#ffcccc" BorderWidth="1pt" BorderColor="#ffcccc" GridLines="None" HorizontalAlign="Left">
+  <FooterStyle ForeColor="#FFFFFF" BackColor="#AAAAAA"></FooterStyle>
+  <EditRowStyle BorderWidth="1pt" ForeColor="#000000" BorderStyle="Solid" BorderColor="#FF0000" BackColor="#FFFFE0"></EditRowStyle>
+  <HeaderStyle Font-Bold="True" ForeColor="#FFFFFF" BackColor="#660000"></HeaderStyle>
+  <AlternatingRowStyle BorderWidth="2pt" ForeColor="#000000" BorderStyle="Solid" BorderColor="#ffcccc" BackColor="#ffe5e5"></AlternatingRowStyle>
+  <SelectedRowStyle ForeColor="#000000" BorderColor="#0000EE" BorderWidth="2" BackColor="#FFFFE0"></SelectedRowStyle>
+  <RowStyle BackColor="#FFFFFF" ForeColor="#000000"></RowStyle>
+  <PagerStyle BorderWidth="1pt" Font-Bold="True" Font-Size="1.2em" BorderColor="#FF0000" BorderStyle="Solid" ForeColor="#000000" BackColor="#AAAAAA"></PagerStyle>
+</asp:GridView>
+
+<asp:DataList runat="server" BorderStyle="Solid" BorderColor="#ffcccc" BackColor="#ffcccc">
+  <AlternatingItemStyle BackColor="#ffe5e5" BorderColor="#ffe5e5"></AlternatingItemStyle>
+  <EditItemStyle ForeColor="#660000" BackColor="#FFFFE0" BorderColor="#660000" BorderStyle="solid" BorderWidth="1pt"></EditItemStyle>
+  <FooterStyle Font-Bold="True" ForeColor="#660000" BackColor="#FFFFFF" BorderColor="#ffe5e5"></FooterStyle>
+  <ItemStyle BackColor="#FFFFFF" BorderColor="#ffe5e5"></ItemStyle>
+  <HeaderStyle Font-Bold="True" BorderColor="#660000" BorderStyle="solid" ForeColor="#FFFFFF" BackColor="#660000"></HeaderStyle>
+  <SelectedItemStyle ForeColor="#660000" BackColor="#E6E6FA" BorderColor="transparent" BorderWidth="1pt"></SelectedItemStyle>
+</asp:DataList>
+
+<asp:DetailsView runat="server" ForeColor="#000000" BorderWidth="2pt" BorderStyle="Solid" BorderColor="#ffcccc" BackColor="#ffe5e5" CellPadding="5">
+  <HeaderStyle BackColor="#660000" BorderColor="#ffe5e5"></HeaderStyle>
+  <PagerStyle ForeColor="#660000" BackColor="#ffe5e5"></PagerStyle>
+  <EditRowStyle BorderColor="#660000" BackColor="#FFFFFF" ForeColor="#000000"></EditRowStyle>
+  <RowStyle BackColor="#FFFFFF" BorderColor="#660000"></RowStyle>
+  <CommandRowStyle Font-Bold="True" ForeColor="#660000" BackColor="#ffcccc" BorderColor="#660000"></CommandRowStyle>
+  <InsertRowStyle BackColor="#FFFFFF" BorderColor="#ffe5e5"></InsertRowStyle>
+  <FooterStyle BackColor="#ffe5e5" ForeColor="#000000" BorderColor="#ffe5e5"></FooterStyle>
+  <AlternatingRowStyle BackColor="#ffe5e5" BorderColor="#ffe5e5"></AlternatingRowStyle>
+</asp:DetailsView>
+
+<asp:TreeView runat="server" ForeColor="#660000" BackColor="transparent" BorderColor="#ffe5e5" ParentNodeImageUrl="images/UglyRed_greysquare.gif" RootNodeImageUrl="images/UglyRed_greysquare.gif" NodeIndent="10" LeafNodeImageUrl="images/UglyRed_greysquare.gif">
+  <NodeStyle horizontalpadding="5" ForeColor="#660000" verticalpadding="1" BackColor="#FFFFFF"></NodeStyle>
+  <LeafNodeStyle ForeColor="#660000" BackColor="#FFFFFF"></LeafNodeStyle>
+  <LevelStyles>
+   <asp:TreeNodeStyle Font-Bold="True" BackColor="#FFFFFF" ForeColor="#660000" ChildNodesPadding="5"></asp:TreeNodeStyle>
+  </LevelStyles>
+  <RootNodeStyle Font-Bold="True" BackColor="#FFFFFF"></RootNodeStyle>
+  <ParentNodeStyle ForeColor="#660000" BackColor="#FFFFFF"></ParentNodeStyle>
+  <HoverNodeStyle Font-Underline="false" BorderColor="#ffe5e5" BackColor="#FFFFFF" ForeColor="#FF0000"></HoverNodeStyle>
+  <SelectedNodeStyle BorderWidth="1px" ForeColor="#660066" BorderStyle="Solid" BackColor="#FFFFFF"></SelectedNodeStyle>
+</asp:TreeView>
+
+<asp:CheckBox runat="server" BackColor="transparent" BorderWidth="0" ForeColor="#660000"></asp:CheckBox>
+
+<asp:RadioButton runat="server" BackColor="transparent" BorderWidth="0" ForeColor="#660000"></asp:RadioButton>
+
+<asp:CheckBoxList runat="server" BackColor="transparent" ForeColor="#660000" BorderColor="#ffe5e5" BorderStyle="Solid" BorderWidth="1pt" CellPadding="5" CellSpacing="1"></asp:CheckBoxList>
+
+<asp:RadioButtonList runat="server" BackColor="#FFFFFF" ForeColor="#660000" BorderColor="#ffe5e5" BorderStyle="Solid" BorderWidth="1px" CellPadding="5" CellSpacing="0"></asp:RadioButtonList>
+
+<asp:DropDownList runat="server" BackColor="#FFFFFF" ForeColor="#660000"></asp:DropDownList>
+
+<asp:ListBox runat="server" BackColor="#FFFFFF" ForeColor="#660000"></asp:ListBox>
+
+<asp:BulletedList BulletImageUrl="images/UglyRed_bullet1.gif" runat="server" BackColor="transparent" ForeColor="#660000"></asp:BulletedList>
+
+<asp:Login runat="server" ForeColor="#000000" BorderColor="#ffcccc" BorderStyle="Solid" BorderWidth="2pt" BackColor="#ffe5e5">
+  <CheckBoxStyle BorderStyle="None" BorderWidth="1px" BorderColor="Navy" BackColor="#ffe5e5"></CheckBoxStyle>
+  <FailureTextStyle ForeColor="#660000" BackColor="#ffe5e5"></FailureTextStyle>
+  <HyperLinkStyle ForeColor="#660000" BackColor="#ffe5e5"></HyperLinkStyle>
+  <TextBoxStyle Font-Italic="True" BorderColor="#660000" BackColor="#FFFFFF" Forecolor="#660000"></TextBoxStyle>
+  <InstructionTextStyle Font-Italic="True" BackColor="transparent"></InstructionTextStyle>
+  <TitleTextStyle Font-Bold="True" ForeColor="#FFFFFF" BackColor="#660000"></TitleTextStyle>
+  <LabelStyle ForeColor="#000000" BackColor="#ffe5e5"></LabelStyle>
+</asp:Login>
+
+<asp:LoginName runat="server" Font-Bold="True" ForeColor="#660000"></asp:LoginName>
+
+<asp:LoginStatus runat="server" ForeColor="#660000" Font-Bold="True" BorderColor="#660000"></asp:LoginStatus>
+
+<asp:SiteMapPath runat="server" ForeColor="#660000" BackColor="#FFFFFF" Bordercolor="#660000">
+  <CurrentNodeStyle ForeColor="#660066" Font-Bold="true" Font-Underline="false" BorderColor="#FFFFFF" BackColor="#FFFFFF"></CurrentNodeStyle>
+  <PathSeparatorStyle ForeColor="#000000" Font-Underline="false" BorderColor="#FFFFFF" BackColor="#FFFFFF"></PathSeparatorStyle>
+  <RootNodeStyle ForeColor="#660000" Font-Underline="true" BorderColor="#FFFFFF" BackColor="#FFFFFF"></RootNodeStyle>
+  <NodeStyle ForeColor="#660000" Font-Underline="true" BorderColor="#FFFFFF" BackColor="#FFFFFF"></NodeStyle>
+</asp:SiteMapPath>
+
+<asp:PasswordRecovery runat="server" ForeColor="#000000" BorderWidth="2pt" BorderStyle="Solid" BorderColor="#ffcccc" BackColor="#ffe5e5">
+  <SubmitButtonStyle BackColor="#ffe5e5" BorderStyle="Solid" BorderColor="#660000" BorderWidth="1pt" ForeColor="#660000"></SubmitButtonStyle>
+  <HyperLinkStyle ForeColor="#660000" BackColor="#ffe5e5"></HyperLinkStyle>
+  <FailureTextStyle ForeColor="#660000" BackColor="#ffe5e5"></FailureTextStyle>
+  <InstructionTextStyle ForeColor="#660066" Font-Italic="true" BackColor="#ffe5e5"></InstructionTextStyle>
+  <SuccessTextStyle ForeColor="#660000" Font-Bold="true" BackColor="#000000"></SuccessTextStyle>
+  <TitleTextStyle Font-Bold="True" ForeColor="#FFFFFF" BackColor="#660000"></TitleTextStyle>
+  <TextBoxStyle ForeColor="#660000" BorderWidth="1pt" borderStyle="Solid" BorderColor="#660000" BackColor="#FFFFFF"></TextBoxStyle>
+  <LabelStyle ForeColor="#000000" BackColor="#ffe5e5"></LabelStyle>
+</asp:PasswordRecovery>
+
+
+<asp:Wizard runat="server" ForeColor="#000000" BackColor="#E6E6FA" Bordercolor="#660000" BorderWidth="1pt">
+  <HeaderStyle ForeColor="#FFFFFF" BackColor="#660000"></headerstyle>
+  <SidebarStyle ForeColor="#660000"/>
+  <SideBarButtonStyle BackColor="lavender" ForeColor="#660000" BorderColor="#660000" />
+  <StepStyle BackColor="#FFFFFF" BorderColor="#000000" ForeColor="#000000" BorderWidth="1pt"/>
+  <NavigationStyle ForeColor="#660000" BorderColor="#660000"/>
+  <NavigationButtonStyle ForeColor="#660000" BorderColor="#660000"/>
+</asp:Wizard>

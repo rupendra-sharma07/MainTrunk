@@ -1,0 +1,16 @@
+<!-- Added by rupendra for Examples re writer rule....
+
+
+<RewriterRule>
+        <LookFor>~/(.*)/examples\.aspx</LookFor>
+        <!-- Modified by : Rupendra on 21-sep-2011 to remove example page refference -->
+        <!--<SendTo>~/Miscellaneous/examples.aspx</SendTo>-->
+        <SendTo>~/Miscellaneous/themes.aspx</SendTo>
+      </RewriterRule>
+<RewriterRule>
+        <LookFor>~/examples\.aspx</LookFor>
+        <!-- Modified by : Rupendra on 21-sep-2011 to remove example page refference -->
+        <!--<SendTo>~/Miscellaneous/examples.aspx</SendTo>-->
+        <SendTo>~/Miscellaneous/themes.aspx</SendTo>
+      </RewriterRule>
+

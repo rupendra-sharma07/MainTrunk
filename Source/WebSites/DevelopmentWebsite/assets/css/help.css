@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	padding:0;
+	background: transparent;
+}
+html {
+	margin: 0;
+	padding:0;
+	background: transparent;
+}
+
+
+
+.yt-ContentContainer {
+	width:688px;
+	height:430px;
+	position:relative;
+}
+.yt-ContentPrimaryContainer {
+	float:none;
+}
+.yt-ContentPrimary {
+	background:url(../images/bg_HelpContainer.gif) repeat-y 0 0;
+	padding:0 20px 0 10px;
+	margin:0;
+	overflow: hidden;
+	height:425px;
+	width:458px;
+	position:absolute;
+	top:5px;
+	right:5px;
+	float:none;
+}
+
+.yt-ContentPrimary img {
+	margin:4px 0;
+	clear:both;
+}
+.yt-ContentPrimary p img {
+	margin:0 0 4px 4px;
+	float:right;
+	clear:none;;
+}
+.yt-ContentSecondary {
+	padding-left:10px;
+	margin:0;
+	overflow-y:auto;
+	height:425px;
+	width:175px;
+	position:absolute;
+	top:5px;
+	float:none;
+	left:10px;
+}
+
+h3 {
+	border-bottom:1px dotted #b3aabf;
+	margin-top:0;
+	margin-bottom:12px;
+	padding-top:0;
+}
+
+ul ul {
+	margin-top:4px;
+	font-size:0.9em;
+}
+
+ul ul li {
+	background-image:url(../images/icon_Bullet-Arrow.gif);
+	background-position:0 3px;
+}
+	
+.divHelpContent{width:480px; text-align:justify; height:370px; overflow:auto; padding-right:10px;}
+hr{ border-top:1px dotted #cccccc; margin-right:5px; margin-left:5px;  color:#ffffff; text-decoration:none;}

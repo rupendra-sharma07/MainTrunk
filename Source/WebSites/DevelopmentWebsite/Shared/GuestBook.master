@@ -1,0 +1,426 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GuestBook.master.cs" Inherits="Shared_GuestBook" %>
+
+<%@ Register Src="../UserControl/Footer.ascx" TagName="Footer" TagPrefix="uc2" %>
+<%@ Register Src="../UserControl/Inbox.ascx" TagName="Inbox" TagPrefix="uc1" %>
+<%@ Register Src="../UserControl/LeftFeaturedPanel.ascx" TagName="LeftFeaturedPanel"
+    TagPrefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Your Tribute - Guestbook</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en-ca" />
+    <meta http-equiv="imagetoolbar" content="false" />
+    <meta name="robots" content="index,follow" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <!-- really basic, generic html class stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/default.css" />
+    <!-- default grid layout stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/layouts/centered1024_21.css" />
+    <!-- print-friendly stylesheet -->
+    <link rel="stylesheet" type="text/css" media="print" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/print.css" />
+    <!-- screen elements stylesheet should be here -->
+    <link rel="stylesheet" type="text/css" href="../test/assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/screen.css" />
+    <!-- Selected App Theme -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="../assets/themes/MemorialDefault/theme.css"
+        title="MemorialDefault" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/AnniversaryDefault/theme.css"
+        title="AnniversaryDefault" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/BabyBoy/theme.css"
+        title="BabyBoy" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/BabyDefault/theme.css"
+        title="BabyDefault" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/BabyGirl/theme.css"
+        title="BabyGirl" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/BirthdayCheers/theme.css"
+        title="BirthdayCheers" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/BirthdayDefault/theme.css"
+        title="BirthdayDefault" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/GraduationAlternate/theme.css"
+        title="GraduationAlternate" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/GraduationDefault/theme.css"
+        title="GraduationDefault" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/MemorialFlowers/theme.css"
+        title="MemorialFlowers" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/MemorialPatriotic/theme.css"
+        title="MemorialPatriotic" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/MemorialReligious/theme.css"
+        title="MemorialReligious" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/MemorialReligiousII/theme.css"
+        title="MemorialReligiousII" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/MemorialSky/theme.css"
+        title="MemorialSky" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/WeddingDefault/theme.css"
+        title="WeddingDefault" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/WeddingFall/theme.css"
+        title="WeddingFall" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/WeddingFormal/theme.css"
+        title="WeddingFormal" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/WeddingSpring/theme.css"
+        title="WeddingSpring" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/WeddingTropical/theme.css"
+        title="WeddingTropical" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/themes/WeddingWinter/theme.css"
+        title="WeddingWinter" />
+    <!-- larger text stylesheets -->
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/medium_text.css"
+        title="medium_text" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/large_text.css"
+        title="large_text" />
+    <!-- JS libraries -->
+
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/scripts/mootools-1.11.js'></script>
+
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/scripts/global.js'></script>
+
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/scripts/styleSwitcher.js'></script>
+
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>Common/JavaScript/Common.js'></script>
+
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>Common/JavaScript/ajax.js'></script>
+
+    <script language="javascript" type="text/jscript">
+        //executeBeforeLoad();
+
+        function CreateBookmarkLink() {
+            title = "Webpage Title";
+            var url = $('ctl00_hdnUrl').value;
+            if (window.sidebar) {
+                // Mozilla Firefox Bookmark		
+                window.sidebar.addPanel(title, url, "");
+            }
+            else if (window.external) {
+                // IE Favorite		
+                window.external.AddFavorite(url, title);
+            }
+            else if (window.opera && window.print) {
+                // Opera Hotlist		
+                return true;
+            }
+        }
+        //to set id and value of selected theme to the hidden variables.
+        function GetSelectedTheme(selectedThemeId, selectedThemeValue) {
+            $('ctl00_hdnSelectedTheme').value = selectedThemeId;
+            $('ctl00_hdnSelectedThemeValue').value = selectedThemeValue;
+        }
+        //Function for share on facebook
+        function fbs_click() {
+            u = location.href;
+
+            var indexVal = u.indexOf("?");
+            if (indexVal == -1)
+                u += "?";
+            else
+                u += "\&";
+
+            u += "TributeId=" + $('ctl00_hdnTributeId').value;
+            u += "\&" + "TributeName=" + $('ctl00_hdnTributeName').value;
+            u += "\&" + "TributeType=" + $('ctl00_hdnTributeType').value;
+            u += "\&" + "TributeUrl=" + $('ctl00_hdnTributeUrl').value;
+            u += "\&" + "fbmode=facebook";
+
+            t = document.title; window.open('http://www.facebook.com/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t), 'sharer', 'toolbar=0,status=0,width=626,height=436');
+            return false;
+        }
+
+        function Themer(theSelect) {
+            SetActiveStyleSheet(theSelect);
+        }
+
+        function checkValidEmail(source, args) {
+            var validator = document.getElementById('<%= cvCheckValidEmail.ClientID %>');
+            var EmailList = (document.getElementById('<%= txtEmailAddress.ClientID %>').value).replace(/\,/g, ";");
+            args.IsValid = EventCheckValidEmail(validator, EmailList);
+        }
+
+        function LinkToMailTribute() {
+            $('ctl00_hdnTypeToMail').value = "Tribute";
+        }
+        function LinkToMailGuestbook() {
+            $('ctl00_hdnTypeToMail').value = "Guestbook";
+        }
+    </script>
+
+    <!--#include file="../analytics.asp"-->
+</head>
+<body runat="server" id="masterBody">
+    <form runat="server" action="">
+    <input id="hdnUrl" type="hidden" runat="server" />
+    <asp:HiddenField ID="hdnSelectedTheme" runat="server" />
+    <asp:HiddenField ID="hdnSelectedThemeValue" runat="server" />
+    <asp:HiddenField ID="HiddenField1" runat="server" />
+    <asp:HiddenField ID="HiddenField2" runat="server" />
+    <asp:HiddenField ID="hdnTributeId" runat="server" />
+    <asp:HiddenField ID="hdnTributeName" runat="server" />
+    <asp:HiddenField ID="hdnTributeType" runat="server" />
+    <asp:HiddenField ID="hdnTributeUrl" runat="server" />
+    <asp:HiddenField ID="hdnTypeToMail" runat="server" />
+    <div class="yt-Container yt-Channel-Memorial yt-Tribute yt-Guest">
+        <div class="yt-HeaderContainer">
+            <div class="yt-Header">
+                <a href="../Tribute/Home.aspx" title="Return to User Account Page" class="yt-Logo">
+                </a>
+                <div class="yt-HeaderControls">
+                    <div class="yt-NavHeader">
+                        <div class="floatLeft" id="divProfile" runat="server">
+                            <a id="myprofile" runat="server" href="../MyHome/AdminMytributesHome.aspx">My Account</a>
+                            <uc1:Inbox ID="Inbox1" runat="server" />
+                        </div>
+                        <div class="yt-UserInfo">
+                            <span>
+                                <%=_userName%>
+                            </span><span id="spanLogout" runat="server"></span>
+                        </div>
+                    </div>
+                    <div class="hack-clearBoth">
+                    </div>
+                    <div class="yt-Tools">
+                        <div id="yt-TypeSizeControl" class="yt-TypeSizeControl">
+                            <span class="floatLeft">Text Size:&#160;</span> <a href="javascript:void(0);" class="large"
+                                title="Large Text">a</a> <a href="javascript:void(0);" class="medium" title="Medium Text">
+                                    a</a> <a href="javascript:void(0);" class="small" title="Small Text">a</a>
+                        </div>
+                        <a href="javascript:void(0);" id="yt-SearchLauncher" class="yt-SearchLauncher hideText">
+                            Find a Tribute</a>
+                        <div id="yt-Search">
+                            <h2>
+                                <asp:Label ID="lblFindTribute" runat="server" Text="Find a Tribute"></asp:Label></h2>
+                            <fieldset>
+                                <div class="yt-Form-Field yt-SearchKeywords">
+                                    <label id="lblSearchFor" runat="server" for="txtSearchKeywords">
+                                        Search for:</label>
+                                    <asp:TextBox ID="txtSearchKeyword" runat="server" Text="Enter the name of a Tribute"></asp:TextBox>
+                                </div>
+                                <asp:ImageButton ID="btnSearchSubmit" CssClass="yt-Search-Submit" runat="server"
+                                    ImageUrl="../assets/images/btn_go.gif" AlternateText="Search Tributes" CausesValidation="false"
+                                    OnClick="btnGo_Click" />
+                                <div class="columnLeft">
+                                    <div class="yt-Form-Field yt-Form-Field-Checkbox">
+                                        <asp:RadioButton ID="rdoSearch_All" GroupName="rdoSearchGroup" runat="server" TabIndex="1"
+                                            Checked="true" />
+                                        <label id="lblSearch_All" runat="server">
+                                            All Tributes</label>
+                                    </div>
+                                    <div class="yt-Form-Field yt-Form-Field-Checkbox">
+                                        <asp:RadioButton ID="rdoSearch_Anniversary" GroupName="rdoSearchGroup" runat="server"
+                                            TabIndex="2" Checked="false" />
+                                        <label id="lblSearch_Anniversary" runat="server">
+                                            Anniversary Tributes</label>
+                                    </div>
+                                    <div class="yt-Form-Field yt-Form-Field-Checkbox">
+                                        <asp:RadioButton ID="rdoSearch_Birthday" GroupName="rdoSearchGroup" runat="server"
+                                            TabIndex="3" Checked="false" />
+                                        <label id="lblSearch_Birthday" runat="server">
+                                            Birthday Tributes</label>
+                                    </div>
+                                    <div class="yt-Form-Field yt-Form-Field-Checkbox">
+                                        <asp:RadioButton ID="rdoSearch_Graduation" GroupName="rdoSearchGroup" runat="server"
+                                            TabIndex="4" Checked="false" />
+                                        <label id="lblSearch_Graduation" runat="server">
+                                            Graduation Tributes</label>
+                                    </div>
+                                </div>
+                                <div class="columnRight">
+                                    <div class="yt-Form-Field yt-Form-Field-Checkbox">
+                                        <asp:RadioButton ID="rdoSearch_Memorial" GroupName="rdoSearchGroup" runat="server"
+                                            TabIndex="5" Checked="false" />
+                                        <label id="lblSearch_Memorial" runat="server">
+                                            Memorial Tributes</label>
+                                    </div>
+                                    <div class="yt-Form-Field yt-Form-Field-Checkbox">
+                                        <asp:RadioButton ID="rdoSearch_NewBaby" GroupName="rdoSearchGroup" runat="server"
+                                            TabIndex="6" Checked="false" />
+                                        <label id="lblSearch_NewBaby" runat="server">
+                                            New Baby Tributes</label>
+                                    </div>
+                                    <div class="yt-Form-Field yt-Form-Field-Checkbox">
+                                        <asp:RadioButton ID="rdoSearch_Wedding" GroupName="rdoSearchGroup" runat="server"
+                                            TabIndex="7" Checked="false" />
+                                        <label id="lblSearch_Wedding" runat="server">
+                                            Wedding Tributes</label>
+                                    </div>
+                                    <div class="yt-SearchAdvancedLink">
+                                        <asp:HyperLink ID="lnkAdvanceSearch" runat="server" NavigateUrl="../Tribute/AdvanceSearch.aspx">Advanced Search</asp:HyperLink>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <a id="lnkClose" runat="server" href="javascript:void(0);" class="yt-MiniButton yt-CloseSearch"
+                                onclick="yt_Search.toggle();">Close</a>
+                            <div class="hack-clearBoth">
+                            </div>
+                        </div>
+                        <!--yt-Search-->
+                    </div>
+                    <!--yt-Tools-->
+                </div>
+                <!--yt-HeaderControls-->
+            </div>
+            <!--yt-Header-->
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="yt-ContentContainer">
+            <div class="yt-ContentContainerInner">
+                <div class="yt-ContentPrimaryContainer">
+                    <div class="yt-ContentPrimary">
+                        <div id="lblErrMsg" style="text-align: left" runat="server" class="yt-Error" visible="false">
+                        </div>
+                    </div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!--yt-ContentPrimaryContainer-->
+                <div class="yt-ContentSecondary">
+                    <div class="yt-Panel yt-Panel-Tools">
+                        <div class="yt-Panel-Body">
+                            <h2>
+                                Tribute Tools</h2>
+                            <p class="yt-Tools-Entry" id="pLogin" runat="server">
+                            </p>
+                            <ul class="yt-Tools-Share">
+                                <li id="liEmailPage" runat="server" class="yt-Tool-EmailPage"><a href="javascript:void(0);"
+                                    onclick="LinkToMailGuestbook();doModalShare();">Email this page</a></li>
+                                <li id="liEmailTribute" runat="server" class="yt-Tool-EmailTribute">
+                                    <asp:LinkButton ID="lbtnEmailTribute" runat="server" OnClick="lbtnEmailTribute_Click"
+                                        CausesValidation="false"></asp:LinkButton></li>
+                                <li id="liShareOnFacebook" runat="server" class="yt-Tool-Facebook"></li>
+                            </ul>
+                            <ul class="yt-Tools-Manage">
+                                <li id="liAddToFavorite" runat="server" class="yt-Tool-Favorites"><a class="yt-Tool-AddFavorites-Link"
+                                    href="javascript: void(0);">
+                                    <%=toFav %>
+                                </a>
+                                    <div class="yt-Add-Favorites-Confirmation">
+                                        <p>
+                                            <%=toFavText %>
+                                        </p>
+                                        <div class="yt-Form-Field">
+                                            <input type="checkbox" id="chkFavoritesEmailNotifications" runat="server" checked="checked" />
+                                            <label for="chkFavoritesEmailNotifications">
+                                                Send e-mail notifications about activity on this tribute (can be changed later in
+                                                My Home)</label>
+                                        </div>
+                                        <div class="yt-Form-MiniButtons">
+                                            <asp:LinkButton ID="lbtnAddToFavorite" Text="Add" CssClass="yt-MiniButton yt-AddButton"
+                                                runat="server" CausesValidation="false" OnClick="lbtnAddToFavorite_Click"></asp:LinkButton>
+                                            <a href="javascript: void(0);" class="yt-MiniButton yt-CancelButton">Cancel</a>
+                                        </div>
+                                    </div>
+                                    <div class="hack-clearBoth">
+                                    </div>
+                                </li>
+                                <li id="liChangeSiteTheme" runat="server" class="yt-Tool-ChangeTheme"><a href="#"
+                                    class="yt-Tool-ChangeTheme-Link">Change Site Theme</a>
+                                    <div class="yt-ThemeSet" id="yt-ThemesWedding" style="display: block;">
+                                        <asp:Literal ID="litThemes" runat="server"></asp:Literal>
+                                        <div class="yt-Form-MiniButtons">
+                                            <asp:LinkButton ID="lbtnSaveTheme" runat="server" Text="Save" CssClass="yt-MiniButton yt-SaveButton"
+                                                CausesValidation="false" OnClick="lbtnSaveTheme_Click"></asp:LinkButton>
+                                            <a href="javascript: void(0);" class="yt-MiniButton yt-CancelButton">Cancel</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="liManageTribute" runat="server" class="yt-Tool-ManageTribute"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="yt-Panel">
+                        <uc3:LeftFeaturedPanel ID="LeftFeaturedPanel1" runat="server" />
+                    </div>
+                    <div class="yt-Advertising-Panel">
+                        <h2>
+                            Advertising</h2>
+                        <div id="divAddSense" runat="server" class="yt-Advertisement">
+                        </div>
+                    </div>
+                </div>
+                <!--yt-ContentSecondary-->
+                <div class="hack-clearBoth">
+                </div>
+                <div class="yt-ContentContainerImage">
+                </div>
+            </div>
+            <!--yt-ContentContainerInner-->
+        </div>
+        <!--yt-ContentContainer-->
+        <div >
+            <uc2:Footer ID="Footer1" runat="server" />
+        </div>
+        <!--yt-Footer-->
+    </div>
+    <!--yt-Container-->
+    <div class="upgrade">
+        <h2>
+            Please Upgrade Your Browser</h2>
+        <p>
+            This site's design is only visible in a graphical browser that supports <a href="http://www.webstandards.org/upgrade/"
+                title="The Web Standards Project's BROWSER UPGRADE initiative.">web standards</a>,
+            but its content is accessible to any browser or Internet device.</p>
+    </div>
+    <!--yt-upgrade-->
+    <!-- Following DIV content is used for modal to share page -->
+    <div id="yt-ShareContainer">
+        <div id="yt-ShareError">
+            <!-- if the yt-SponsorError div has content (including spaces, CR/LF characters, etc, the modal login will show on page load -->
+            <div id="yt-ProfileError">
+                <asp:ValidationSummary ValidationGroup="Share" CssClass="yt-Error" ID="vsError" runat="server"
+                    HeaderText="<h2>Oops - there was a problem with some account type information.</h2><h3>Please correct the errors below:</h3>"
+                    ForeColor="Black" />
+            </div>
+        </div>
+        <div id="yt-ShareContent" class="yt-ModalWrapper">
+            <div class="yt-Panel-Primary">
+                <h2 id="hEmailPage" runat="server">
+                </h2>
+                <p id="pRequired" runat="server" class="yt-requiredFields">
+                </p>
+                <div class="yt-Form-Field">
+                    <label for="txtSendName" id="lblUserName" runat="server">
+                    </label>
+                    <asp:TextBox ID="txtUserName" runat="server" CssClass="yt-Form-Input-Long" ValidationGroup="Share"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvUserName" ValidationGroup="Share" runat="server"
+                        ControlToValidate="txtUserName">!</asp:RequiredFieldValidator>
+                </div>
+                <div class="yt-Form-Field">
+                    <label for="txtSendEmail" id="lblUserEmailAddress" runat="server">
+                    </label>
+                    <asp:TextBox ID="txtUserEmailAddress" runat="server" ValidationGroup="Share" CssClass="yt-Form-Input-Long"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvUserEmailAddress" runat="server" ValidationGroup="Share"
+                        ControlToValidate="txtUserEmailAddress">!</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="revFromEmailAddress" ValidationGroup="Share"
+                        runat="server" ControlToValidate="txtUserEmailAddress" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">!</asp:RegularExpressionValidator>
+                </div>
+                <div class="yt-Form-Field yt-EmailList">
+                    <label for="txtarEmailAddresses" id="lblEmailAddress" runat="server">
+                    </label>
+                    <asp:TextBox ID="txtEmailAddress" runat="server" CssClass="yt-Form-Textarea-Short"
+                        ValidationGroup="Share" Columns="50" Rows="6" TextMode="MultiLine"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEmailAddress" runat="server" ValidationGroup="Share"
+                        ControlToValidate="txtEmailAddress">!</asp:RequiredFieldValidator>
+                    <asp:CustomValidator ID="cvCheckValidEmail" runat="server" ValidationGroup="Share"
+                        ClientValidationFunction="checkValidEmail" Width="1px" ErrorMessage="Email Address are not valid"
+                        Font-Bold="True" Font-Size="Medium" ForeColor="#FF8000">!</asp:CustomValidator>
+                    <div class="yt-Form-MiniButtons">
+                        <div class="yt-Form-Submit">
+                            <asp:LinkButton ID="lbtnSubmit" ValidationGroup="Share" CssClass="yt-MiniButton yt-AddButton"
+                                runat="server" OnClick="lbtnSubmit_Click"></asp:LinkButton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <script type="text/javascript">
+        executeBeforeLoad();
+    </script>
+
+    <div id="txtHint" visible="false">
+        <b></b>
+    </div>
+</body>
+
+<script type="text/javascript" src="../assets/scripts/modalbox.js"></script>
+
+</html>

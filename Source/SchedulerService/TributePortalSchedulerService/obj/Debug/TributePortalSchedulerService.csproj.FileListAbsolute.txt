@@ -1,0 +1,6 @@
+E:\Project\YourTribute\Source\SchedulerService\TributePortalSchedulerService\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\SchedulerService\TributePortalSchedulerService\obj\Debug\TributePortalSchedulerService.ProjectInstaller.resources
+E:\Project\YourTribute\Source\SchedulerService\TributePortalSchedulerService\obj\Debug\TributePortalSchedulerService.csproj.GenerateResource.Cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\SchedulerService\TributePortalSchedulerService\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\SchedulerService\TributePortalSchedulerService\obj\Debug\TributePortalSchedulerService.ProjectInstaller.resources
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\SchedulerService\TributePortalSchedulerService\obj\Debug\TributePortalSchedulerService.csproj.GenerateResource.Cache

@@ -1,0 +1,8 @@
+    <!-- for BeanStream payment gateway by Rupendra on 17 aug 2011 -->
+    <add key="BeanStreamUrl" value="https://www.beanstream.com/scripts/process_transaction.asp"></add>
+    <add key="MerchantId" value="237120000"/>
+    <add key="requestType" value="BACKEND"/>
+    <add key="trnType" value="P"/>
+    <add key="BeanUserName" value="admin"/>
+    <add key="BeanUserPwd" value="Ab3b82cd"/>
+    <!-- end if beanStream settings -->

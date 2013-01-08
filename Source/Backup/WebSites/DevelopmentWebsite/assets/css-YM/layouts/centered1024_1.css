@@ -1,0 +1,63 @@
+/*
+centered1024_1.css
+Centered, 1, 1024px wide, screen media CSS for use with modern, CSS-capable browsers.
+
+author: Mark Bice
+version: 1.0
+last modified: November 27, 2007
+
+notes:
+The rules in this stylesheet are for grid layout only! ie grid dimensions and positioning.
+Place colours, child elements, etc in the appropriate theme CSS.
+*/
+
+@media screen  {
+
+
+
+
+.yt-Container {
+	width: 916px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.yt-ContentContainer {
+	width: 904px;
+	min-height: 200px;
+	height: 200px;
+}
+html>body .yt-ContentContainer {
+	height: auto;
+}
+
+.yt-ContentContainerInner {
+	padding-left: 120px;
+	padding-right: 120px;
+	padding-top: 20px;
+}
+.yt-ContentFull { /* an extra-wide column for pages with no sidebars*/
+	padding-left:10px;
+	padding-right:10px;
+}
+/* .yt-ContentFull .yt-ContentContainerImage in screen.css must have margins set as negative of above as well */
+
+.yt-ContentPrimaryContainer {
+	width: 100%;
+}
+
+.yt-ContentPrimary {
+	margin-bottom: 6px;
+}
+
+
+.yt-ContentSecondary, .yt-ContentTertiary {
+	display: none;
+}
+
+
+
+
+
+}

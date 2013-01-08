@@ -1,0 +1,6 @@
+added by UDham Singh      
+
+<RewriterRule>
+        <LookFor>~/(.*)/AjaxLogin\.aspx</LookFor>
+        <SendTo>~/Users/AjaxLogin.aspx</SendTo>
+      </RewriterRule>

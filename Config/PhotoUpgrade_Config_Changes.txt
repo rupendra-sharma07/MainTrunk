@@ -1,0 +1,6 @@
+ <!-- Edited by Ashu Goyal : Please replace this RewriteRule in all config files  -->
+
+  <RewriterRule>
+        <LookFor>~/(.*)/ManagePhotoAlbum\.aspx</LookFor>
+        <SendTo>~/Photo/ManagePhotoAlbum.aspx?TributeUrl=$1</SendTo>
+      </RewriterRule>

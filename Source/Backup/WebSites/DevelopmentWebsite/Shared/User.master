@@ -1,0 +1,210 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.master.cs" Inherits="Shared_User" %>
+<%@ Register Src="../UserControl/YourTributeHeader.ascx" TagName="Header" TagPrefix="uc" %>
+<%@ Register Src="../UserControl/FooterHome.ascx" TagName="Footer" TagPrefix="uc" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="https://www.facebook.com/2008/fbml">
+<head runat="server">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en-ca" />
+    <meta http-equiv="imagetoolbar" content="false" />
+    <meta http-equiv="Pragma" content="no-cache" /> 
+    <meta name="robots" content="index,follow" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <!-- really basic, generic html class stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/default.css" />
+    <!-- default grid layout stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/layouts/centered1024_12.css" />
+    <!-- print-friendly stylesheet -->
+    <link rel="stylesheet" type="text/css" media="print" href="<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/print.css" />
+    <!-- screen elements stylesheet should be here -->    
+    <link rel="stylesheet" type="text/css" href="<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/ScreenLatest.css" />
+    <link rel="stylesheet" type="text/css" href="<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/Captcha.css" />
+    <!-- larger text stylesheets -->
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="~/assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/medium_text.css"
+        title="medium_text" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/large_text.css"
+        title="large_text" />
+    <!-- Website Favorite Icon -->
+    <!-- <link rel="Shortcut Icon" type="image/x-icon" href="../assets/images/favicon.ico" /> -->
+    <!-- This url will work on Remote server. Comment the above url -->
+    <link rel="Shortcut Icon" type="image/x-icon" href="~/assets/images/favicon.ico" /> 
+       
+    <!-- JS libraries -->
+    <%--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>--%>
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/scripts/mootools-1.11.js'></script>
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/scripts/global.js'></script>
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/scripts/styleSwitcher.js'></script>
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>Common/JavaScript/Common.js'></script>
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>Common/JavaScript/ajax.js'></script>
+    <script src="https://connect.facebook.net/en_US/all.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript">
+     App_Domain = "<%=Session["APP_BASE_DOMAIN"]%>";
+     function SetEmailGroup()
+     {
+         
+           var required_validator = document.getElementById('<%= PortalValidationSummary.ClientID %>');
+           required_validator.validationGroup = "popupemail";
+     } 
+     function SetUserGroup()
+     {         
+           var required_validator = document.getElementById('<%= PortalValidationSummary.ClientID %>');
+           required_validator.validationGroup = "popup";
+             var error=$('ctl00_errorPopPwd');
+             if(error)
+              error.style.visibility = 'hidden';
+           
+     }
+
+    </script>    
+</head>
+<body>
+    <form id="User" runat="server">
+        <div class="yt-Container yt-SignUpForm yt-AnonymousUser">
+            <uc:Header ID="Header" Section="registration" NavigationName="None" runat="server" />                       
+            <div class="hack-clearBoth"></div>
+            <div class="yt-ContentContainer">
+                <div style="text-align:left" class="yt-ContentContainerInner">
+                    <div>                        
+                        <asp:ScriptManager ID="PortalManager" runat="server">
+                        </asp:ScriptManager>
+                        <asp:HiddenField ID="UserHiddenField" runat="server" />
+                        <asp:HiddenField ID="HiddenFieldAvailability" runat="server" />
+                        <asp:ContentPlaceHolder ID="UserContentPlaceHolder" runat="server">
+                        </asp:ContentPlaceHolder>                        
+                    </div>                   
+                    <div class="hack-clearBoth"></div>
+                    <div class="yt-ContentContainerImage"></div>
+                </div>
+                <!--yt-ContentContainerInner-->
+            </div>            
+                <uc:Footer ID="Footer1" runat="server" />            
+        </div>
+        <div class="upgrade">
+            <h2>
+                Please Upgrade Your Browser</h2>
+            <p>
+                This site's design is only visible in a graphical browser that supports <a href="http://www.webstandards.org/upgrade/"
+                    title="The Web Standards Project's BROWSER UPGRADE initiative.">web standards</a>,
+                but its content is accessible to any browser or Internet device.</p>
+        </div>
+        <div id="yt-LoginContentContainer">
+            <div id="yt-LoginError">
+                <!--  if the yt-LoginError div has content (including spaces, CR/LF characters, etc, the modal login will show on page load -->
+                <asp:ValidationSummary CssClass="yt-Error" ID="PortalValidationSummary" runat="server"
+                    HeaderText=" <h2>Oops - there was a problem with your login.</h2>                                                             <h3>Please correct the errors below:</h3>"
+                    ForeColor="Black" ValidationGroup="popup" />
+            </div>
+            <div id="yt-LoginContent" class="yt-ModalWrapper">
+                <div class="yt-Panel-Primary">
+                    <h2>
+                        Login</h2>
+                    <fieldset class="yt-Form">
+                        <asp:Panel ID="UpdatePanelPopup" runat="server" DefaultButton="popuplbtnLogin">
+                            <div class="yt-Form-Field">
+                                <label>
+                                    Username:</label>
+                                <asp:TextBox ID="txtLoginUsername1" CssClass="yt-Form-Input" runat="server" ValidationGroup="popup"></asp:TextBox><asp:RequiredFieldValidator
+                                    ID="rfvLoginUsername" ControlToValidate="txtLoginUsername1" runat="server" ErrorMessage="Username is a required field."
+                                    ValidationGroup="popup" Font-Bold="True" Font-Size="Medium" ForeColor="#FF8000"
+                                    Width="1px">!</asp:RequiredFieldValidator><asp:CustomValidator ID="CustomValidator1"
+                                        ErrorMessage="Invalid username or password." Text="!" ClientValidationFunction="ValidateUser"
+                                        runat="server" ValidationGroup="popup" Font-Bold="True" Font-Size="Medium" ForeColor="#FF8000"
+                                        Width="1px"></asp:CustomValidator>
+                            </div>
+                            <div class="yt-Form-Field">
+                                <label>
+                                    Password:</label>
+                                <asp:TextBox ID="txtLoginPassword1" CssClass="yt-Form-Input" runat="server" ValidationGroup="popup"
+                                    TextMode="Password"></asp:TextBox><asp:RequiredFieldValidator ID="rfvLoginPassword" Width="1px" ControlToValidate="txtLoginPassword1"
+                                    runat="server" ErrorMessage="Password is a required field." ValidationGroup="popup"
+                                    Font-Bold="True" Font-Size="Medium" ForeColor="#FF8000">!</asp:RequiredFieldValidator>
+                                <span id="errorPopPwd" runat="server" style="visibility: hidden;">&nbsp;</span>
+                            </div>
+                            <div class="yt-SignUpLink">
+                                Not a member yet?
+                                <asp:LinkButton ID="popuplbtnSignup" CausesValidation="false" runat="server" PostBackUrl="userregistration.aspx">Sign up!</asp:LinkButton>
+                            </div>
+                            <div class="yt-Form-Submit">
+                                <asp:LinkButton ID="popuplbtnLogin" CssClass="yt-Button yt-ArrowButton" runat="server"
+                                    ValidationGroup="popup">Log in</asp:LinkButton>
+                            </div>
+                             <a href="javascript: void(0);" class="yt-ForgetUserNamePassword-Link" onclick="ToggleElementDisplay('yt-ForgetUserNamePassword');">
+                                Did you forget your username or password?</a>
+                            <div id="yt-ForgetUserNamePassword" class="yt-ForgetUserNamePassword">
+                            <p>
+                                We’ll send you an email with your username and a link to reset your password.</p>
+                            <div class="yt-Form-Field">
+                                <label>
+                                    Your email address:</label>
+                                <asp:TextBox ID="txtLoginEmail1" runat="server" ValidationGroup="popupemail" Width="252px"
+                                    CssClass="yt-Form-Input-Long"></asp:TextBox>
+                                <asp:RegularExpressionValidator ID="revLoginEmail" runat="server" ErrorMessage="Please enter a valid email address."
+                                    ValidationGroup="popupemail" ControlToValidate="txtLoginEmail1" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                                    Font-Bold="True" Font-Size="Medium" ForeColor="#FF8000">!</asp:RegularExpressionValidator>
+                                <asp:RequiredFieldValidator ID="rfvLoginEmail" ControlToValidate="txtLoginEmail1"
+                                    runat="server" ErrorMessage="Please enter a valid email address." ValidationGroup="popupemail"
+                                    Font-Bold="True" Font-Size="Medium" ForeColor="#FF8000">!</asp:RequiredFieldValidator>
+                            </div>
+                            <div class="yt-Form-Submit">
+                                <asp:LinkButton ID="popuplbtnSendemail" CssClass="yt-Button yt-ArrowButton" runat="server"
+                                    ValidationGroup="popupemail" OnClick="popuplbtnSendemail_Click">Send email</asp:LinkButton>
+                            </div>
+                            </div>
+                        </asp:Panel>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="txtHint">        
+    </div>        
+</body>
+    <script type="text/javascript" src="../assets/scripts/modalbox.js"></script>
+    <script type="text/javascript">    
+
+if( typeof executebeforeLoad=='function')
+{
+      executeBeforeLoad();  
+}
+      <% if (ConfigurationManager.AppSettings["ApiKey"] != null) { %>
+
+      window.fbAsyncInit = function() {
+          FB.init({
+                  appId: '<%= ConfigurationManager.AppSettings["ApiKey"].ToString() %>',
+                  status: true, // check login status
+                  cookie: true, // enable cookies to allow the server to access the session
+                  xfbml: true,  // parse XFBML
+        //channelUrl  : 'http://www.yourdomain.com/channel.html', // Custom Channel URL
+                  oauth: true //enables OAuth 2.0
+              });
+
+          FB.getLoginStatus(function(response) {
+              if (response.authResponse) update_user_is_connected();
+              else update_user_is_not_connected();
+          });
+
+          // This will be triggered as soon as the user logs into Facebook (through your site)
+          FB.Event.subscribe('auth.login', function(response) {
+              update_user_is_connected();
+          });
+      };           
+              function update_user_is_connected() {
+            header_user_is_connected();  
+            FB.login(function (response) {
+                    if (response.authResponse) {    
+                        // user authorized
+                        popupFbSignUp(); 
+                    } else {
+                        // user cancelled
+                    }
+                }, { scope: 'email' });        
+            FB.XFBML.parse();
+        }
+        function update_user_is_not_connected() {
+            header_user_is_not_connected();
+            FB.XFBML.parse();
+        }    
+      <% } %>
+    </script> 
+</html>

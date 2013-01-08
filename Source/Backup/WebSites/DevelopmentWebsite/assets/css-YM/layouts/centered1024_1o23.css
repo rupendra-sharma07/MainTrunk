@@ -1,0 +1,73 @@
+/*
+centered1024_1o23.css
+Centered, 1 over 2-3, 1024px wide, screen media CSS for use with modern, CSS-capable browsers.
+
+author: Sing Chan
+version: 0.7
+last modified: March 12, 2007
+
+notes:
+The rules in this stylesheet are for grid layout only! ie grid dimensions and positioning.
+Place colours, child elements, etc in the appropriate theme CSS.
+*/
+
+@media screen  {
+
+
+
+
+.yt-Container {
+	width: 916px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.yt-ContentContainer {
+	width: 904px;
+	min-height: 200px;
+	height: 200px;
+}
+html>body .yt-ContentContainer {
+	height: auto;
+}
+
+.yt-ContentContainerInner {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+}
+
+.yt-ContentPrimaryContainer {
+	width: 100%;
+}
+
+.yt-ContentPrimary {
+	margin-bottom: 10px;
+}
+
+
+.yt-ContentSecondary {
+	float: left;
+	width: 540px;
+}
+
+html>body .yt-ContentSecondary {
+	width: 550px;
+}
+
+
+.yt-ContentTertiary {
+	float: right;
+	width: 322px;
+}
+
+.yt-ContentContainerImage {
+	margin-left: -10px !important;
+}
+
+
+
+
+
+}

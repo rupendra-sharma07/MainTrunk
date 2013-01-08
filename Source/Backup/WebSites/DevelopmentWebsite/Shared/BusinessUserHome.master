@@ -1,0 +1,211 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BusinessUserHome.master.cs"
+    Inherits="Shared_BusinessUserHome" %>
+<%@ Register Src="../UserControl/Footer.ascx" TagName="Footer" TagPrefix="uc2" %>
+<%@ Register Src="../UserControl/Inbox.ascx" TagName="Inbox" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Your Tribute - Company Name's Tributes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en-ca" />
+    <meta http-equiv="imagetoolbar" content="false" />
+    <meta name="robots" content="index,follow" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <!-- really basic, generic html class stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/default.css" />
+    <!-- default grid layout stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/layouts/centered1024_21.css" />
+    <!-- print-friendly stylesheet -->
+    <link rel="stylesheet" type="text/css" media="print" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/print.css" />
+    <!-- screen elements stylesheet should be here -->
+    <link rel="stylesheet" type="text/css" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/screen.css" />
+    <!-- larger text stylesheets -->
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/medium_text.css"
+        title="medium_text" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/large_text.css"
+        title="large_text" />
+        
+    <!-- Website Favorite Icon -->
+    <link rel="Shortcut Icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    
+    <!-- JS libraries -->
+
+     <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key=<%=TributesPortal.Utilities.WebConfig.GoogleAPIKey%>"
+        type="text/javascript"></script>  
+
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/scripts/map.js'></script>
+    
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/scripts/mootools-1.11.js'></script>
+
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/scripts/global.js'></script>
+
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/scripts/styleSwitcher.js'></script>
+
+    <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>Common/JavaScript/Common.js'></script>
+
+    <script language="javascript" type="text/jscript"></script>
+    <!--#include file="../analytics.asp"-->
+</head>
+<body>
+    <form id="Form1" runat="server" action="">
+     <div id="divShowModalPopup"></div>
+        <div class="yt-Container yt-SearchResults">
+            <div class="yt-HeaderContainer">
+                <div class="yt-Header">
+                    <a href="../Users/UserAccounts.aspx" title="Return to User Account Page" class="yt-Logo">
+                    </a>
+                    <div class="yt-HeaderControls">
+                        <div class="yt-NavHeader">
+                            <div class="floatLeft" id="divProfile" runat="server">
+                                <a id="myprofile" runat="server" href="adminmytributeshome.aspx">My Account</a>
+                                <uc1:Inbox ID="Inbox1" runat="server" />
+                            </div>
+                            <div class="yt-UserInfo">
+                                <span>
+                                    <%=_UserName%>
+                                </span><span id="spanLogout" runat="server"></span>
+                            </div>
+                        </div>
+                        <div class="hack-clearBoth">
+                        </div>
+                        <div class="yt-Tools">
+                            <div id="yt-TypeSizeControl" class="yt-TypeSizeControl">
+                                <span class="floatLeft">Text Size:&#160;</span> <a href="javascript:void(0);" class="large"
+                                    title="Large Text">a</a> <a href="javascript:void(0);" class="medium" title="Medium Text">
+                                        a</a> <a href="javascript:void(0);" class="small" title="Small Text">a</a>
+                            </div>
+                        </div>
+                        <!--yt-Tools-->
+                    </div>
+                    <!--yt-HeaderControls-->
+                </div>
+                <!--yt-Header-->
+            </div>
+            <!--yt-HeaderContainer-->
+            <div class="hack-clearBoth">
+            </div>
+            <asp:ContentPlaceHolder ID="HeaderContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="yt-ContentContainer">
+                <div class="yt-ContentContainerInner">
+                    <div class="yt-ContentPrimaryContainer">
+                        <asp:ContentPlaceHolder ID="ModuleContentPlaceHolder" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <!--yt-ContentPrimaryContainer-->
+                    <div class="yt-ContentSecondary">
+                        <div class="yt-Panel yt-Panel-Branding">
+                            <div class="yt-Panel-Body">
+                                <h2>
+                                    <a href="#" onclick="uploadLogo();">
+                                        <img src="../assets/images/bg_CompanyLogo.gif" alt="Upload your company logo" width="130"
+                                            height="112" /></a>
+                                </h2>
+                                <div class="yt-Form-MiniButtons">
+                                    <a href="javascript: void(0);" onclick="uploadLogo();" class="yt-MiniButton yt-UploadPhotoButton">
+                                        Upload photo</a>
+                                </div>
+                                <div class="yt-Form-Field">
+                                    <asp:TextBox ID="txtWelcomeMessage" runat="server" Columns="20" Rows="10" CssClass="yt-Form-Textarea-Short"
+                                        TextMode="MultiLine"></asp:TextBox>
+                                </div>
+                                <div class="yt-Form-MiniButtons">
+                                    <asp:LinkButton ID="lbtnSaveMessage" runat="server" CssClass="yt-MiniButton yt-SaveButton">Save</asp:LinkButton>
+                                    <asp:LinkButton ID="lbtnCancelMessage" runat="server" CssClass="yt-MiniButton yt-CancelButton"
+                                        CausesValidation="False">Cancel</asp:LinkButton>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="yt-Panel yt-Panel-Tools">
+                            <div class="yt-Panel-Body">
+                                <h2>
+                                    Contact Us</h2>
+                                <address class="vcard">
+                                    <span class="fn org">
+                                        <asp:Label ID="lblOrg" runat="server" Text="Smith Funeral Home"></asp:Label>
+                                    </span><span class="adr"><span class="street-address">
+                                        <asp:Label ID="lblStreetAddress" runat="server" Text="6952 Greenwood Street"></asp:Label>
+                                    </span>
+                                        <br />
+                                        <span class="locality">
+                                            <asp:Label ID="lblLocality" runat="server" Text="Burnaby"></asp:Label>
+                                        </span>,
+                                        <abbr class="region" title="British Columbia">
+                                            <asp:Label ID="lblRegion" runat="server" Text="BC"></asp:Label>
+                                        </abbr>
+                                        ,<br />
+                                        <span class="country-name">
+                                            <asp:Label ID="lblCountry" runat="server" Text="Canada"></asp:Label>
+                                        </span><span class="postal-code">
+                                            <asp:Label ID="lblPostalCode" runat="server" Text="V5A 1X8"></asp:Label>
+                                        </span></span><span class="tel">
+                                            <asp:Label ID="lblTelephone" runat="server" Text="1.866.468.4996"></asp:Label>
+                                        </span><a class="url" href="#">www.smithfuneralhome.com</a> <a href="javascript:void(0);">
+                                            Send Us a Message</a>
+                                </address>
+                                <a href="javascript:void(0);" onclick="showMapModal('6952 Greenwood Street', 'Burnaby', 'BC', 'Canada')"
+                                    class="yt-MiniButton yt-MapButton">Show Map</a>
+                            </div>
+                        </div>
+                        <div id="divSearch" runat="server" class="yt-Panel yt-Panel-Tools">
+                            <div class="yt-Panel-Body">
+                                <h2>
+                                    Search</h2>
+                                <div class="yt-SearchTools">
+                                    <fieldset class="yt-Form">
+                                        <div class="yt-Form-Field yt-SearchKeywords">
+                                            <label id="lblSearchFor" runat="server" for="txtSearchKeywords">
+                                                Search for:</label>
+                                            <asp:TextBox ID="txtSearchKeyword" runat="server" Text="Enter the name of a Tribute"></asp:TextBox>
+                                        </div>
+                                        <div class="yt-SearchAdvancedLink">
+                                            <a href="advancedsearch.aspx">Advanced Search</a>
+                                        </div>
+                                        <asp:ImageButton ID="btnSearchSubmit" CssClass="yt-Search-Submit" runat="server"
+                                            ImageUrl="../assets/images/btn_go.gif" AlternateText="Search Tributes" OnClick="btnSearchSubmit_Click" />
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--yt-ContentSecondary-->
+                    <div class="hack-clearBoth">
+                    </div>
+                    <div class="hack-clearBoth">
+                    </div>
+                    <div class="yt-ContentContainerImage">
+                    </div>
+                </div>
+                <!--yt-ContentContainerInner-->
+            </div>
+            <!--yt-ContentContainer-->
+            <div >
+                <uc2:Footer ID="Footer1" runat="server" />
+            
+            </div>
+            <!--yt-Footer-->
+        </div>
+        <!--yt-Container-->
+        <div class="upgrade">
+            <h2>
+                Please Upgrade Your Browser</h2>
+            <p>
+                This site&#39;s design is only visible in a graphical browser that supports <a href="http://www.webstandards.org/upgrade/"
+                    title="The Web Standards Project's BROWSER UPGRADE initiative.">web standards</a>,
+                but its content is accessible to any browser or Internet device.</p>
+        </div>
+        <asp:ContentPlaceHolder ID="ImageListContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+
+    <script type="text/javascript">
+    executeBeforeLoad();
+
+    </script>
+
+    <div id="txtHint" visible="false">
+        <b></b>
+    </div>
+</body>
+    <script type="text/javascript" src="../assets/scripts/modalbox.js"></script>
+</html>

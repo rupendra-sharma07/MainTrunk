@@ -1,0 +1,1 @@
+select * from sys.sql_modules where definition like '%rupendra%'

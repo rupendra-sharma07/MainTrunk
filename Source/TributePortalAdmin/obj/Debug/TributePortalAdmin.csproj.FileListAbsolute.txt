@@ -1,0 +1,86 @@
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\TributePortalAdmin.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\TributePortalAdmin.pdb
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\Microsoft.Practices.CompositeWeb.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\log4net.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\Source\TributePortalAdmin\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source\TributePortalAdmin\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\TributePortalAdmin\obj\Debug\TributePortalAdmin.dll
+E:\Project\YourTribute\Source\TributePortalAdmin\obj\Debug\TributePortalAdmin.pdb
+E:\Source\TributePortalAdmin\bin\Debug\TributePortalAdmin.dll
+E:\Source\TributePortalAdmin\bin\Debug\TributePortalAdmin.pdb
+E:\Source\TributePortalAdmin\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Source\TributePortalAdmin\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Source\TributePortalAdmin\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Source\TributePortalAdmin\bin\Debug\TributesPortal.Utilities.dll
+E:\Source\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Source\TributePortalAdmin\bin\Debug\log4net.dll
+E:\Source\TributePortalAdmin\bin\Debug\TributePortalSecurity.dll
+E:\Source\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Source\TributePortalAdmin\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Source\TributePortalAdmin\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Source\TributePortalAdmin\bin\Debug\TributesPortal.Utilities.pdb
+E:\Source\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Source\TributePortalAdmin\bin\Debug\TributePortalSecurity.pdb
+E:\Source\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Source\TributePortalAdmin\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Source\TributePortalAdmin\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Source\TributePortalAdmin\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Source\TributePortalAdmin\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\TributePortalAdmin\obj\Debug\TributePortalAdmin.dll
+E:\Source\TributePortalAdmin\obj\Debug\TributePortalAdmin.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\TributePortalAdmin.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\TributePortalAdmin.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\TributesPortal.Utilities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\TributePortalSecurity.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\TributesPortal.Utilities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\TributePortalSecurity.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\obj\Debug\TributePortalAdmin.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalAdmin\obj\Debug\TributePortalAdmin.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\TributePortalAdmin.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\TributePortalAdmin.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\obj\Debug\TributePortalAdmin.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalAdmin\obj\Debug\TributePortalAdmin.pdb

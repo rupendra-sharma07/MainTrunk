@@ -1,0 +1,744 @@
+/*------------------------------------------------------------
+
+tributecreation.css
+CSS rules specific to create tribute pages.
+
+author: Cameron Cavers
+last modified: Feb. 14, 2007
+
+------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------
+
+  Layout
+
+------------------------------------------------------------*/
+
+	
+.yt-Panel-Primary {
+	margin-top:0;
+	padding-top:27px;
+	position:relative;
+}	
+.yt-Inbox .yt-Panel-Primary {
+	padding-top:7px;
+}
+
+
+	
+.yt-Panel-System h2 {
+	font-size:14px;
+}
+
+
+.yt-ContentContainerImage {
+	margin:20px -10px 0;
+}
+
+
+.yt-Panel-Primary h3 {
+	border:none!important;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-left:0;
+}
+
+
+
+.yt-Admin .yt-AdminMain {
+	position:relative;
+	padding-top:33px;
+	width: 661px;
+}
+
+.yt-ContentContainerInner {
+	padding:30px 10px 0 10px;
+}
+
+
+.yt-UserInfo a.yt-Inbox {
+	margin-right:20px;
+}
+.yt-AdminContainer {
+	width:630px;
+	clear:both;
+}
+.yt-AdminHeader {
+	height:1.5em;
+	line-height:1.5em;
+	clear:both;
+	margin-top:-14px;
+}
+.yt-Inbox .yt-AdminHeader {
+	margin-top:0;
+	padding-top:6px;
+}
+.yt-AdminHeader h3 {
+	display:inline;
+	width:auto;
+	float:left;
+	margin:0;
+}
+.yt-Tribute-Settings {
+	margin:0 7px;
+}
+.yt-MyTributeSettings .yt-Tribute-Settings  {
+	margin:0 -10px;
+	padding:0 17px 34px;
+	background:#ffffff url(../images/bg_Panel-MyTributes.gif) no-repeat left bottom;
+}
+
+
+ul.yt-Inbox-Tools {
+	border-top:1px dotted #D8C6B9;
+	margin:6px 0 4px;
+	padding-top:8px;
+	clear:both;
+	list-style:none;
+}
+ul.yt-Inbox-Tools li {
+	display:inline;
+	background:none;
+	padding:0 12px 0 0;
+}
+
+.yt-Inbox-Option {
+	float:left;
+	display:block;
+	margin-right:24px!important;
+	line-height:1.5em;
+}
+h4.yt-Inbox-Option {
+	line-height:1.1em;
+	margin-top:0;
+}
+
+.yt-MessageList .yt-ListItem {
+	margin-top:0!important;
+	border-bottom:1px dotted #D8C6B9;
+}
+.yt-MessageList .yt-ListItem h4 {
+	font-weight:bold;
+	margin-bottom:0!important;
+}
+.yt-MessageList .yt-ListItem h5 {
+	margin:4px 0!important;
+}
+.yt-MessageList .yt-ListItem h6 {
+	margin-top:0!important;
+	margin-bottom:0!important;
+}
+.yt-MessageList .yt-ListItem .yt-SenderInfo {
+	position:relative;
+	height:70px;
+	clear:both;
+	margin-bottom:0.5em;
+}
+.yt-MessageList .yt-ListItem .yt-ItemPhoto {
+	top:0;
+	left:0;
+}
+.yt-MessageList .yt-ListItem p {
+	margin-left:0;
+}
+.yt-MessageList .yt-ListItem p.yt-ItemDate, .yt-MessageList .yt-ListItem h6 {
+	margin-left:64px!important;
+}
+/*------------------------------------------------------------
+
+  Navigation
+
+------------------------------------------------------------*/
+
+
+.yt-AdminNavPrimary {
+	list-style-position:inside;
+	width:630px;
+	height:44px;
+	padding:0;
+	margin:0;
+	position:absolute;
+	left:17px;
+	top:0;
+	/*z-index:1000;*/
+}
+
+
+	.yt-AdminNavPrimary li {
+		background-color:#d8c6b9;
+		background-image:none;
+		display:block;
+		float:left;
+		width:103px;
+		height:33px;
+		padding:0;
+		margin-right:2px;
+		font-size:12px;
+		font-family:"Lucida Sans Unicode","Lucida Sans", sans-serif;
+		/*font-family:Lucida Sans, sans-serif;*/
+	}
+	.yt-AdminNavPrimary li#yt-MyProfileTab,  .yt-AdminNavPrimary li.yt-MyProfileTab{
+		float:right!important;
+	}
+	.yt-AdminNavPrimary li.yt-Selected {
+		height:44px;
+	}
+	
+	.yt-AdminNavPrimary li a {
+		background-color:#d8c6b9;
+		background-image:none;
+		display:block;
+		float:left;
+		width:81px;
+		height:26px;
+		padding:7px 11px 0;
+		text-decoration:none;
+	}
+	.yt-AdminNavPrimary li a:hover {
+		background-color:#8e7c71;
+		background-image:none;
+		text-decoration:underline;
+		color:#ffffff;
+	}
+	
+	.yt-AdminNavPrimary li.yt-Selected a {
+		background:#3f2921 url(../images/bg_adminNavCurrent.gif) no-repeat 0 0;
+		height:37px;
+		margin-bottom:-11px;
+		color:#ffffff;
+	}
+	
+
+	
+.yt-AdminNavSecondary {
+	height:30px;
+	padding:0;
+	margin:0 0 0 7px;
+	position:relative;
+	list-style:none;
+	clear:both;
+	display:block;
+}
+
+
+	.yt-AdminNavSecondary li {
+		background:none!important;
+		display:block;
+		float:left;
+		height:28px;
+		padding:0;
+		margin-right:2px;
+		font-size:11px;
+		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		/*font-family:Lucida Sans, sans-serif;*/
+	}
+
+
+	.yt-AdminNavSecondary li a {
+		background:url(../images/bg_adminNavSecondary.gif) repeat-x 0 0;
+		display:block;
+		float:left;
+		height:23px;
+		padding:5px 11px 0;
+		text-decoration:none;
+	}	
+	.yt-AdminNavSecondary li a:hover {
+		text-decoration:underline;
+	}
+	
+	.yt-AdminNavSecondary li.yt-Selected a {
+		background:url(../images/bg_adminNavSecondary.gif) repeat-x 0 -50px;
+		color:#ffffff;
+	}
+	
+.yt-BackLink {
+	display:block;
+	float:right;
+	padding-left:12px;
+	background:url(../images/icon_BackArrow.gif) no-repeat left top;
+	height:1.5em;
+}
+
+a.yt-ManageLink {
+	background:url(../images/icon_ManageTribute.gif) no-repeat 0 0;
+	display:block;
+	width:18px;
+	height:17px;
+	overflow:hidden;
+	text-indent:-9000px;
+	margin:0 auto;
+}
+.yt-Pagination a:link, .yt-Pagination a:visited, .yt-Inbox-Option a:link, .yt-Inbox-Option a:visited {
+	color:#007987;
+}
+/*------------------------------------------------------------
+
+  Forms
+
+------------------------------------------------------------*/
+	
+.yt-CompactRadioList .yt-Form-Field-Radio {
+	display:inline;
+	margin-right:5px;
+}	
+
+.yt-CompactRadioList .yt-Form-Field-Radio {
+	padding:4px 4px 5px 0;
+	margin:0 5px 0 0;
+}
+
+.yt-CompactRadioList .yt-Form-Field-Radio input {
+	float:none;
+}
+
+.yt-CompactRadioList  .yt-Form-Field-Radio label {
+	display:inline;
+	margin-left:0px;
+	margin-right:5px;
+}
+
+.yt-PhotoField {
+	width:100%;
+	clear:both;
+	height:110px;
+	position:relative;
+}
+
+.yt-PhotoField .yt-Thumb img {
+	margin:1px;
+}
+
+.yt-PhotoField .yt-UploadPhotoButton {
+	position:absolute;
+	left:130px;
+	bottom:6px;
+	top:auto!important;
+}
+
+.yt-Form p {
+	margin:6px 0 12px;
+}
+
+a.yt-DeleteButton {
+	float:left;
+}
+
+/*------------------------------------------------------------
+
+  Tables
+
+------------------------------------------------------------*/
+
+.yt-AdminTable {
+	width:659px;
+	position:relative;
+	margin-left:-10px;
+	margin-right:-10px;
+	padding-bottom:10px;
+	border-bottom:7px solid #8e7c71;
+}
+.yt-MyTributeSettings .yt-AdminTable {
+	border-bottom:none;
+}
+
+	.yt-AdminTable th, .yt-AdminTable td {
+		padding:13px 10px 10px;
+		vertical-align:top;
+	}
+	
+	.yt-AdminTable thead th {
+		background-color:#8e7c71;
+		color:#ffffff;
+		border:none;
+		white-space:nowrap;
+		font-size:12px;
+		text-align:left;
+	}
+	.yt-AdminTable thead th select {
+		font-size:12px!important;
+	}
+	.yt-AdminTable tbody th, .yt-AdminTable tbody td {
+		padding:10px;
+		width:100px;overflow:hidden;text-overflow:ellipsis;
+	}
+	.yt-AdminTable tbody   tr {
+		background:#ffffff url(../images/bg_adminTableRow.gif) no-repeat center bottom;
+	}
+	.yt-AdminTable tbody td.yt-colFirst {
+		background-position:left bottom;
+	}
+	.yt-AdminTable tbody td.yt-colLast {
+		background-position:right bottom;
+	}
+	.yt-AdminTable tbody   tr.yt-rowLast {
+		background:#ffffff url(../images/bg_adminTableRow-Last.gif) no-repeat center bottom;
+	}
+	.yt-AdminTable tbody tr.yt-rowLast   td, .yt-AdminTable tbody tr.yt-rowLast   th {
+		padding-bottom: 18px;
+	}
+	.yt-AdminTable tbody tr > td, .yt-AdminTable tbody tr > th {
+		aborder-bottom:none!important;
+	}
+	.yt-AdminTable tbody td input {
+		margin:1px auto;
+		display:block;
+	}
+
+/* Inbox Styles */
+
+tr.yt-Inbox-Unread td { /* style to attach to rows with unread messages */
+	font-weight:bold;
+}
+tr.yt-Inbox-Selected { /* style to attach to rows with unread messages */
+	background-color:#ebe2dc!important;
+}
+.yt-Inbox tbody td a {
+	display:block;
+}
+
+
+/*------------------------------------------------------------
+
+  Modals
+
+------------------------------------------------------------*/
+
+/* Styles for image cropper modal unique to Admin */
+.yt-UserProfile-Photo {
+	position:relative;
+	top:auto;
+	left:auto;
+	width:119px;
+	height:119px;
+}
+
+
+/* UpgradeExtend Tribute Popup Specific code */
+#yt-UpgradeExtendContainer{
+	display:none;
+}
+	#mb_contents #yt-UpgradeExtendContent{
+		display:block;
+	}
+	
+	.mb-UpgradeExtendModal { /* add width to #mb_center for unique modals */
+		width:658px; 
+	}
+	#yt-UpgradeExtendContent {
+		margin-top:30px;
+	}
+	
+	.mb-UpgradeExtendModal #mb_contents .yt-Panel-Primary {
+		width:630px;
+		padding-top:25px;
+	}
+	
+	.mb-UpgradeExtendModal #mb_contents .yt-Panel-Primary h2 {
+		margin-top:-50px;
+		margin-bottom:25px;
+	}
+	
+	.mb-UpgradeExtendModal .yt-Form-Field {
+		margin-top:17px;
+	}
+	.mb-UpgradeExtendModal .yt-Form-Submit {
+		float:right;
+	}
+	.mb-UpgradeExtendModal #mb_header {
+		right:8px;
+		top:38px;
+		z-index:10000;
+	}
+	.mb-UpgradeExtendModal #mb_header a#mb_close_link {
+		z-index:5000;
+	}
+	
+
+/* Delete Confirmation box for deleting admins, tributes */	
+#yt-DeleteConfirmContainer_{
+	display:none;
+}
+	#mb_contents #yt-DeleteConfirmContent_{
+		display:block;
+	}
+	
+	.mb-DeleteConfirmModal { /* add width to #mb_center for unique modals */
+		width:558px; 
+	}
+	#yt-DeleteConfirmContent_ {
+		margin-top:30px;
+	}
+	
+	.mb-DeleteConfirmModal #mb_contents .yt-Panel-Primary {
+		width:530px;
+		padding-top:15px;
+	}
+	
+	.mb-DeleteConfirmModal #mb_contents .yt-Panel-Primary h2 {
+		margin-top:-40px;
+		margin-bottom:15px;
+	}
+	
+	.mb-DeleteConfirmModal .yt-Form-Field {
+		margin-top:17px;
+	}
+	.mb-DeleteConfirmModal .yt-Form-Submit {
+		float:right;
+	}
+	.mb-DeleteConfirmModal #mb_header {
+		right:8px;
+		top:38px;
+		z-index:10000;
+	}
+	.mb-DeleteConfirmModal #mb_header a#mb_close_link {
+		position:relative!important;
+		top:auto;
+		left:auto;
+		right:auto;
+	}	
+	
+
+
+/* Delete Confirmation box for deleting admins, tributes */	
+#yt-DeleteConfirmContainer{
+	display:none;
+}
+	#mb_contents #yt-DeleteConfirmContent{
+		display:block;
+	}
+	
+	.mb-DeleteConfirmModal { /* add width to #mb_center for unique modals */
+		width:558px; 
+	}
+	#yt-DeleteConfirmContent {
+		margin-top:30px;
+	}
+	
+	.mb-DeleteConfirmModal #mb_contents .yt-Panel-Primary {
+		width:530px;
+		padding-top:15px;
+	}
+	
+	.mb-DeleteConfirmModal #mb_contents .yt-Panel-Primary h2 {
+		margin-top:-40px;
+		margin-bottom:15px;
+	}
+	
+	.mb-DeleteConfirmModal .yt-Form-Field {
+		margin-top:17px;
+	}
+	.mb-DeleteConfirmModal .yt-Form-Submit {
+		float:right;
+	}
+	.mb-DeleteConfirmModal #mb_header {
+		right:8px;
+		top:38px;
+		z-index:10000;
+	}
+	.mb-DeleteConfirmModal #mb_header a#mb_close_link {
+		position:relative!important;
+		top:auto;
+		left:auto;
+		right:auto;
+	}	
+	
+/* Delete Confirmation box for deleting admins, tributes */	
+#yt-AutoRenewContainer{
+	display:none;
+}
+	#mb_contents #yt-AutoRenewContent{
+		display:block;
+	}
+	
+	.mb-AutoRenewModal { /* add width to #mb_center for unique modals */
+		width:558px; 
+	}
+	#yt-AutoRenewContent {
+		margin-top:30px;
+	}
+	
+	.mb-AutoRenewModal #mb_contents .yt-Panel-Primary {
+		width:530px;
+		padding-top:15px;
+	}
+	
+	.mb-AutoRenewModal #mb_contents .yt-Panel-Primary h2 {
+		margin-top:-40px;
+		margin-bottom:15px;
+	}
+	
+	.mb-AutoRenewModal .yt-Form-Field {
+		margin-top:17px;
+	}
+	.mb-AutoRenewModal .yt-Form-Submit {
+		float:right;
+	}
+	.mb-AutoRenewModal #mb_header {
+		right:8px;
+		top:38px;
+		z-index:10000;
+	}
+	.mb-AutoRenewModal #mb_header a#mb_close_link {
+		position:relative!important;
+		top:auto;
+		left:auto;
+		right:auto;
+	}
+
+/* AdminReceipt Tribute Popup Specific code */
+#yt-AdminReceiptContent{
+	display:none;
+}
+	#mb_contents #yt-AdminReceiptContent{
+		display:block;
+	}
+	
+	.mb-AdminReceiptModal { /* add width to #mb_center for unique modals */
+		width:658px; 
+	}
+	#yt-AdminReceiptContent {
+		margin-top:30px;
+	}
+	
+	.mb-AdminReceiptModal #mb_contents .yt-Panel-Primary {
+		width:630px;
+		padding-top:12px;
+	}
+	
+	.mb-AdminReceiptModal #mb_contents .yt-Panel-Primary h2 {
+		margin-top:-50px;
+	}
+	
+	.mb-AdminReceiptModal .yt-Form-Field {
+		margin-top:17px;
+	}
+	.mb-AdminReceiptModal .yt-Form-Submit {
+		float:right;
+	}
+	.mb-AdminReceiptModal #mb_header {
+		right:8px;
+		top:38px;
+		z-index:10000;
+	}
+	.mb-AdminReceiptModal #mb_header a#mb_close_link {
+		z-index:5000;
+	}
+	
+	.mb-AdminReceiptModal dd {
+		line-height:1.4em;
+	}
+	
+	.mb-AdminReceiptModal dt {
+		float:left;
+		clear:right;
+		width:10em;
+		display:block;
+		color:#3F2921!important;
+	}
+	
+	.mb-AdminReceiptModal dd {
+		margin-left:11em;
+		display:block;
+		margin:0;
+	}
+
+
+/* Address Styles for Receipt modal */
+
+address {
+	font-family:"Lucida Sans Unicode","Lucida Sans", sans-serif;
+	font-size:12px;
+	font-style:normal;
+	line-height:1.4em;
+	padding-left:42px;
+}
+address abbr {
+	border:none;
+}
+address .org {
+	display:block;
+	width:165px;
+	height:35px;
+	position:relative;
+	left:-42px;
+}
+
+/*
+   Hide Text after image logo -- image replacement 
+   won't work with print styles, and for hCard microformat, 
+   "fn" must be text 
+*/
+address .org span {
+	display:none;
+}
+
+
+
+/* Donation Delete Confirmation box for deleting donation box on a tribute */	
+#yt-DonationDeleteConfirmContainer{
+	display:none;
+}
+	#mb_contents #yt-DonationDeleteConfirmContent{
+		display:block;
+	}
+	
+	.mb-DonationDeleteConfirmModal { /* add width to #mb_center for unique modals */
+		width:558px; 
+	}
+	#yt-DonationDeleteConfirmContent {
+		margin-top:30px;
+	}
+	
+	.mb-DonationDeleteConfirmModal #mb_contents .yt-Panel-Primary {
+		width:530px;
+		padding-top:15px;
+	}
+	
+	.mb-DonationDeleteConfirmModal #mb_contents .yt-Panel-Primary h2 {
+		margin-top:-40px;
+		margin-bottom:15px;
+	}
+	
+	.mb-DonationDeleteConfirmModal .yt-Form-Field {
+		margin-top:17px;
+	}
+	.mb-DonationDeleteConfirmModal .yt-Form-Submit {
+		float:right;
+	}
+	.mb-DonationDeleteConfirmModal #mb_header {
+		right:8px;
+		top:38px;
+		z-index:10000;
+	}
+	.mb-DonationDeleteConfirmModal #mb_header a#mb_close_link {
+		position:relative!important;
+		top:auto;
+		left:auto;
+		right:auto;
+	}	
+	/* Profile Settings, Facebook connection */
+	#ProfileSettingsFacebookConnect {
+	  float:right;
+	  margin-right: 15px;
+	  text-align:center;
+	  position:relative;
+	  margin-top: -25px;
+	  margin-bottom: 5px;
+	}
+	#ProfileSettingsFacebookStatus {
+	  margin-top:8px;
+	}
+	
+	.DivTheme
+	{
+		float: left; width: 120px; text-align: center; cursor: pointer; padding-top: 2px;
+            color: White; font-weight: bold; background-color: #646464; text-decoration:none; margin-left:2px;
+	}
+	.DivThemeSelected
+	{
+		float: left; width: 120px; text-align: center; cursor: pointer; padding-top: 2px;
+            color: black; font-weight: bold; background-color: #D4D4D4; text-decoration:none; margin-left:2px;
+	}
+	

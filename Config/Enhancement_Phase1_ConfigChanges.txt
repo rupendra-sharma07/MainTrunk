@@ -1,0 +1,30 @@
+<!--Recent Tribute activity changes-->
+    
+    <add key="MaxStoryLimit" value="2"/>
+    <add key="MaxNotesLimit" value="2"/>
+    <add key="MaxGuestbookLimit" value="4"/>
+    <add key="MaxGiftsLimit" value="4"/>
+    <add key="MaxEventsLimit" value="2"/>
+    <add key="MaxPhotosLimit" value="2"/>
+    <add key="MaxVideosLimit" value="2"/>
+    <add key="MaxVideoTributeLimit" value="1"/>
+    <add key="MaxCommentsLimit" value="4"/>
+    <add key="MaxNoteCommentsLimit" value="1"/>
+    <add key="MaxPhotoCommentsLimit" value="1"/>
+    <add key="MaxVideoCommentsLimit" value="1"/>
+    <add key="MaxVideoTributeCommentsLimit" value="1"/>
+    
+    <!--Recent Tribute activity changes till here-->
+
+
+    
+YT
+<add key="MailChimpApiKeyNew" value="43cb83fd284184b565525e3080625317-us1"/>
+    <add key="UserNewsLetterListID" value="e012f22018"/>
+    <add key="TributeNewsLetterListID" value="e012f22018"/>
+
+
+YM
+<add key="MailChimpApiKeyNew" value="43cb83fd284184b565525e3080625317-us1"/>
+    <add key="UserNewsLetterListID" value="b51d84de2d"/>
+    <add key="TributeNewsLetterListID" value="b51d84de2d"/>

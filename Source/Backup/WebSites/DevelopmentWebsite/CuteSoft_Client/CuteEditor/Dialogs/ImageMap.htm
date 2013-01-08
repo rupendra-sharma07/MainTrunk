@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>[[ImageMap]]</title>
+		
+		<meta http-equiv="Page-Enter" content="blendTrans(Duration=0.1)" />
+		<meta http-equiv="Page-Exit" content="blendTrans(Duration=0.1)" />
+		<link href='Load.ashx?type=themecss&file=dialog.css&theme=[[_Theme_]]' type="text/css" rel="stylesheet" />
+		<!--[if IE]>
+			<link href="Load.ashx?type=style&file=IE.css" type="text/css" rel="stylesheet" />
+		<![endif]-->
+		<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1003&file=DialogHead.js"></script>
+		<style type="text/css">
+		html, body,#ajaxdiv {height: 100%;}
+		#iframe{width: 550px; height: 300px;background-color:#ffffff;padding:0;}
+		#divouter{border:1px solid #a0a0a0;vertical-align: top;width: 550px; height: 300px;background-color:white;}
+		</style>
+	</head>
+	<body>
+		<div id="ajaxdiv">
+			<table border="0" cellspacing="0" cellpadding="2" width="100%">
+				<tr>
+					<td style="padding:4px">
+	<img src="Load.ashx?type=image&file=ImageMap.gif" onclick="newMap();" title="[[AddHotSpot]]"	class="cursor dialogButton"  onmouseover="CuteEditor_ColorPicker_ButtonOver(this);" />
+	<img src="Load.ashx?type=image&file=link.gif" onclick="Addlink(this);" title="[[insertlink]]"	class="cursor dialogButton"  onmouseover="CuteEditor_ColorPicker_ButtonOver(this);" />
+	<img id="img_zoom_in" src="Load.ashx?type=image&file=zoom_in.gif" onclick="Zoom_In();" title="[[ZoomIn]]"	class="cursor dialogButton"  onmouseover="CuteEditor_ColorPicker_ButtonOver(this);" />
+	<img id="img_zoom_out" src="Load.ashx?type=image&file=zoom_out.gif" onclick="Zoom_Out();" title="[[ZoomOut]]"	class="cursor dialogButton" onmouseover="CuteEditor_ColorPicker_ButtonOver(this);"  />
+	<img id="img_bestfit" src="Load.ashx?type=image&file=bestfit.gif" onclick="BestFit();" title="[[BestFit]]" class="cursor dialogButton"  onmouseover="CuteEditor_ColorPicker_ButtonOver(this);" />
+	<img id="img_actualsize" src="Load.ashx?type=image&file=Actualsize.gif" onclick="Actualsize();" title="[[ActualSize]]" class="cursor dialogButton"  onmouseover="CuteEditor_ColorPicker_ButtonOver(this);" />
+					</td>
+				</tr>
+				<tr>
+					<td style="height:280px">
+						<div id="divouter">					
+							<iframe id="iframe" src="../template.aspx" frameborder="0"></iframe>
+						</div>
+					</td>
+				</tr>
+			</table>
+		
+			<br />
+			<div align="center">
+				<input type="button" id="Button2" name="insert" class="formbutton" value="[[Update]]" onclick="do_insert();" />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" value="[[Cancel]]" class="formbutton" onclick="do_Close();" />
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1003&file=DialogFoot.js"></script>
+	<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1003&file=Dialog_ImageMap.js"></script>
+</html>
+

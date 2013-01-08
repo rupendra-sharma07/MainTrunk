@@ -1,0 +1,45 @@
+E:\Project\YourTribute\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+E:\Project\YourTribute\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YourTribute\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Project\YourTribute\Source\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb
+E:\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.dll
+E:\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.pdb
+E:\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+E:\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Source\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
+E:\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalSecurity\bin\Debug\TributePortalSecurity.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalSecurity\bin\Debug\TributePortalSecurity.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalSecurity\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalSecurity\bin\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalSecurity\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalSecurity\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalSecurity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb
+E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.dll
+E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.pdb
+E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
+E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb

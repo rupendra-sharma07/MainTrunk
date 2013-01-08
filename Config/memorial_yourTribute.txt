@@ -1,0 +1,8 @@
+      <RewriterRule>
+        <LookFor>~/themes\.aspx</LookFor>
+        <SendTo>~/Miscellaneous/themes.aspx</SendTo>
+      </RewriterRule>
+      <RewriterRule>
+        <LookFor>~/(.*)/themes\.aspx</LookFor>
+        <SendTo>~/Miscellaneous/themes.aspx</SendTo>
+      </RewriterRule>

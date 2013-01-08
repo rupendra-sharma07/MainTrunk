@@ -1,0 +1,417 @@
+/*------------------------------------------------------------
+
+tributecreation.css
+CSS rules specific to create tribute pages.
+
+author: Cameron Cavers
+last modified: Feb. 14, 2007
+
+------------------------------------------------------------*/
+
+
+
+.yt-TributeCreation .yt-TributeProcess
+{
+	position: relative;
+	padding-top: 80px;
+}
+
+.yt-ProcessSteps
+{
+	list-style-position: inside;
+	width: 630px;
+	height: 91px;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left: 16px;
+	top: 0;
+}
+.yt-Panel-Primary
+{
+	min-height: 0 !important;
+	height: auto;
+}
+html > body .yt-Panel-Primary
+{
+	height: auto !important;
+}
+
+.yt-ProcessSteps li
+{
+	background-color: #d8c6b9;
+	background-image: none;
+	display: block;
+	float: left;
+	width: 103px;
+	height: 80px;
+	padding: 0;
+	margin-right: 2px;
+	font-size: 11px;
+	font-family: "Lucida Sans Unicode" , "Lucida Grande" , sans-serif;
+}
+
+.yt-ProcessSteps li.yt-Selected
+{
+	height: 91px;
+}
+
+.yt-ProcessSteps li a
+{
+	background-color: #d8c6b9;
+	background-image: none;
+	display: block;
+	float: left;
+	width: 81px;
+	height: 64px;
+	padding: 5px 11px 11px;
+}
+
+.yt-ProcessSteps li a strong
+{
+	font-family: Georgia;
+	font-size: 1.8em;
+	font-weight: normal;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.yt-ProcessSteps li.yt-Selected a
+{
+	background: #3f2921 url(../images/bg_process_stepCurrent.gif) no-repeat 0 0;
+	height: 75px;
+	margin-bottom: -11px;
+	color: #ffffff;
+}
+
+.yt-ProcessSteps li.yt-Visited a
+{
+	background-color: #a48f82;
+	background-image: none;
+}
+.yt-ProcessSteps li.yt-Visited a strong
+{
+	text-decoration: none;
+}
+
+
+.yt-ProcessStepDisplay
+{
+	background-color: #ffffff;
+	border: 1px dashed #6f584c;
+	padding: 18px 16px 8px;
+	clear: both;
+}
+
+
+
+.yt-CompactRadioList .yt-Form-Field-Radio
+{
+	display: inline;
+	margin-right: 5px;
+}
+
+.yt-CompactRadioList .yt-Form-Field-Radio
+{
+	padding: 4px 4px 5px 0;
+	margin: 0 2px 0 0;
+}
+
+.yt-CompactRadioList .yt-Form-Field-Radio input
+{
+	float: none;
+}
+.yt-top input
+{	
+	top:-20px;
+}
+
+.yt-CompactRadioList .yt-Form-Field-Radio label
+{
+	display: inline;
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+
+
+.yt-TributeChannelSelection
+{
+	min-height: 24px;
+	float: left;
+	clear: both;
+	width: 628px;
+	display: block;
+}
+
+.yt-ChannelSelected
+{
+	display: none;
+	clear: both;
+}
+
+
+.yt-ThemeSet .yt-Form-Field-Radio
+{
+	display: block;
+	clear: none !important;
+	float: left !important;
+	padding-left: 5px;
+	margin: 10px;
+	height:70px;
+}
+.yt-ThemeSet .yt-Form-Field-Radio label
+{
+	left: 28px;
+	top: 58px;
+	margin: 0;
+}
+.yt-Process-StepDisplay .yt-ThemeSet
+{
+	width: 628px;
+	float: left;
+}
+
+
+/* Theme Preview Modal Rules */
+
+#mb_center.mb-TributeThemePreviewModal
+{
+	width: 371px;
+}
+#mb_center.mb-TributeThemePreviewModal .yt-Panel-Primary
+{
+	width: 363px;
+	padding: 30px 3px 3px;
+}
+#mb_center.mb-TributeThemePreviewModal #mb_contents div
+{
+	width: 363px;
+	height: 569px;
+}
+#mb_center.mb-TributeThemePreviewModal #mb_header a#mb_close_link
+{
+	top: 5px;
+}
+
+/* End Theme Preview Modal Rules */
+
+
+
+
+
+.yt-TributeAddressUnavailable
+{
+	display: none;
+}
+
+
+
+
+
+.yt-ProcessStepDisplay .yt-Form-Cancel
+{
+	margin: 12px 0;
+	float: left;
+}
+
+.yt-ProcessStepDisplay .yt-Form-Submit
+{
+	position: relative;
+	margin: 0 -12px 0 0;
+	float: right;
+}
+
+/* Special fieldset spacing for date fields */
+
+.yt-FieldsetWrapper fieldset.yt-Date-Fields
+{
+	margin: 0;
+	padding-top: 14px;
+}
+
+/* Theme Address Selection Box*/
+
+.yt-ThemeAddress
+{
+	clear: both;
+	margin-top: 10px;
+}
+.yt-ThemeAddress label
+{
+	font-size: 120%;
+}
+
+.yt-ThemeAddress .hint, .yt-TributeAddressUnavailable .hint
+{
+	margin-left: 165px !important;
+}
+
+/* Photo field for Tribute Creation */
+
+.yt-PhotoField
+{
+	position: relative;
+	height: 133px;
+}
+.yt-PhotoField .yt-shownHint
+{
+	position: absolute;
+	left: 140px;
+	bottom: 5px;
+	width: 480px;
+	color: #70594c;
+	font-size: 0.9em;
+}
+.yt-PhotoField a.yt-MiniButton
+{
+	background-image: url(../images/btn_Photo.gif);
+	position: absolute;
+	z-index: 1000;
+	top: 4px;
+	left: 135px;
+}
+.yt-TributePhoto
+{
+	background: url(../images/bg_TributePhoto.gif) no-repeat left top;
+	width: 119px;
+	height: 119px;
+	padding: 7px;
+}
+
+/* Message field for Tribute Creation */
+
+.yt-MessageField
+{
+	position: relative;
+	width: 100%;
+	clear: both;
+}
+.yt-MessageField .yt-shownHint
+{
+	right: 0;
+	bottom: 25px;
+	position: absolute;
+	width: 320px;
+	color: #70594c;
+	font-size: 0.9em;
+}
+.yt-MessageField label
+{
+	font-size: 14px;
+}
+.yt-messageRemaining
+{
+	font-family: Georgia;
+	font-size: 0.9em;
+}
+
+#numberRemaining
+{
+	font-size: 1.6em;
+}
+
+/* Rules for Step 3 - Privacy / Administrator Add */
+
+.yt-PrivacyFields label, .yt-AdminAddFields label
+{
+	font-size: 14px;
+}
+.yt-AdminAddFields .yt-Form-Buttons
+{
+	margin: 0;
+	padding: 4px 0;
+}
+a.yt-AdminButton
+{
+	background-image: url(../images/btn_Admin.gif);
+	margin: 5px 0 0;
+}
+.yt-AdminAddFields .yt-Form-Field
+{
+	margin: 6px 0;
+}
+
+
+.yt-Step4 .yt-Panel-Primary h2
+{
+	background-image: url(../images/solid_f5ede6.gif);
+	margin-top: -30px;
+}
+.yt-Step4 .yt-Panel-Primary
+{
+	position: relative;
+	border-style: solid;
+	border-color: #d8c7ba;
+	padding-top: 5px;
+	width: 606px; /*Needed for IE6*/
+}
+.yt-Step4 .yt-EditButton
+{
+	position: absolute;
+	top: -18px;
+	right: -1px;
+}
+.yt-Step4 .yt-ThemeSet
+{
+	display: block;
+	position: relative;
+	width: 606px;
+	clear: both;
+	padding-top: 35px;
+	margin-bottom: 12px;
+}
+.yt-Step4 .yt-ThemeColorPrimary, .yt-Step4 .yt-ThemeColorSecondary
+{
+	top: 0;
+}
+
+
+
+
+
+
+
+/* must be after .yt-ThemeSet, .yt-ChannelSelected, etc. for code to override display:none */
+.yt-ShowBox
+{
+	display: block !important;
+}
+
+.bold_red
+{
+	color: #cc0000;
+	font-weight: bold;
+}
+.bold_green
+{
+	color: #009900;
+	font-weight: bold;
+}
+
+.RemainingCreditPoint
+{
+	border: solid 1px #ccc;
+	padding: 5px 10px 5px 10px;
+	width: 600px;
+}
+
+
+.grdCreditCostMapping
+{
+	border-bottom: dotted 1px #ccc;
+	padding: 5px 130px 5px 0px;
+}
+.grdCreditCostheader th
+{
+	border-bottom: dotted 1px #ccc;
+	margin: 20px 10px 20px 10px;
+	padding-left: 2px;
+	padding-bottom: 5px;
+}
+
+.grdCreditCostRadioBorder
+{
+	border-bottom: dotted 1px #ccc;
+	padding-bottom: 5px;
+}

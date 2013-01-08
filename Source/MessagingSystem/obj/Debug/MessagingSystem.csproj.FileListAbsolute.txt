@@ -1,0 +1,105 @@
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\MessagingSystem.dll
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\MessagingSystem.pdb
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\Microsoft.Practices.CompositeWeb.dll
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\log4net.dll
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source\MessagingSystem\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\MessagingSystem\obj\Debug\MessagingSystem.dll
+E:\Project\YourTribute\Source\MessagingSystem\obj\Debug\MessagingSystem.pdb
+E:\Source\MessagingSystem\bin\Debug\MessagingSystem.dll
+E:\Source\MessagingSystem\bin\Debug\MessagingSystem.pdb
+E:\Source\MessagingSystem\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Source\MessagingSystem\bin\Debug\TributesPortal.Utilities.dll
+E:\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Source\MessagingSystem\bin\Debug\log4net.dll
+E:\Source\MessagingSystem\bin\Debug\TributePortalSecurity.dll
+E:\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Source\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Source\MessagingSystem\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Source\MessagingSystem\bin\Debug\TributesPortal.Utilities.pdb
+E:\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Source\MessagingSystem\bin\Debug\TributePortalSecurity.pdb
+E:\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Source\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Source\MessagingSystem\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\MessagingSystem\obj\Debug\MessagingSystem.dll
+E:\Source\MessagingSystem\obj\Debug\MessagingSystem.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\MessagingSystem.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\MessagingSystem.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\TributesPortal.Utilities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\TributePortalSecurity.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\TributesPortal.Utilities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\TributePortalSecurity.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\obj\Debug\MessagingSystem.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MessagingSystem\obj\Debug\MessagingSystem.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\MessagingSystem.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\MessagingSystem.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\obj\Debug\MessagingSystem.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MessagingSystem\obj\Debug\MessagingSystem.pdb
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\MessagingSystem.dll
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\MessagingSystem.pdb
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\TributesPortal.Utilities.dll
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\log4net.dll
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\TributePortalSecurity.dll
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\TributesPortal.Utilities.pdb
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\obj\Debug\MessagingSystem.dll
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\obj\Debug\MessagingSystem.pdb
+E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml

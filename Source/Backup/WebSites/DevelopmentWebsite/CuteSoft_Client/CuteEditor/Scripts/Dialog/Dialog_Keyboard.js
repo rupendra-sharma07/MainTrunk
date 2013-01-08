@@ -1,0 +1,1 @@
+var OxO325a=["keyboard_area","length","value"];var editor=Window_GetDialogArguments(window);function do_insert(){var Ox43e=Window_GetElement(window,OxO325a[0],true);if(Ox43e[OxO325a[2]][OxO325a[1]]>0){editor.PasteHTML(Ox43e.value);} ;} ;function do_Close(){Window_CloseDialog(window);} ;

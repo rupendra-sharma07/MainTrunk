@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<VideoConfiguration>
+	<StorageDrive>
+		<DriveNameOnServiceServer>D:</DriveNameOnServiceServer>
+		<DriveNameOnApplicationServer>D:</DriveNameOnApplicationServer>
+		<TributePortalRootFolder>TributePortalVideos</TributePortalRootFolder>
+		<VideoFilesFolder>VideoFiles</VideoFilesFolder>
+	</StorageDrive>
+</VideoConfiguration>

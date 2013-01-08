@@ -1,0 +1,25 @@
+ 
+UPDATE PACKAGE
+   SET 
+      PackageName = 'Memorial Tribute LifeTime'
+ WHERE PackageID = 4
+
+UPDATE PACKAGE
+   SET 
+      PackageName = 'Memorial Tribute Yearly'
+ WHERE PackageID = 5
+
+UPDATE PACKAGE
+   SET 
+      PackageName = 'Premium Obituary LifeTime'
+ WHERE PackageID = 6
+ 
+ UPDATE PACKAGE
+   SET 
+      PackageName = 'Premium Obituary One Year'
+ WHERE PackageID = 7
+ 
+ UPDATE PACKAGE
+   SET 
+      PackageName = 'Obituary'
+ WHERE PackageID = 8

@@ -1,0 +1,249 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Inner.master.cs" Inherits="Shared_Inner" %>
+<%@ Register Src="../UserControl/YourTributeHeader.ascx" TagName="Header" TagPrefix="uc" %>
+<%@ Register Src="../UserControl/TributeBlog.ascx" TagName="TributeBlog" TagPrefix="uc" %>
+<%@ Register Src="../UserControl/LeftFeaturedPanel.ascx" TagName="LeftFeaturedPanel" TagPrefix="uc" %>
+<%@ Register Src="../UserControl/FooterHome.ascx" TagName="Footer" TagPrefix="uc" %>    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
+<head id="Head1" runat="server">
+    <title><%= _page_title %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en-ca" />
+    <meta http-equiv="imagetoolbar" content="false" />
+    <meta name="robots" content="index,follow" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <!-- really basic, generic html class stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="<%=Session["APP_SCRIPT_PATH"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/default.css" />
+    <!-- default grid layout stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="<%=Session["APP_SCRIPT_PATH"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/layouts/centered1024_12.css" />
+    <!-- print-friendly stylesheet -->
+    <link rel="stylesheet" type="text/css" media="print" href="<%=Session["APP_SCRIPT_PATH"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/print.css" />
+    <!-- screen elements stylesheet should be here -->
+    <link rel="stylesheet" type="text/css" href="<%=Session["APP_SCRIPT_PATH"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/ScreenLatest.css" />
+    <!-- larger text stylesheets -->
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="<%=Session["APP_SCRIPT_PATH"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/medium_text.css"
+        title="medium_text" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="<%=Session["APP_SCRIPT_PATH"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/large_text.css"
+        title="large_text" />
+    <!-- Admin-specific elements stylesheet should be here -->
+    <link rel="stylesheet" type="text/css" href="<%=Session["APP_SCRIPT_PATH"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/admin.css" />
+    <!-- Website Favorite Icon -->
+    <link rel="Shortcut Icon" type="image/x-icon" href="<%=Session["APP_SCRIPT_PATH"]%>assets/images/favicon.ico" />
+    <!-- JS libraries -->
+
+    <script type="text/javascript" src="<%=Session["APP_SCRIPT_PATH"]%>assets/scripts/mootools-1.11.js"></script>
+    <script type="text/javascript" src="<%=Session["APP_SCRIPT_PATH"]%>assets/scripts/global.js"></script>
+    <script type="text/javascript" src="<%=Session["APP_SCRIPT_PATH"]%>assets/scripts/styleSwitcher.js"></script>
+    <script type="text/javascript" src="<%=Session["APP_SCRIPT_PATH"]%>assets/scripts/admin.js"></script>
+    <script type="text/javascript" src="<%=Session["APP_SCRIPT_PATH"]%>Common/JavaScript/Common.js"></script>
+    <script type="text/javascript" src="<%=Session["APP_SCRIPT_PATH"]%>Common/JavaScript/InternalMessage.js"></script>
+    <script type="text/javascript" src="<%=Session["APP_SCRIPT_PATH"]%>Common/JavaScript/CreditCardValidation.js"></script>
+    <script src="https://connect.facebook.net/en_US/all.js" type="text/javascript"></script>
+    <script type="text/javascript">
+     function HideIndicator()
+    {
+     var lblErrMsg= document.getElementById('<%= errormsg.ClientID %>'); 
+     if(lblErrMsg)
+     {
+       lblErrMsg.innerHTML = '';
+       lblErrMsg.style.visibility = 'hidden';
+     }
+ }
+ function HideHeader() {
+     var notice = $('<%= Notice.ClientID %>');
+     if (notice) {
+         notice.innerHTML = '';
+         notice.removeClass('yt-Notice');
+         notice.removeClass('yt-Error');
+     }
+ }
+
+ function SetHeader(message, type) {
+     var notice = $('<%= Notice.ClientID %>');
+     if (notice) {
+         if (type == 1)
+             notice.className = 'yt-Notice';
+         else
+             notice.className = 'yt-Error';
+
+         notice.innerHTML = message;
+         notice.style.visibility = 'visible';
+     }
+ }	    
+    </script>
+    <!--#include file="../analytics.asp"-->
+    <asp:ContentPlaceHolder id="HeadContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <div class="yt-Container yt-Admin">
+        <uc:Header ID="Header" Section="inner" runat="server" />
+        <div class="hack-clearBoth"></div>
+        <div class="yt-ContentContainer">
+            <div class="yt-ContentContainerInner">
+                <div class="yt-ContentPrimaryContainer">
+                    <div class="yt-ContentPrimary">
+                      <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                        <ContentTemplate>
+                        <div align="left">
+                            <asp:ValidationSummary CssClass="yt-Error" ID="PortalValidationSummary" runat="server"
+                                Width="631px" HeaderText=" <h2>Oops - there was a problem with your profile settings.</h2>                                                             <h3>Please correct the errors below:</h3>"
+                                ForeColor="Black" />
+                        </div>
+                        <div id="errormsg" align="left" runat="server" visible="false" class="yt-Error"></div>
+                        <div id="Notice" runat="server" visible="false" class="yt-Notice"></div>                          
+                        <div class="yt-AdminMain">
+                            <ul class="yt-AdminNavPrimary">
+                                <li id="limytribute" runat="server"><a href='#'>My Tributes</a></li>
+                                <li id="limyfavourite" runat="server"><a href='#'>My Favorites</a></li>                              
+                                <li id="liinbox" runat="server"><a href='#'>Inbox</a></li>   
+                                <li id="lievents" runat="server"><a href='#'>Events</a></li>
+                                <li id="limyprofile" class="yt-MyProfileTab" runat="server">
+                                <a href="#">My Profile</a></li> 
+                            </ul>
+                            <div class="yt-Panel-Primary">
+                              <% if (_nav_primary != null && _nav_primary.Equals(AdminNavPrimaryEnum.myprofile.ToString())) { %> 
+                                <ul class="yt-AdminNavSecondary">
+                              <% if (_nav_secondary.Equals(AdminNavSecondaryEnum.profile.ToString()))
+                                 { %>  
+                                    <li class="yt-Selected"><a href="javascript:void(0);">Profile Settings</a></li>
+                              <% }
+                                 else
+                                 { %>  
+                                    <li><a href="adminprofilesettings.aspx">Profile Settings</a></li>
+                              <% }
+                                 if (_nav_secondary.Equals(AdminNavSecondaryEnum.privacy.ToString()))
+                                 { %> 
+                                    <li class="yt-Selected"><a href="javascript:void(0);">Privacy Settings</a></li>
+                              <% }
+                                 else
+                                 { %>                                        
+                                    <li><a href="adminprofileprivacy.aspx">Privacy Settings</a></li>
+                              <% }
+                                 if (_nav_secondary.Equals(AdminNavSecondaryEnum.emailpassword.ToString()))
+                                 { %> 
+                                    <li class="yt-Selected"><a href="javascript:void(0);">Change Email/Password</a></li>                                     
+                              <% }
+                                 else
+                                 { %>                                                                         
+                                    <li><a href="adminprofileemailpassword.aspx">Change Email/Password</a></li>
+                              <% }
+                                 if (_nav_secondary.Equals(AdminNavSecondaryEnum.emailnotifications.ToString()))
+                                 { %>                                     
+                                    <li class="yt-Selected"><a href="javascript:void(0);">Email Notifications</a></li>                                 
+                              <% }
+                                 else
+                                 { %>                                 
+                                    <li><a href="adminprofileemail.aspx">Email Notifications</a></li>
+                              <% }
+                                 if (_nav_secondary.Equals(AdminNavSecondaryEnum.billing.ToString()))
+                                 { %>                                    
+                                    <li class="yt-Selected"><a href="javascript:void(0);">Billing Info</a></li>
+                              <% }
+                                 else
+                                 { %>
+                                    <li><a href="adminprofilebilling.aspx">Billing Info</a></li> 
+                              <% } %>                                    
+                                </ul>                            
+                              <% } %>                                
+                            <asp:ContentPlaceHolder id="BodyContentPlaceHolder" runat="server">
+                            </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                        </ContentTemplate>
+                      </asp:UpdatePanel>                        
+                    </div>
+                    <!--yt-ContentPrimary-->
+                </div>
+                <!--yt-ContentPrimaryContainer-->
+                <div class="yt-ContentSecondary">
+                    <div class="yt-Panel-System">
+                        <h2 id="trbBlog" runat="server" >
+                            News from Your Tribute</h2>
+                        <uc:TributeBlog ID="TributeBlog1" runat="server" />
+                    </div>
+                    <div class="yt-Panel yt-Panel-Tributes">
+                    <uc:LeftFeaturedPanel ID="LeftFeaturedPanel1" runat="server" />                        
+                    </div>
+                </div>
+                <!--yt-ContentSecondary-->
+                <div class="hack-clearBoth">
+                </div>
+                <div class="yt-ContentContainerImage">
+                </div>
+            </div>
+            <!--yt-ContentContainerInner-->
+        </div>
+        <!--yt-ContentContainer-->
+        <!--<div class="yt-Footer">-->
+            <uc:Footer ID="Footer1" runat="server" />
+        <!--</div>-->
+        <!--yt-Footer-->                                        
+    </div>
+    <div class="upgrade">
+        <h2>
+            Please Upgrade Your Browser</h2>
+        <p>
+            This site's design is only visible in a graphical browser that supports <a href="http://www.webstandards.org/upgrade/"
+                title="The Web Standards Project's BROWSER UPGRADE initiative.">web standards</a>,
+            but its content is accessible to any browser or Internet device.</p>
+    </div>   
+    <!-- markup for modal boxes -->
+    <asp:ContentPlaceHolder id="ModalContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- markup for modal boxes -->          
+    </form>
+    <script type="text/javascript" src="<%=Session["APP_SCRIPT_PATH"]%>assets/scripts/modalbox.js"></script>
+    <script type="text/javascript">
+
+      executeBeforeLoad();  
+
+      
+      <% if (ConfigurationManager.AppSettings["ApiKey"] != null) { %>  
+      window.fbAsyncInit = function() {
+    FB.init({
+        appId  : '<%= ConfigurationManager.AppSettings["ApiKey"].ToString() %>',
+        status : true, // check login status
+        cookie : true, // enable cookies to allow the server to access the session
+        xfbml  : true,  // parse XFBML
+       // channelUrl  : 'http://www.yourdomain.com/channel.html', // Custom Channel URL
+        oauth : true //enables OAuth 2.0
+    });
+
+    FB.getLoginStatus(function(response) {
+        if (response.authResponse) update_user_is_connected();
+        else update_user_is_not_connected();
+    });
+
+    // This will be triggered as soon as the user logs into Facebook (through your site)
+    FB.Event.subscribe('auth.login', function(response) {
+        update_user_is_connected();
+    });
+};
+(function () {
+
+        var e = document.createElement('script');
+
+        e.type = 'text/javascript';
+
+        e.src = document.location.protocol +
+
+                    '//connect.facebook.net/en_US/all.js';
+
+        e.async = true;
+
+        document.getElementById('fb-root').appendChild(e);
+
+    } ());
+
+//      FB.init('<%= ConfigurationManager.AppSettings["ApiKey"].ToString() %>', "/xd_receiver.htm",
+//                 {"ifUserConnected": update_user_is_connected,
+//                  "ifUserNotConnected": update_user_is_not_connected});
+      // FB.Facebook.get_sessionState().waitUntilReady(fb_session_ready);              
+      <% } %>
+    </script>
+  </body>
+    
+</html>

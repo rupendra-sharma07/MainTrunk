@@ -1,0 +1,53 @@
+﻿
+.HeaderText {
+	font-family:"Lucida Sans Unicode","Lucida Sans", sans-serif;
+	font-size:12px;
+	font-style:normal;
+	color:Menu;
+	background-color:WindowFrame;
+	line-height:1.4em;
+	padding-left:42px;
+}
+.MenuText {
+	font-family:"Lucida Sans Unicode","Lucida Sans", sans-serif;
+	font-size:12px;
+	font-style:normal;
+	color:MenuText;
+	line-height:1.4em;
+	padding-left:42px;
+}
+.bgColor
+{
+	background-color:White;
+}
+bgColor2
+{
+	background-color:White;
+}
+.yt-Panel {
+	background-color:White; /* should be same color as .yt-ContentTertiary .yt-Panel-Announcement h2 on line 110 of this file! */
+}
+.TableBackground
+{
+	background: #ffffff;
+	color: #3f2921;
+	margin-bottom: 40px;
+	padding:0 0 0 20px;
+}
+.LabelHeader
+{
+	font-family:"Lucida Sans Unicode","Lucida Sans", sans-serif;
+	font-size:14px;
+	font-style:normal;
+	color:MenuText;
+	line-height:1.4em;
+}
+.LabelText
+{
+	font-family:"Lucida Sans Unicode","Lucida Sans", sans-serif;
+	font-size:12px;
+	font-style:normal;
+	color:MenuText;
+	line-height:1.4em;
+}
+

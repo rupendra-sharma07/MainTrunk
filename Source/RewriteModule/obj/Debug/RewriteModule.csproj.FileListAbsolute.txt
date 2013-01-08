@@ -1,0 +1,15 @@
+E:\Project\YourTribute\Source\RewriteModule\bin\Debug\RewriteModule.dll
+E:\Project\YourTribute\Source\RewriteModule\bin\Debug\RewriteModule.pdb
+E:\Project\YourTribute\Source\RewriteModule\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\RewriteModule\obj\Debug\RewriteModule.dll
+E:\Project\YourTribute\Source\RewriteModule\obj\Debug\RewriteModule.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\RewriteModule\bin\Debug\RewriteModule.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\RewriteModule\bin\Debug\RewriteModule.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\RewriteModule\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\RewriteModule\obj\Debug\RewriteModule.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\RewriteModule\obj\Debug\RewriteModule.pdb
+E:\YourTribute\EnhancementPhase1\Source\RewriteModule\bin\Debug\RewriteModule.dll
+E:\YourTribute\EnhancementPhase1\Source\RewriteModule\bin\Debug\RewriteModule.pdb
+E:\YourTribute\EnhancementPhase1\Source\RewriteModule\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\EnhancementPhase1\Source\RewriteModule\obj\Debug\RewriteModule.dll
+E:\YourTribute\EnhancementPhase1\Source\RewriteModule\obj\Debug\RewriteModule.pdb

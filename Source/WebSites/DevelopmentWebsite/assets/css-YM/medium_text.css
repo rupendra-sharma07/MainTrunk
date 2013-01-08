@@ -1,0 +1,40 @@
+/*------------------------------------------------------------
+
+medium_text.css
+Medium text size Screen media CSS common to all stylesheets.
+
+author: Mark Bice
+last modified: November 27, 2007
+------------------------------------------------------------*/
+
+
+h1.yt-tributeTitle,
+.yt-ProcessSteps
+{
+	font-size: inherit !important;
+}
+
+.yt-ContentContainer {
+	font-size: medium;
+}
+
+.yt-NavSecondary a {
+	font-size: medium;
+}
+
+.yt-TypeSizeControl a.medium {
+	background-color: #e6dbd2;
+	background-position: 0px -25px;
+}
+.yt-TypeSizeControl a.medium:hover {
+	background-color: #e6dbd2;
+}
+
+.yt-TypeSizeControl a.small, .yt-TypeSizeControl a.large {
+	background-color: #f5ede7;
+	background-position: 0px 0px;
+}
+
+.yt-TypeSizeControl a.large:hover, .yt-TypeSizeControl a.small:hover {
+	background-color: #fcf9f6;
+}

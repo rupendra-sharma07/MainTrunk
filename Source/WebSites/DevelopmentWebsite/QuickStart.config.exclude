@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<configuration>
+	<dataFile>~/Common/Examples.xml</dataFile>
+</configuration>

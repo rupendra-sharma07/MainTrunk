@@ -1,0 +1,188 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SearchResult.master.cs"
+    Inherits="Shared_SearchResult" %>
+<%@ Register Src="../UserControl/YourTributeHeader.ascx" TagName="Header" TagPrefix="uc" %>         
+<%@ Register Src="../UserControl/LeftFeaturedPanel.ascx" TagName="LeftFeaturedPanel"
+    TagPrefix="uc" %>
+<%@ Register Src="../UserControl/FooterHome.ascx" TagName="Footer" TagPrefix="uc" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
+<head id="Head1" runat="server">
+    <title>Your Tribute - Search Results</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en-ca" />
+    <meta http-equiv="imagetoolbar" content="false" />
+    <meta name="robots" content="index,follow" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <!-- really basic, generic html class stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="<%=Session["APP_BASE_DOMAIN"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/default.css" />
+    <!-- default grid layout stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="<%=Session["APP_BASE_DOMAIN"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/layouts/centered1024_21.css" />
+    <!-- print-friendly stylesheet -->
+    <link rel="stylesheet" type="text/css" media="print" href="<%=Session["APP_BASE_DOMAIN"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/print.css" />
+    <!-- screen elements stylesheet should be here -->
+    <link rel="stylesheet" type="text/css" href="<%=Session["APP_BASE_DOMAIN"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/ScreenLatest.css" />
+    <!-- larger text stylesheets -->
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="<%=Session["APP_BASE_DOMAIN"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/medium_text.css"
+        title="medium_text" />
+    <link rel="alternate stylesheet" type="text/css" media="screen, projection" href="<%=Session["APP_BASE_DOMAIN"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/large_text.css"
+        title="large_text" />
+    <!-- Website Favorite Icon -->
+    <link rel="Shortcut Icon" type="image/x-icon" href="<%=Session["APP_BASE_DOMAIN"]%>assets/images/favicon.ico" />
+    
+    <!-- JS libraries -->
+    <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/mootools-1.11.js"></script>
+    <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/global.js"></script>
+    <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/styleSwitcher.js"></script>
+    <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>Common/JavaScript/Common.js"></script>
+    <script src="https://connect.facebook.net/en_US/all.js" type="text/javascript"></script>
+    <!--#include file="../analytics.asp"-->
+</head>
+<body>
+    <form id="Form1" runat="server" action="">
+        <div class="yt-Container yt-SearchResults">
+            <uc:Header ID="ytHeader" Section="tribute" NavigationName="None" runat="server" />
+            <%-- 
+            <div class="yt-HeaderContainer">
+                <div class="yt-Header">
+                    <a href="<%=Session["APP_BASE_DOMAIN"]%>" title="Return to Parent Home Page" class="yt-Logo">
+                    </a>
+                    <div class="yt-HeaderControls">
+                        <div class="yt-NavHeader">
+                            <div class="floatLeft" id="divProfile" runat="server">
+                                <a id="myprofile" runat="server">My Account</a>
+                                <uc1:Inbox ID="Inbox1" runat="server" />
+                            </div>
+                            <div class="yt-UserInfo">
+                                <span>
+                                    <%=_UserName%>
+                                </span><span id="spanLogout" runat="server"></span>
+                            </div>
+                        </div>
+                        <div class="hack-clearBoth">
+                        </div>
+                        <div class="yt-Tools">
+                            <div id="yt-TypeSizeControl" class="yt-TypeSizeControl">
+                                <span class="floatLeft">Text Size:&#160;</span> <a href="javascript:void(0);" class="large"
+                                    title="Large Text">a</a> <a href="javascript:void(0);" class="medium" title="Medium Text">
+                                        a</a> <a href="javascript:void(0);" class="small" title="Small Text">a</a>
+                            </div>
+                        </div>
+                        <!--yt-Tools-->
+                    </div>
+                    <!--yt-HeaderControls-->
+                </div>
+                <!--yt-Header-->
+            </div>
+            <!--yt-HeaderContainer-->
+            --%>
+            <div class="hack-clearBoth">
+            </div>
+            <asp:ContentPlaceHolder ID="HeaderContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="yt-ContentContainer">
+                <div class="yt-ContentContainerInner">
+                    <div class="yt-ContentPrimaryContainer">
+                        <asp:ContentPlaceHolder ID="ModuleContentPlaceHolder" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <!--yt-ContentPrimaryContainer-->
+                    <div class="yt-ContentSecondary" >
+                        <div class="yt-Panel yt-Panel-Tools"  id="divSearch" runat="server" >
+                            <div class="yt-Panel-Body">
+                                <h2>
+                                    Search</h2>
+                                <div class="yt-SearchTools">
+                                    <fieldset class="yt-Form">
+                                        <div class="yt-Form-Field yt-SearchKeywords">
+                                            <label id="lblSearchFor" runat="server" for="txtSearchKeywords">
+                                                Search for:</label>
+                                            <asp:TextBox ID="txtSearchKeyword" runat="server" Text="Enter the name of a Tribute"></asp:TextBox>
+                                        </div>
+                                        <div class="yt-SearchAdvancedLink">
+                                            <a href="advancedsearch.aspx">Advanced Search</a>
+                                        </div>
+                                        <asp:ImageButton ID="btnSearchSubmit" CssClass="yt-Search-Submit" runat="server"
+                                            ImageUrl="../assets/images/btn_go.gif" AlternateText="Search Tributes" OnClick="btnSearchSubmit_Click" />
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- By Udham to remove types of tributes -->
+                        <div class="yt-Panel" id="YTPanel" runat=server>   
+                                    <uc:LeftFeaturedPanel ID="LeftFeaturedPanel1" runat="server" />    
+                        </div>
+                    </div>
+                    <!--yt-ContentSecondary-->
+                    <div class="hack-clearBoth">
+                    </div>
+                    <div class="hack-clearBoth">
+                    </div>
+                    <div class="yt-ContentContainerImage">
+                    </div>
+                </div>
+                <!--yt-ContentContainerInner-->
+            </div>
+            <!--yt-ContentContainer-->
+            <!--<div class="yt-Footer">-->
+                <uc:Footer ID="Footer1" runat="server" />
+            <!--</div>-->
+            <!--yt-Footer-->
+        </div>
+        <!--yt-Container-->
+        <div class="upgrade">
+            <h2>
+                Please Upgrade Your Browser</h2>
+            <p>
+                This site&#39;s design is only visible in a graphical browser that supports <a href="http://www.webstandards.org/upgrade/"
+                    title="The Web Standards Project's BROWSER UPGRADE initiative.">web standards</a>,
+                but its content is accessible to any browser or Internet device.</p>
+        </div>
+        <asp:ContentPlaceHolder ID="ImageListContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+
+    <script type="text/javascript">
+
+      executeBeforeLoad();  
+
+      <% if (ConfigurationManager.AppSettings["ApiKey"] != null) { %>  
+        function update_user_is_connected() {
+            header_user_is_connected();
+            FB.XFBML.parse();
+        }
+        function update_user_is_not_connected() {
+            header_user_is_not_connected();
+            FB.XFBML.parse();
+        }          
+        window.fbAsyncInit = function() {
+    FB.init({
+        appId  : '<%= ConfigurationManager.AppSettings["ApiKey"].ToString() %>',
+        status : true, // check login status
+        cookie : true, // enable cookies to allow the server to access the session
+        xfbml  : true,  // parse XFBML
+        //channelUrl  : 'http://www.yourdomain.com/channel.html', // Custom Channel URL
+        oauth : true //enables OAuth 2.0
+    });
+
+    FB.getLoginStatus(function(response) {
+        if (response.authResponse) update_user_is_connected();
+        else update_user_is_not_connected();
+    });
+
+    // This will be triggered as soon as the user logs into Facebook (through your site)
+    FB.Event.subscribe('auth.login', function(response) {
+        update_user_is_connected();
+    });
+};
+        
+//        FB.init('<%= ConfigurationManager.AppSettings["ApiKey"].ToString() %>', "/xd_receiver.htm",
+//                 {"ifUserConnected": update_user_is_connected,
+//                  "ifUserNotConnected": update_user_is_not_connected});
+      <% } %>         </script>
+
+    <div id="txtHint" visible="false">
+        <b></b>
+    </div>
+</body>
+ <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/modalbox.js"></script>
+</html>

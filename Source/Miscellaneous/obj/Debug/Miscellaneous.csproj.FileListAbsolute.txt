@@ -1,0 +1,166 @@
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\Miscellaneous.dll
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\Miscellaneous.pdb
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\Microsoft.Practices.CompositeWeb.dll
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\log4net.dll
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source\Miscellaneous\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\Miscellaneous\obj\Debug\Miscellaneous.dll
+E:\Project\YourTribute\Source\Miscellaneous\obj\Debug\Miscellaneous.pdb
+E:\Source\Miscellaneous\bin\Debug\Miscellaneous.dll
+E:\Source\Miscellaneous\bin\Debug\Miscellaneous.pdb
+E:\Source\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.dll
+E:\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Source\Miscellaneous\bin\Debug\log4net.dll
+E:\Source\Miscellaneous\bin\Debug\TributePortalSecurity.dll
+E:\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Source\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.pdb
+E:\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Source\Miscellaneous\bin\Debug\TributePortalSecurity.pdb
+E:\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Source\Miscellaneous\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\Miscellaneous\obj\Debug\Miscellaneous.dll
+E:\Source\Miscellaneous\obj\Debug\Miscellaneous.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\Miscellaneous.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\Miscellaneous.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\TributesPortal.Utilities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\TributePortalSecurity.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\TributesPortal.Utilities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\TributePortalSecurity.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\obj\Debug\Miscellaneous.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Miscellaneous\obj\Debug\Miscellaneous.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\Miscellaneous.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\Miscellaneous.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\obj\Debug\Miscellaneous.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Miscellaneous\obj\Debug\Miscellaneous.pdb
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\Miscellaneous.dll
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\Miscellaneous.pdb
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\obj\Debug\Miscellaneous.dll
+E:\Project\YourTribute\SourceCode\Main\Source\Source\Miscellaneous\obj\Debug\Miscellaneous.pdb
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\Miscellaneous.dll
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\Miscellaneous.pdb
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.dll
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\TributePortalSecurity.dll
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.pdb
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\TributePortalSecurity.pdb
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\obj\Debug\Miscellaneous.dll
+E:\YourTribute\YT-Mohit\Source\Miscellaneous\obj\Debug\Miscellaneous.pdb
+D:\Source\Miscellaneous\bin\Debug\Miscellaneous.dll
+D:\Source\Miscellaneous\bin\Debug\Miscellaneous.pdb
+D:\Source\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.dll
+D:\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.dll
+D:\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.dll
+D:\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Source\Miscellaneous\bin\Debug\log4net.dll
+D:\Source\Miscellaneous\bin\Debug\TributePortalSecurity.dll
+D:\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.dll
+D:\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.pdb
+D:\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Source\Miscellaneous\bin\Debug\TributePortalSecurity.pdb
+D:\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.pdb
+D:\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.pdb
+D:\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.pdb
+D:\Source\Miscellaneous\obj\Debug\ResolveAssemblyReference.cache
+D:\Source\Miscellaneous\obj\Debug\Miscellaneous.dll
+D:\Source\Miscellaneous\obj\Debug\Miscellaneous.pdb
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\Miscellaneous.dll
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\Miscellaneous.pdb
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.dll
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\log4net.dll
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\TributePortalSecurity.dll
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.pdb
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\obj\Debug\Miscellaneous.dll
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\obj\Debug\Miscellaneous.pdb
+E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml

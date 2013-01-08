@@ -1,0 +1,271 @@
+/*------------------------------------------------------------
+
+default.css
+Default CSS styles used across all browsers.
+
+author: Sing Chan, Mark Bice
+version: 1.0
+last modified: November 26, 2007
+
+notes:
+Place your generic class rules here. These rules will be applied to ALL browsers.
+
+------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------------
+
+HTML elements
+
+------------------------------------------------------------*/
+
+body {
+	
+	font-family:"Lucida Sans", "Lucida Grande", sans-serif;
+	margin: 0;
+	padding:0;	
+	background: #fff;
+        color:#FFFFFF;
+        font-size :12px;
+        
+}
+
+.divProfileLinks
+{
+	float:left;
+	margin-left:90px;
+	padding-top:4px;
+}
+.yt-Inbox
+{
+	margin-left:20px;
+}
+.logoutLink
+{
+	padding-left:8px;
+}
+.spanUserName
+{
+	padding-right:5px;
+}
+
+html {
+	margin: 0;
+	padding:0;
+	background: transparent;
+}
+
+
+
+
+/*------------------------------------------------------------
+
+generic classes
+
+------------------------------------------------------------*/
+
+
+/* floats */
+
+.floatLeft {
+float:left;
+padding-top:3px;
+}
+
+.floatRight {
+	float: right;
+}
+
+
+/* float clears */
+
+.clearBoth {
+	clear: both;
+}
+
+.clearLeft {
+	clear: left;
+}
+
+.clearRight {
+	clear: right;
+}
+
+
+/* text alignment */
+
+.alignCenter {
+	text-align: center;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+
+/* hidden text */
+
+.hideText {
+	font-size: 1px;
+	line-height: 1px;
+	letter-spacing: -1em;
+	text-indent: -9999px;
+}
+
+
+
+
+/*------------------------------------------------------------
+
+special messaging
+
+------------------------------------------------------------*/
+
+/* browser upgrade message */
+.upgrade {
+	margin-top: 1em;
+	color: #900;
+	border: 2px solid #900;
+}
+
+/* print preview message */
+.printPreview {
+	display: none;
+}
+
+
+.text_center{text-align:center;}
+
+
+label {
+	font-size:14px;
+	padding-top:3px;
+}
+
+/*****For Modal Box*****/
+
+.mb-expireNoticeModal
+{
+	width:620px;
+}
+
+.yt-adModalContainer{
+    /*width:590px;*/
+}
+
+.ya-adModalInnerContainer {
+    width: 100%;
+    padding:25px;
+}
+.yt-topOfModal img{
+    float: left;
+}
+.yt-adModalContainer 
+{
+	background-color :white ;
+}
+
+.yt-adModalRightSideText{
+    float:left;
+    text-align:left;
+    margin-left:25px;
+}
+.yt-adModalRightSideText h3{
+    margin: 5px 0px 10px 0px;
+    font: normal 19px "Lucida Grande",Sans-Serif;
+    color :Black ;    
+}
+
+.adModalIntroText{
+    padding:15px 0px;    
+}
+
+.adModalIntroText a
+{
+	color :Blue;
+}
+
+.modalContentBlock{
+    height:90px;
+}
+
+.modalContentBlock img{
+    float:left;
+    width:62px;
+    height:62px;
+    margin-top:5px;
+}
+
+.modalContentBlockText{
+    float:left;
+    /*width:450px;*/
+}
+
+
+
+.yt-adModalbigButtons{
+    height:60px;
+    padding-left:0px;
+    width:530px;
+}
+
+a.adModalleftBigButton{
+    float:left;
+    background: url(../images/btn_bigLeftBrown.png) no-repeat top right ;
+}
+/*******LHK:for Memorial Tribute pop up********************/
+a.memTributeModalRightBigButton{
+    float:right;
+    background: url(../images/btn_createTributeInSeconds.png) no-repeat top right ;
+}
+a.adModalleftBigButton, a.memTributeModalRightBigButton{
+    width: 256px;
+    height:56px;
+    display:block;
+    text-indent: -9999px;
+}
+a.memTributeModalRightBigButton:hover, a.adModalleftBigButton:hover{
+    background-position: right bottom;
+}
+/****** Till Here *********/
+
+a.adModalrightBigButton{
+    float:right;
+    background: url(../images/btn_bigRightGreen.png) no-repeat top left ;
+}
+
+a.adModalleftBigButton, a.adModalrightBigButton{
+    width: 256px;
+    height:56px;
+    display:block;
+    text-indent: -9999px;
+}
+a.adModalrightBigButton:hover, a.adModalleftBigButton:hover{
+    background-position: right bottom;
+}
+
+.yt-adModalGoogleAdCut{
+    background: url(../images/bg_modalAd.png) no-repeat top left;
+    height:104px;
+    width:480px;
+    display:block;
+    margin:5px 0px 0px 20px;
+    padding: 20px 0 0;
+    text-align:center;
+}
+.yt-adModalGoogleAdCut p.infoMessage{
+    color:#999;
+    font-size: 10px;
+}
+
+.adModalIntroText a.abc
+{
+	color :Blue ;
+}

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6a252655-7ecd-47ba-b45b-69d1d8019756" name="Administrator@OPTIMUS 2010-09-28 17:17:37" runUser="OPTIMUS\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="33ea40cf-68f5-436d-8248-b63d5c22a7e8">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="E:\Project\YourTribute\Source\TestResults\Administrator_OPTIMUS 2010-09-28 17_17_37">
+      <DeploymentItem filename="E:\Project\YourTribute\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessLogic.dll" />
+      <DeploymentItem filename="E:\Project\YourTribute\Source\PortalUtilities\bin\Debug\TributesPortal.Utilities.dll" />
+      <DeploymentItem filename="E:\Project\YourTribute\Source\ResourceAccess\bin\Debug\TributesPortal.ResourceAccess.dll" />
+      <DeploymentItem filename="E:\Project\YourTribute\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2010-09-28T17:17:37.0625000+05:30" queuing="2010-09-28T17:17:42.6875000+05:30" start="2010-09-28T17:17:42.9375000+05:30" finish="2010-09-28T17:17:57.3593750+05:30" />
+  <TestDefinitions>
+    <UnitTest name="GetEventInfoTest" storage="e:\project\yourtribute\source\yourtributetestproject\bin\debug\yourtributetestproject.dll" id="c75a13c7-4dbc-345b-46a5-22c050734621">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="107103fc-01ef-496d-9abc-55cdf442de9b" />
+      <TestMethod codeBase="E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="YourTributeTestProject.EventManagerTest, YourTributeTestProject" name="GetEventInfoTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c75a13c7-4dbc-345b-46a5-22c050734621" executionId="107103fc-01ef-496d-9abc-55cdf442de9b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="107103fc-01ef-496d-9abc-55cdf442de9b" testId="c75a13c7-4dbc-345b-46a5-22c050734621" testName="GetEventInfoTest" computerName="OPTIMUS" duration="00:00:10.2914494" startTime="2010-09-28T17:17:43.0625000+05:30" endTime="2010-09-28T17:17:54.2031250+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;TributesPortal.BusinessEntities.Events&gt;. </Message>
+          <StackTrace>   at YourTributeTestProject.EventManagerTest.GetEventInfoTest() in E:\Project\YourTribute\Source\YourTributeTestProject\EventManagerTest.cs:line 421
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

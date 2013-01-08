@@ -1,0 +1,10 @@
+E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.pdb
+E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\bin\x86\Debug\log4net.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.pdb
+E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.pdb

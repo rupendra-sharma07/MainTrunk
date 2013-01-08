@@ -1,0 +1,108 @@
+E:\Project\YourTribute\Source\PortalController\bin\Debug\PortalController.dll
+E:\Project\YourTribute\Source\PortalController\bin\Debug\PortalController.pdb
+E:\Project\YourTribute\Source\PortalController\bin\Debug\Microsoft.Practices.CompositeWeb.dll
+E:\Project\YourTribute\Source\PortalController\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source\PortalController\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source\PortalController\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\Source\PortalController\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source\PortalController\bin\Debug\log4net.dll
+E:\Project\YourTribute\Source\PortalController\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\Source\PortalController\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source\PortalController\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YourTribute\Source\PortalController\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source\PortalController\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\Source\PortalController\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\Source\PortalController\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\Source\PortalController\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source\PortalController\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\PortalController\obj\Debug\PortalController.dll
+E:\Project\YourTribute\Source\PortalController\obj\Debug\PortalController.pdb
+E:\Source\PortalController\bin\Debug\PortalController.dll
+E:\Source\PortalController\bin\Debug\PortalController.pdb
+E:\Source\PortalController\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Source\PortalController\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Source\PortalController\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Source\PortalController\bin\Debug\TributesPortal.Utilities.dll
+E:\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Source\PortalController\bin\Debug\log4net.dll
+E:\Source\PortalController\bin\Debug\TributePortalSecurity.dll
+E:\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Source\PortalController\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Source\PortalController\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Source\PortalController\bin\Debug\TributesPortal.Utilities.pdb
+E:\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Source\PortalController\bin\Debug\TributePortalSecurity.pdb
+E:\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Source\PortalController\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Source\PortalController\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Source\PortalController\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Source\PortalController\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\PortalController\obj\Debug\PortalController.dll
+E:\Source\PortalController\obj\Debug\PortalController.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\PortalController.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\PortalController.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\TributesPortal.Utilities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\TributePortalSecurity.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\TributesPortal.Utilities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\TributePortalSecurity.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\obj\Debug\PortalController.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalController\obj\Debug\PortalController.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\PortalController.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\PortalController.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\obj\Debug\PortalController.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalController\obj\Debug\PortalController.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\PortalController\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\PortalController\obj\Debug\PortalController.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\PortalController\obj\Debug\PortalController.pdb
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\PortalController.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\PortalController.pdb
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\TributesPortal.Utilities.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\log4net.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\TributePortalSecurity.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\TributesPortal.Utilities.pdb
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\YourTribute\EnhancementPhase1\Source\PortalController\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\EnhancementPhase1\Source\PortalController\obj\Debug\PortalController.dll
+E:\YourTribute\EnhancementPhase1\Source\PortalController\obj\Debug\PortalController.pdb
+E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml

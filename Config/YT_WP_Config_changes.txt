@@ -1,0 +1,4 @@
+<RewriterRule>
+        <LookFor>~/EnableRSSFeed\.aspx</LookFor>
+        <SendTo>~/tributeportaladmin/EnableRSSFeed.aspx</SendTo>
+      </RewriterRule>

@@ -1,0 +1,125 @@
+E:\Project\YourTribute\Source\Photo\bin\Debug\Photo.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\Photo.pdb
+E:\Project\YourTribute\Source\Photo\bin\Debug\Microsoft.Practices.CompositeWeb.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\log4net.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YourTribute\Source\Photo\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source\Photo\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\Source\Photo\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\Source\Photo\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\Source\Photo\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source\Photo\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source\Photo\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source\Photo\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\Photo\obj\Debug\Photo.dll
+E:\Project\YourTribute\Source\Photo\obj\Debug\Photo.pdb
+E:\Source\Photo\bin\Debug\Photo.dll
+E:\Source\Photo\bin\Debug\Photo.pdb
+E:\Source\Photo\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Source\Photo\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Source\Photo\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Source\Photo\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Source\Photo\bin\Debug\TributesPortal.Utilities.dll
+E:\Source\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Source\Photo\bin\Debug\log4net.dll
+E:\Source\Photo\bin\Debug\TributePortalSecurity.dll
+E:\Source\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Source\Photo\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Source\Photo\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Source\Photo\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Source\Photo\bin\Debug\TributesPortal.Utilities.pdb
+E:\Source\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Source\Photo\bin\Debug\TributePortalSecurity.pdb
+E:\Source\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Source\Photo\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Source\Photo\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Source\Photo\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Source\Photo\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Source\Photo\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Source\Photo\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\Photo\obj\Debug\Photo.dll
+E:\Source\Photo\obj\Debug\Photo.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\Photo.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\Photo.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\TributesPortal.Utilities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\TributePortalSecurity.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\TributesPortal.Utilities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\TributePortalSecurity.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\obj\Debug\Photo.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Photo\obj\Debug\Photo.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\Photo.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\Photo.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\obj\Debug\Photo.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Photo\obj\Debug\Photo.pdb
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\Photo.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\Photo.pdb
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\TributesPortal.Utilities.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\log4net.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\TributePortalSecurity.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\TributesPortal.Utilities.pdb
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\EnhancementPhase1\Source\Photo\obj\Debug\Photo.dll
+E:\YourTribute\EnhancementPhase1\Source\Photo\obj\Debug\Photo.pdb
+E:\YourTribute\EnhancementPhase1\Source\Photo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml

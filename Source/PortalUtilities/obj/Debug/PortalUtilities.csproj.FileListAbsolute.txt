@@ -1,0 +1,46 @@
+E:\Project\YourTribute\Source\PortalUtilities\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source\PortalUtilities\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source\PortalUtilities\bin\Debug\log4net.dll
+E:\Project\YourTribute\Source\PortalUtilities\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source\PortalUtilities\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source\PortalUtilities\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source\PortalUtilities\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source\PortalUtilities\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\PortalUtilities\obj\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source\PortalUtilities\obj\Debug\TributesPortal.Utilities.pdb
+E:\Source\PortalUtilities\bin\Debug\TributesPortal.Utilities.dll
+E:\Source\PortalUtilities\bin\Debug\TributesPortal.Utilities.pdb
+E:\Source\PortalUtilities\bin\Debug\TributePortalSecurity.dll
+E:\Source\PortalUtilities\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Source\PortalUtilities\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Source\PortalUtilities\bin\Debug\TributePortalSecurity.pdb
+E:\Source\PortalUtilities\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\PortalUtilities\obj\Debug\TributesPortal.Utilities.dll
+E:\Source\PortalUtilities\obj\Debug\TributesPortal.Utilities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalUtilities\bin\Debug\TributesPortal.Utilities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalUtilities\bin\Debug\TributesPortal.Utilities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalUtilities\bin\Debug\TributePortalSecurity.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalUtilities\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalUtilities\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalUtilities\bin\Debug\TributePortalSecurity.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalUtilities\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalUtilities\obj\Debug\TributesPortal.Utilities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\PortalUtilities\obj\Debug\TributesPortal.Utilities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalUtilities\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalUtilities\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalUtilities\bin\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalUtilities\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalUtilities\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalUtilities\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalUtilities\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalUtilities\obj\Debug\TributesPortal.Utilities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\PortalUtilities\obj\Debug\TributesPortal.Utilities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\PortalUtilities\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\PortalUtilities\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\PortalUtilities\bin\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\PortalUtilities\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\PortalUtilities\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\PortalUtilities\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\PortalUtilities\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\PortalUtilities\obj\Debug\TributesPortal.Utilities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\PortalUtilities\obj\Debug\TributesPortal.Utilities.pdb

@@ -1,0 +1,78 @@
+E:\Project\YourTribute\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YourTribute\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YourTribute\Source\MultipleLangSupport\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source\MultipleLangSupport\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source\MultipleLangSupport\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.resources
+E:\Project\YourTribute\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.fr.resources
+E:\Project\YourTribute\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.ro.resources
+E:\Project\YourTribute\Source\MultipleLangSupport\obj\Debug\MultipleLangSupport.csproj.GenerateResource.Cache
+E:\Project\YourTribute\Source\MultipleLangSupport\obj\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source\MultipleLangSupport\obj\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YourTribute\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Source\MultipleLangSupport\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Source\MultipleLangSupport\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Source\MultipleLangSupport\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.resources
+E:\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.fr.resources
+E:\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.ro.resources
+E:\Source\MultipleLangSupport\obj\Debug\MultipleLangSupport.csproj.GenerateResource.Cache
+E:\Source\MultipleLangSupport\obj\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Source\MultipleLangSupport\obj\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.resources
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.fr.resources
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.ro.resources
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\obj\Debug\MultipleLangSupport.csproj.GenerateResource.Cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\obj\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\obj\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.resources
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.fr.resources
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.ro.resources
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\obj\Debug\MultipleLangSupport.csproj.GenerateResource.Cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\obj\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\obj\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.resources
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.fr.resources
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.ro.resources
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\obj\Debug\MultipleLangSupport.csproj.GenerateResource.Cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\obj\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\obj\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source 9Nov\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.resources
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.fr.resources
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.ro.resources
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\MultipleLangSupport.csproj.GenerateResource.Cache
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.dll
+E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.pdb

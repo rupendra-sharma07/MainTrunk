@@ -1,0 +1,150 @@
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll.config
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.pdb
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\TributePortalSecurity.dll
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessEntities.dll
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic.dll
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.ResourceAccess.dll
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.Utilities.dll
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\log4net.dll
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.Utilities.pdb
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\TributePortalSecurity.pdb
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.ResourceAccess.pdb
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic.pdb
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessEntities.pdb
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic_Accessor.dll
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic_Accessor.pdb
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\obj\Debug\ResolveAssemblyReference.cache
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\obj\Debug\YourTributeTestProject.dll
+F:\tajinder_optimus\YourTribute\Source\YourTributeTestProject\obj\Debug\YourTributeTestProject.pdb
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\Common\Examples.xml
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\Common\XML\PhotoConfiguration.xml
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll.config
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.pdb
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\log4net.dll
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic_Accessor.dll
+E:\Project\YourTribute\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic_Accessor.pdb
+E:\Project\YourTribute\Source\YourTributeTestProject\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\YourTributeTestProject\obj\Debug\YourTributeTestProject.dll
+E:\Project\YourTribute\Source\YourTributeTestProject\obj\Debug\YourTributeTestProject.pdb
+E:\Source\YourTributeTestProject\bin\Debug\Common\Examples.xml
+E:\Source\YourTributeTestProject\bin\Debug\Common\XML\PhotoConfiguration.xml
+E:\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll.config
+E:\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll
+E:\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.pdb
+E:\Source\YourTributeTestProject\bin\Debug\TributePortalSecurity.dll
+E:\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Source\YourTributeTestProject\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Source\YourTributeTestProject\bin\Debug\TributesPortal.Utilities.dll
+E:\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Source\YourTributeTestProject\bin\Debug\log4net.dll
+E:\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Source\YourTributeTestProject\bin\Debug\TributesPortal.Utilities.pdb
+E:\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Source\YourTributeTestProject\bin\Debug\TributePortalSecurity.pdb
+E:\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Source\YourTributeTestProject\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic_Accessor.dll
+E:\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic_Accessor.pdb
+E:\Source\YourTributeTestProject\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\YourTributeTestProject\obj\Debug\YourTributeTestProject.dll
+E:\Source\YourTributeTestProject\obj\Debug\YourTributeTestProject.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\Common\Examples.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\Common\XML\PhotoConfiguration.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll.config
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\YourTributeTestProject.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\TributePortalSecurity.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\TributesPortal.Utilities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\TributesPortal.Utilities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\TributePortalSecurity.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic_Accessor.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic_Accessor.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\obj\Debug\YourTributeTestProject.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\YourTributeTestProject\obj\Debug\YourTributeTestProject.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\Common\Examples.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\Common\XML\PhotoConfiguration.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll.config
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\YourTributeTestProject.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic_Accessor.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic_Accessor.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\obj\Debug\YourTributeTestProject.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\YourTributeTestProject\obj\Debug\YourTributeTestProject.pdb
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\Common\Examples.xml
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\Common\XML\PhotoConfiguration.xml
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll.config
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.dll
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\YourTributeTestProject.pdb
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\TributePortalSecurity.dll
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\TributesPortal.Utilities.dll
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\log4net.dll
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\TributesPortal.Utilities.pdb
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\TributePortalSecurity.pdb
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic_Accessor.dll
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\TributesPortal.BusinessLogic_Accessor.pdb
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\obj\Debug\YourTributeTestProject.dll
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\obj\Debug\YourTributeTestProject.pdb
+E:\YourTribute\EnhancementPhase1\Source\YourTributeTestProject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml

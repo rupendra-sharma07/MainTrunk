@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserLogin.master.cs" Inherits="Shared_UserLogin" %>
+<%@ Register Src="../UserControl/Footer.ascx" TagName="Footer" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Your Tribute - Login</title>
+<!--
+		
+author: Mark Bice
+last modified: December 02, 2007
+
+	-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en-ca" />
+<meta http-equiv="imagetoolbar" content="false" />
+<meta name="robots" content="index,follow" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<!-- really basic, generic html class stylesheet -->
+<link rel="stylesheet" type="text/css" media="screen, projection" href="../test/assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/default.css" />
+<!-- default grid layout stylesheet -->
+<link rel="stylesheet" type="text/css" media="screen, projection" href="../test/assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/layouts/centered1024_1.css" />
+<!-- print-friendly stylesheet -->
+<link rel="stylesheet" type="text/css" media="print" href="../test/assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/print.css" />
+<!-- screen elements stylesheet should be here -->
+<link rel="stylesheet" type="text/css" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/screen.css" />
+<!-- larger text stylesheets -->
+<link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../test/assets/css/medium_text.css" title="medium_text" />
+<link rel="alternate stylesheet" type="text/css" media="screen, projection" href="../test/assets/css/large_text.css" title="large_text" />
+<!-- Website Favorite Icon -->
+<link rel="Shortcut Icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+
+<!-- JS libraries -->
+<script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>test/assets/scripts/mootools-1.11.js'></script>
+<script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>test/assets/scripts/global.js'></script>
+<script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>test/assets/scripts/styleSwitcher.js'></script>
+
+
+
+<script type="text/javascript">
+    
+    /* NOTE: may want to move this to an external .js */
+    
+    InitForm = function() {
+        $$('.availabilityNotice').each( function(a) {
+		    a.innerHTML = '';
+		    a.className = 'availabilityNotice';
+	    });
+    }
+    
+    function SN(application)
+    {
+        showNotice("Text", "ok", "Cancel", application);
+   }
+	
+</script>
+<!--#include file="../analytics.asp"-->
+</head>
+<body>
+<form id="Form1" runat="server" action="">
+    <div class="yt-Container yt-LoginForm yt-AnonymousUser">
+        <div class="yt-HeaderContainer">
+            <div class="yt-Header"> <a href="#" title="Return to Your Tribute Home Page" class="yt-Logo"></a>
+                <div class="yt-HeaderControls">
+                    <div class="yt-NavHeader">
+                        <div class="yt-UserInfo"> <a href="javascript: void(0);" onclick="doModalLogin();">Log in</a> </div>
+                    </div>
+                    <div class="hack-clearBoth"></div>
+                    <div class="yt-Tools">
+                        <div id="yt-TypeSizeControl" class="yt-TypeSizeControl"> <span class="floatLeft">Text Size:&#160;</span> <a href="javascript:void(0);" class="large" title="Large Text">a</a> <a href="javascript:void(0);" class="medium" title="Medium Text">a</a> <a href="javascript:void(0);" class="small" title="Small Text">a</a> </div>
+                    </div>
+                    <!--yt-Tools-->
+                </div>
+                <!--yt-HeaderControls-->
+            </div>
+            <!--yt-Header-->
+        </div>
+        <!--yt-HeaderContainer-->
+        <div class="hack-clearBoth"></div>
+        <div class="yt-ContentContainer">
+            <div class="yt-ContentContainerInner">
+                <div class="yt-ContentPrimaryContainer">
+                
+                   
+                      <div>
+                        <asp:ContentPlaceHolder ID="UserContentPlaceHolder" runat="server">
+                        </asp:ContentPlaceHolder>
+                   </div> 
+                    <!--yt-ContentPrimary-->
+                </div>
+                <!--yt-ContentPrimaryContainer-->
+                <div class="hack-clearBoth"></div>
+                <div class="yt-ContentContainerImage"></div>
+            </div>
+            <!--yt-ContentContainerInner-->
+        </div>
+        <!--yt-ContentContainer-->
+        <div >
+	          <uc2:Footer ID="Footer1" runat="server" />
+	        </div>
+        </div><!--yt-Footer--> 
+    <!--yt-Container-->
+    <div class="upgrade">
+        <h2>Please Upgrade Your Browser</h2>
+        <p>This site's design is only visible in a graphical browser that supports <a href="http://www.webstandards.org/upgrade/" title="The Web Standards Project's BROWSER UPGRADE initiative.">web standards</a>, but its content is accessible to any browser or Internet device.</p>
+    </div>
+    <!--yt-upgrade-->
+    
+    
+    
+    
+    
+    <!--login form modal-->
+	<div id="yt-LoginContentContainer">
+            <div>
+                <!--  if the yt-LoginError div has content (including spaces, CR/LF characters, etc, the modal login will show on page load -->
+                <asp:ValidationSummary CssClass="yt-Error" ID="PortalValidationSummary" runat="server"
+                    HeaderText=" <h2>Oops - there was a problem with your sign up.</h2>                                                             <h3>Please correct the errors below:</h3>"
+                    ForeColor="Black" ValidationGroup="popup" />
+            </div>
+            <div id="yt-LoginContent" class="yt-ModalWrapper">       
+                <div class="yt-Panel-Primary">
+                    <h2>
+                        Login</h2>
+                    <fieldset class="yt-Form">
+                     
+                                <div class="yt-Form-Field">
+                                    <asp:Label ID="lblLoginUsername" runat="server" Text="Username:"></asp:Label>
+                                    <asp:TextBox ID="txtLoginUsername" runat="server" ValidationGroup="popup"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvLoginUsername" ControlToValidate="txtLoginUsername"
+                                        runat="server" ErrorMessage="Username is a required field." ValidationGroup="popup">!</asp:RequiredFieldValidator>
+                                    <div class="hint">
+                                        hint for username<span class="hintPointer"></span></div>
+                                </div>
+                                <div class="yt-Form-Field">
+                                    <asp:Label ID="lblLoginPassword" runat="server" Text="Password:"></asp:Label>
+                                    <asp:TextBox ID="txtLoginPassword" runat="server" ValidationGroup="popup" TextMode="Password"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvLoginPassword" ControlToValidate="txtLoginPassword"
+                                        runat="server" ErrorMessage="Password is a required field." ValidationGroup="popup">!</asp:RequiredFieldValidator>
+                                    <div class="hint">
+                                        hint for password<span class="hintPointer"></span></div>
+                                </div>
+                                <div class="yt-SignUpLink">
+                                    Not a member yet?
+                                    <asp:LinkButton ID="popuplbtnSignup" CausesValidation="false" runat="server" PostBackUrl="userregistration.aspx">Sign up!</asp:LinkButton>
+                                </div>
+                                <div class="yt-Form-Submit">
+                                    <asp:LinkButton ID="popuplbtnLogin" CssClass="yt-Button yt-ArrowButton" runat="server"
+                                        ValidationGroup="popup" OnClick="popuplbtnLogin_Click" OnClientClick="SN();">Log in</asp:LinkButton>
+                                </div>
+                                <h3>
+                                    Did you forget your username or password?</h3>
+                                <p>
+                                    We’ll send you an email with your username and a link to reset your password.</p>
+                                <div class="yt-Form-Field">
+                                    <asp:Label ID="lblLoginEmail" runat="server" Text="Your email address:"></asp:Label>
+                                    &nbsp;
+                                    <asp:TextBox ID="txtLoginEmail" runat="server" ValidationGroup="popupemail" Width="252px"></asp:TextBox>
+                                    <asp:RegularExpressionValidator ID="revLoginEmail" runat="server" ErrorMessage="Please enter a real email address"
+                                        ValidationGroup="popupemail" ControlToValidate="txtLoginEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">!</asp:RegularExpressionValidator>
+                                    <asp:RequiredFieldValidator ID="rfvLoginEmail" ControlToValidate="txtLoginEmail"
+                                        runat="server" ErrorMessage="Please enter email." ValidationGroup="popupemail">!</asp:RequiredFieldValidator>
+                                    <div class="hint">
+                                        Please enter a real email address. We won't sell it to others or send you spam,
+                                        but we will use it to notify you of important happenings at Your Tribute.<span class="hintPointer"></span>
+                                    </div>
+                                </div>
+                                <div class="yt-Form-Submit">
+                                    <asp:LinkButton ID="popuplbtnSendemail" CssClass="yt-Button yt-ArrowButton" runat="server"
+                                        ValidationGroup="popupemail" OnClick="popuplbtnSendemail_Click">Send email</asp:LinkButton>
+                                </div>                          
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+</form>
+<script type="text/javascript">
+executeBeforeLoad();
+</script>
+</body>
+<script type="text/javascript" src="../test/assets/scripts/modalbox.js"></script>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Subversion:$Id: IOVS.config 29987 2008-11-21 08:44:57Z jksharma $-->
+<IOVS>
+
+	<Section Name="Sanitation" Id="Sanitation">
+		<Field Id="XSSAttack" Name="XSSAttack" DataType="string">
+			<Min />
+			<Max />
+			<RegEx>((\%3C)|&lt;)((\%69)|i|(\%49))((\%6D)|m|(\%4D))((\%67)|g|(\%47))</RegEx>
+			<RegEx>((\%3C)|&lt;)((\%53)|s|(\%73))((\%43)|c|(\%63))((\%52)|r|(\%72))((\%69)|i|(\%49))((\%50)|p|(\%70))((\%54)|t|(\%74))</RegEx>
+			<MultiOccur />
+			<ErrorMessage>Cross site scripting attack detected</ErrorMessage>
+		</Field>
+
+		<!-- Added by iqbal for SQL Injection attack-->
+		<Field Id="SQLInjectionAttack" Name="SQLInjectionAttack" DataType="string">
+			<!--<RegEx>(script)|(%6F)|(%4F)|(%72)|(%3B)|(%3D)|(%27)|(%3D)|(%52)|(&lt;)|(&gt;)|(%3c)|(%3e)|(SELECT)|(UPDATE)|(INSERT)|(DELETE)|(GRANT)|(REVOKE)|(DROP)|(UNION)|(TRUNCATE)|(&lt;=)|(&gt;=)|(EXEC)|(EXECUTE)|</RegEx>-->
+			<!--TODO: Will be considered during the implementation of SQL injection-->
+			<RegEx>(&lt;script&gt;)|(%6F)|(%4F)|(%72)|(%3B)|(%3D)|(%27)|(%3D)|(%52)|(%3c)|(%3e)|(SELECT)|(UPDATE)|(INSERT)|(DELETE)|(GRANT)|(REVOKE)|(DROP)|(UNION)|(TRUNCATE)|(EXEC)|(EXECUTE)</RegEx>
+			<ErrorMessage>SQL injection attack detected</ErrorMessage>
+		</Field>
+	</Section>
+
+	<Section Name="Validation" Id="Validation">
+		<!-- For String special Character Validation -->
+		<Field Id="SpecialCharacters" Name="SpecialCharacters" DataType="string">
+			<RegEx>^[a-zA-Z0-9\s\?\.\:\+\*\=\[\]_\,\(\)\/\-\&amp;\'\"\"@\&lt;\&gt;\;]*$</RegEx>
+			<ErrorMessage>Please enter valid characters</ErrorMessage>
+		</Field>
+	</Section>
+</IOVS>

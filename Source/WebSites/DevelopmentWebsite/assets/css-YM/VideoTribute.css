@@ -1,0 +1,286 @@
+﻿body {
+	margin: 0;
+	padding:0;
+	background: transparent;
+}
+html {
+	margin: 0;
+	padding:0;
+	background: transparent;
+}
+
+/********for header*********************/
+/*.yt-CustomHeaderContainer {
+	background: #fff;
+	margin: 10px 0 10px 0;
+	padding: 7px 8px 7px 8px;
+	border-top: solid 1px #ebe9e9;
+	border-bottom: solid 1px #ebe9e9;
+	
+	height: 93px;
+voice-family: "\"}\"";
+voice-family:inherit;
+	height: 93px;
+	z-index: 1504;
+}*/
+/*.yt-CustomHeader {
+	
+	border: solid 1px #d4c8bf;
+	padding: 10px 10px 10px 5px;
+	
+	height: 77px;
+voice-family: "\"}\"";
+voice-family:inherit;
+	height: 73px;
+	z-index:1503;
+}*/
+/*****AD for VT Admin Edit*****/
+/*.yt-vt-edit-modal-form{
+	margin-left: 215px;
+}
+
+.yt-vt-inputblock label{
+display:block;
+font-weight:normal;
+font-family:"Lucida Sans","Lucida Grande",sans-serif;
+font-size:12px;
+color:#3F2921;
+margin-top:5px;
+}
+
+a.yt-vt-UploadButton {
+background-image:url("../images/uploadImage.gif");
+float:right;
+}
+
+a.yt-vt-CloseButton {
+background-image:url("../images/closeicon.gif");
+float:right;
+}
+
+a.yt-vt-SaveButton {
+background-image:url("../images/saveIcon.gif");
+float:right;
+}
+*/
+/* header navigation */
+
+	.yt-NavHeader
+	{
+		margin: 0;
+		padding: 0;
+		text-align: right;
+		white-space: nowrap;
+		background: url(../images/navHeaderSeparator.gif) repeat-x bottom left;
+		padding-bottom: 5px;
+	}
+	.yt-NavCustomHeader
+	{
+		margin: 0;
+		padding: 0;
+		text-align: right;
+		white-space: nowrap;
+		/*background: url(../images/navHeaderSeparator.gif) repeat-x bottom left;*/
+		padding-bottom: 5px;
+	}
+	/*commented out by ADogra*/
+	/*.yt-NavHeader a {
+		margin-right: 20px;
+		font-weight: 500;
+	}
+
+	.yt-NavHeader .yt-UserInfo a {
+		margin: 2px 0px 0 12px;
+	}
+
+	.yt-NavHeader .yt-UserInfo span#header_user_name {
+	    font-size: 14px;      
+	}*/
+
+	/*Added by ADogra*/
+	.yt-UserInfo ul
+	{
+		margin: 0 0 5px;
+	}
+	.yt-UserInfo ul li
+	{
+		list-style: none;
+		display: inline;
+		background-image: none;
+		padding: 0 3px 0;
+		margin: 0;
+	}
+	.yt-fbImg
+	{
+		width: 139px;
+		height: 18px;
+		margin-bottom: -5px;
+	}
+
+	#yt-globalNav
+	{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		padding-top: 5px;
+		margin-left: 20px;
+		position: relative;
+		float: right;
+	}
+	#yt-globalNav li
+	{
+		background-image: url(../images/globalMenu.png);
+		background-repeat: no-repeat;
+		cursor: pointer;
+		display: block;
+		float: left;
+		height: 27px;
+		margin-right: 0px;
+		overflow: hidden;
+		padding: 0;
+		margin-top: 2px;
+	}
+	#yt-globalNav a
+	{
+		display: block;
+		height: 27px;
+		outline: none;
+		text-indent: -9999px;
+	}
+
+	#yt-globalMenuItem1
+	{
+		background-position: 0px 0px;
+		width: 68px;
+	}
+
+	#yt-globalMenuItem2
+	{
+		background-position: -68px 0px;
+		width: 68px;
+	}
+	#yt-globalMenuItem3
+	{
+		background-position: -136px 0px;
+		width: 98px;
+	}
+	#yt-globalMenuItem4
+	{
+		background-position: -234px 0px;
+		width: 102px;
+	}
+	#yt-globalMenuItem5
+	{
+		background-position: -336px 0px;
+		width: 74px;
+	}
+
+	#yt-globalMenuItem1.current
+	{
+		background-position: 0 center;
+	}
+	#yt-globalMenuItem2.current
+	{
+		background-position: -68px center;
+	}
+	#yt-globalMenuItem3.current
+	{
+		background-position: -136px center;
+	}
+	#yt-globalMenuItem4.current
+	{
+		background-position: -234px center;
+	}
+	#yt-globalMenuItem5.current
+	{
+		background-position: -336px center;
+	}
+
+
+	#yt-globalMenuItem1.active, #yt-globalMenuItem1:hover
+	{
+		background-position: 0 bottom;
+	}
+	#yt-globalMenuItem2.active, #yt-globalMenuItem2:hover
+	{
+		background-position: -68px bottom;
+	}
+	#yt-globalMenuItem3.active, #yt-globalMenuItem3:hover
+	{
+		background-position: -136px bottom;
+	}
+	#yt-globalMenuItem4.active, #yt-globalMenuItem4:hover
+	{
+		background-position: -234px bottom;
+	}
+	#yt-globalMenuItem5.active, #yt-globalMenuItem5:hover
+	{
+		background-position: -336px bottom;
+	}
+
+
+	#yt-globalMenuItem1 a, #yt-globalMenuItem.current a
+	{
+		background-position: left 0px;
+	}
+	#yt-globalMenuItem1 a:hover
+	{
+		background-position: left -54px;
+	}
+	#yt-globalMenuItem5 a, #yt-globalMenuItem5.current a
+	{
+		background-position: right -27px;
+	}
+	#yt-globalMenuItem5 a:hover
+	{
+		background-position: right -81px;
+	}
+
+	#yt-globalMenuItem1.current:hover
+	{
+		background-position: 0 center;
+	}
+	#yt-globalMenuItem2.current:hover
+	{
+		background-position: -68px center;
+	}
+	#yt-globalMenuItem3.current:hover
+	{
+		background-position: -136px center;
+	}
+	#yt-globalMenuItem4.current:hover
+	{
+		background-position: -234px center;
+	}
+	#yt-globalMenuItem5.current:hover
+	{
+		background-position: -336px center;
+	}
+	#yt-globalMenuItem1.current a:hover
+	{
+		cursor: default;
+	}
+	#yt-globalMenuItem2.current a:hover
+	{
+		cursor: default;
+	}
+	#yt-globalMenuItem3.current a:hover
+	{
+		cursor: default;
+	}
+	#yt-globalMenuItem4.current a:hover
+	{
+		cursor: default;
+	}
+	#yt-globalMenuItem5.current a:hover
+	{
+		cursor: default;
+	}
+
+	/*ADogra ens here*/
+
+	#fb_logout_image
+	{
+		/*     position: relative;     top: -1px;     */
+		vertical-align: text-bottom;
+	}

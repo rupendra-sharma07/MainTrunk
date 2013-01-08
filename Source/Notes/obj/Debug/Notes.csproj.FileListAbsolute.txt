@@ -1,0 +1,125 @@
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributesPortal.Notes.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributesPortal.Notes.pdb
+E:\Project\YourTribute\Source\Notes\bin\Debug\Microsoft.Practices.CompositeWeb.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\log4net.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\Source\Notes\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source\Notes\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source\Notes\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source\Notes\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source\Notes\obj\Debug\TributesPortal.Notes.dll
+E:\Project\YourTribute\Source\Notes\obj\Debug\TributesPortal.Notes.pdb
+E:\Source\Notes\bin\Debug\TributesPortal.Notes.dll
+E:\Source\Notes\bin\Debug\TributesPortal.Notes.pdb
+E:\Source\Notes\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Source\Notes\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Source\Notes\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Source\Notes\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Source\Notes\bin\Debug\TributesPortal.Utilities.dll
+E:\Source\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Source\Notes\bin\Debug\log4net.dll
+E:\Source\Notes\bin\Debug\TributePortalSecurity.dll
+E:\Source\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Source\Notes\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Source\Notes\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Source\Notes\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Source\Notes\bin\Debug\TributesPortal.Utilities.pdb
+E:\Source\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Source\Notes\bin\Debug\TributePortalSecurity.pdb
+E:\Source\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Source\Notes\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Source\Notes\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Source\Notes\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Source\Notes\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Source\Notes\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Source\Notes\obj\Debug\ResolveAssemblyReference.cache
+E:\Source\Notes\obj\Debug\TributesPortal.Notes.dll
+E:\Source\Notes\obj\Debug\TributesPortal.Notes.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributesPortal.Notes.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributesPortal.Notes.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributesPortal.Utilities.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributePortalSecurity.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributesPortal.Utilities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributePortalSecurity.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\obj\Debug\ResolveAssemblyReference.cache
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\obj\Debug\TributesPortal.Notes.dll
+E:\Yourtribute Source\Source\Source After Partial Credit Order\Notes\obj\Debug\TributesPortal.Notes.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributesPortal.Notes.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributesPortal.Notes.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributePortalSecurity.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\obj\Debug\TributesPortal.Notes.dll
+E:\Project\YT video project\Source\With Order DVD 09112010\Source AfterDiwali 8 Nov\Notes\obj\Debug\TributesPortal.Notes.pdb
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributesPortal.Notes.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributesPortal.Notes.pdb
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributesPortal.Utilities.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\log4net.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributePortalSecurity.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributesPortal.Utilities.pdb
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\obj\Debug\ResolveAssemblyReference.cache
+E:\YourTribute\EnhancementPhase1\Source\Notes\obj\Debug\TributesPortal.Notes.dll
+E:\YourTribute\EnhancementPhase1\Source\Notes\obj\Debug\TributesPortal.Notes.pdb
+E:\YourTribute\EnhancementPhase1\Source\Notes\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml

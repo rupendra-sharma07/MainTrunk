@@ -1,0 +1,66 @@
+  <!-- Added by Ashu Goyal on sept 30,2011: describe the type of Application --> 
+<add key="ApplicationType" value="yourmoments"/>
+<add key="ApplicationWord" value="Moments"/>
+    <add key="ApplicationWordForInternalUse" value="Website"/>
+
+<!-- Facebook AppId= 241623515894807
+App Secret: 1dff7fdb525eaf5e1c8627db81097bc1 (reset)
+
+-->
+
+<!-- Google Map Key 
+Key = ABQIAAAAS9ow1xiZbRxt1XQ3cGV5uBS9LjPnKLX0y6v70PgDePLy7DeggRRqmLi5Sdo35D1LOFZp-3G1FIO38Q
+
+-->
+
+
+ <add key="ApplicationType" value="YourMoments"/>
+
+
+  <!-- Added by Ashu on Oct 4, 2011 for YourMoments Redirection URL-->
+      <RewriterRule>
+        <LookFor>~/(.*)/sharetribute\.aspx</LookFor>
+        <SendTo>~/Tribute/sharetribute.aspx</SendTo>
+      </RewriterRule>
+
+      <RewriterRule>
+        <LookFor>~/(.*)/shareMoments\.aspx</LookFor>
+        <SendTo>~/Tribute/sharetribute.aspx</SendTo>
+      </RewriterRule>
+
+      <RewriterRule>
+        <LookFor>~/BusinessUserMomentsHome\.aspx</LookFor>
+        <SendTo>~/MyHome/BusinessUserTributesHome.aspx</SendTo>
+      </RewriterRule>
+
+      <RewriterRule>
+        <LookFor>~/(.*)/moments\.aspx</LookFor>
+        <SendTo>~/Myhome/AdminMytributesHome.aspx</SendTo>
+      </RewriterRule>
+
+      <RewriterRule>
+        <LookFor>~/moments\.aspx</LookFor>
+        <SendTo>~/Myhome/AdminMytributesHome.aspx</SendTo>
+      </RewriterRule>
+
+      <RewriterRule>
+        <LookFor>~/(.*)/MomentsHomePage\.aspx</LookFor>
+        <SendTo>~/Tribute/TributeHomePage.aspx?TributeUrl=$1</SendTo>
+      </RewriterRule>
+      <RewriterRule>
+        <LookFor>~/(.*)/MomentsSponsor\.aspx</LookFor>
+        <SendTo>~/Tribute/TributeSponsor.aspx?TributeUrl=$1</SendTo>
+      </RewriterRule>
+      <RewriterRule>
+        <LookFor>~/AdminMyMomentsPrivacy\.aspx</LookFor>
+        <SendTo>~/MyHome/AdminMytributesPrivacy.aspx</SendTo>
+      </RewriterRule>
+      <RewriterRule>
+        <LookFor>~/MomentsSponsor\.aspx</LookFor>
+        <SendTo>~/Tribute/TributeSponsor.aspx</SendTo>
+      </RewriterRule>
+      <RewriterRule>
+        <LookFor>~/MomentsCreation\.aspx</LookFor>
+        <SendTo>~/Tribute/TributeCreation.aspx</SendTo>
+      </RewriterRule>
+      <!--Ashu till here-->

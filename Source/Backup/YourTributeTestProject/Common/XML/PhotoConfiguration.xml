@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<PhotoConfiguration>
+  <DriveNameOnServiceServer>C:</DriveNameOnServiceServer>
+  <DriveNameOnApplicationServer>C:</DriveNameOnApplicationServer>
+    <!--PhotoRootFolder>Inetpub\wwwroot\MainRoot\TributePhotos</PhotoRootFolder -->
+  <PhotoRootFolder>Inetpub/wwwroot/MainRoot/TributePhotos</PhotoRootFolder>
+  <PhotoVirtualDirectory>http://localhost/TributePhotos/</PhotoVirtualDirectory>
+  <ThumbnailFolder>Thumbnails</ThumbnailFolder>
+  <XMLFileFolder>XMLFilesForSlideShow</XMLFileFolder>
+  <EventFolder>Event</EventFolder>
+  <TempFolder>Temp</TempFolder>
+  <StoryFolder>Story</StoryFolder>
+  <CompanyLogoFolder>CompanyLogo</CompanyLogoFolder>
+  <SSLPhotoVirtualDirectory>https://localhost/TributePhotos/</SSLPhotoVirtualDirectory>
+</PhotoConfiguration>

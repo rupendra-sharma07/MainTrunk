@@ -1,0 +1,20 @@
+<publishData>
+  <publishTarget publishUrl="http://localhost/TributeService/">
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll" publishTime="12/21/2007 16:04:18" />
+    <file relUrl="bin/TributePortalSecurity.dll" publishTime="05/06/2008 12:07:08" />
+    <file relUrl="Resources/XMLFiles/VideoConfiguration.xml" publishTime="02/21/2008 10:18:48" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll.refresh" publishTime="11/27/2008 13:12:44" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Security.dll.refresh" publishTime="11/27/2008 13:12:44" />
+    <file relUrl="Web.config" publishTime="05/21/2010 17:10:15" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Security.dll" publishTime="04/03/2008 15:00:54" />
+    <file relUrl="bin/TributeService.dll.refresh" publishTime="11/27/2008 13:12:44" />
+    <file relUrl="Service.asmx" publishTime="11/27/2007 17:55:22" />
+    <file relUrl="bin/Microsoft.Practices.ObjectBuilder.dll.refresh" publishTime="11/27/2008 13:12:44" />
+    <file relUrl="bin/Microsoft.Practices.ObjectBuilder.dll" publishTime="05/22/2007 09:47:38" />
+    <file relUrl="bin/TributePortalSecurity.dll.refresh" publishTime="11/27/2008 13:12:44" />
+    <file relUrl="bin/TributeService.pdb" publishTime="05/21/2010 17:24:35" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll.refresh" publishTime="11/27/2008 13:12:44" />
+    <file relUrl="bin/TributeService.dll" publishTime="05/21/2010 17:24:35" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll" publishTime="12/21/2007 16:04:18" />
+  </publishTarget>
+</publishData>
