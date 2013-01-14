@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="9E434219-B16C-4F56-AB76-9899A2D96C77" ModuleId="DevelopmentWebsite" />
+  <Module PersistentId="C6AC10CA-B459-4996-A954-03BC981669A9" ModuleId="BusinessLogic" />
+  <Module PersistentId="A6398B94-F757-4592-B5ED-2297B66D651D" ModuleId="BusinessEntities" />
+  <Module PersistentId="021D01CB-E0CF-4429-AC76-2CDA2F911D91" ModuleId="PortalUtilities" />
+  <Module PersistentId="A96C1929-4465-4C6E-8E4A-1B7F87409277" ModuleId="Tribute" />
+</Modules>
