@@ -109,10 +109,12 @@
     <Compile Include="Views\IEnableRSSFeed.cs" />
     <Compile Include="Views\IPortalSummaryReport.cs" />
     <Compile Include="Views\ITributeSummaryReport.cs" />
+    <Compile Include="Views\IUpdateMobileView.cs" />
     <Compile Include="Views\IUpdateTribute.cs" />
     <Compile Include="Views\IUserSummaryReport.cs" />
     <Compile Include="Views\PortalSummaryReportPresenter.cs" />
     <Compile Include="Views\TributeSummaryReportPresenter.cs" />
+    <Compile Include="Views\UpdateMobileViewPresenter.cs" />
     <Compile Include="Views\UpdateTributePresenter.cs" />
     <Compile Include="Views\UserSummaryReportPresenter.cs" />
   </ItemGroup>

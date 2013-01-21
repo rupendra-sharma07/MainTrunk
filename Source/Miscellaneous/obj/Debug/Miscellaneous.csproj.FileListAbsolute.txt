@@ -164,3 +164,22 @@ E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\obj\Debug\ResolveAssemblyR
 E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\obj\Debug\Miscellaneous.dll
 E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\obj\Debug\Miscellaneous.pdb
 E:\YourTribute\EnhancementPhase1\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\Miscellaneous.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\Miscellaneous.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\log4net.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\obj\Debug\Miscellaneous.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\Miscellaneous\obj\Debug\Miscellaneous.pdb

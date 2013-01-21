@@ -176,5 +176,7 @@ namespace TributesPortal.Utilities
         public static string MaxVideoCommentsLimit = ConfigurationManager.AppSettings["MaxVideoCommentsLimit"];
         public static string MaxVideoTributeCommentsLimit = ConfigurationManager.AppSettings["MaxVideoTributeCommentsLimit"];
 
+
+        public static string IsMobileRedirectOn = ConfigurationManager.AppSettings["IsMobileRedirectOn"];
     }
 }

@@ -13,3 +13,8 @@ E:\YourTribute\EnhancementPhase1\Source\RewriteModule\bin\Debug\RewriteModule.pd
 E:\YourTribute\EnhancementPhase1\Source\RewriteModule\obj\Debug\ResolveAssemblyReference.cache
 E:\YourTribute\EnhancementPhase1\Source\RewriteModule\obj\Debug\RewriteModule.dll
 E:\YourTribute\EnhancementPhase1\Source\RewriteModule\obj\Debug\RewriteModule.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\RewriteModule\bin\Debug\RewriteModule.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\RewriteModule\bin\Debug\RewriteModule.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\RewriteModule\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\RewriteModule\obj\Debug\RewriteModule.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\RewriteModule\obj\Debug\RewriteModule.pdb

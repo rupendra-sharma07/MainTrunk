@@ -43,3 +43,9 @@ E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\bin\Debug\Microsof
 E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
 E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
 E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb

@@ -8,3 +8,13 @@ E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\bin\x86\Debug\TributesPo
 E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\obj\x86\Debug\ResolveAssemblyReference.cache
 E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.dll
 E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\log4net.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.pdb

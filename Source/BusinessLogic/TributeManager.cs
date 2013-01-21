@@ -628,5 +628,10 @@ namespace TributesPortal.BusinessLogic
             TributeResource objResource = new TributeResource();
             return objResource.IsAllowedPhotoCheckonPhotoId(PhotoId);
         }
+
+        public bool GetIsMobileViewOn(Tributes obTrb)
+        {
+            throw new NotImplementedException();
+        }
     }//end class
 }//end namespace

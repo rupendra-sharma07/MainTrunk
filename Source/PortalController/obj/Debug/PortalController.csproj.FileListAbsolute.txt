@@ -106,3 +106,22 @@ E:\YourTribute\EnhancementPhase1\Source\PortalController\obj\Debug\ResolveAssemb
 E:\YourTribute\EnhancementPhase1\Source\PortalController\obj\Debug\PortalController.dll
 E:\YourTribute\EnhancementPhase1\Source\PortalController\obj\Debug\PortalController.pdb
 E:\YourTribute\EnhancementPhase1\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\PortalController.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\PortalController.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\log4net.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\obj\Debug\PortalController.dll
+E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalController\obj\Debug\PortalController.pdb

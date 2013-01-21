@@ -4,4 +4,7 @@
   <Module PersistentId="A6398B94-F757-4592-B5ED-2297B66D651D" ModuleId="BusinessEntities" />
   <Module PersistentId="021D01CB-E0CF-4429-AC76-2CDA2F911D91" ModuleId="PortalUtilities" />
   <Module PersistentId="A96C1929-4465-4C6E-8E4A-1B7F87409277" ModuleId="Tribute" />
+  <Module PersistentId="5E23E15A-C521-4B08-829C-E2A8D1FA4947" ModuleId="Miscellaneous" />
+  <Module PersistentId="7925A672-F749-4675-9276-DF4DD33E334E" ModuleId="ResourceAccess" />
+  <Module PersistentId="565C60D2-9B3B-4202-AF1D-6D6B6A5878A3" ModuleId="TributePortalAdmin" />
 </Modules>
