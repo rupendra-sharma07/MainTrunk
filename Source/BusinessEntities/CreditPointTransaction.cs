@@ -43,12 +43,12 @@ namespace TributesPortal.BusinessEntities
         private int _userId;
 
 
-        public int NetCreditPoints
+        public Double NetCreditPoints
         {
             get { return _NetCreditPoints; }
             set { _NetCreditPoints = value; }
         }
-        private int _NetCreditPoints;
+        private Double _NetCreditPoints;
 
 
         public int AmountPaid

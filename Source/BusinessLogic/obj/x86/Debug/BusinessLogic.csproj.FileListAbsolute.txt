@@ -14,19 +14,67 @@ E:\YourTribute\EnhancementPhase1\Source\BusinessLogic\obj\x86\Debug\ResolveAssem
 E:\YourTribute\EnhancementPhase1\Source\BusinessLogic\obj\x86\Debug\TributesPortal.BusinessLogic.dll
 E:\YourTribute\EnhancementPhase1\Source\BusinessLogic\obj\x86\Debug\TributesPortal.BusinessLogic.pdb
 E:\YourTribute\EnhancementPhase1\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessLogic.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessLogic.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessEntities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\TributesPortal.ResourceAccess.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\TributesPortal.Utilities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\log4net.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessEntities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\TributesPortal.Utilities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\TributesPortal.ResourceAccess.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\obj\x86\Debug\ResolveAssemblyReference.cache
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\obj\x86\Debug\TributesPortal.BusinessLogic.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessLogic\obj\x86\Debug\TributesPortal.BusinessLogic.pdb
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\TributesPortal.Utilities.dll
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\log4net.dll
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\TributesPortal.Utilities.pdb
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\TestYourTributeGit\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\TestYourTributeGit\Source\BusinessLogic\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\TestYourTributeGit\Source\BusinessLogic\obj\x86\Debug\TributesPortal.BusinessLogic.dll
+E:\TestYourTributeGit\Source\BusinessLogic\obj\x86\Debug\TributesPortal.BusinessLogic.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\log4net.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\obj\x86\Debug\TributesPortal.BusinessLogic.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessLogic\obj\x86\Debug\TributesPortal.BusinessLogic.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\log4net.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\obj\x86\Debug\TributesPortal.BusinessLogic.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessLogic\obj\x86\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\log4net.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\obj\x86\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessLogic\obj\x86\Debug\TributesPortal.BusinessLogic.pdb

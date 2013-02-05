@@ -34,9 +34,39 @@ using Facebook;
 public partial class Tribute_Rootpage : PageBase//System.Web.UI.Page
 {
     public string LinkOtherDomain = string.Empty;
+    private SessionValue objSessionValue = null;
     protected void Page_Load(object sender, EventArgs e)
     {
+        System.Diagnostics.Debug.WriteLine("In Home -- Page_Load");
         //this.Form.Action = Request.RawUrl;
+        //code for YT Mobile redirections
+        string redirctMobileUrl = string.Empty;
+        if (!IsPostBack)
+        {
+            System.Diagnostics.Debug.WriteLine("In Home -- Postback");
+            DeviceManager deviceManager = new DeviceManager
+            {
+                UserAgent = Request.UserAgent,
+                IsMobileBrowser = Request.Browser.IsMobileDevice
+            };
+
+            // Added by Varun Goel on 25 Jan 2013 for NoRedirection functionality
+            TributesPortal.Utilities.StateManager stateManager = StateManager.Instance;
+            System.Diagnostics.Debug.WriteLine("In Home -- Validating");
+            objSessionValue = (SessionValue)stateManager.Get("objSessionvalue", StateManager.State.Session);
+            if (objSessionValue!= null)
+                System.Diagnostics.Debug.WriteLine("In Home -- Validating redirection:" + objSessionValue.NoRedirection);
+            if (objSessionValue == null || objSessionValue.NoRedirection == null || objSessionValue.NoRedirection == false)
+            {
+                System.Diagnostics.Debug.WriteLine("In Home -- After validation inside if for redirection");
+                if (deviceManager.IsMobileDevice())
+                {
+                    // Redirection URL
+                    redirctMobileUrl = string.Format("{0}{1}{2}", "https://www.", WebConfig.TopLevelDomain, "/mobile/Search.html");
+                    Response.Redirect(redirctMobileUrl, false);
+                }
+            }
+        }
 
         // Added by Ashu on Oct 11, 2011
         if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower() == "yourmoments")
@@ -61,6 +91,7 @@ public partial class Tribute_Rootpage : PageBase//System.Web.UI.Page
         }
         else if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower() == "yourtribute")
         {
+            HomeTitle.InnerHtml = @"Your Tribute - Free Online Obituaries & Premium Memorial Websites";
             YT2.Attributes["class"] = "Purple-MT";
             YT4.Attributes["class"] = "Gray-MT";
            // YT5.Attributes["class"] = "Gray-MT";

@@ -64,7 +64,7 @@
                                             Font-Bold="True" Font-Size="Medium" ForeColor="#FF8000" ValidationGroup="vgNextStep">!</asp:CustomValidator>
                                             <asp:RegularExpressionValidator ID="revTributeName" runat="server" ErrorMessage="Please provide a valid Tribute Name."
                                             ControlToValidate="txtTributeName" ValidationGroup="vgNextStep" Font-Bold="True"
-                                            Font-Size="Medium" ForeColor="#FF8000" Text="!" ValidationExpression="^[a-zA-Z0-9_,\#,\-.\s,]*$"></asp:RegularExpressionValidator>
+                                            Font-Size="Medium" ForeColor="#FF8000" Text="!" ValidationExpression="^[a-zA-Z0-9_,\-\'\&quot;)(.\s,]*$"></asp:RegularExpressionValidator>
                                         <div class="hint">
                                             Enter the name of the person or people who you are creating this tribute for. For
                                             example: "Aunt Jill" or "Jane and Michael Smith".You are limited to 40 characters.<span
@@ -116,7 +116,7 @@
                                     </asp:UpdatePanel>
                                     <div class="yt-Form-Buttons">
                                         <div class="yt-Form-Cancel">
-                                            <a href="javascript: void(0);" onclick="cancelTributeCreation();">Cancel Tribute Creation</a>
+                                            <a href="javascript: void(0);" onclick="cancelTributeCreation('tribute');">Cancel Tribute Creation</a>
                                         </div>
                                         <div class="yt-Form-Submit">
                                             <asp:LinkButton ID="lbtnNextstep" CausesValidation="true" CssClass="yt-Button yt-ArrowButton"
@@ -304,7 +304,7 @@
                                     </div>
                                     <div class="yt-Form-Buttons">
                                         <div class="yt-Form-Cancel">
-                                            <a href="javascript: void(0);" onclick="cancelTributeCreation();">Cancel Tribute Creation</a>
+                                            <a href="javascript: void(0);" onclick="cancelTributeCreation('tribute');">Cancel Tribute Creation</a>
                                         </div>
                                         <div class="yt-Form-Submit">
                                             <asp:LinkButton ID="lbtn2Nextstep" TabIndex="24" CssClass="yt-Button yt-ArrowButton"
@@ -370,7 +370,7 @@
                                             </p>
                                         </div>
                                     </fieldset>
-                                    <fieldset class="yt-AdminAddFields">
+                                    <fieldset class="yt-AdminAddFields" id="divOrderDvdStep3" runat="server">
                                         <legend><em class="required">*</em> <b>Select Video Tribute revenue generating options:</b></legend>
                                         <asp:CheckBox runat="server" ID="chkOrderDVD" AutoPostBack="false" Font-Bold="true"
                                             Text="Order DVD Box" />
@@ -388,7 +388,7 @@
                                     </fieldset>
                                     <div class="yt-Form-Buttons">
                                         <div class="yt-Form-Cancel">
-                                            <a href="javascript: void(0);" onclick="cancelTributeCreation();">Cancel Tribute Creation</a>
+                                            <a href="javascript: void(0);" onclick="cancelTributeCreation('tribute');">Cancel Tribute Creation</a>
                                         </div>
                                         <div class="yt-Form-Submit">
                                             <asp:LinkButton ID="lbtn3Nextstep" CssClass="yt-Button yt-ArrowButton" runat="server"
@@ -565,7 +565,7 @@
                                     <fieldset class="yt-Form">
                                         <div class="yt-Form-Buttons">
                                             <div class="yt-Form-Cancel">
-                                                <a href="javascript: void(0);" onclick="cancelTributeCreation();">Cancel Tribute Creation</a>
+                                                <a href="javascript: void(0);" onclick="cancelTributeCreation('tribute');">Cancel Tribute Creation</a>
                                             </div>
                                             <div class="yt-Form-Submit">
                                                 <asp:LinkButton ID="ltbn4Nextstep" CssClass="yt-Button yt-ArrowButton" runat="server"
@@ -613,10 +613,10 @@
                                                     id="yt-AccountTypeSelection">
                                                     <thead>
                                                         <tr>
-                                                            <th>
+                                                            <th class="yt-colFirst">
                                                                 choose your account type
                                                                 <asp:CustomValidator ID="CustomValidator1" runat="server" ForeColor="Transparent"
-                                                                    ClientValidationFunction="SelectAccountType" ErrorMessage=" Please select the account type for this tribute.">.</asp:CustomValidator>
+                                                                    ClientValidationFunction="SelectVideoAccountType" ErrorMessage=" Please select the account type for this tribute.">.</asp:CustomValidator>
                                                             </th>
                                                             <th style="width: 87px">
                                                                 Account Price
@@ -627,21 +627,43 @@
                                                             <th>
                                                                 Advertising Free
                                                             </th>
-                                                            <th>
+                                                            <th class="yt-colLast">
                                                                 No Renewal Required
                                                             </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
+                                                    <tr class="yt-rowFirst">
                                                             <th>
-                                                                <div class="yt-Form-Field-Radio">
-                                                                    <asp:RadioButton ID="rdoMembershipLifetime" GroupName="rdoMembershipType" Text="Video Tribute (Life)"
-                                                                        runat="server" AutoPostBack="True" OnCheckedChanged="rdoMembershipLifetime_CheckedChanged" />
+                                                                <div class="yt-Form-Field-Radio textCap">
+                                                                    <asp:RadioButton ID="rdoMembershipThirty" GroupName="rdoMembershipType" Text="Video Tribute (30 Days)"
+                                                                        runat="server" AutoPostBack="True" OnCheckedChanged="rdoMembershipThirty_CheckedChanged" />
                                                                 </div>
                                                             </th>
                                                             <td class="yt-Cost">
-                                                                2 Credits
+                                                                Free
+                                                            </td>
+                                                            <td>
+                                                                <img src="<%=Session["APP_SCRIPT_PATH"]%>assets/images/icon_check.gif" alt="Yes"
+                                                                    width="21" height="21" />
+                                                            </td>
+                                                            <td>
+                                                                <img src="<%=Session["APP_SCRIPT_PATH"]%>assets/images/icon_x.gif" alt="No"
+                                                                    width="21" height="21" />
+                                                            </td>
+                                                            <td class="yt-colLast">
+                                                                <img src="<%=Session["APP_SCRIPT_PATH"]%>assets/images/icon_x.gif" alt="No"
+                                                                    width="21" height="21" />
+                                                            </td>
+                                                        </tr><tr>
+                                                            <th>
+                                                                <div class="yt-Form-Field-Radio textCap">
+                                                                    <asp:RadioButton ID="rdoMembershipNinety" GroupName="rdoMembershipType" Text="Video Tribute (90 Days)"
+                                                                        runat="server" AutoPostBack="True" OnCheckedChanged="rdoMembershipNinety_CheckedChanged" />
+                                                                </div>
+                                                            </th>
+                                                            <td class="yt-Cost">
+                                                                0.5 Credit
                                                             </td>
                                                             <td>
                                                                 <img src="<%=Session["APP_SCRIPT_PATH"]%>assets/images/icon_check.gif" alt="Yes"
@@ -651,14 +673,14 @@
                                                                 <img src="<%=Session["APP_SCRIPT_PATH"]%>assets/images/icon_check.gif" alt="Yes"
                                                                     width="21" height="21" />
                                                             </td>
-                                                            <td>
-                                                                <img src="<%=Session["APP_SCRIPT_PATH"]%>assets/images/icon_check.gif" alt="Yes"
+                                                            <td class="yt-colLast">
+                                                                <img src="<%=Session["APP_SCRIPT_PATH"]%>assets/images/icon_x.gif" alt="No"
                                                                     width="21" height="21" />
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <th>
-                                                                <div class="yt-Form-Field-Radio">
+                                                                <div class="yt-Form-Field-Radio textCap">
                                                                     <asp:RadioButton ID="rdoMembershipYearly" GroupName="rdoMembershipType" Text="Video Tribute (1 Year)"
                                                                         runat="server" AutoPostBack="True" OnCheckedChanged="rdoMembershipYearly_CheckedChanged" />
                                                                 </div>
@@ -674,9 +696,32 @@
                                                                 <img src="<%=Session["APP_SCRIPT_PATH"]%>assets/images/icon_check.gif" alt="Yes"
                                                                     width="21" height="21" />
                                                             </td>
-                                                            <td>
+                                                            <td class="yt-colLast">
                                                                 <img src="<%=Session["APP_SCRIPT_PATH"]%>assets/images/icon_x.gif" alt="No" width="21"
                                                                     height="21" />
+                                                            </td >
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="yt-Form-Field-Radio textCap">
+                                                                    <asp:RadioButton ID="rdoMembershipLifetime" GroupName="rdoMembershipType" Text="Video Tribute (Life)"
+                                                                        runat="server" AutoPostBack="True" OnCheckedChanged="rdoMembershipLifetime_CheckedChanged" />
+                                                                </div>
+                                                            </th>
+                                                            <td class="yt-Cost">
+                                                                4 Credits
+                                                            </td>
+                                                            <td>
+                                                                <img src="<%=Session["APP_SCRIPT_PATH"]%>assets/images/icon_check.gif" alt="Yes"
+                                                                    width="21" height="21" />
+                                                            </td>
+                                                            <td>
+                                                                <img src="<%=Session["APP_SCRIPT_PATH"]%>assets/images/icon_check.gif" alt="Yes"
+                                                                    width="21" height="21" />
+                                                            </td>
+                                                            <td class="yt-colLast">
+                                                                <img src="<%=Session["APP_SCRIPT_PATH"]%>assets/images/icon_check.gif" alt="Yes"
+                                                                    width="21" height="21" />
                                                             </td>
                                                         </tr>
                                                     </tbody>
@@ -686,11 +731,10 @@
                                                     <asp:Label ID="lblTotalCredit" runat="server"></asp:Label>
                                                 </h2>
                                                 <!-- DIV to hide content until membership type is selected -->
-                                                <div class="RemainingCreditPoint">
+                                                <div class="RemainingCreditPoint" id="creditMsg" runat="server">
                                                     <span id="NetCreditCount" runat="server"></span>
                                                 </div>
-                                                <br />
-                                                <br />
+                                                <div id="divEmptyHeight" runat="server" style="height:25px;"/>
                                                 <div>
                                                     <asp:Panel ID="PanelFreeTrial" runat="server" Visible="false" Width="624px">
                                                         <p class="yt-InfoBox">
@@ -1000,7 +1044,7 @@
                                         </asp:UpdatePanel>
                                         <div class="yt-Form-Buttons">
                                             <div class="yt-Form-Cancel">
-                                                <a href="javascript: void(0);" tabindex="20" onclick="cancelTributeCreation();">Cancel
+                                                <a href="javascript: void(0);" tabindex="20" onclick="cancelTributeCreation('tribute');">Cancel
                                                     Tribute Creation</a>
                                             </div>
                                             <div class="yt-Form-Submit">
@@ -1041,7 +1085,7 @@
                                     </ul>
                                     <div class="yt-ProcessStepDisplay">
                                         <h3>
-                                            Congratulations, the Video Tribute has been created!
+                                            Congratulations, the <label id="step6Msg" runat="server"/> Tribute has been created!
                                         </h3>
                                         <br />
                                         <div class="RemainingCreditPoint">

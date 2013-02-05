@@ -203,12 +203,10 @@ namespace TributesPortal.ResourceAccess
                 }
                 return objCreditCostMapping;
             }
-
             catch (System.Data.SqlClient.SqlException ex)
             {
                 throw ex;
             }
-
         }
 
         public void GetCreditPointCount(object[] objValue)
@@ -289,7 +287,7 @@ namespace TributesPortal.ResourceAccess
                                                 };
                     DbType[] dbType ={
                                       DbType.Int64,                                      
-                                      DbType.Int64,
+                                      DbType.Double,
                                       DbType.Int64,
                                       DbType.Int64,
                                       DbType.DateTime,

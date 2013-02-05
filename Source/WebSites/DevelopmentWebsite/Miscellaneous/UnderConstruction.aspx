@@ -5,6 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Untitled Page</title>
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script src="../assets/scripts/BrowserOrTabCloseHandler.js" type="text/javascript"></script>
 </head>
 <body>
     <form id="form1" runat="server">

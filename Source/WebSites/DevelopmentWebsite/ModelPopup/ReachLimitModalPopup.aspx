@@ -28,6 +28,8 @@
     <script src="../assets/scripts/mootools-1.11.js" type="text/javascript"></script>
 
     <script src="../assets/scripts/global.js" type="text/javascript"></script>
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
 
     <script src="../Common/JavaScript/Common.js" type="text/javascript"></script>
 

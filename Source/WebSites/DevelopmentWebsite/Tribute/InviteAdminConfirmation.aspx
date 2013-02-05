@@ -37,6 +37,9 @@
 
     <script type="text/javascript" src="../assets/scripts/modalbox.js"></script>
 
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
     <script type="text/javascript">
     
     /* NOTE: may want to move this to an external .js */

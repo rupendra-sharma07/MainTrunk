@@ -8,10 +8,8 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
 using TributesPortal.BusinessEntities;
 using System.Data;
-using System.Data.SqlClient;
 using TributesPortal.Utilities;
 
 namespace TributesPortal.ResourceAccess
@@ -2207,6 +2205,69 @@ namespace TributesPortal.ResourceAccess
                 }
             }
             return isAllowedPhotoCheck;
+        }
+
+        public bool GetIsMobileViewOn(Tributes obTrb)
+        {
+            bool IsMobileViewOn = false;
+
+            if (!string.IsNullOrEmpty(obTrb.TributeUrl))
+            {
+                try
+                {
+                    object[] objparam = { obTrb.TributeUrl,obTrb.TypeDescription,WebConfig.ApplicationType
+                                        };
+                    DataSet dsIsAllowed = GetDataSet("usp_IsMobileViewOn", objparam);
+                    if (dsIsAllowed.Tables[0].Rows.Count > 0)
+                    {
+                        foreach (DataRow dr in dsIsAllowed.Tables[0].Rows)
+                        {
+                            bool.TryParse(dr["IsMobileViewOn"].ToString(), out IsMobileViewOn);
+                        }
+                    }
+                }
+                catch (System.Data.SqlClient.SqlException sqlEx)
+                {
+                    if (sqlEx.Number >= 50000)
+                    {
+                        Errors objError = new Errors();
+                        objError.ErrorMessage = sqlEx.Message;
+                        return IsMobileViewOn;
+                    }
+                }
+            }
+            return IsMobileViewOn;
+        }
+
+        public bool UpdateUserTributeMobileView(Users users)
+        {
+            bool _UpdateStatus = false;
+            if (users != null)
+            {
+                try
+                {
+                    object[] objparam = { users.UserId,users.UserName,users.IsMobileViewOn
+                                        };
+                    DataSet dsIsAllowed = GetDataSet("usp_UpdateIsMobileViewOn", objparam);
+                    if (dsIsAllowed.Tables[0].Rows.Count > 0)
+                    {
+                        foreach (DataRow dr in dsIsAllowed.Tables[0].Rows)
+                        {
+                            bool.TryParse(dr["UpdateOutput"].ToString(), out _UpdateStatus);
+                        }
+                    }
+                }
+                catch (System.Data.SqlClient.SqlException sqlEx)
+                {
+                    if (sqlEx.Number >= 50000)
+                    {
+                        Errors objError = new Errors();
+                        objError.ErrorMessage = sqlEx.Message;
+                        return _UpdateStatus;
+                    }
+                }
+            }
+            return _UpdateStatus;
         }
     }//end class
 }//end namespace

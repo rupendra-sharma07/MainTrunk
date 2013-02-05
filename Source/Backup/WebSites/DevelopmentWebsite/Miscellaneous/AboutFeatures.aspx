@@ -7,7 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"
 xml:lang="en" lang="en">
 <head>
-    <title id="featuresTitle" runat="server">Features | What is included with a memorial website - Your Tribute</title>
+    <title id="featuresTitle" runat="server">Features - Online Obituary & Memorial Website options of Your Tribute</title>
     
     <meta name="description" content="Memorial websites from Your Tribute include photo sharing, messaging, condolences and more in a personalized easy-to-use interface." />	
 <meta name="keywords" content="memorial websites, memorial tribute, photo sharing, messaging, condolences, your tribute" />
@@ -17,8 +17,8 @@ xml:lang="en" lang="en">
     <meta http-equiv="imagetoolbar" content="false" />
     <meta name="robots" content="index,follow" />
     <meta name="MSSmartTagsPreventParsing" content="true" />
-    <meta name="description" content="Create a personalized website for a wedding, baby, memorial or other special event. Your Tribute offers the best custom websites to celebrate your event. Make an online website free for 30 days with Your Tribute’s personal online website creation service.">
-    <meta name="keywords" content="Personal Website, Personal Websites, Personal Webpage">
+    <meta name="description" content="View all Online Obituary and Memorial Website features. Share photos and videos, add condolences and memories, and many more Obituary and Memorial options.">
+    <meta name="keywords" content="online obituary, memorial website">
     <!-- really basic, generic html class stylesheet -->
     <!-- These url's will work on Remote server. Comment the above urls -->
     <link rel="stylesheet" type="text/css" media="screen, projection" href="<%=Session["APP_BASE_DOMAIN"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/default.css" />

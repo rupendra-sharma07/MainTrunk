@@ -3,3 +3,8 @@ E:\YourTribute\EnhancementPhase1\Source\ActionlessForm\bin\Debug\ActionlessForm.
 E:\YourTribute\EnhancementPhase1\Source\ActionlessForm\obj\Debug\ResolveAssemblyReference.cache
 E:\YourTribute\EnhancementPhase1\Source\ActionlessForm\obj\Debug\ActionlessForm.dll
 E:\YourTribute\EnhancementPhase1\Source\ActionlessForm\obj\Debug\ActionlessForm.pdb
+E:\Projects\Git\YourTribute\MainTrunk\Source\ActionlessForm\bin\Debug\ActionlessForm.dll
+E:\Projects\Git\YourTribute\MainTrunk\Source\ActionlessForm\bin\Debug\ActionlessForm.pdb
+E:\Projects\Git\YourTribute\MainTrunk\Source\ActionlessForm\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Git\YourTribute\MainTrunk\Source\ActionlessForm\obj\Debug\ActionlessForm.dll
+E:\Projects\Git\YourTribute\MainTrunk\Source\ActionlessForm\obj\Debug\ActionlessForm.pdb

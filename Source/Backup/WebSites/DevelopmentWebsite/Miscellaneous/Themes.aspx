@@ -6,18 +6,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"
 xml:lang="en" lang="en">
 <head>
-    <title>Your Tribute Free Online Memorial Websites | Available Designer Themes</title>
-<%--    <meta name="description" content="Your Tribute has numerous designer themes available for you to personalize your online memorial website. Theme genres include nature, sky, flowers and more." />
-    <meta name="keywords" content="online memorial, memorial theme, designer themes, online memorials, memorial tributes, your tribute" />--%> 
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Themes - Obituary and Memorial Designs and Themes for Your Tribute</title>
+    <%--    <meta name="description" content="Your Tribute has numerous designer themes available for you to personalize your online memorial website. Theme genres include nature, sky, flowers and more." />
+    <meta name="keywords" content="online memorial, memorial theme, designer themes, online memorials, memorial tributes, your tribute" />--%>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="en-ca" />
     <meta http-equiv="imagetoolbar" content="false" />
     <meta name="robots" content="index,follow" />
     <meta name="MSSmartTagsPreventParsing" content="true" />
     <%--<meta name="description" content="Create a personalized website for a wedding, baby, memorial or other special event. Your Tribute offers the best custom websites to celebrate your event. Make an online website free for 30 days with Your Tribute’s personal online website creation service."/>
     <meta name="keywords" content="Personal Website, Personal Websites, Personal Webpage"/>--%>
-    <meta name="description" content=" Free Online Memorial Websites – With Your Tribute, you can create a free online memorial website for a departed loved one. Build a Your Tribute online memorial using a variety of suitable themes today." />
-    <meta name="keywords" content="free online memorial website, free online memorial websites" />
+    <meta name="description" content="Beautiful Memorial Designs and Obituary Themes from Your Tribute. Personalize your memorial with one of our designer Obituary Designs or Memorial Themes." />
+    <meta name="keywords" content="obituary designs, obituary themes, memorial designs, memorial themes" />
     <!-- really basic, generic html class stylesheet -->
     <!-- These url's will work on Remote server. Comment the above urls -->
     <link rel="stylesheet" type="text/css" media="screen, projection" href="<%=Session["APP_BASE_DOMAIN"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/default.css" />
@@ -90,27 +90,29 @@ xml:lang="en" lang="en">
                         <h3 class="yt-BoldHeading OceanBlue-MT">
                             Themes
                         </h3>
-                        <div class="tourIntro">
-                            <p>
-                                Your Tribute has a variety of designer themes available for you to personalize the
-                                free online memorial website that you create. Most free online memorial websites
-                                themes look inexpensive. At Your Tribute we believe that whether you create a free
-                                memorial or premium memorial tribute, your loved one’s memorial deserves a premium
-                                theme.
+                        <div class="yt-PricingAddText">
+                            <div class="examplesText">
+                                <h3 class="Purple-MT">
+                                    Premium Obituary and Memorial Themes</h3>
+                            </div>
+                            <p class="textunderPricing NewTextColor-MT">
+                                Your Tribute has a variety of obituary and memorial themes available for you to
+                                personalize the memorial you create. Most free webslte themes look inexpensive and
+                                we believe that your loved one's memorial should be the highest quality. At Your
+                                Tribute, whether you create a free obituary or premium memorial website, the memorial
+                                should be a beautiful representation of your loved one's life.
                             </p>
                             <br />
-                            <p>
-                                Theme genres include nature, sky, flowers, religion and much more. We regularly
-                                add new themes. If you have a suggestion for a theme you would like to see on Your
-                                Tribute, please contact us. We will be happy to discuss custom theme options with
-                                you.
+                            <p class="textunderPricing NewTextColor-MT">
+                                Our genres of memorial themes include nature, sky, flowers, patriotic, religion
+                                and much more. We regularly add new themes and if you have a suggestion for a memorial
+                                theme you would like to see on Your Tribute, please contact us. Also, we will be
+                                happy to discuss designing custom memorial themes with you. To preview our most
+                                popular obituary and memorial themes, click on an image below. When you are ready,
+                                click "get started" to select a package and create a free obituary or premium memorial
+                                website to pay tribute to your loved one.
                             </p>
                             <br />
-                            <p>
-                                To preview a theme, click on an image below. When you are ready to get started,
-                                click “get started” to select a package and create a memorial to permanently remember
-                                your loved one.
-                            </p>
                         </div>
                         <div class="hack-clearBoth">
                         </div>
@@ -255,24 +257,36 @@ xml:lang="en" lang="en">
                         <div class="yt-PricingAddText">
                             <h1 class="yt-PricingHeading">
                                 <div class="Purple-MT">
-                                    Designer themes for Free Online Memorial Website.</div>
+                                    Choosing Obituary and Memorial Designs</div>
                             </h1>
                             <p class="textunderPricing NewTextColor-MT">
-                                Designer themes at Your Tribute are available to personalize all free online memorial
-                                websites. Each theme has been designed to beautifully and eloquently reflect your
-                                loved ones personality. The most popular themes are flowers, sky and patriotic;
-                                however, we have a wide selection of themes to choose from to personalize the memorial
-                                website.</p><br />
+                                When deciding what theme to choose for an obituary or memorial, we recommend that
+                                you preview the memorial designs above. This will give you a general idea of the
+                                theme's colors, fonts and imagery. However, do not worry about choosing the perfect
+                                design when you create the memorial. We recommend that you begin with any theme
+                                and get started adding content to the memorial. Next, from any of the memorial's
+                                pages you can choose to change the theme. Switch through the memorial designs to
+                                see how it changes the look and feel of the memorial. You can choose a theme and
+                                if you change your mind, go back at any time and update the design.
+                            </p>
+                            <br />
                             <p class="textunderPricing NewTextColor-MT">
-                                If you choose to create a free online memorial website or premium memorial, you
-                                have a choice of all our premium themes. After you create a memorial website it
-                                is easy to switch your theme any time. There is no fee to choose a new theme.</p>
-                            <p class="textunderPricing NewTextColor-MT"><br />
-                                Want to create your own designer theme? For a fee we can work with you to create
-                                your own personalized theme for your memorial website. Contact us to discuss what
-                                custom theme options are available. To view all free online memorial websites that
-                                you can create for your loved one, click the “Pricing & Sign Up” link at the top
-                                of the page.</p>
+                                Choosing a memorial design is one of the best ways that you will be able to personalize
+                                your loved one's memorial. Select from our collection of memorial designs and themes
+                                that best represent your loved one's life. For example, you may choose the flowers
+                                theme because they loved gardening, choose a religious theme for a catholic funeral,
+                                or select one of our seasonal themes (Spring, Autumn, etc.) for a nice design that
+                                will work for a man or woman.
+                            </p>
+                            <p class="textunderPricing NewTextColor-MT">
+                                <br />
+                                Each theme has been designed to beautifully and eloquently reflect your loved ones
+                                personality. The most popular themes are flowers, sky and patriotic, however, we
+                                have a wide selection of themes to choose from to personalize the memorial website.
+                                If you cannot find a theme you like, please contact us to discuss creating a custom
+                                theme for your memorial. For a small fee we can work together to choose colors and
+                                images and produce a beautiful personalized theme for your loved one.
+                            </p>
                         </div>
                         <%} %>
                         <div class="bigButtonsOnFeatures">

@@ -26,6 +26,9 @@
 
     <script type="text/javascript" src="../assets/scripts/global.js"></script>
 
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
     <script type="text/javascript" src="../Common/JavaScript/Common.js"></script>
     
 <%--      <!--for ajax not working on staging server-->

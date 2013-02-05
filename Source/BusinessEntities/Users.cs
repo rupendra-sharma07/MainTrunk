@@ -42,8 +42,7 @@ namespace TributesPortal.BusinessEntities
             IsActive,
             IsDeleted,
             FacebookUid,
-            ApplicationType,
-            IsMobileViewOn
+            ApplicationType
         }
 
         public Users()
@@ -292,14 +291,15 @@ namespace TributesPortal.BusinessEntities
             get { return _IsVisitCountHide; }
             set { _IsVisitCountHide = value; }
         }
-        
 
-        private bool _IsMobileViewOn;
+        private bool _isMobileViewOn;
+
         public bool IsMobileViewOn
         {
-            get { return _IsMobileViewOn; }
-            set { _IsMobileViewOn = value; }
+            get { return _isMobileViewOn; }
+            set { _isMobileViewOn = value; }
         }
+
 
 
         //  objUsers.UserName = txtUsername.Text.ToString();
@@ -519,7 +519,6 @@ namespace TributesPortal.BusinessEntities
             this._IsVisitCountHide = IsVisitCountHide;
             this._FacebookUid = null;
         }
-
         private EmailNotification _ObjEmailNotification;
         public EmailNotification EmailNotification
         {
@@ -565,39 +564,7 @@ namespace TributesPortal.BusinessEntities
             this._FacebookUid = FacebookUid;
             this._ApplicationType = ApplicationType;
         }
-        // added by LHK on Jan 8, 2013 for IsMobileViewOn property
-        public Users(
-          string UserName,
-          string Password,
-          string FirstName,
-          string LastName,
-          string Email,
-          string VerificationCode,
-          bool AllowIncomingMsg,
-          string City,
-          Nullable<int> State,
-          Nullable<int> Country,
-          int UserType,
-          Nullable<Int64> FacebookUid,
-            string ApplicationType,
-            bool IsMobileViewOn
-          )
-        {
-            this._UserName = UserName;
-            this._Password = Password;
-            this._FirstName = FirstName;
-            this._LastName = LastName;
-            this._Email = Email;
-            this._VerificationCode = VerificationCode;
-            this._AllowIncomingMsg = AllowIncomingMsg;
-            this._City = City;
-            this._State = State;
-            this._Country = Country;
-            this._UserType = UserType;
-            this._FacebookUid = FacebookUid;
-            this._ApplicationType = ApplicationType;
-            this._IsMobileViewOn = IsMobileViewOn;
-        }
+
         
     }
 }

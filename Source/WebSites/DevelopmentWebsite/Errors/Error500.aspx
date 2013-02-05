@@ -42,6 +42,9 @@
 
     <script src="https://connect.facebook.net/en_US/all.js" type="text/javascript"></script>
 
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
     <script type="text/javascript" language="javascript">
         //Added by LHK -28 03 2012 - for tribute home page login button functionality.
         function LogOut() {

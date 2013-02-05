@@ -37,6 +37,9 @@
 
     <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/modalbox.js"></script>
 
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
     <script type="text/javascript">
 
         /* NOTE: may want to move this to an external .js */
@@ -126,8 +129,8 @@
                         <asp:UpdatePanel ID="UpdatePanel1" UpdateMode="Always" runat="server">
                             <ContentTemplate>
                                 <div class="yt-ContentPrimary">
-                                    <asp:ValidationSummary ID="vsErrorSummary" runat="server" CssClass="yt-Error" HeaderText=" <h2>Oops - there was a problem with your video tribute.</h2></br><h3>Please correct the error(s) below:</h3>"
-                                        ForeColor="Black" />
+                                    <asp:ValidationSummary ID="vsErrorSummary" runat="server" CssClass="yt-Error" HeaderText="<h3>Please correct the error(s) below:</h3>"
+                                        ForeColor="Black"/>
                                     <div id="ytNotice" class="yt-Notice">
                                         <!-- if the yt-LoginError div has content (including spaces, CR/LF characters, etc, the modal login will show on page load -->
                                         <div id="headline">
@@ -144,35 +147,40 @@
                                     </h1>
                                     <table cellspacing="0" cellpadding="0" class="alignTable">
                                         <tr>
-                                            <td class="brownHeading RightEdgesWhite-YM" style="text-align: left; padding: 7px 0px 0px 18px;">
+                                            <td class="brownHeading RightEdgesWhite-YM" style="font-size: 16px;font-weight: bold;padding: 3px 0 0 10px;text-align: left;">
                                                 <p>
-                                                    Tribute Features</p>
+                                                    Features</p>
+                                            </td>
+                                            <td class="brownHeading PurpleEdges-YM bgBlue">
+                                                VIDEO ONLY
+                                            </td>
+                                            <td class="brownHeading PurpleEdges-YM bgBlue">
+                                                VIDEO TRIBUTE
                                             </td>
                                             <td class="brownHeading PurpleEdges-YM">
-                                                Video Only
-                                            </td>
-                                            <td class="brownHeading PurpleEdges-YM">
-                                                VIDEO + OBITUARY
+                                                Free OBITUARY
                                             </td>
                                             <td class="brownHeading PurpleEdges-YM">
                                                 <p>
                                                     PREMIUM OBITUARY</p>
                                             </td>
                                             <td class="brownHeading LeftEdgesWhite-YM">
-                                                Memorial Tribute
+                                                MEMORIAL WEBSITE
                                             </td>
                                         </tr>
-                                        <tr>
-                                        </tr>
-                                        
                                         <tr class="topBorderOnly">
                                             <td class="leftOfTableRow">
                                                 <p class="paraVideo">
-                                                    Designer Theme</p>
+                                                    Biography & Photo</p>
                                             </td>
-                                            <td class="rightOfTableRow">
+                                            <td class="rightOfTableRow lightBgBlue">
                                                 <p class="paraVideo">
-                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" />
+                                                    -
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRow lightBgBlue">
+                                                <p class="paraVideo">
+                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick_transBackgrd.png" />
                                                 </p>
                                             </td>
                                             <td class="rightOfTableRow">
@@ -194,11 +202,16 @@
                                         <tr style="height: 10px">
                                             <td class="leftOfTableRow">
                                                 <p class="paraVideo">
-                                                    Story (Obituary, Photo, Biography, etc)</p>
+                                                    Personalized Website</p>
                                             </td>
-                                            <td class="rightOfTableRow">
+                                            <td class="rightOfTableRow lightBgBlue">
                                                 <p class="paraVideo">
-                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" />
+                                                    -
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRow lightBgBlue">
+                                                <p class="paraVideo">
+                                                    -
                                                 </p>
                                             </td>
                                             <td class="rightOfTableRow">
@@ -222,9 +235,14 @@
                                         <tr>
                                             <td class="leftOfTableRow">
                                                 <p class="paraVideo">
-                                                    Guestbook (Unlimited Messages)</p>
+                                                    Guestbook & Memorials</p>
                                             </td>
-                                            <td class="rightOfTableRow">
+                                            <td class="rightOfTableRow lightBgBlue">
+                                                <p class="paraVideo">
+                                                    -
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRow lightBgBlue">
                                                 <p class="paraVideo">
                                                     -
                                                 </p>
@@ -248,10 +266,15 @@
                                         <tr>
                                             <td class="leftOfTableRow">
                                                 <p class="paraVideo">
-                                                    Free Virtual Gifts
+                                                    Events & Notes
                                                 </p>
                                             </td>
-                                            <td class="rightOfTableRow">
+                                            <td class="rightOfTableRow lightBgBlue">
+                                                <p class="paraVideo">
+                                                    -
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRow lightBgBlue">
                                                 <p class="paraVideo">
                                                     -
                                                 </p>
@@ -275,9 +298,14 @@
                                         <tr>
                                             <td class="leftOfTableRow">
                                                 <p class="paraVideo">
-                                                    Social Sharing Tools</p>
+                                                    Videos</p>
                                             </td>
-                                            <td class="rightOfTableRow">
+                                            <td class="rightOfTableRow lightBgBlue">
+                                                <p style="vertical-align: bottom; text-align: center;">
+                                                    -
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRow lightBgBlue">
                                                 <p style="vertical-align: bottom; text-align: center;">
                                                     -
                                                 </p>
@@ -290,33 +318,6 @@
                                             <td class="rightOfTableRow">
                                                 <p class="paraVideo">
                                                     <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" />
-                                                </p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" />
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="leftOfTableRow">
-                                                <p class="paraVideo">
-                                                    Events (Online Invitations & RSVP)
-                                                </p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p style="vertical-align: bottom; text-align: center;">
-                                                    -
-                                                </p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" />
-                                                </p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                   <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" />
                                                 </p>
                                             </td>
                                             <td class="rightOfTableRow">
@@ -331,7 +332,12 @@
                                                     Photo Albums
                                                 </p>
                                             </td>
-                                            <td class="rightOfTableRow">
+                                            <td class="rightOfTableRow lightBgBlue">
+                                                <p class="paraVideo">
+                                                    -
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRow lightBgBlue">
                                                 <p class="paraVideo">
                                                     -
                                                 </p>
@@ -355,7 +361,17 @@
                                         <tr>
                                             <td class="leftOfTableRow">
                                                 <p class="paraVideo">
-                                                    Videos
+                                                    High Resolution Photos
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRow lightBgBlue">
+                                                <p class="paraVideo">
+                                                    -
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRow lightBgBlue">
+                                                <p class="paraVideo">
+                                                    -
                                                 </p>
                                             </td>
                                             <td class="rightOfTableRow">
@@ -365,88 +381,8 @@
                                             </td>
                                             <td class="rightOfTableRow">
                                                 <p class="paraVideo">
-                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" />
-                                                </p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" />
-                                                </p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" />
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="leftOfTableRow">
-                                                <p class="paraVideo">
-                                                    Notes/Pages
-                                                </p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
                                                     -
                                                 </p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" /></p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" /></p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" />
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="leftOfTableRow">
-                                                <p class="paraVideo">
-                                                    View/Download High Res. Photos
-                                                </p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    -
-                                                </p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    -</p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    -</p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" />
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="leftOfTableRow">
-                                                <p class="paraVideo">
-                                                    Unlimited Storage
-                                                </p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    -</p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    -
-                                                </p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    -</p>
                                             </td>
                                             <td class="rightOfTableRow">
                                                 <p class="paraVideo">
@@ -460,6 +396,16 @@
                                                     Custom URL
                                                 </p>
                                             </td>
+                                            <td class="rightOfTableRow lightBgBlue">
+                                                <p class="paraVideo">
+                                                    -
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRow lightBgBlue">
+                                                <p class="paraVideo">
+                                                    -
+                                                </p>
+                                            </td>
                                             <td class="rightOfTableRow">
                                                 <p class="paraVideo">
                                                     -
@@ -467,11 +413,8 @@
                                             </td>
                                             <td class="rightOfTableRow">
                                                 <p class="paraVideo">
-                                                    -</p>
-                                            </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
-                                                    -</p>
+                                                    -
+                                                </p>
                                             </td>
                                             <td class="rightOfTableRow">
                                                 <p class="paraVideo">
@@ -485,8 +428,12 @@
                                                     No Advertising
                                                 </p>
                                             </td>
-                                            <td class="rightOfTableRow">
-                                                <p class="paraVideo">
+                                            <td class="rightOfTableRow lightBgBlue">
+                                                <p class="paraVideo" style="border: solid 1px red;">
+                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" /></p>
+                                            </td>
+                                            <td class="rightOfTableRow lightBgBlue">
+                                                <p class="paraVideo"  style="border: solid 1px red;">
                                                     <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick.jpg" /></p>
                                             </td>
                                             <td class="rightOfTableRow">
@@ -504,116 +451,176 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="leftOfTableRow video3rdLastBGcolor">
+                                            <td class="leftOfTableRow">
                                                 <p class="paraVideo" style="padding-top: 0px;">
                                                     Video Tribute
                                                 </p>
                                             </td>
-                                            <td class="rightOfTableRowLast video3rdLastBGcolor" style="border-bottom: 1px solid #796359">
+                                            <td class="rightOfTableRowLast video3rdLastBGcolor lightBgBlue" style="border-bottom: 1px solid #796359">
                                                 <p class="paraVideo" style="padding-top: 0px;">
                                                     <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick_transBackgrd.png" />
                                                 </p>
                                             </td>
-                                            <td class="rightOfTableRowLastLight video3rdLastBGcolor">
-                                                <p class="paraVideo" style="padding-top: 0px;">
-                                                    (30 Days)</p>
-                                            </td>
-                                            <td class="rightOfTableRowLast video3rdLastBGcolor">
+                                            <td class="rightOfTableRowLast video3rdLastBGcolor lightBgBlue" style="border-bottom: 1px solid #796359">
                                                 <p class="paraVideo" style="padding-top: 0px;">
                                                     <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick_transBackgrd.png" />
                                                 </p>
                                             </td>
-                                            <td class="rightOfTableRowLast video3rdLastBGcolor">
+                                            <td class="rightOfTableRowLastLight">
+                                                <p class="paraVideo" style="margin-top: -5px;">
+                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick_transBackgrd.png" />
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRowLast">
+                                                <p class="paraVideo" style="padding-top: 0px;">
+                                                    <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick_transBackgrd.png" />
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRowLast">
                                                 <p id="secondLastRow" class="paraVideo" style="padding-top: 0px;">
                                                     <img alt="yes" src="<%=Session["APP_BASE_DOMAIN"]%>assets/images/greenTick_transBackgrd.png" />
                                                 </p>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="leftOfTableRow">
+                                            <td class="leftOfTableRow TopBoldBorder">
+                                                <p id="P2" class="Font15">
+                                                    PRICE (30 Days)
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRowLast lightBgBlue TopBoldBorder">
+                                                    <h4>
+                                                        <strong>
+                                                            <div class="pricingMargin">
+                                                                FREE</div>
+                                                        </strong>
+                                                    </h4>
+                                            </td>
+                                            <td class="rightOfTableRowLast lightBgBlue TopBoldBorder">
+                                                    <h4>
+                                                        <strong>
+                                                            <div class="pricingMargin">
+                                                                FREE</div>
+                                                        </strong>
+                                                    </h4>
+                                            </td>
+                                            <td class="rightOfTableRowLast TopBoldBorder">
+                                                    <h4>
+                                                        <strong>
+                                                            <div class="pricingMargin">
+                                                                FREE</div>
+                                                        </strong>
+                                                    </h4>
+                                            </td>
+                                            <td class="rightOfTableRowLast TopBoldBorder">
+                                                <p id="P6" class="Font15">
+                                                    -</p>
+                                            </td>
+                                            <td class="rightOfTableRowLast TopBoldBorder">
+                                                <p id="P7" class="Font15">
+                                                    -</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="leftOfTableRow TopDottedBorder">
+                                                <p id="P8" class="Font15">
+                                                    PRICE (90 Days)
+                                                </p>
+                                            </td>
+                                            <td class="rightOfTableRowLast lightBgBlue TopDottedBorder" >
+                                                <p id="P9" class="Font15">
+                                                    $5.00(0.5 Credit)</p>
+                                            </td>
+                                            <td class="rightOfTableRowLast lightBgBlue TopDottedBorder">
+                                                <p id="P10" class="Font15">
+                                                    $5.00(0.5 Credit)</p>
+                                            </td>
+                                            <td class="rightOfTableRowLast TopDottedBorder">
+                                                <p id="P11" class="Font15">
+                                                    -</p>
+                                            </td>
+                                            <td class="rightOfTableRowLast TopDottedBorder">
+                                                <p id="P12" class="Font15">
+                                                    -</p>
+                                            </td>
+                                            <td class="rightOfTableRowLast TopDottedBorder">
+                                                <p id="P13" class="Font15">
+                                                    -</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="leftOfTableRow TopDottedBorder">
                                                 <p id="secondLastRow" class="Font15">
                                                     PRICE (1 YEAR)
                                                 </p>
                                             </td>
-                                            <td class="rightOfTableRowLast">
+                                            <td class="rightOfTableRowLast lightBgBlue TopDottedBorder">
                                                 <p id="secondLastRow" class="Font15">
-                                                    1 Credit</p>
+                                                    $10.00(1 Credit)</p>
                                             </td>
-                                            <td class="rightOfTableRowLast">
-                                                <p id="secondLastRow" class="Font15">
+                                            <td class="rightOfTableRowLast lightBgBlue TopDottedBorder">
+                                                <p id="P1" class="Font15">
+                                                    $10.00(1 Credit)</p>
+                                            </td>
+                                            <td class="rightOfTableRowLast TopDottedBorder">
+                                                <p class="Font15">
                                                     -</p>
                                             </td>
-                                            <td class="rightOfTableRowLast">
-                                                <p id="secondLastRow" class="Font15">
-                                                    <asp:Label ID="lblPhotoTributeYearlyCost" runat="server" Text="Label"></asp:Label>
+                                            <td class="rightOfTableRowLast TopDottedBorder">
+                                                <p class="Font15">$10.00(<asp:Label ID="lblPhotoTributeYearlyCost" runat="server" Text="Label"></asp:Label>)
                                                 </p>
                                             </td>
-                                            <td class="rightOfTableRowLast">
-                                                <p id="secondLastRow">
-                                                    <asp:Label ID="lblTributeYearlyCost" runat="server" Text="Label"></asp:Label>
+                                            <td class="rightOfTableRowLast TopDottedBorder">
+                                                <p class="Font15">$20.00(<asp:Label ID="lblTributeYearlyCost" runat="server" Text="Label"></asp:Label>s)
                                                 </p>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="leftOfTableRow NewTextColor-MT Font15 yt-colFirst">
-                                                <h4>
-                                                    <strong>
-                                                        <div class="pricingMargin">
-                                                            PRICE (LIFETIME)</div>
-                                                    </strong>
-                                                </h4>
+                                            <td class="leftOfTableRow NewTextColor-MT Font15 yt-colFirst TopDottedBorder">
+                                                   <p class="Font15" id="LastRow">
+                                                            PRICE (LIFETIME)</p>
                                             </td>
-                                            <td class="rightOfTableRowLast NewTextColor-MT Font15">
-                                                <h4>
-                                                    <strong>
-                                                        <div class="pricingMargin">
-                                                            2 Credits</div>
-                                                    </strong>
-                                                </h4>
+                                            <td class="rightOfTableRowLast NewTextColor-MT Font15 lightBgBlue TopDottedBorder">
+                                                    <p class="Font15" >$40.00(4 Credits)</p>
                                             </td>
-                                            <td class="rightOfTableRowLast NewTextColor-MT Font15">
-                                                <h4>
-                                                    <strong>
-                                                        <div class="pricingMargin">
-                                                            FREE</div>
-                                                    </strong>
-                                                </h4>
+                                            <td class="rightOfTableRowLast NewTextColor-MT Font15 lightBgBlue TopDottedBorder">
+                                                   <p class="Font15" >$40.00(4 Credits)</p>
                                             </td>
-                                            <td class="rightOfTableRowLast NewTextColor-MT Font15">
-                                                <h4>
-                                                    <strong>
-                                                        <div class="pricingMargin">
-                                                            <asp:Label ID="lblPhotoTributeLifeTimeCost" runat="server" Text="Label"></asp:Label>
-                                                        </div>
-                                                    </strong>
-                                                </h4>
+                                            <td class="rightOfTableRowLast NewTextColor-MT Font15 TopDottedBorder">
+                                                     <p class="Font15" >
+                                                            -</p>
                                             </td>
-                                            <td class="rightOfTableRowLast NewTextColor-MT Font15">
-                                                <h4>
-                                                    <strong>
-                                                        <div class="pricingMargin">
-                                                            <asp:Label ID="lblTributeLifeTimeCost" runat="server" Text="Label"></asp:Label>
-                                                        </div>
-                                                    </strong>
-                                                </h4>
+                                            <td class="rightOfTableRowLast NewTextColor-MT Font15 TopDottedBorder">
+                                                     <p class="Font15" >$20.00(<asp:Label ID="lblPhotoTributeLifeTimeCost" runat="server" Text="Label"></asp:Label>)
+                                                        </p>
+                                            </td>
+                                            <td class="rightOfTableRowLast NewTextColor-MT Font15 TopDottedBorder">
+                                                     <p class="Font15" >$40.00(<asp:Label ID="lblTributeLifeTimeCost" runat="server" Text="Label"></asp:Label>)
+                                                        </p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
+                                                <span>* Free "Video Only" and "Video Tribute" accounts have banner advertising.
+                                                </span>
                                             </td>
-                                            <td class="rightOfTableRowLastSignUp">
-                                                <a class="videoSelectButton" href="<%=Session["APP_BASE_DOMAIN"]%>Tribute/VideoTributeCreation.aspx">
+                                            <td class="rightOfTableRowLastSignUp lightBgBlue">
+                                                <a class="videoSelectButton" href="<%=Session["APP_BASE_DOMAIN"]%>Tribute/VideoTributeCreation.aspx?AccountType=1">
+                                                    Sign Up</a>
+                                            </td>
+                                            <td class="rightOfTableRowLastSignUp lightBgBlue">
+                                                <a class="videoSelectButton" href="<%=Session["APP_BASE_DOMAIN"]%>Tribute/VideoTributeCreation.aspx?AccountType=2">
                                                     Sign Up</a>
                                             </td>
                                             <td class="rightOfTableRowLastSignUp">
                                                 <a class="videoSelectButton" href="<%=Session["APP_BASE_DOMAIN"]%>Create.aspx?Type=Memorial&AccountType=1">
                                                     Sign Up</a>
                                             </td>
-                                            <td class="rightOfTableRowLastSignUp">
+                                            <td class="rightOfTableRowLastSignUpMiddle">
                                                 <a class="videoSelectButton" href="<%=Session["APP_BASE_DOMAIN"]%>Create.aspx?Type=Memorial&AccountType=2">
                                                     Sign Up</a>
                                             </td>
-                                            <td class="rightOfTableRowLastSignUp">
+                                            <td class="rightOfTableRowLastSignUpMiddle">
                                                 <a class="videoSelectButton" href="<%=Session["APP_BASE_DOMAIN"]%>Create.aspx?Type=Memorial&AccountType=3">
                                                     Sign Up</a>
                                             </td>

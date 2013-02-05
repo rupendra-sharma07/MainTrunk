@@ -3,8 +3,23 @@ E:\YourTribute\EnhancementPhase1\Source\BusinessEntities\bin\Debug\TributesPorta
 E:\YourTribute\EnhancementPhase1\Source\BusinessEntities\obj\x86\Debug\ResolveAssemblyReference.cache
 E:\YourTribute\EnhancementPhase1\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.dll
 E:\YourTribute\EnhancementPhase1\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessEntities\obj\x86\Debug\ResolveAssemblyReference.cache
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\TestYourTributeGit\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\TestYourTributeGit\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\TestYourTributeGit\Source\BusinessEntities\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\TestYourTributeGit\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\TestYourTributeGit\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessEntities\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessEntities\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessEntities\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.pdb

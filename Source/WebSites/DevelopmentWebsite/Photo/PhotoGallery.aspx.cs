@@ -388,7 +388,7 @@ public partial class Photo_PhotoGallery : PageBase, IPhotoGallery
                         }
                         else
                         {
-                            appDomian = "http://www." + WebConfig.TopLevelDomain + "/" + Session["TributeURL"] + "/managephotoalbum.aspx?albummode=Create&Type=" + objTrb.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby");
+                            appDomian = "~/" + Session["TributeURL"] + Session["TributeURL"] + "/managephotoalbum.aspx?albummode=Create&Type=" + objTrb.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby");
                             Response.Redirect(appDomian, false);
                         }
 
@@ -411,7 +411,7 @@ public partial class Photo_PhotoGallery : PageBase, IPhotoGallery
                     }
                     else
                     {
-                        appDomian = "http://www." + WebConfig.TopLevelDomain + "/" + Session["TributeURL"] + "/managephotoalbum.aspx?albummode=Create&Type=" + objTrb.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby");
+                        appDomian = "~/" + Session["TributeURL"] + "/managephotoalbum.aspx?albummode=Create&Type=" + objTrb.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby");
                         Response.Redirect(appDomian, false);
                     }
                     // Response.Redirect("~/" + Session["TributeURL"] + "/managephotoalbum.aspx", false);

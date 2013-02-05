@@ -6,6 +6,8 @@
 <head runat="server">
     <title>Full Size Image</title>   
     <link rel="Shortcut Icon" type="image/x-icon" href="<%=Session["APP_BASE_DOMAIN"]%>assets/images/favicon.ico" /> 
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
 </head>
 <body style=" padding:0px; margin:0px;">
     <form id="form1" runat="server" >

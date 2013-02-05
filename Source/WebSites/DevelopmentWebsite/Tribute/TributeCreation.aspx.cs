@@ -73,7 +73,7 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
     private string confirmationId = string.Empty;
     private string errorMesg = string.Empty;
     private string _amount = string.Empty;
-    private int _NetCreditCount;
+    private double _NetCreditCount;
     private IList<CreditCostMapping> _creditCostMappingList = null;
     // private int _videoTributeOwnerid = 0; //by ud
 
@@ -1688,7 +1688,7 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         string LastName = string.Empty;
         double Couponamount = 0;
         string strBillingTotal;
-        int NewUpdatedCredit = 0;
+        double NewUpdatedCredit = 0;
 
         //BeanStream Responce string
         var bIsSuccess = false;
@@ -1855,12 +1855,12 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
                             {
                                 if (rdoMembershipYearly.Checked)
                                 {
-                                    NewUpdatedCredit = int.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - int.Parse(WebConfig.PhotoYearlyCreditCost.Substring(0, 2).Trim());
+                                    NewUpdatedCredit = double.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - double.Parse(WebConfig.PhotoYearlyCreditCost.Substring(0, 2).Trim());
                                     double.TryParse(WebConfig.PhotoOneyearAmount.Substring(1, 5).Trim(), out totalValue);
                                 }
                                 else if (rdoMembershipLifetime.Checked)
                                 {
-                                    NewUpdatedCredit = int.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - int.Parse(WebConfig.PhotoLifeTimeCreditCost.Substring(0, 2).Trim());
+                                    NewUpdatedCredit = double.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - double.Parse(WebConfig.PhotoLifeTimeCreditCost.Substring(0, 2).Trim());
                                     double.TryParse(WebConfig.PhotoLifeTimeAmount.Substring(1, 5).Trim(), out totalValue);
                                 }
                             }
@@ -1868,12 +1868,12 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
                             {
                                 if (rdoMembershipYearly.Checked)
                                 {
-                                    NewUpdatedCredit = int.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - int.Parse(WebConfig.TributeYearlyCreditCost.Substring(0, 2).Trim());
+                                    NewUpdatedCredit = double.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - double.Parse(WebConfig.TributeYearlyCreditCost.Substring(0, 2).Trim());
                                     double.TryParse(WebConfig.TributeOneyearAmount.Substring(1, 5).Trim(), out totalValue);
                                 }
                                 else if (rdoMembershipLifetime.Checked)
                                 {
-                                    NewUpdatedCredit = int.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - int.Parse(WebConfig.TributeLifeTimeCreditCost.Substring(0, 2).Trim());
+                                    NewUpdatedCredit = double.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - double.Parse(WebConfig.TributeLifeTimeCreditCost.Substring(0, 2).Trim());
                                     double.TryParse(WebConfig.TributeLifeTimeAmount.Substring(1, 5).Trim(), out totalValue);
                                 }
                             }
@@ -1884,12 +1884,12 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
                             {
                                 if (rdoMembershipYearly.Checked)
                                 {
-                                    NewUpdatedCredit = _NetCreditCount - int.Parse(WebConfig.PhotoYearlyCreditCost.Substring(0, 2).Trim());
+                                    NewUpdatedCredit = _NetCreditCount - double.Parse(WebConfig.PhotoYearlyCreditCost.Substring(0, 2).Trim());
                                     double.TryParse(WebConfig.PhotoOneyearAmount.Substring(1, 5).Trim(), out totalValue);
                                 }
                                 else if (rdoMembershipLifetime.Checked)
                                 {
-                                    NewUpdatedCredit = _NetCreditCount - int.Parse(WebConfig.PhotoLifeTimeCreditCost.Substring(0, 2).Trim());
+                                    NewUpdatedCredit = _NetCreditCount - double.Parse(WebConfig.PhotoLifeTimeCreditCost.Substring(0, 2).Trim());
                                     double.TryParse(WebConfig.PhotoLifeTimeAmount.Substring(1, 5).Trim(), out totalValue);
                                 }
                             }
@@ -1897,12 +1897,12 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
                             {
                                 if (rdoMembershipYearly.Checked)
                                 {
-                                    NewUpdatedCredit = _NetCreditCount - int.Parse(WebConfig.TributeYearlyCreditCost.Substring(0, 2).Trim());
+                                    NewUpdatedCredit = _NetCreditCount - double.Parse(WebConfig.TributeYearlyCreditCost.Substring(0, 2).Trim());
                                     double.TryParse(WebConfig.TributeOneyearAmount.Substring(1, 5).Trim(), out totalValue);
                                 }
                                 else if (rdoMembershipLifetime.Checked)
                                 {
-                                    NewUpdatedCredit = _NetCreditCount - int.Parse(WebConfig.TributeLifeTimeCreditCost.Substring(0, 2).Trim());
+                                    NewUpdatedCredit = _NetCreditCount - double.Parse(WebConfig.TributeLifeTimeCreditCost.Substring(0, 2).Trim());
                                     double.TryParse(WebConfig.TributeLifeTimeAmount.Substring(1, 5).Trim(), out totalValue);
                                 }
                             }
@@ -3269,7 +3269,7 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         get { return txtCCZipCode.Text; }
     }
 
-    public int NetCreditPoints
+    public double NetCreditPoints
     {
         get
         {

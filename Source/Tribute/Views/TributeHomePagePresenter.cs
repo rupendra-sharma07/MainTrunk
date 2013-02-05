@@ -627,6 +627,11 @@ namespace TributesPortal.Tribute.Views
             //View.TributeName = _objTributeUserInfo.Tributes.TributeName;
             View.TributeMessage = _objTributeUserInfo.Tributes.WelcomeMessage;          
         }
+
+        public bool GetIsMobileViewOn(Tributes oTribute)
+        {
+            return _controller.GetIsMobileViewOn(oTribute);
+        }
     }//End 
 }
 

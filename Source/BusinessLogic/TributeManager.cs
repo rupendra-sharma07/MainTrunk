@@ -631,7 +631,14 @@ namespace TributesPortal.BusinessLogic
 
         public bool GetIsMobileViewOn(Tributes obTrb)
         {
-            throw new NotImplementedException();
+            TributeResource objResource = new TributeResource();
+            return objResource.GetIsMobileViewOn(obTrb);
+        }
+
+        public bool UpdateUserTributeMobileView(Users users)
+        {
+            TributeResource objResource = new TributeResource();
+            return objResource.UpdateUserTributeMobileView(users);
         }
     }//end class
 }//end namespace

@@ -108,7 +108,7 @@ namespace TributesPortal.Tribute.Views
         UserRegistration CreditCardDetails { set; }
         IList<ParameterTypesCodes> GetSelectedPaymentMode { set; }
         string SelectedPaymentMode { set; }
-        int NetCreditPoints { set; get; }
+        double NetCreditPoints { set; get; }
         IList<CreditCostMapping> CreditCostMappingList { set; }
 
         //LHK:(3:49 PM 2/8/2011) for Obituary Note for TributeType=Memorial

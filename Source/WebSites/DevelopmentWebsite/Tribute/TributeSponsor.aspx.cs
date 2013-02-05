@@ -946,10 +946,10 @@ public partial class Tribute_TributeSponsor : PageBase, ITributeSponsor
         get
         {
             int _packageid = 0;
-            //if (rdoPhotoMembershipYearly.Checked)
-            //{
-            //    _packageid = 7;
-            //}
+            if (rdoPhotoMembershipYearly.Checked)
+            {
+                _packageid = 7;
+            }
             if (rdoPhotoMembershipLifeTime.Checked)
             {
                 _packageid = 6;

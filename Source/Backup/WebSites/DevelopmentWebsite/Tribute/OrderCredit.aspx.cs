@@ -71,6 +71,7 @@ public partial class Tribute_OrderCredit : PageBase, IOrderCredit
         //        Response.Redirect(@"https://www." + WebConfig.TopLevelDomain + @"/TributeSponsor.aspx?TributeURL=" + tributeurl + "&TributeType=" + tributetype);
         //}
 
+        //lblCopyRight.Text = DateTime.Now.Year.ToString();
         if ((Request.QueryString["TributeUrl"] != null) && (Request.QueryString["TributeType"] != null))
             _presenter.GetTributeSessionForUrlAndType(Request.QueryString["TributeUrl"].ToString(), Request.QueryString["TributeType"].ToString(),WebConfig.ApplicationType.ToString());
 

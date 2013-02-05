@@ -37,6 +37,9 @@
 
     <script src="../assets/scripts/cropper/cropper.js" type="text/javascript"></script>
 
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
     <script type="text/javascript" src="../Common/JavaScript/Common.js"></script>
 
     <script type="text/javascript">

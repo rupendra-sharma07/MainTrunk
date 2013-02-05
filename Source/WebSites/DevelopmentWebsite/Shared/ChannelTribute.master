@@ -53,6 +53,9 @@
 
     <script type="text/javascript" src='<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>Common/JavaScript/Common.js'></script>
 
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="<%= ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] %>assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
     <script language="javascript" type="text/jscript"></script>
 
     <!--#include file="../analytics.asp"-->

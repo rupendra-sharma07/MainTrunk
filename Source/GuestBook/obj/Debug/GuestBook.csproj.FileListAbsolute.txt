@@ -151,26 +151,95 @@ E:\YourTribute\EnhancementPhase1\Source\GuestBook\obj\Debug\ResolveAssemblyRefer
 E:\YourTribute\EnhancementPhase1\Source\GuestBook\obj\Debug\TributesPortal.GuestBook.dll
 E:\YourTribute\EnhancementPhase1\Source\GuestBook\obj\Debug\TributesPortal.GuestBook.pdb
 E:\YourTribute\EnhancementPhase1\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributesPortal.GuestBook.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributesPortal.GuestBook.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributesPortal.BusinessEntities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributesPortal.BusinessLogic.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributesPortal.MultipleLangSupport.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributesPortal.Utilities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributesPortal.ResourceAccess.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributePortalSecurity.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\log4net.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributesPortal.BusinessEntities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributesPortal.BusinessLogic.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributesPortal.Utilities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributesPortal.MultipleLangSupport.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\TributesPortal.ResourceAccess.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\obj\Debug\ResolveAssemblyReference.cache
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\obj\Debug\TributesPortal.GuestBook.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\GuestBook\obj\Debug\TributesPortal.GuestBook.pdb
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributesPortal.GuestBook.dll
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributesPortal.GuestBook.pdb
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributesPortal.Utilities.dll
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\log4net.dll
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributePortalSecurity.dll
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributesPortal.Utilities.pdb
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\TestYourTributeGit\Source\GuestBook\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\TestYourTributeGit\Source\GuestBook\obj\Debug\ResolveAssemblyReference.cache
+E:\TestYourTributeGit\Source\GuestBook\obj\Debug\TributesPortal.GuestBook.dll
+E:\TestYourTributeGit\Source\GuestBook\obj\Debug\TributesPortal.GuestBook.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributesPortal.GuestBook.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributesPortal.GuestBook.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\log4net.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\obj\Debug\TributesPortal.GuestBook.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\GuestBook\obj\Debug\TributesPortal.GuestBook.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributesPortal.GuestBook.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributesPortal.GuestBook.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\log4net.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\obj\Debug\TributesPortal.GuestBook.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\GuestBook\obj\Debug\TributesPortal.GuestBook.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributesPortal.GuestBook.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributesPortal.GuestBook.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\log4net.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\obj\Debug\TributesPortal.GuestBook.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\GuestBook\obj\Debug\TributesPortal.GuestBook.pdb

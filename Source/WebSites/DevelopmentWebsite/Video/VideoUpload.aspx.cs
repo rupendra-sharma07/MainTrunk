@@ -89,7 +89,7 @@ public partial class Video_VideoUpload : PageBase, IVideoUpload
                 {
                     _validityText = "30";
                     _userName = objSessionvalue.UserName;
-                    int NetCreditPoints;
+                    double NetCreditPoints;
                     UserRegistration _objUserReg = new UserRegistration();
                     Users objUsers = new Users();
                     objUsers.UserId = objSessionvalue.UserId;

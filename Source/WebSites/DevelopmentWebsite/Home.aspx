@@ -7,7 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"
 xml:lang="en" lang="en">
 <head>
-    <title id="HomeTitle" runat="server" >Your Tribute’s Free Obituaries Online | Permanent Online Memorials</title>
+    <title id="HomeTitle" runat="server" >Your Tribute - Free Online Obituaries & Premium Memorial Websites</title>
     <!--
 		
 author: Mark Bice
@@ -25,8 +25,8 @@ last modified: December 02, 2007
     <meta name="keywords" content="Event Website, Wedding Website, Baby Website, Memorial Website" />--%>
     <meta name="verify-v1" content="t/eO7u+WzYZ4+WwZSJgRfJihKZMi/S9+10TXbCDiilk=" />
     <meta name="y_key" content="d87f2529b7dae83b" />
-    <meta name="description" content="Free Obituaries Online – Let Your Tribute help you celebrate the lives of your deceased loved ones through our free obituaries online and more. Sign up and share precious memories online with your friends and family today." />
-    <meta name="keywords" content="free obituaries online" />
+    <meta name="description" content="Create Free Online Obituaries or Premium Memorial Websites for your loved ones with Your Tribute. Share Condolences, Stories, Memorials, Photos and Videos." />
+    <meta name="keywords" content="online obituaries, free online obituaries, memorial websites, premium memorial websites, your tribute, yourtribute.com" />
     <!-- really basic, generic html class stylesheet -->
     <!-- These url's will work on Remote server. Comment the above urls -->
     <%--  <link rel="stylesheet" type="text/css" media="screen, projection" href="<%=Session["APP_BASE_DOMAIN"]%>assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/default.css" />--%>
@@ -58,6 +58,9 @@ last modified: December 02, 2007
 
     <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/global.js"></script>
 
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
     <%--<script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/styleSwitcher.js"></script>
 
     <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/modalbox.js"></script>--%>
@@ -77,7 +80,7 @@ last modified: December 02, 2007
         //        }
     </script>
 
-    <!--#include file="~/analytics.asp"-->
+    <!--#include file="analytics.asp"-->
 </head>
 <body>
     <form id="Form1" action="" runat="server">
@@ -148,10 +151,12 @@ last modified: December 02, 2007
                                             <h5>
                                                 The smartest and easiest way to plan, share and remember an event.</h5>
                                             <p id="YT13" runat="server">
-                                                Create a personal website (a <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>) for your significant event in minutes. Send
-                                                stylish online invitations with RSVP. Add photos and videos and let your friends
-                                                and family do the same. Receive personal messages in your guestbook as well as virtual
-                                                gifts. Plus many more easy-to-use features!
+                                                Create a personal website (a
+                                                <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>)
+                                                for your significant event in minutes. Send stylish online invitations with RSVP.
+                                                Add photos and videos and let your friends and family do the same. Receive personal
+                                                messages in your guestbook as well as virtual gifts. Plus many more easy-to-use
+                                                features!
                                             </p>
                                         </div>
                                     </div>
@@ -164,11 +169,14 @@ last modified: December 02, 2007
                                                 The funnest and easiest way to announce and share your new baby.
                                             </h5>
                                             <p id="YT14" runat="server">
-                                                Create a personal website (a <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>) for your new baby in minutes. Send beautiful
-                                                online baby anouncements. Share stories and add photos and videos from before and
-                                                after the birth. Receive personal messages in your guestbook. Plus much more!
+                                                Create a personal website (a
+                                                <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>)
+                                                for your new baby in minutes. Send beautiful online baby anouncements. Share stories
+                                                and add photos and videos from before and after the birth. Receive personal messages
+                                                in your guestbook. Plus much more!
                                             </p>
-                                            <a href="<%="http://newbaby.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com" %>" class="learnMore-2">Learn More &gt;</a>
+                                            <a href="<%="http://newbaby.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com" %>"
+                                                class="learnMore-2">Learn More &gt;</a>
                                         </div>
                                         <div class="yt-exampleLink">
                                             <p>
@@ -185,15 +193,20 @@ last modified: December 02, 2007
                                                 The easiest and most unique way to share and remember your big day.
                                             </h5>
                                             <p id="YT16" runat="server">
-                                                Create a personal website (a <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>) for your graduation in minutes. Send beautiful
-                                                grad invites. Add photos from before and after the event. Receive personal messages
-                                                in your guestbook and virtual gifts. Plus many more easy-to-use features!
+                                                Create a personal website (a
+                                                <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>)
+                                                for your graduation in minutes. Send beautiful grad invites. Add photos from before
+                                                and after the event. Receive personal messages in your guestbook and virtual gifts.
+                                                Plus many more easy-to-use features!
                                             </p>
-                                            <a href="<%="http://graduation.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com" %>" class="learnMore-3">Learn More &gt;</a>
+                                            <a href="<%="http://graduation.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com" %>"
+                                                class="learnMore-3">Learn More &gt;</a>
                                         </div>
                                         <div class="yt-exampleLink">
                                             <p>
-                                                <span id="YT17" runat="server">Graduation <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>:</span> <a href="<%="http://graduation.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com/kellysmith/" %>"
+                                                <span id="YT17" runat="server">Graduation
+                                                    <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>:</span>
+                                                <a href="<%="http://graduation.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com/kellysmith/" %>"
                                                     class="learnMore-3" target="_blank">Kelly Smith</a></p>
                                         </div>
                                     </div>
@@ -205,16 +218,20 @@ last modified: December 02, 2007
                                             <h5>
                                                 The smartest and easiest way to plan, share and remember your wedding.</h5>
                                             <p id="YT18" runat="server">
-                                                Create a personal website (a <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>) for your wedding in minutes. Send beautiful
-                                                online invitations with RSVP. Add photos from before and after the wedding and let
-                                                your guests do the same. Receive personal messages in your guestbook. Plus much
-                                                more!
+                                                Create a personal website (a
+                                                <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>)
+                                                for your wedding in minutes. Send beautiful online invitations with RSVP. Add photos
+                                                from before and after the wedding and let your guests do the same. Receive personal
+                                                messages in your guestbook. Plus much more!
                                             </p>
-                                            <a href="<%="http://wedding.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com" %>" class="learnMore-4">Learn More &gt;</a>
+                                            <a href="<%="http://wedding.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com" %>"
+                                                class="learnMore-4">Learn More &gt;</a>
                                         </div>
                                         <div class="yt-exampleLink">
                                             <p>
-                                                <span id="YT19" runat="server">Wedding <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>: </span><a href="<%="http://wedding.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com/jonandmary/" %>"
+                                                <span id="YT19" runat="server">Wedding
+                                                    <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>:
+                                                </span><a href="<%="http://wedding.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com/jonandmary/" %>"
                                                     class="learnMore-4" target="_blank">Jon &amp; Mary</a></p>
                                         </div>
                                     </div>
@@ -227,16 +244,20 @@ last modified: December 02, 2007
                                                 The easiest and funnest way to plan, share and remember your birthday.
                                             </h5>
                                             <p id="YT20" runat="server">
-                                                Create a personal website (a <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>) for your birthday in minutes. Send stylish
-                                                online birthday invitations with RSVP. Add photos from before and after the event
-                                                and let your friends do the same. Receive messages in your guestbook, virtual gifts,
-                                                and more!
+                                                Create a personal website (a
+                                                <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>)
+                                                for your birthday in minutes. Send stylish online birthday invitations with RSVP.
+                                                Add photos from before and after the event and let your friends do the same. Receive
+                                                messages in your guestbook, virtual gifts, and more!
                                             </p>
-                                            <a href="<%="http://birthday.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com" %>" class="learnMore-5">Learn More &gt;</a>
+                                            <a href="<%="http://birthday.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com" %>"
+                                                class="learnMore-5">Learn More &gt;</a>
                                         </div>
                                         <div class="yt-exampleLink">
                                             <p>
-                                                <span id="YT21" runat="server">Birthday <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>: </span><a href="<%="http://birthday.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com/jensweet16/" %>" 
+                                                <span id="YT21" runat="server">Birthday
+                                                    <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>:
+                                                </span><a href="<%="http://birthday.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com/jensweet16/" %>"
                                                     class="learnMore-5" target="_blank">Jen's Sweet 16</a></p>
                                         </div>
                                     </div>
@@ -249,16 +270,20 @@ last modified: December 02, 2007
                                                 The most personalized and thoughtful way to remember a loved one.
                                             </h5>
                                             <p id="YT22" runat="server">
-                                                Create a personal website (a <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>) for your loved one in minutes. Share their
-                                                story. Send stylish online thank you cards. Add photos and videos and let friends
-                                                and family do the same. Receive personal messages in the guestbook and much more!
+                                                Create a personal website (a
+                                                <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>)
+                                                for your loved one in minutes. Share their story. Send stylish online thank you
+                                                cards. Add photos and videos and let friends and family do the same. Receive personal
+                                                messages in the guestbook and much more!
                                             </p>
                                             <a href="http://memorial.yourtribute.com" class="learnMore-6">Learn More &gt;</a>
                                         </div>
                                         <div class="yt-exampleLink">
                                             <p>
-                                                <span id="YT23" runat="server">Memorial <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>:</span> <a href="http://memorial.yourtribute.com/evelynmsmith/"
-                                                    class="learnMore-6" target="_blank">Evelyn Mary Smith</a></p>
+                                                <span id="YT23" runat="server">Memorial
+                                                    <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>:</span>
+                                                <a href="http://memorial.yourtribute.com/evelynmsmith/" class="learnMore-6" target="_blank">
+                                                    Evelyn Mary Smith</a></p>
                                         </div>
                                     </div>
                                     <div id='yt-slide-7' class='yt-slide'>
@@ -269,17 +294,21 @@ last modified: December 02, 2007
                                             <h5>
                                                 The most creative and fun way to share your important milestone.</h5>
                                             <p id="YT24" runat="server">
-                                                Create a personal website (a <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>) for your anniversary in minutes. Send stylish
-                                                online invitations. Add photos and videos from before and after the event. Receive
-                                                personal messages in the guestbook and virtual gifts. Plus many more easy-to-use
-                                                features!
+                                                Create a personal website (a
+                                                <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>)
+                                                for your anniversary in minutes. Send stylish online invitations. Add photos and
+                                                videos from before and after the event. Receive personal messages in the guestbook
+                                                and virtual gifts. Plus many more easy-to-use features!
                                             </p>
-                                            <a href="<%="http://anniversary.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com" %>" class="learnMore-7">Learn More &gt;</a>
+                                            <a href="<%="http://anniversary.your"+ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()+".com" %>"
+                                                class="learnMore-7">Learn More &gt;</a>
                                         </div>
                                         <div class="yt-exampleLink">
                                             <p>
-                                                <span id="YT25" runat="server">Anniversary <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>:</span> <a href="http://anniversary.yourtribute.com/billandjune/"
-                                                    class="learnMore-7" target="_blank">Bill &amp; June Stiles</a></p>
+                                                <span id="YT25" runat="server">Anniversary
+                                                    <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>:</span>
+                                                <a href="http://anniversary.yourtribute.com/billandjune/" class="learnMore-7" target="_blank">
+                                                    Bill &amp; June Stiles</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -323,19 +352,22 @@ last modified: December 02, 2007
                                             <br />
                                             online memorial.
                                         </h5>
-                                        <p id="P4" runat="server">
-                                            Create a free online obituary or personalized memorial <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString().ToLower()%> website for a loved
-                                            one in minutes. Invite friends and family to share condolences, stories, memories,
+                                        <p id="P4" runat="server" class="createTextP4">
+                                            Create free online obituaries or premium memorial websites for loved ones in minutes.
+                                            Easily invite friends and family to share their condolences, stories, memories,
                                             photos and videos on the memorial.
                                         </p>
-                                        <a href="<%=Session["APP_BASE_DOMAIN"]%>tour.aspx" class="learmore-MT">Learn More &gt;</a>
+                                        <br/>
+                                        <a href="<%=Session["APP_BASE_DOMAIN"]%>tour.aspx" class="learmore-MT"><b>Learn More &gt;</b></a>
                                     </div>
                                     <div class="hack-clearBoth">
                                     </div>
                                     <div class="yt-SamplePadding">
                                         <p>
-                                            <span id="Span1" runat="server">Sample Memorial <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>:</span> <a id="Links" href="http://memorial.yourtribute.com/evelynmsmith/"
-                                                target="_blank" class="learnMore-6">Evelyn Mary Smith</a></p>
+                                            <span id="Span1" runat="server"><b>Sample Memorial Website:</b>
+                                                 </span>
+                                            <a id="Links" href="http://memorial.yourtribute.com/evelynmsmith/" target="_blank"
+                                                class="learnMore-6">Evelyn Mary Smith</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -362,27 +394,32 @@ last modified: December 02, 2007
                 
                     <% if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower().Equals("yourmoments"))
                        { %>
-                       <div class="padLeft100">
-                    <div id="bigButtons" runat="server" class="bigButtons">
-                        <a href="<%=Session["APP_BASE_DOMAIN"]%>pricing.aspx" class="leftBigButton">Create a
-                            <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%></a> <a href="<%=Session["APP_BASE_DOMAIN"]%>tour.aspx" class="rightBigButton">
-                                Take a Tour</a>
-                    </div>
+                    <div class="padLeft100">
+                        <div id="bigButtons" runat="server" class="bigButtons">
+                            <a href="<%=Session["APP_BASE_DOMAIN"]%>pricing.aspx" class="leftBigButton">Create a
+                                <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%></a>
+                            <a href="<%=Session["APP_BASE_DOMAIN"]%>tour.aspx" class="rightBigButton">Take a Tour</a>
+                        </div>
                     </div>
                     <%} %>
                     <div id="topQuote">
                         <% if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower().Equals("yourtribute"))
                            { %>
                         <h1 class="NormalFont">
-                            Over<span class="bold"> 40,000 families</span> have used 
-                            <span id="YT1" runat="server" class="bold">Your <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>'s Free Obituaries </span> online to <span
-                                class="bold">remember a life</span>.</h1>
+                            <span class="bold boldTextStyle">Pay
+                                <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString().ToLower()%>
+                                to the life of a loved one with an online memorial from Your
+                                <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString()%>.</span>
+                        </h1>
+                        <span class="underText">Create a free Online Obituary Or premium Memorial Website. Get
+                            started in seconds. No Credit Card required.</span>
                         <%} %>
                         <%else
                             { %>
                         <h3>
-                            Over<span class="bold"> 50,000 people</span> have used <span class="bold">Your <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString()%></span>
-                            to celebrate a <span id="Span3" runat="server" class="bold">significant event</span>
+                            Over<span class="bold"> 50,000 people</span> have used <span class="bold">Your
+                                <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString()%></span> to
+                            celebrate a <span id="Span3" runat="server" class="bold">significant event</span>
                             or <span class="bold">special someone</span>.</h3>
                         <%} %>
                     </div>
@@ -390,9 +427,9 @@ last modified: December 02, 2007
                        { %>
                     <div style="height: 20px; margin-top: 10px; margin-left: -20px; background-color: #BBDFF2;
                         padding-top: 7px; padding-bottom: 7px;">
-                        <span style="margin-left: 165px; color: #5BB4E5; font-weight: bold; font-size: 16px;">
-                            Searching for an existing memorial?</span> <span style="margin-left: 10px; top: -2px;
-                                position: relative;">
+                        <span style="margin-left: 50px; color: #5BB4E5; font-weight: bold; font-size: 16px;">
+                            Searching for an existing online obituary or memorial website?</span> <span style="margin-left: 10px;
+                                top: -2px; position: relative;">
                                 <asp:TextBox ID="txtsearch" runat="server" CssClass="SearchTxt-MT" Text="Enter a First and Last Name"
                                     onfocus="if(this.value=='Enter a First and Last Name') {this.value='';this.style.color = '#7E84B6';this.style.fontStyle='normal';}"
                                     onkeypress="this.style.color = 'black';this.style.fontStyle='normal';" onblur="if(this.value=='') {this.value='Enter a First and Last Name';this.style.color = '#7E84B6';} else{this.style.color = 'black';this.style.fontStyle='normal';}"></asp:TextBox></span>
@@ -400,52 +437,63 @@ last modified: December 02, 2007
                             <asp:Button ID="btnSearch" ValidationGroup="SearchError" runat="server" CssClass="yt-SearchBtn-MT"
                                 Text="Search" OnClick="btnSearch_Click" /></span> <span>
                                     <asp:RequiredFieldValidator ControlToValidate="txtsearch" InitialValue="Enter a First and Last Name"
-                                        ID="reqSearch" runat="server" ErrorMessage="Please enter some text" Display="Dynamic"
+                                        ID="reqSearch" runat="server" Font-Bold="true" Font-Size="14" ErrorMessage=" ! " Display="Dynamic"
                                         ValidationGroup="SearchError"> </asp:RequiredFieldValidator>
                                 </span>
                     </div>
                     <%} %>
                     <div class="whatBlock">
                         <h4 class="Purple-MT" id="YT2" runat="server">
-                            What is Your <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString()%>?</h4>
+                            What is Your
+                            <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString()%>?</h4>
                         <% if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower().Equals("yourtribute"))
                            { %>
                         <p class="Purple-MT">
-                            A web-based tool that lets you create a permanent online memorial to remember the
-                            life of a loved one. An online memorial provides the same features as popular social
-                            networking and photo sharing websites in a personalized easy-to-use interface.</p>
+                            Your Tribute is an easy-to-use website that allows you to create an online memorial
+                            to commemorate a life. Create free online obituaries or memorial websites to remember
+                            your loved ones. Share their story, add photos and videos, leave condolences and
+                            memorials, and then invite friends and family to do the same.</p>
                         <%} %>
                         <%else
                             { %>
                         <p class="">
-                            A web-based tool, that lets you set up a personal website (a <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>) to plan, share
-                            and remember a significant event or special someone. A <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%> can be created in
-                            minutes, but remains online for life to provide an everlasting record of the special
-                            occasion.</p>
+                            A web-based tool, that lets you set up a personal website (a
+                            <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>)
+                            to plan, share and remember a significant event or special someone. A
+                            <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>
+                            can be created in minutes, but remains online for life to provide an everlasting
+                            record of the special occasion.</p>
                         <%} %>
                     </div>
                     <div class="whyBlock">
                         <h4 class="Gray-MT" id="YT4" runat="server">
-                            Why Your <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString()%>?</h4>
+                            Why Your
+                            <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString()%>?</h4>
                         <% if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower().Equals("yourtribute"))
                            { %>
                         <p class="Gray-MT">
-                            Since 2002 we have provided a safe and secure environment for friends and family to connect and share memories. Free obituaries online can be created in minutes, but remain online forever to provide an everlasting record of the person’s life.</p>
+                            Since 2002, friends and family have used Your Tribute to create more than 75,000
+                            online obituaries and memorial websites to commemorate the life of loved ones. Our
+                            team, with more than 50 years experience in the funeral industry, is dedicated to
+                            helping you create a beautiful tribute to a departed person.</p>
                         <%} %>
                         <%else
                             { %>
                         <p class="">
-                            It is easy and elegant. Create a personalized <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%> for your event in minutes.
-                            Your <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString()%> includes many of the features of popular online invitation, photo sharing,
-                            blogging, and social networking websites, in an easy-to-use intuitive interface.</p>
+                            It is easy and elegant. Create a personalized
+                            <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%>
+                            for your event in minutes. Your
+                            <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString()%>
+                            includes many of the features of popular online invitation, photo sharing, blogging,
+                            and social networking websites, in an easy-to-use intuitive interface.</p>
                         <%} %>
                     </div>
                     <% if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower().Equals("yourtribute"))
                        { %>
                     <div id="bButtons" runat="server" class="bigButtons-MT">
                         <a href="<%=Session["APP_BASE_DOMAIN"]%>pricing.aspx" class="leftBigButton">Create a
-                            <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%></a> <a href="<%=Session["APP_BASE_DOMAIN"]%>tour.aspx" class="rightBigButton">
-                                Take a Tour</a>
+                            <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%></a>
+                        <a href="<%=Session["APP_BASE_DOMAIN"]%>tour.aspx" class="rightBigButton">Take a Tour</a>
                     </div>
                     <div class="hack-clearBoth">
                     </div>
@@ -476,8 +524,8 @@ last modified: December 02, 2007
                                 <h3>
                                     Lifetime Storage</h3>
                                 <p id="P3" runat="server">
-                                    All online memorials, including stories, guestbook, messages, photos and videos
-                                    will remain online permanently.</p>
+                                    Create a memorial websites to ensure your memories, including condolences , photos
+                                    and videos, will remain online permanently.</p>
                                 <div class="HomepageBox_Lifetime">
                                 </div>
                                 <!--<img src="images/col13.gif" alt="good people"/>-->
@@ -488,18 +536,19 @@ last modified: December 02, 2007
                                 <h3>
                                     Beautiful Themes</h3>
                                 <p id="P1" runat="server">
-                                    Choose from our collection of themes created by top designers. Tired of your theme?
-                                    Switching to a new theme is easy!</p>
+                                    Personalize all free online obituaries or memorial websites with one of our designer
+                                    themes. You can switch the theme any time.</p>
                                 <div class="HomepageBox_Themes">
                                 </div>
                                 <!--<img src="images/col31.gif" alt="good people"/>-->
                             </div>
                             <div class="HomePageBottom">
                                 <h3>
-                                    Guestbook & Gifts</h3>
+                                    Guestbook & Memorials</h3>
                                 <p>
-                                    Leave a personal message in the guestbook or choose from a collection of free virtual
-                                    gifts to give to the family.</p>
+                                    Leave a condolence message in the online guestbook or choose a memorial to add to
+                                    the online obituary or memorial website.
+                                </p>
                                 <div class="HomepageBox_Guestbook">
                                 </div>
                                 <!-- <img src="images/col32.gif" alt="good people"/>-->
@@ -508,34 +557,30 @@ last modified: December 02, 2007
                                 <h3>
                                     High Resolution Photos</h3>
                                 <p>
-                                    We store the original version of every photo (up to 3 MP). Memorial can view and
-                                    download high resolution photos.</p>
+                                    We store the original version of every photo (up to 3MP). Premium memorial websites
+                                    can view and save high resolution photos.</p>
                                 <div class="HomepageBox_Photos">
                                 </div>
                             </div>
                         </div>
                         <div class="hack-clearBoth">
                         </div>
-                           <%if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower() == "yourtribute")
-                             { %>
+                        <%if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower() == "yourtribute")
+                          { %>
                         <div class="testimonialBlock-MT">
                             <h2 class="blueHome" id="YT9" runat="server">
-                                Celebrate a life and remember a special someone with Your <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString()%>.</h2>
+                                Celebrate a life and remember a special someone with Your
+                                <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString()%>.</h2>
                             <h2 class="h2TestimonialTextSize">
-                                <span class="h2TestimonialTextSize1">Create permanent </span><span class="h2TestimonialTextSize2">
-                                    free Obituaries</span> <span class="h2TestimonialTextSize1"> online or personalized
-                                
-                                
-                                
-                                </span><span class="h2TestimonialTextSize2" id="YT10" runat="server">Memorial
-                                    <%=ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()%></span>
-                                <span class="h2TestimonialTextSize1">websites</span><span class="h2TestimonialTextSize1">.</span></h2>
+                                <span class="h2TestimonialTextSize1">Create free </span><span class="h2TestimonialTextSize2">
+                                    Online Obituaries</span> <span class="h2TestimonialTextSize1">or premium </span>
+                                <span class="h2TestimonialTextSize2" id="YT10" runat="server">Memorial Websites</span><span class="h2TestimonialTextSize1"> in a few simple steps.</span></h2>
                             <%--   <h2 class="h2TestimonialTextSize">
                             Create <b>free</b> personalized <b>Tributes</b> to <b>plan</b>, <b>share</b> and
                             <b>remember</b> life's most <b>important events</b>.</h2>--%>
                             <p class="HomePageFontSize">
-                                Share stories and memories, add photos and videos, receive personal guestbook messages
-                                and virtual gifts, plus much more!</p>
+                                Share their story, add photos and videos, leave condolences and memorials, and then
+                                invite friends and family to do the same.</p>
                         </div>
                         <%} %>
                     </div>
@@ -641,35 +686,66 @@ last modified: December 02, 2007
                                 Get started in seconds, no credit card, no commitment.</p>
                         </div>
                     </div>
-                    <div class="ytIntro"> 
-                    <p>
-                        Founded in 2002, Your Tribute is a leading provider of free obituaries online. For
-                        the past 10 years we have provided a safe and secure environment for friends and
-                        family to connect and share memories. We provide free obituaries and memorial tribute
-                        websites to families. We also work with funeral homes worldwide as their obituary
-                        provider.</p><br />
-                    <p>
-                        Free obituaries online are fast and easy to setup. They include the obituary as
-                        well as the story page where families can add personal information and write their
-                        loved one’s story. All obituaries include free virtual gifts as well as unlimited
-                        guestbook messages. The obituary can easily be shared with relatives and friends
-                        by email and through social websites like Facebook and Twitter.</p><br />
-                    <p>
-                        It is easy to upgrade free obituaries online to premium memorial tribute websites.
-                        Personalized memorial websites are enhanced versions of the free obituaries. The
-                        premium memorial tributes allow you to add information about the funeral and related
-                        events. You can invite friends and family and send them virtual thank you cards.
-                        Friends and family can also add photos and videos to the memorial website.</p><br />
-                    <p>
-                        If you have any questions about creating free obituaries online, please contact
-                        us at any time. We can provide you with suggestion and help create a beautiful obituary
-                        or memorial tribute website for your loved one.<a href="<%=Session["APP_BASE_DOMAIN"]%>pricing.aspx">Click here to get started for free.</a></p>
-                </div>
+                    <div class="ytIntro">
+                        <p class="bottomBlock">
+                            The Importance of Free Online Obituaries
+                        </p>
+                        <p>
+                            An obituary, also referred to as a death notice, is typically published In a local
+                            newspaper. The obituary includes the death announcement, life history, family and
+                            funeral information. Obituaries are necessary because they notify people of the
+                            deceased's passing. However, today more people rely on the Internet for information
+                            and free online obituaries are an important way to ensure that people are notified
+                            of the death.</p>
+                        <br />
+                        <p>
+                            Free online obituaries create a permanent online record of the person's death that
+                            can always be located by friends and family. Furthermore, the online obituary can
+                            be shared by email and through social networking websites and can be viewed by people
+                            throughout the world. These are major advantages over newspapers, which can only
+                            be viewed locally and are often only permanently saved by a few family members.</p>
+                        <br />
+                        <p>
+                            Another important reason to create free online obituaries is to provide friends
+                            and family with a location where they can connect and share memories. Online obituaries
+                            often include a guestbook feature where people can leave condolences. Your Tribute's
+                            free online obituaries include a guestbook, but also allow users to share stories,
+                            photos, videos and more.</p>
+                        <br />
+                        <p class="bottomBlock">
+                            The Benefits of Premium Memorial Websites
+                        </p>
+                        
+                        <p>
+                            Free online obituaries are a quick and easy way to create an online death notice,
+                            but premium memorial websites offer a number of benefits. A memorial website is
+                            more personalized and creates an online memorial to memorialize and pay tribute
+                            to the life of an individual. A memorial website preserves history and memories
+                            and makes them available for future generations to view and contribute to.</p>
+                        <br />
+                        <p>
+                            Premium memorial websites from Your Tribute have no content limits. Users can add
+                            an unlimited number of stories, condolences, memorials, photos, videos and more.
+                            In addition to being able to add unlimited content, users can upload and view high-resolution
+                            photos and HD videos. This gives friends and family a central location where they
+                            can share photos and videos of their departed loved one.</p>
+                        <br />
+                        <p>
+                            Some of the other benefits of creating premium memorial websites is that you receive
+                            a custom URL for the website which makes it easier to share with friends and family.
+                            You also have a wider selection of themes to choose from allowing you to create
+                            a more personalized memorial. Finally, creating a permanent memorial will ensure
+                            that the tribute remains online forever for future generations to view.</p>
+                        <br />
+                        <p>
+                            <a id="btmPricingLink" href="<%=Session["APP_BASE_DOMAIN"]%>pricing.aspx">Get started with a free Online
+                                Obituary or premium Memorial Website.></a></p>
+                    </div>
                 </div>
                 <!--adGrid ends here-->
                 <!--yt-ContentPrimaryContainer-->
                 <div class="hack-clearBoth">
-                </div>                
+                </div>
                 <div id="Bottombackground" runat="server" class="yt-ContentContainerImage">
                 </div>
             </div>

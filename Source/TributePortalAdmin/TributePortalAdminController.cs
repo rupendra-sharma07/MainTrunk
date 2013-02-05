@@ -229,5 +229,10 @@ namespace TributesPortal.TributePortalAdmin
         {
             return FacadeManager.TributeManager.UpdateNewTributeUrlTributeTypeinAlltables(_objUpdateTribute, _newTribute);
         }
+
+        internal bool UpdateUserTributeMobileView(Users users)
+        {
+            return FacadeManager.TributeManager.UpdateUserTributeMobileView(users);
+        }
     }
 }

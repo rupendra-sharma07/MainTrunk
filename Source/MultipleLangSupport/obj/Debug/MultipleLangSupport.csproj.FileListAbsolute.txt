@@ -76,17 +76,56 @@ E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\fr\Tribute
 E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
 E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.dll
 E:\YourTribute\EnhancementPhase1\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\obj\Debug\ResolveAssemblyReference.cache
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.resources
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.fr.resources
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.ro.resources
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\obj\Debug\ResGen.read.1.tlog
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\obj\Debug\ResGen.write.1.tlog
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\obj\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\obj\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\TestYourTributeGit\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\TestYourTributeGit\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\TestYourTributeGit\Source\MultipleLangSupport\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\TestYourTributeGit\Source\MultipleLangSupport\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\TestYourTributeGit\Source\MultipleLangSupport\obj\Debug\ResolveAssemblyReference.cache
+E:\TestYourTributeGit\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.resources
+E:\TestYourTributeGit\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.fr.resources
+E:\TestYourTributeGit\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.ro.resources
+E:\TestYourTributeGit\Source\MultipleLangSupport\obj\Debug\MultipleLangSupport.csproj.GenerateResource.Cache
+E:\TestYourTributeGit\Source\MultipleLangSupport\obj\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\TestYourTributeGit\Source\MultipleLangSupport\obj\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\TestYourTributeGit\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.dll
+E:\TestYourTributeGit\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.resources
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.fr.resources
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.ro.resources
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\obj\Debug\MultipleLangSupport.csproj.GenerateResource.Cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\obj\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\obj\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.resources
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.fr.resources
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.ro.resources
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\obj\Debug\MultipleLangSupport.csproj.GenerateResource.Cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\obj\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\obj\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.resources
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.fr.resources
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.App_GlobalResources.Resource.ro.resources
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\obj\Debug\ResGen.read.1.tlog
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\obj\Debug\ResGen.write.1.tlog
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\obj\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\obj\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MultipleLangSupport\obj\Debug\TributesPortal.MultipleLangSupport.pdb

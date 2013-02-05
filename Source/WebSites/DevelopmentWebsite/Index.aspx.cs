@@ -34,6 +34,8 @@ using Facebook;
 public partial class Tribute_RootHomepage :PageBase//System.Web.UI.Page
 {
     public string LinkOtherDomain = string.Empty;
+    private SessionValue objSessionValue = null;
+
     protected void Page_Load(object sender, EventArgs e)
     {       
         string strHostDomain = "";
@@ -42,6 +44,31 @@ public partial class Tribute_RootHomepage :PageBase//System.Web.UI.Page
 
         strHostDomain = Request.ServerVariables["SERVER_NAME"];
         string[] urlArr = strHostDomain.Split(".".ToCharArray());
+       
+        //code for YT Mobile redirections
+        string redirctMobileUrl = string.Empty;
+        if (!IsPostBack)
+        {
+            DeviceManager deviceManager = new DeviceManager
+            {
+                UserAgent = Request.UserAgent,
+                IsMobileBrowser = Request.Browser.IsMobileDevice
+            };
+
+            // Added by Varun Goel on 25 Jan 2013 for NoRedirection functionality
+            TributesPortal.Utilities.StateManager stateManager = StateManager.Instance;
+
+            objSessionValue = (SessionValue)stateManager.Get("objSessionvalue", StateManager.State.Session);
+            if (objSessionValue == null || objSessionValue.NoRedirection == null || objSessionValue.NoRedirection == false)
+            {
+                if (deviceManager.IsMobileDevice())
+                {
+                    // Redirection URL
+                    redirctMobileUrl = string.Format("{0}{1}{2}", "https://www.", WebConfig.TopLevelDomain, "/mobile/Search.html");
+                    Response.Redirect(redirctMobileUrl, false);
+                }
+            }
+        }
 
         if (urlArr.Length > 2)
         {
@@ -86,6 +113,7 @@ public partial class Tribute_RootHomepage :PageBase//System.Web.UI.Page
         }
         else if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower() == "yourtribute")
         {
+            HomeTitle.InnerHtml = @"Your Tribute - Free Online Obituaries & Premium Memorial Websites";
             YT2.Attributes["class"] = "Purple-MT";
             YT4.Attributes["class"] = "Gray-MT";
            // YT5.Attributes["class"] = "Gray-MT";

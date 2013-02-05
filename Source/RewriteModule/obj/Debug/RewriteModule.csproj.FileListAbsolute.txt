@@ -13,8 +13,23 @@ E:\YourTribute\EnhancementPhase1\Source\RewriteModule\bin\Debug\RewriteModule.pd
 E:\YourTribute\EnhancementPhase1\Source\RewriteModule\obj\Debug\ResolveAssemblyReference.cache
 E:\YourTribute\EnhancementPhase1\Source\RewriteModule\obj\Debug\RewriteModule.dll
 E:\YourTribute\EnhancementPhase1\Source\RewriteModule\obj\Debug\RewriteModule.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\RewriteModule\bin\Debug\RewriteModule.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\RewriteModule\bin\Debug\RewriteModule.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\RewriteModule\obj\Debug\ResolveAssemblyReference.cache
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\RewriteModule\obj\Debug\RewriteModule.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\RewriteModule\obj\Debug\RewriteModule.pdb
+E:\TestYourTributeGit\Source\RewriteModule\bin\Debug\RewriteModule.dll
+E:\TestYourTributeGit\Source\RewriteModule\bin\Debug\RewriteModule.pdb
+E:\TestYourTributeGit\Source\RewriteModule\obj\Debug\ResolveAssemblyReference.cache
+E:\TestYourTributeGit\Source\RewriteModule\obj\Debug\RewriteModule.dll
+E:\TestYourTributeGit\Source\RewriteModule\obj\Debug\RewriteModule.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\RewriteModule\bin\Debug\RewriteModule.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\RewriteModule\bin\Debug\RewriteModule.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\RewriteModule\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\RewriteModule\obj\Debug\RewriteModule.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\RewriteModule\obj\Debug\RewriteModule.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\RewriteModule\bin\Debug\RewriteModule.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\RewriteModule\bin\Debug\RewriteModule.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\RewriteModule\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\RewriteModule\obj\Debug\RewriteModule.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\RewriteModule\obj\Debug\RewriteModule.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\RewriteModule\bin\Debug\RewriteModule.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\RewriteModule\bin\Debug\RewriteModule.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\RewriteModule\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source_25Jan2013\Source\RewriteModule\obj\Debug\RewriteModule.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\RewriteModule\obj\Debug\RewriteModule.pdb

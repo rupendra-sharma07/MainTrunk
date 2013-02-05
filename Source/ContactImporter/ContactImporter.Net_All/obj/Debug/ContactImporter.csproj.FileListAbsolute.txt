@@ -38,3 +38,35 @@ E:\YourTribute\EnhancementPhase1\Source\ContactImporter\ContactImporter.Net_All\
 E:\YourTribute\EnhancementPhase1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.csproj.ResolveComReference.cache
 E:\YourTribute\EnhancementPhase1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.dll
 E:\YourTribute\EnhancementPhase1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.pdb
+E:\TestYourTributeGit\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.dll
+E:\TestYourTributeGit\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.pdb
+E:\TestYourTributeGit\Source\ContactImporter\ContactImporter.Net_All\bin\Interop.WinHttp.dll
+E:\TestYourTributeGit\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ResolveAssemblyReference.cache
+E:\TestYourTributeGit\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\Interop.WinHttp.dll
+E:\TestYourTributeGit\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.csproj.ResolveComReference.cache
+E:\TestYourTributeGit\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.dll
+E:\TestYourTributeGit\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\ContactImporter\ContactImporter.Net_All\bin\Interop.WinHttp.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\Interop.WinHttp.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.csproj.ResolveComReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\ContactImporter\ContactImporter.Net_All\bin\Interop.WinHttp.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\Interop.WinHttp.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.csproj.ResolveComReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\ContactImporter\ContactImporter.Net_All\bin\ContactImporter.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\ContactImporter\ContactImporter.Net_All\bin\Interop.WinHttp.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source_25Jan2013\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\Interop.WinHttp.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.csproj.ResolveComReference.cache
+E:\Project\YourTribute\Source_25Jan2013\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\ContactImporter\ContactImporter.Net_All\obj\Debug\ContactImporter.pdb

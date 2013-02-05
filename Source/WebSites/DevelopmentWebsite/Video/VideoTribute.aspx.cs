@@ -97,6 +97,8 @@ public partial class Video_VideoTribute : PageBase, IVideoTribute
     //private bool isTributeIdNumeric;               // commented by Ud to remove warning
     bool IsCstmHeaderOn = true;
 
+    public int packageId = 0;
+
     #endregion
 
     #region CONSTANT
@@ -139,26 +141,29 @@ public partial class Video_VideoTribute : PageBase, IVideoTribute
                 // For passing in Create Tribute Button of Modal Popup
                 Session["TributeId"] = _tributeId.ToString();
 
+                packageId = _presenter.GetTributePackageId(_tributeId);
+
                 //LHK: Check for expiry message
                 string tributeEndDate = _presenter.GetTributeEndDate(_tributeId);
                 #region if loop
                 if (tributeEndDate != "")
                 {
+                    string errorHtml = string.Empty;
                     if (!tributeEndDate.Equals("Never"))
                     {
-                        DateTime dt1 =DateTime.Now;
+                        DateTime dt1 = DateTime.Now;
 
-                        DateTime.TryParseExact(tributeEndDate, "MM'/'dd'/'yyyy",CultureInfo.InvariantCulture,DateTimeStyles.None, out dt1);
+                        DateTime.TryParseExact(tributeEndDate, "MM'/'dd'/'yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out dt1);
                         if (dt1 > DateTime.Now)
                         {
                             VideoExpiryDate = dt1.ToString("dd/MM/yyyy");
                             if (WebConfig.ApplicationMode.Equals("local"))
                             {
-                                lblErrorMessage.Text = "<img src='../assets/images/warn.png'/> The video can be viewed until<b> " + dt1.ToString("MMMM dd, yyyy") + "</b>. To keep it online longer, <a href='" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "' style='font-weight:bold'>click here to upgrade</a>";
+                                errorHtml = "<img src='../assets/images/warn.png'/> The video can be viewed until<b> " + dt1.ToString("MMMM dd, yyyy") + "</b>. To keep it online longer, <a href='" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "' style='font-weight:bold'>click here to upgrade</a>";
                             }
                             else
                             {
-                                lblErrorMessage.Text = "<img src='../assets/images/warn.png'/> The video can be viewed until <b> " + dt1.ToString("MMMM dd, yyyy") + "</b>. To keep it online longer, <a href='http://video." + WebConfig.TopLevelDomain + "/tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "' style='font-weight:bold'>click here to upgrade</a>";
+                                errorHtml = "<img src='../assets/images/warn.png'/> The video can be viewed until <b> " + dt1.ToString("MMMM dd, yyyy") + "</b>. To keep it online longer, <a href='http://video." + WebConfig.TopLevelDomain + "/tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "' style='font-weight:bold'>click here to upgrade</a>";
                             }
                         }
                         else
@@ -166,18 +171,26 @@ public partial class Video_VideoTribute : PageBase, IVideoTribute
                             VideoExpiryDate = dt1.ToString("dd/MM/yyyy");
                             if (WebConfig.ApplicationMode.Equals("local"))
                             {
-                                lblErrorMessage.Text = "<img src='../assets/images/error_pic.png'/> This video has expired. To reactivate the video so that it can be viewed for life. <a href='" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "'style='color:Red;font-weight:bold' >click here to upgrade</a>";
+                                errorHtml = "<img src='../assets/images/error_pic.png'/> This video has expired. To reactivate the video so that it can be viewed for life. <a href='" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "'style='color:Red;font-weight:bold' >click here to upgrade</a>";
                             }
                             else
                             {
-                                lblErrorMessage.Text = "<img src='../assets/images/error_pic.png'/> This video has expired. To reactivate the video so that it can be viewed for life. <a href='http://video." + WebConfig.TopLevelDomain + "/tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "'style='color:Red;font-weight:bold' >click here to upgrade</a>";
+                                errorHtml = "<img src='../assets/images/error_pic.png'/> This video has expired. To reactivate the video so that it can be viewed for life. <a href='http://video." + WebConfig.TopLevelDomain + "/tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "'style='color:Red;font-weight:bold' >click here to upgrade</a>";
                             }
                         }
                     }
                     else
                     {
                         VideoExpiryDate = null;
-                        lblErrorMessage.Text = "<img src='../assets/images/warn.png'/> This video has been upgraded and can be viewed forever!";
+                        errorHtml = "<img src='../assets/images/warn.png'/> This video has been upgraded and can be viewed forever!";
+                    }
+                    if (packageId == 1 || packageId == 2 || packageId == 9 || packageId == 10)
+                    {
+                        lblErrorMessage.Text = errorHtml;
+                    }
+                    else
+                    {
+                        lblVidOnlyErrorMessage.Text = errorHtml;
                     }
                 }
                 #endregion
@@ -659,170 +672,7 @@ public partial class Video_VideoTribute : PageBase, IVideoTribute
         }
     }
 
-    //public string VideoUrl
-    //{
-    //    set
-    //    {
-    //        _videoUrl = value;
-    //    }
-    //}
-
-    //Properties for tribute header
-
-    //public string BusinessAddress
-    //{
-    //    get
-    //    {
-    //        return strBusinessAddress;
-
-    //    }
-    //    set
-    //    {
-    //        strBusinessAddress = value;
-    //    }
-
-    //}
-    //public string Phone
-    //{
-    //    get
-    //    {
-    //        return strPhone;
-
-    //    }
-    //    set
-    //    {
-    //        strPhone = value;
-    //    }
-
-    //}
-
-    //public string HeaderBGColor
-    //{
-    //    get
-    //    {
-    //        return strHeaderBGColor;
-    //    }
-    //    set
-    //    {
-    //        strHeaderBGColor = value;
-    //    }
-
-    //}
-
-    //public string HeaderLogo
-    //{
-    //    get
-    //    {
-    //        return strHeaderLogo;
-
-    //    }
-    //    set
-    //    {
-    //        strHeaderLogo = value;
-    //        //Session["HeaderLogo"] = value.ToString();
-    //        StateManager objStateManager = StateManager.Instance;
-    //        objStateManager.Add("HeaderLogo",value, StateManager.State.Session);
-    //    }
-
-    //}
-
-    //public string WebSite
-    //{
-    //    get
-    //    {
-    //        return strWebsite;
-    //    }
-    //    set
-    //    {
-    //        strWebsite = value;
-
-    //    }
-
-    //}
-    //public bool IsAddressOn
-    //{
-    //    get
-    //    {
-    //        return boolIsAddressOn;
-    //    }
-    //    set
-    //    {
-    //        boolIsAddressOn = Convert.ToBoolean(value);
-
-    //    }
-    //}
-    //public bool IsPhoneOn
-    //{
-    //    get
-    //    {
-    //        return boolIsPhoneon;
-    //    }
-    //    set
-    //    {
-    //        boolIsPhoneon = Convert.ToBoolean(value);
-
-    //    }
-    //}
-
-    //public bool IsWebSiteOn
-    //{
-    //    get
-    //    {
-    //        return boolIsWebSiteon;
-    //    }
-    //    set
-    //    {
-    //        boolIsWebSiteon = Convert.ToBoolean(value);
-
-    //    }
-    //}
     
-
-    //public bool IsObituaryURLOn
-    //{
-    //    get
-    //    {
-    //        return boolObituaryLinkOn;
-    //    }
-    //    set
-    //    {
-    //        boolObituaryLinkOn = Convert.ToBoolean(value);
-
-    //    }
-    //}
-    //public string ObituaryURL
-    //{
-    //    get
-    //    {
-    //        return strObituaryLink;
-    //    }
-    //    set
-    //    {
-    //        strObituaryLink = value;
-    //    }
-    //}
-    //public string UserBussCity
-    //{
-    //    get
-    //    {
-    //        return _userBussCity;
-    //    }
-    //    set
-    //    {
-    //        _userBussCity = value;
-    //    }
-    //}
-    //public string UserBussState
-    //{
-    //    get
-    //    {
-    //        return _userBussState;
-    //    }
-    //    set
-    //    {
-    //        _userBussState = value;
-    //    }
-    //}
     public bool IsCustomHeaderOn
     {
         get
@@ -960,15 +810,37 @@ public partial class Video_VideoTribute : PageBase, IVideoTribute
         if (_tributeVideoId != null)
         {
 
-            if (VideoExpiryDate != null)
+            if (packageId == 2 || packageId == 1 || packageId == 9 || packageId == 10)
             {
-                //sb.Append("<object height='480' width='720' wmode='transparent' type='application/x-shockwave-flash' allowScriptAccess='sameDomain' pluginspage='http://www.adobe.com/go/getflashplayer' allowFullScreen='false' bgcolor='ffffff' align='left' id='shell' name='shell' data='" + swfPlayer + "'><param name='menu' value='false'><param name='allowFullScreen' value='false' /><param name='bgcolor' value='#ffffff' /><param name='quality' value='high' /><param name='allowScriptAccess' value='sameDomain' /><param name='flashvars' value='MovieName=" + swfFile.Trim() + "&amp;ExpiryDate=" + VideoExpiryDate.Trim() + "&amp;UpgradeURL=" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "'></object>");
-                mainBody.Attributes.Add("onload", "javascript:showvideo('" + swfPlayer + "','" + swfFile + "','" + VideoExpiryDate + "','" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "');");
+                divVidTribute.Visible = true;
+                divVidOnly.Visible = false;
+                if (VideoExpiryDate != null)
+                {
+                    //sb.Append("<object height='480' width='720' wmode='transparent' type='application/x-shockwave-flash' allowScriptAccess='sameDomain' pluginspage='http://www.adobe.com/go/getflashplayer' allowFullScreen='false' bgcolor='ffffff' align='left' id='shell' name='shell' data='" + swfPlayer + "'><param name='menu' value='false'><param name='allowFullScreen' value='false' /><param name='bgcolor' value='#ffffff' /><param name='quality' value='high' /><param name='allowScriptAccess' value='sameDomain' /><param name='flashvars' value='MovieName=" + swfFile.Trim() + "&amp;ExpiryDate=" + VideoExpiryDate.Trim() + "&amp;UpgradeURL=" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "'></object>");
+                    mainBody.Attributes.Add("onload", "javascript:showvideo('" + swfPlayer + "','" + swfFile + "','" + VideoExpiryDate + "','" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "');");
+                }
+                else
+                {
+                    mainBody.Attributes.Add("onload", "javascript:showvideo('" + swfPlayer + "','" + swfFile + "','null','" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "');");
+                    //sb.Append("<object height='480' width='720' wmode='transparent' type='application/x-shockwave-flash' allowScriptAccess='sameDomain' pluginspage='http://www.adobe.com/go/getflashplayer' allowFullScreen='false' bgcolor='ffffff' id='shell' align='left' name='shell' data='" + swfPlayer + "'><param name='menu' value='false'><param name='allowFullScreen' value='false' /><param name='bgcolor' value='#ffffff' /><param name='quality' value='high' /><param name='allowScriptAccess' value='sameDomain' /><param name='flashvars' value='MovieName=" + swfFile.Trim() + "&amp;ExpiryDate=null&amp;UpgradeURL=" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "'></object>");
+                }
+
             }
             else
             {
-                mainBody.Attributes.Add("onload", "javascript:showvideo('" + swfPlayer + "','" + swfFile + "','null','" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "');");
-                //sb.Append("<object height='480' width='720' wmode='transparent' type='application/x-shockwave-flash' allowScriptAccess='sameDomain' pluginspage='http://www.adobe.com/go/getflashplayer' allowFullScreen='false' bgcolor='ffffff' id='shell' align='left' name='shell' data='" + swfPlayer + "'><param name='menu' value='false'><param name='allowFullScreen' value='false' /><param name='bgcolor' value='#ffffff' /><param name='quality' value='high' /><param name='allowScriptAccess' value='sameDomain' /><param name='flashvars' value='MovieName=" + swfFile.Trim() + "&amp;ExpiryDate=null&amp;UpgradeURL=" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "'></object>");
+               
+                divVidTribute.Visible = false;
+                divVidOnly.Visible = true;
+                if (VideoExpiryDate != null)
+                {
+                    //sb.Append("<object height='480' width='720' wmode='transparent' type='application/x-shockwave-flash' allowScriptAccess='sameDomain' pluginspage='http://www.adobe.com/go/getflashplayer' allowFullScreen='false' bgcolor='ffffff' align='left' id='shell' name='shell' data='" + swfPlayer + "'><param name='menu' value='false'><param name='allowFullScreen' value='false' /><param name='bgcolor' value='#ffffff' /><param name='quality' value='high' /><param name='allowScriptAccess' value='sameDomain' /><param name='flashvars' value='MovieName=" + swfFile.Trim() + "&amp;ExpiryDate=" + VideoExpiryDate.Trim() + "&amp;UpgradeURL=" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "'></object>");
+                    mainBody.Attributes.Add("onload", "javascript:showvideoOnly('" + swfPlayer + "','" + swfFile + "','" + VideoExpiryDate + "','" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "');");
+                }
+                else
+                {
+                    mainBody.Attributes.Add("onload", "javascript:showvideoOnly('" + swfPlayer + "','" + swfFile + "','null','" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "');");
+                    //sb.Append("<object height='480' width='720' wmode='transparent' type='application/x-shockwave-flash' allowScriptAccess='sameDomain' pluginspage='http://www.adobe.com/go/getflashplayer' allowFullScreen='false' bgcolor='ffffff' id='shell' align='left' name='shell' data='" + swfPlayer + "'><param name='menu' value='false'><param name='allowFullScreen' value='false' /><param name='bgcolor' value='#ffffff' /><param name='quality' value='high' /><param name='allowScriptAccess' value='sameDomain' /><param name='flashvars' value='MovieName=" + swfFile.Trim() + "&amp;ExpiryDate=null&amp;UpgradeURL=" + Session["APP_PATH"].ToString() + "tribute/videotributesponsor.aspx?tributeId=" + _tributeId + "'></object>");
+                }
             }
 
         }

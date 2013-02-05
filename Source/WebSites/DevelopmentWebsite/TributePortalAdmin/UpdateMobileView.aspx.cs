@@ -27,6 +27,7 @@ public partial class TributePortalAdmin_UpdateMobileView : System.Web.UI.Page,IU
         {
             txtUserIdOrUsername.Text = "";
             lblUpdatedRecord.Visible = false;
+            rdoUserId.Checked = true;
         }
     }
 

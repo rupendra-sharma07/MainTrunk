@@ -817,6 +817,8 @@ namespace TributesPortal.BusinessLogic
                 objUser.InsertSessionKeyValues(_objSessionValue.ID, "UserImage", _objSessionValue.UserImage.ToString());
             else
                 objUser.InsertSessionKeyValues(_objSessionValue.ID, "UserImage", "");
+            // Added by Varun to store NoRedirection boolean
+            objUser.InsertSessionKeyValues(_objSessionValue.ID, "NoRedirection", _objSessionValue.NoRedirection.ToString());
         }
 
         /// <summary>

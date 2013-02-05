@@ -7,6 +7,8 @@
 <head>
     <title>Your Tribute</title>
     <!--#include file="../analytics.asp"-->
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
     </head>
     <body>
     <form id="Form1" action="" runat="server">

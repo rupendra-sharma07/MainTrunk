@@ -7,29 +7,20 @@
 ///Audit Trail     : Date of Modification  Modified By         Description
 
 using System;
-using System.Data;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using System.Text;
 using Microsoft.Practices.ObjectBuilder;
 using TributesPortal.MyHome.Views;
 using TributesPortal.MultipleLangSupport;
 using TributesPortal.Utilities;
-using TributesPortal.Users;
 using TributesPortal.BusinessEntities;
 using System.IO;
 using System.Collections.Generic;
-using TributesPortal.Users.Views;
 using Facebook;
 using Facebook.Web;
 using System.Drawing;
-using System.Drawing.Imaging;//Lx:for Image resize
+//Lx:for Image resize
 
 
 public partial class MyHome_AdminProfileSettings : PageBase, IAdminProfileSettings
@@ -119,21 +110,24 @@ public partial class MyHome_AdminProfileSettings : PageBase, IAdminProfileSettin
         }
         if (FacebookWebContext.Current.Session != null)
         {
-            var fbwc = new FacebookWebClient(FacebookWebContext.Current.AccessToken);            
-            try
-            {            
-                
-                string fql = "Select pic_square from user where uid = " + FacebookWebContext.Current.UserId;
-                JsonArray me2 = (JsonArray)fbwc.Query(fql);
-                var mm = (IDictionary<string, object>)me2[0];
-
-                if (!string.IsNullOrEmpty((string)mm["pic_square"]))
-                {
-                    ImgUserImage.Src = (string)mm["pic_square"]; // get user image
-                }
-            }
-            catch (Exception ex)
+            if (FacebookWebContext.Current.AccessToken != null)
             {
+                var fbwc = new FacebookWebClient(FacebookWebContext.Current.AccessToken);
+                try
+                {
+
+                    string fql = "Select pic_square from user where uid = " + FacebookWebContext.Current.UserId;
+                    JsonArray me2 = (JsonArray) fbwc.Query(fql);
+                    var mm = (IDictionary<string, object>) me2[0];
+
+                    if (!string.IsNullOrEmpty((string) mm["pic_square"]))
+                    {
+                        ImgUserImage.Src = (string) mm["pic_square"]; // get user image
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
             }
         }
     }
@@ -199,6 +193,13 @@ public partial class MyHome_AdminProfileSettings : PageBase, IAdminProfileSettin
 
                 if (!(string.IsNullOrEmpty(newImgPath)))
                     objSessionValue.UserImage = newImgPath;
+
+
+                if (!string.IsNullOrEmpty(txtFirstName.Text))
+                    objSessionValue.FirstName = txtFirstName.Text;
+                if (!string.IsNullOrEmpty(txtLastName.Text))
+                    objSessionValue.LastName = txtLastName.Text;
+
             }
             objStateManager.Add("objSessionvalue", objSessionValue, TributesPortal.Utilities.StateManager.State.Session);
         }

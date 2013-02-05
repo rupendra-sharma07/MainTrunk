@@ -1,100 +1,59 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ManagePhotoAlbum.aspx.cs"
     Inherits="Photo_ManagePhotoAlbum" Title="ManagePhotoAlbum" MasterPageFile="~/Shared/Story.master" %>
 
-<%@ Register Assembly="System.Web.Extensions" Namespace="System.Web.UI" TagPrefix="asp" %>
-<%@ Register Assembly="Aurigma.ImageUploader" Namespace="Aurigma.ImageUploader" TagPrefix="cc1" %>
 <asp:Content ID="content1" ContentPlaceHolderID="TabContentPlaceHolder" runat="Server">
-    <%--  <script src="~/assets/scripts/multipledescriptions.js" type="text/javascript"></script>--%>
+    <%--    <script src="../assets/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
 
-    <script src="../assets/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
-
-    <script src="../assets/scripts/jquery-ui-1.8.6.custom.min.js" type="text/javascript"></script>
+    <script src="../assets/scripts/jquery-ui-1.8.6.custom.min.js" type="text/javascript"></script>--%>
 
     <script src="../assets/scripts/ExecuteBeforeLoad.js" type="text/javascript"></script>
 
+    <link rel="stylesheet" href="../BlueImpAssets/BlueImp/bootstrap.css">
+    <link rel="stylesheet" href="../BlueImpAssets/BlueImp/jquery.css">
+
     <script language="javascript" type="text/javascript">
+//        function handleFiles(files) {
+//            if (!files.length) {
+//                body.innerHTML = "<p>No files selected!</p>";
+//            } else {
+//                var list = document.createElement("ul");
+//                for (var i = 0; i < files.length; i++) {
+//                    var li = document.createElement("li");
+//                    list.appendChild(li);
 
-        //to restrict the value of Video Descritpion to 1000 characters
-        function DescmaxLength() {
-            var txtId = document.getElementById('<%= txtAlbumDesc.ClientID %>');
-            if (txtId != null) {
-                var txtVal = txtId.value;
-                if (txtVal != "" && txtVal.length > 0)
-                    return chkForMaxLength(1000, txtVal.length);
-                else return 0;
-            }
-        }
+//                    var img = document.createElement("img");
+//                    alert(files[i].toSource());
+//                    img.src = window.URL.createObjectURL(files[i]);
+//                    
+//                    img.height = 60;
+//                    img.onload = function(e) {
+//                        window.URL.revokeObjectURL(this.src);
+//                    }
+//                    li.appendChild(img);
 
-        function maxLength() {
-            var txtId = document.getElementById('<%= txtAlbumDesc.ClientID %>');
-            if (txtId != null) {
-                var txtVal = txtId.value;
-                if (txtVal != "" && txtVal.length > 0)
-                    return chkForMaxLength(1000, txtVal.length);
-                else return 0;
-            }
-        }
+//                    var info = document.createElement("span");
+//                    info.innerHTML = files[i].name + ": " + files[i].size + " bytes";
+//                    li.appendChild(info);
+//                }
+//                body.appendChild(list);
+//            }
+//        }
 
+//        function PreviewImage() {
+//            oFReader = new FileReader();
+//            oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+
+//            oFReader.onload = function(oFREvent) {
+//                document.getElementById("uploadPreview").src = oFREvent.target.result;
+//            };
+//        }
+        
         function validateData() {
 
             var errorMessage = " <h2>Oops - there is a problem in photo album.</h2><br/><h3>Please correct the error(s) below:</h3>";
             var valAlbumId = $('ctl00_ModuleContentPlaceHolder_hdnAlbumId').value;
             var valPhotoCount = $('ctl00_ModuleContentPlaceHolder_hdnPhotoCount').value;
 
-            var error = "";
-            if (!isEmpty(valAlbumId)) {
-                var valAlbumName = $('ctl00_ModuleContentPlaceHolder_txtAlbumName').value;
-                var valAlbumDesc = $('ctl00_ModuleContentPlaceHolder_txtAlbumDesc').value;
-                var spanAlbumName = document.getElementById('spnAlbumName');
-                var spanAlbumDesc = document.getElementById('spnAlbumDesc');
-                var spanUploadPhoto = document.getElementById('spnUploadPhoto');
-
-                if (!isEmpty(valAlbumName)) {
-                    error = "error";
-                    errorMessage += "<ul>";
-                    errorMessage += "<li>";
-                    errorMessage += "Album name is required field."
-                    errorMessage += "</li>";
-                    errorMessage += "</ul>";
-                    //alert("Test1 " + spnAlbumName.style.visibility);
-                    spanAlbumName.style.visibility = "visible";
-
-                }
-                else {
-                    //alert("Test2 " + spnAlbumName.style.visibility);
-                    spanAlbumName.style.visibility = "hidden";
-                }
-
-                //to check for duplicate album name.
-                var txtName = $('ctl00_ModuleContentPlaceHolder_txtAlbumName').value;
-                if (isEmpty(txtName)) {
-                    var txtAlbumList = $('ctl00_ModuleContentPlaceHolder_hdnAlbumList').value;
-                    if (!isUnique(txtName, txtAlbumList)) {
-                        error = "error";
-                        errorMessage += "<ul>";
-                        errorMessage += "<li>";
-                        errorMessage += "Album name already exists."
-                        errorMessage += "</li>";
-                        errorMessage += "</ul>";
-                        if (spanAlbumName.style.visibility != "visible")
-                            spanAlbumName.style.visibility = "visible";
-                    }
-                }
-
-                //to check album descritpion length.
-                if (!chkForMaxLength(1000, valAlbumDesc.length)) {
-                    error = "error";
-                    errorMessage += "<ul>";
-                    errorMessage += "<li>";
-                    errorMessage += "Album description is exceeding it's maximum limit of 1000 characters."
-                    errorMessage += "</li>";
-                    errorMessage += "</ul>";
-                    spanAlbumDesc.style.visibility = "visible";
-                }
-                else {
-                    spanAlbumDesc.style.visibility = "hidden";
-                }
-            }
 
             if (isEmpty(valAlbumId)) {
                 var spanUploadPhoto = document.getElementById('spnUploadPhoto');
@@ -160,18 +119,7 @@
             }
 
         }
-
-        // function to add value of album name and album desc textbox to session by UD
-        function setSessionAlbum() {
-            if (document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumName') != null && document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumDesc')) {
-                albumName = document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumName').value;
-                albumDesc = document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumDesc').value;
-
-
-                Photo_ManagePhotoAlbum.SetAlbumNameDesc(albumName, albumDesc);
-            }
-
-        }
+        
     </script>
 
     <script type="text/javascript" language="javascript">
@@ -181,14 +129,15 @@
             if (pageurl.indexOf('#') >= 0) {
                 pageurl = pageurl.replace("#1", "");
             }
-            var uploader = $au.uploader(uploaderID);
-            var f = uploader.files(),
-				fileCount = f.count(),
-				guids = {},
-				i;
+            //            var uploader = $au.uploader(uploaderID);
+            //            var f = uploader.files(),
+            //				fileCount = f.count(),
+            //				guids = {},
+            //				i;
             var albumName;
             var albumDesc;
             var result = 0;
+            var fileCount = 0;
 
             //-- Check validations of album by Ashu
             if (document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumName') != null && document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumDesc') != null) {
@@ -216,6 +165,7 @@
                     hdnFilecount = document.getElementById('<% =hdnPhotoCount.ClientID%>').value;
                 }
                 result = Photo_ManagePhotoAlbum.CheckAlbumFileCount(fileCount, hdnFilecount);
+
             }
             if (result.value < 0) {
                 if (document.getElementById('ctl00_ModuleContentPlaceHolder_lblErrMsg') != null)
@@ -270,7 +220,6 @@
                 return false;
             }
             else {
-
                 if (document.getElementById('ctl00_ModuleContentPlaceHolder_lblErrMsg') != null) {
                     document.getElementById('ctl00_ModuleContentPlaceHolder_lblErrMsg').innerHTML = "";
                     document.getElementById('ctl00_ModuleContentPlaceHolder_lblErrMsg').style.display = 'none';
@@ -282,10 +231,35 @@
                 if (document.getElementById('ctl00_ModuleContentPlaceHolder_spnUploadPhoto') != null)
                     document.getElementById('ctl00_ModuleContentPlaceHolder_spnUploadPhoto').style.display = 'none';
             }
+
+
+            // Adding uploaded files in hidden fields
+
+            var table = document.getElementById('ctl00_ModuleContentPlaceHolder_uploadFilesTable');
+            var rows = table.getElementsByTagName('tr');
+            var hiddenField = document.getElementById('ctl00_ModuleContentPlaceHolder_hdnImageNames');
+
+            var imageFiles = "";
+            for (r = 0; r < rows.length; r++) {
+                if (rows[r].className == "template-download fade in") {
+                    var cells = rows[r].getElementsByTagName('td');
+                    for (c = 0; c < cells.length; c++) {
+                        if (cells[c].className == "name") {
+                            if (cells[c].innerHTML) {
+                                imageFiles = imageFiles + cells[c].innerHTML + ",";
+                            }
+                        }
+                    }
+                }
+            }
+            hiddenField.value = imageFiles;
+            if (hiddenField.value == "") {
+                document.getElementById('ctl00_ModuleContentPlaceHolder_lblErrMsg').style.display = 'block';
+                document.getElementById('ctl00_ModuleContentPlaceHolder_lblErrMsg').innerHTML = "Please select a photo to upload.";
+                parent.location.href = pageurl + "#1";
+                return false;
+            }
         }
-
-        //        multidescription till here
-
 
         function AfterImageUpload() {
 
@@ -301,15 +275,22 @@
 
                 }
             }
-        }      
-        
-    </script>
-
-    <script type="text/javascript">
-
-        var uploaderID = '<%= Uploader1.ClientID %>';
+        }
 
 
+        // function to add value of album name and album desc textbox to session by UD
+        function setSessionAlbum() {
+            if (document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumName') != null && document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumDesc')) {
+                albumName = document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumName').value;
+                albumDesc = document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumDesc').value;
+
+
+                Photo_ManagePhotoAlbum.SetAlbumNameDesc(albumName, albumDesc);
+            }
+        }
+
+
+       
     </script>
 
     <div class="yt-Breadcrumbs" id="nvgCreateAlbum" runat="server">
@@ -320,9 +301,14 @@
     </div>
 </asp:Content>
 <asp:Content ID="content2" ContentPlaceHolderID="ModuleContentPlaceHolder" runat="Server">
+    <form action="../BlueImpAssets/Handler.ashx" method="POST" enctype="multipart/form-data">
+    <asp:HiddenField ID="hdnImageNames" runat="server" />
     <div style="" id="divShowModalPopup">
     </div>
+    </form>
     <div class="yt-ContentPrimary">
+        <div id="divNavigation" runat="server">
+        </div>
         <input id="hdnAlbumName" name="hdnAlbumName" type="hidden" />
         <asp:HiddenField ID="hdnAlbumList" runat="server" />
         <asp:HiddenField ID="hdnResult" runat="server" />
@@ -330,7 +316,7 @@
         <div id="lblErrMsg" runat="server" class="yt-Error" style="display: none; font-size: 12px;
             text-align: left;">
         </div>
-        <div class="yt-Panel-Primary">
+        <div class="yt-Panel-Primary" style="width: 852px;">
             <h2 id="hPhoto" runat="server">
             </h2>
             <strong id="stgRequired" runat="server"></strong>
@@ -359,7 +345,7 @@
                             <div class="yt-Form-AlbumDescDiv">
                                 <asp:TextBox ID="txtAlbumDesc" runat="server" CssClass="yt-Form-Textarea-XLong" Columns="50"
                                     Rows="6" MaxLength="1000" TextMode="MultiLine" onkeyup="javascript:setSessionAlbum();"
-                                    TabIndex="1"></asp:TextBox>
+                                    TabIndex="1" Width="846px"></asp:TextBox>
                             </div>
                             <div class="YT-Form-Error">
                                 <span id="spnAlbumDesc" runat="server" style="color: #FF8000; font-size: Medium;
@@ -372,47 +358,80 @@
                         <div class="yt-UploadTool">
                             <ul class="yt-Instructions">
                                 <li id="liInstruction1" runat="server"></li>
-                                <li id="liInstruction2" runat="server"></li>
                                 <li id="liInstruction3" runat="server"></li>
                             </ul>
-                            <!-- insert Aurigma Upload Plugin here (sample placeholder graphic below) -->
-                            <!-- Ashu (7june,2011) : Add TreePane for leftpanel on safari -->
-                            <%-- Add Cropping Functionality By Ashu(21 June,2011)--%>
-                            <div id="UploadPaneFrame">
-                                <div class="yt-Form-UploadDiv">
-                                    <div id="UploadPane" class="yt-UploadTool">
-                                        <cc1:Uploader ID="Uploader1" runat="server" OnFileUploaded="Uploader1_FileUploaded"
-                                            Height="420" Width="630px" LicenseKey="<%$ AppSettings:ImageUploaderLicenseKey %>"
-                                            EnableUploadPane="false" EnableDragAndDrop="false" EnableDescriptionEditor="true"
-                                            EnableImageEditor="True" EnableOriginalFilesDeletion="False">
-                                            <TreePane Width="210" />
-                                            <Converters>
-                                                <%--<cc1:Converter Mode="*.*=SourceFile" />--%>
-                                                <cc1:Converter Mode="*.*=Thumbnail" ThumbnailWidth="640" ThumbnailHeight="480" ThumbnailApplyCrop="true" />
-                                                <cc1:Converter Mode="*.*=Thumbnail" ThumbnailWidth="1946" ThumbnailHeight="1459"
-                                                    ThumbnailApplyCrop="true" />
-                                            </Converters>
-                                            <ClientEvents>
-                                                <cc1:ClientEvent EventName="BeforeUpload" HandlerName="onBeforeUpload" />
-                                                <%-- <cc1:ClientEvent EventName="UploadFileCountChange" HandlerName="onUploadFileCountChange" />--%>
-                                                <cc1:ClientEvent EventName="AfterUpload" HandlerName="AfterImageUpload" />
-                                            </ClientEvents>
-                                            <Restrictions FileMask="*.jpg;*.jpeg;*.png;*.gif" MaxFileCount="60" />
-                                            <UploadSettings />
-                                            <%--<UploadSettings ActionUrl="http://localhost:4941/DevelopmentWebsite/photo/ManagePhotoAlbum.aspx"   RedirectUrl="Photos.aspx?post_on_facebook=True" />--%>
-                                        </cc1:Uploader>
-                                        <cc1:InstallationProgress ID="InstallationProgress1" TargetControlID="Uploader1"
-                                            runat="server" ProgressCssClass="ip-progress" InstructionsCssClass="ip-instructions">
-                                        </cc1:InstallationProgress>
-                                        <%-- <ul id="<%= Uploader1.ClientID %>_UploadPane" class="upload-pane" />--%>
+                            <h4 id="hHighResolPhotos" runat="server">
+                                <asp:CheckBox ID="chbxhighResPhoto" runat="server" />
+                                Upload High-Resolution Photos
+                            </h4>
+                            <ul class="yt-Instructions">
+                                <li id="li1" runat="server">High Resolution Photos can only be viewed on paid accounts.
+                                    Only select this option if you have a premium account or plan to upgrade.</li>
+                                <li id="li2" runat="server">Uploading high-resolution photos will significantly increase
+                                    the time taken to upload the photos.</li>
+                            </ul>
+                            <br />
+                            <p>
+                                1. Click "Add Files..."to select your photos, then click "Start Upload". You can
+                                then add or remove photos as necessary.
+                            </p>
+                            <p id="secondLine" runat="server">
+                                2. After you have finished uploading your photos, click "Create photo album" at
+                                the bottom of the page to create the album.</p>
+                            <br />
+                            <div id="fileupload">
+                                <!-- The file upload form used as target for the file upload widget -->
+                                <form action="../BlueImpAssets/Handler.ashx" method="POST" enctype="multipart/form-data">
+                                <!-- Redirect browsers with JavaScript disabled to the origin page -->
+                                <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+                                <div class="row fileupload-buttonbar">
+                                    <div class="span7">
+                                        <!-- The fileinput-button span is used to style the file input field as button -->
+                                        <span class="btn btn-success fileinput-button"><i class="icon-plus icon-white"></i><span>
+                                            Add files...</span>
+                                            <input name="files[]" multiple="" type="file" id="fileElementId" runat="server">
+                                        </span>
+                                        <button type="submit" class="btn btn-primary start">
+                                            <i class="icon-upload icon-white"></i><span>Start upload</span>
+                                        </button>
+                                        <button type="reset" class="btn btn-warning cancel">
+                                            <i class="icon-ban-circle icon-white"></i><span>Cancel upload</span>
+                                        </button>
+                                        <button type="button" class="btn btn-danger delete">
+                                            <i class="icon-trash icon-white"></i><span>Delete</span>
+                                        </button>
+                                        <input class="toggle" type="checkbox">
+                                    </div>
+                                    <!-- The global progress information -->
+                                    <div class="span5 fileupload-progress fade">
+                                        <!-- The global progress bar -->
+                                        <div class="progress progress-success progress-striped active" role="progressbar"
+                                            aria-valuemin="0" aria-valuemax="100">
+                                            <div class="bar" style="width: 0%;">
+                                            </div>
+                                        </div>
+                                        <!-- The extended global progress information -->
+                                        <div class="progress-extended">
+                                            &nbsp;</div>
                                     </div>
                                 </div>
-                                <div class="YT-Form-Error">
-                                    <span id="spnUploadPhoto" runat="server" style="color: #FF8000; font-size: Medium;
-                                        font-weight: bold; display: none;">!</span>
+                                <!-- The loading indicator is shown during file processing -->
+                                <div class="fileupload-loading">
                                 </div>
-                                <br style="clear: both;" />
+                                <br>
+                                <!-- The table listing the files available for upload/download -->
+                                <table role="presentation" class="table table-striped">
+                                    <tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery" id="uploadFilesTable"
+                                        runat="server">
+                                    </tbody>
+                                </table>
+                                </form>
                             </div>
+                            <div class="YT-Form-Error">
+                                <span id="spnUploadPhoto" runat="server" style="color: #FF8000; font-size: Medium;
+                                    font-weight: bold; display: none;">!</span>
+                            </div>
+                            <br style="clear: both;" />
                             <!-- please note that for "Add Photos" and "Add All Photos" buttons in Aurigma tool, we will restyle with yt-MiniButton style or similar effect -->
                         </div>
                         <div class="yt-Form-Buttons">
@@ -420,10 +439,95 @@
                                 <asp:LinkButton ID="lbtnCancel" runat="server" CausesValidation="false" OnClick="lbtnCancel_Click"
                                     TabIndex="4" />
                             </div>
+                            <div style="margin-right: 15px;">
+                                <!-- If page is "Edit Album": -->
+                                <div class="yt-Form-Submit">
+                                    <asp:LinkButton ID="lbtnSavePhoto" runat="server" OnClientClick="return onBeforeUpload();"
+                                        OnClick="lbtnCreateAlbum_Click" CausesValidation="true" CssClass="yt-Button yt-ArrowButton"
+                                        TabIndex="3" />
+                                </div>
+                            </div>
                         </div>
                     </ContentTemplate>
                 </asp:UpdatePanel>
             </fieldset>
         </div>
     </div>
+
+    <script id="template-upload" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-upload fade">
+        <td class="preview"><span class="fade"></span></td>
+        <td class="name"><span>{%=file.name%}</span></td>
+        <td class="size"><span>{%=o.formatFileSize(file.size)%}</span></td>
+        {% if (file.error) { %}
+            <td class="error" colspan="2"><span class="label label-important">Error</span> {%=file.error%}</td>
+        {% } else if (o.files.valid && !i) { %}
+            <td>
+                <div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar" style="width:0%;"></div></div>
+            </td>
+            <td class="start" style="display:none">{% if (!o.options.autoUpload) { %}
+                <button class="btn btn-primary">
+                    <i class="icon-upload icon-white"></i>
+                    <span>Start</span>
+                </button>
+            {% } %}</td>
+        {% } else { %}
+            <td colspan="2"></td>
+        {% } %}
+        <td class="cancel">{% if (!i) { %}
+            <button class="btn btn-warning">
+                <i class="icon-ban-circle icon-white"></i>
+                <span>Cancel</span>
+            </button>
+        {% } %}</td>
+    </tr>
+{% } %}
+    </script>
+
+    <!-- The template to display files available for download -->
+
+    <script id="template-download" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-download fade">
+        {% if (file.Error) { %}
+            <td></td>
+            <td class="name"><span>{%=file.Name%}</span></td>
+            <td class="size"><span>{%=o.formatFileSize(file.fileSize)%}</span></td>
+            <td class="error" colspan="2"><span class="label label-important">Error</span> {%=file.Error%}</td>
+        {% } else { %}
+            <td class="preview">{% if (file.ThumbnailUrl) { %}
+                <a href="{%=file.Url%}" target="_blank" title="{%=file.Name%}" data-gallery="gallery" download="{%=file.Name%}"><img src="{%=file.ThumbnailUrl%}" width="80" height="50" ></a>
+            {% } %}</td>
+            <td class="name">
+                <a href="{%=file.Url%}" target="_blank" title="{%=file.Name%}" data-gallery="{%=file.ThumbnailUrl&&'gallery'%}" download="{%=file.Name%}">{%=file.Name%}</a>
+            </td>
+            <td class="size"><span>{%=o.formatFileSize(file.Size)%}</span></td>
+            <td colspan="2"></td>
+        {% } %}
+        <td class="delete">
+            <button class="btn btn-danger" data-type="{%=file.delete_type%}" data-url="{%=file.delete_url%}"{% if (file.delete_with_credentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+                <i class="icon-trash icon-white"></i>
+                <span>Delete</span>
+            </button>
+            <input type="checkbox" name="delete" value="1">
+        </td>
+    </tr>
+{% } %}
+    </script>
+
+    <script src="../BlueImpAssets/BlueImp/jquery_003.js"></script>
+
+    <script src="../BlueImpAssets/BlueImp/jquery_006.js"></script>
+
+    <script src="../BlueImpAssets/BlueImp/tmpl.js"></script>
+
+    <script src="../BlueImpAssets/BlueImp/load-image.js"></script>
+
+    <script src="../BlueImpAssets/BlueImp/jquery_004.js"></script>
+
+    <script src="../BlueImpAssets/BlueImp/jquery.js"></script>
+
+    <script src="../BlueImpAssets/BlueImp/main.js"></script>
+
 </asp:Content>

@@ -34,6 +34,10 @@
     <script type="text/javascript" src="../assets/scripts/modalbox.js"></script>
     <script type="text/javascript" src="../assets/scripts/admin.js"></script>
     <script type="text/javascript" src="../Common/JavaScript/CreditCardValidation.js"></script>
+
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
     <script type="text/javascript">
      App_Domain = "<%=Session["APP_BASE_DOMAIN"]%>";
  

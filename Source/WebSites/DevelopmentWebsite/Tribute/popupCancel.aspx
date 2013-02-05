@@ -6,6 +6,8 @@
 <head runat="server">
     <title>Untitled Page</title>
     <!--#include file="../analytics.asp"-->
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">

@@ -43,6 +43,9 @@ xml:lang="en" lang="en">
 
     <script type="text/javascript" language="javascript" src="<%=Session["APP_SCRIPT_PATH"]%>Common/JavaScript/TributeHomePage.js"> </script>
 
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="<%=Session["APP_SCRIPT_PATH"]%>assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
     <script src="https://connect.facebook.net/en_US/all.js" type="text/javascript"></script>
 
     <!--#include file="../analytics.asp"-->
@@ -562,8 +565,8 @@ xml:lang="en" lang="en">
                 <!--yt-ContentSecondary-->
                 <%--<div class="hack-clearBoth">
                 </div>--%>
-                <div style="margin-left: -127px; margin-top: 135px;">
-                    <div >
+                <div style="margin-left: -127px; margin-top: 135px; width: 914px;">
+                    <div>
                         <uc:Footer ID="Footer1" runat="server" />
                     </div>
                 </div>

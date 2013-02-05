@@ -124,27 +124,99 @@ E:\YourTribute\EnhancementPhase1\Source\MyHome\obj\Debug\ResolveAssemblyReferenc
 E:\YourTribute\EnhancementPhase1\Source\MyHome\obj\Debug\MyHome.dll
 E:\YourTribute\EnhancementPhase1\Source\MyHome\obj\Debug\MyHome.pdb
 E:\YourTribute\EnhancementPhase1\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\MyHome.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\MyHome.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\TributePortalSecurity.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\TributesPortal.BusinessEntities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\TributesPortal.BusinessLogic.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\TributesPortal.MultipleLangSupport.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\TributesPortal.Utilities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\TributesPortal.ResourceAccess.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\log4net.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\TributesPortal.BusinessEntities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\TributesPortal.BusinessLogic.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\TributesPortal.Utilities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\TributesPortal.MultipleLangSupport.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\TributePortalSecurity.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\TributesPortal.ResourceAccess.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\obj\Debug\ResolveAssemblyReference.cache
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\obj\Debug\MyHome.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\MyHome\obj\Debug\MyHome.pdb
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\MyHome.dll
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\MyHome.pdb
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\TributePortalSecurity.dll
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\TributesPortal.Utilities.dll
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\log4net.dll
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\TributesPortal.Utilities.pdb
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\TributePortalSecurity.pdb
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\TestYourTributeGit\Source\MyHome\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\TestYourTributeGit\Source\MyHome\obj\Debug\ResolveAssemblyReference.cache
+E:\TestYourTributeGit\Source\MyHome\obj\Debug\MyHome.dll
+E:\TestYourTributeGit\Source\MyHome\obj\Debug\MyHome.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\MyHome.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\MyHome.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\log4net.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\TributePortalSecurity.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\obj\Debug\MyHome.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MyHome\obj\Debug\MyHome.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\MyHome.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\MyHome.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\log4net.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\TributePortalSecurity.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\obj\Debug\MyHome.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MyHome\obj\Debug\MyHome.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\MyHome.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\MyHome.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\TributesPortal.MultipleLangSupport.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\log4net.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\TributesPortal.MultipleLangSupport.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\fr\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\bin\Debug\ro\TributesPortal.MultipleLangSupport.resources.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\obj\Debug\MyHome.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\MyHome\obj\Debug\MyHome.pdb

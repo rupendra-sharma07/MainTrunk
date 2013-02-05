@@ -58,6 +58,15 @@ public partial class UserControl_Footer : System.Web.UI.UserControl
         }
         lblCopyRight.Text = DateTime.Now.Year.ToString();
         lblCopyRightyt.Text = DateTime.Now.Year.ToString();
+
+        //if (Request.Url.ToString().ToLower().Contains("ordercredit.aspx"))
+        //{
+        //    CopyRightDiv.Visible = false;
+        //}
+        //else
+        //{
+        //    CopyRightDiv.Visible = true;
+        //}
     }
 
 

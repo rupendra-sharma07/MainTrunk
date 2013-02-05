@@ -43,9 +43,27 @@ E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\bin\Debug\Microsof
 E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
 E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
 E:\YourTribute\EnhancementPhase1\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb
+E:\TestYourTributeGit\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.dll
+E:\TestYourTributeGit\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.pdb
+E:\TestYourTributeGit\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\TestYourTributeGit\Source\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\TestYourTributeGit\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
+E:\TestYourTributeGit\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalSecurity\bin\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalSecurity\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalSecurity\obj\Debug\TributePortalSecurity.pdb

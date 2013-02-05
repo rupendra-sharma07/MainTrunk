@@ -8,17 +8,10 @@
 
 #region USING DIRECTIVES
 using System;
-using System.Data;
-using System.Configuration;
-using System.Collections;
 using System.IO;
+using System.Text.RegularExpressions;
 using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using System.Xml;
 using Microsoft.Practices.ObjectBuilder;
 using TributesPortal.BusinessEntities;
 using TributesPortal.MultipleLangSupport;
@@ -29,9 +22,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Drawing.Drawing2D;
-using System.Data.Odbc;
 using TributesPortal.ResourceAccess;
-using Facebook;
 using Facebook.Web;
 #endregion
 
@@ -60,7 +51,7 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
     public bool AddPhotoEmail = false;
     Random objRand = new Random();
     static int filecount;
-   
+
     enum AnchorPosition
     {
         Top,
@@ -88,10 +79,17 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
 
         try
         {
+            if (Master != null)
+            {
+                HtmlGenericControl currdiv = (HtmlGenericControl)Master.FindControl("divContentSecondary");
+                currdiv.Style.Add("display", "none");
+                HtmlGenericControl containerDiv = (HtmlGenericControl)Master.FindControl("cotentPrimaryContainer");
+                containerDiv.Style.Add("margin-left", "-223px");
+            }
             Ajax.Utility.RegisterTypeForAjax(typeof(Photo_ManagePhotoAlbum));
             GetPhotoSessionValues();
-             CreatePath();
-           
+            CreatePath();
+
             var fbWebContext = FacebookWebContext.Current;
             if (FacebookWebContext.Current.Session != null)
             {
@@ -108,26 +106,21 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
             hdnPhotoUploaderKey.Value = WebConfig.PhotoUploaderKey;
 
             // To Retain last value of text box   by UD
-
             GetSessionValues();
-            
             this._presenter.GetPhotoAlbumList();
-
             if (!this.IsPostBack)
             {
-                Uploader1.UploadSettings.ActionUrl = ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] + "Photo/managephotoalbum.aspx";
-                 
-                Uploader1.UploadSettings.ActionUrl = ConfigurationManager.AppSettings["APP_BASE_DOMAIN"] + "Photo/managephotoalbum.aspx";
-                 /* Made sessions to retain the value of albumid & albumname by Ashu ---*/
-                 if (Request.QueryString["albummode"] != null)
+                lbtnSavePhoto.Text = "Update photo album";
+                /* Made sessions to retain the value of albumid & albumname by Ashu ---*/
+                if (Request.QueryString["albummode"] != null)
                 {
                     if (Request.QueryString["albummode"].ToString() == "Create")
                     {
                         Session["PhotoAlbumId"] = null;
                         Session["PhotoAlbumName"] = null;
-                        HttpContext.Current.Session["AlbumName"] = null;
-                        HttpContext.Current.Session["AlbumDesc"] = null;
-
+                        //HttpContext.Current.Session["AlbumName"] = null;
+                        //HttpContext.Current.Session["AlbumDesc"] = null;
+                        lbtnSavePhoto.Text = "Create photo album";
                     }
                 }
                 if (Request.QueryString["photoAlbumId"] != null)
@@ -157,20 +150,19 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
                     hdnAlbumId.Value = string.Empty;
 
             }
-            if (HttpContext.Current.Session["AlbumName"] != null || HttpContext.Current.Session["AlbumDesc"] != null)
-            {
-                txtAlbumName.Text = HttpContext.Current.Session["AlbumName"].ToString();
-                txtAlbumDesc.Text = HttpContext.Current.Session["AlbumDesc"].ToString();
-            }
+            //if (HttpContext.Current.Session["AlbumName"] != null || HttpContext.Current.Session["AlbumDesc"] != null)
+            //{
+            //    txtAlbumName.Text = HttpContext.Current.Session["AlbumName"].ToString();
+            //    txtAlbumDesc.Text = HttpContext.Current.Session["AlbumDesc"].ToString();
+            //}
             UserIsAdminOrOwner(); //to set the visibility of options in side menu.
-
-           Page.SetFocus(txtAlbumName);
+            Page.SetFocus(txtAlbumName);
 
         }
         catch (Exception ex)
         {
             throw ex;
-          
+
         }
     }
 
@@ -201,212 +193,236 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
         DirectoryInfo objDir = new DirectoryInfo(logPath);
         if (!(objDir.Exists))
             objDir.Create();
-        
+
         // Combine the new file name with the path
         logPath = System.IO.Path.Combine(logPath, "PhotoAlbumError.log");
 
-        
+
         // random file names.
-        
-            using (System.IO.StreamWriter w = System.IO.File.AppendText(logPath))
-            {
-                w.WriteLine("{0} Error: {1}",
-                    DateTime.Now.ToString(System.Globalization.CultureInfo.InvariantCulture),
-                    errorMessage);
-                w.WriteLine(stackTrace);
-                w.Flush();
-                w.Close();
-            }
-     
+
+        using (System.IO.StreamWriter w = System.IO.File.AppendText(logPath))
+        {
+            w.WriteLine("{0} Error: {1}",
+                DateTime.Now.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                errorMessage);
+            w.WriteLine(stackTrace);
+            w.Flush();
+            w.Close();
+        }
+
     }
 
-
-    public void Uploader1_FileUploaded(object sender, FileUploadedEventArgs e)
+    public static string ExtractHtmlInnerText(string htmlText)
     {
-       
+        Regex regex = new Regex("(<.*?>\\s*)+", RegexOptions.Singleline);
+        string resultText = regex.Replace(htmlText, " ").Trim();
+        return resultText;
+    }
+
+    protected void lbtnCreateAlbum_Click(object sender, EventArgs e)
+    {
+        if (!Page.IsValid)
+            return;
+        string images = ExtractHtmlInnerText(hdnImageNames.Value);
+        string[] imageNames = images.Split(',');
+
         try
         {
-           #region  SaveImage
-            string albumName = "";
-            if (HttpContext.Current.Session["AlbumName"] != null)
-                albumName = HttpContext.Current.Session["AlbumName"].ToString();
-            _photoAlbumName = albumName;
-            UploadedFile uploadedFile = e.UploadedFile;
+            #region  SaveImage
             objListPhoto = new List<Photos>();
             //string[] photo;
             Photos objPhoto = new Photos();
             string[] getPath = CommonUtilities.GetPath();
-
-            // Added by Ashu on 4 Aug, 2011
+            string tempPath = getPath[0] + "/" + getPath[1] + "/" + _tributeUrl.Replace(" ", "_") + "_" + _tributeType.Replace(" ", "_") + "/" + "temp_" + _userId;
 
             if (Session["PhotoAlbumId"] != null)
-                {
-                 
-                    int.TryParse(Session["PhotoAlbumId"].ToString(), out _photoAlbumId);
-                    PhotoAlbumID = _photoAlbumId;
-                }
-
-                if (HttpContext.Current.Session["FileCount"] != null && HttpContext.Current.Session["FileCount"] != "")
-                {
-                    int.TryParse(HttpContext.Current.Session["FileCount"].ToString(),out filecount);
-                    HttpContext.Current.Session["FileCount"] = null;
-                }
-           
-            //// Is it new upload session?
-            if (uploadedFile.Package.PackageIndex == 0 && uploadedFile.Index == 0)
             {
-                // Remove previously uploaded files
-                objListPhoto = null;
 
+                int.TryParse(Session["PhotoAlbumId"].ToString(), out _photoAlbumId);
+                PhotoAlbumID = _photoAlbumId;
             }
-         
+
+            if (HttpContext.Current.Session["FileCount"] != null && HttpContext.Current.Session["FileCount"] != "")
+            {
+                int.TryParse(HttpContext.Current.Session["FileCount"].ToString(), out filecount);
+                HttpContext.Current.Session["FileCount"] = null;
+            }
+
             if (PhotoAlbumID == 0)
             {
-               
-                _photoAlbumName = albumName;
+                _photoAlbumName = txtAlbumName.Text;
                 _presenter.CreateAlbum();
-             
                 AddPhotoEmail = false;
             }
-          
+
             if (PhotoAlbumID > 0)
             {
-              
-                int thumbnailCount = 2;
-                string[] thumbnailNames = new string[thumbnailCount];
-                string RandomFileName = "";  // variable to get random number  // by ud
-                #region MyRegion
-                for (int i = 0; i < thumbnailCount; i++)
+                foreach (var imageName in imageNames)
                 {
-                    ConvertedFile thumbnailFile = uploadedFile.ConvertedFiles[i];
-                    if (thumbnailFile != null)
+                    int thumbnailCount = 2;
+                    string[] thumbnailNames = new string[thumbnailCount];
+                    string RandomFileName = ""; // variable to get random number  // by ud
+
+                    #region MyRegion
+
+
+                    if (!string.IsNullOrEmpty(imageName))
                     {
+                        Image thumbnailFile = new Bitmap(tempPath + "//" + imageName.Trim());
+
                         // Save thumbnail
 
-                        string thumbnailName = thumbnailFile.Name;
-                        thumbnailName = thumbnailName.Replace("'", "_");
-                        thumbnailName = thumbnailName.Replace("`", "_");
-                        thumbnailName = thumbnailName.Replace(" ", "_");
-                        thumbnailName = thumbnailName.Replace("@", "");
-                        thumbnailName = thumbnailName.Replace("#", "");
-                        thumbnailName = thumbnailName.Replace("$", "");
-                        thumbnailName = thumbnailName.Replace("%", "");
-                        thumbnailName = thumbnailName.Replace("^", "");
-                        thumbnailName = thumbnailName.Replace("&", "");
-                        thumbnailName = thumbnailName.Replace(",", "");
-                        thumbnailName = thumbnailName.Replace("!", "");
+                        //string thumbnailName = imageName.Trim();
+                        //thumbnailName = thumbnailName.Replace("'", "_");
+                        //thumbnailName = thumbnailName.Replace("`", "_");
+                        //thumbnailName = thumbnailName.Replace(" ", "_");
+                        //thumbnailName = thumbnailName.Replace("@", "");
+                        //thumbnailName = thumbnailName.Replace("#", "");
+                        //thumbnailName = thumbnailName.Replace("$", "");
+                        //thumbnailName = thumbnailName.Replace("%", "");
+                        //thumbnailName = thumbnailName.Replace("^", "");
+                        //thumbnailName = thumbnailName.Replace("&", "");
+                        //thumbnailName = thumbnailName.Replace(",", "");
+                        //thumbnailName = thumbnailName.Replace("!", "");
 
-                        if (i == 0)
-                        {
-                            // get the random number to concatenate with filename   by ud
-                            
-                            thumbnailName = thumbnailName.Replace("_Thumbnail0.jpg", "");
-                            RandomFileName = GetSafeFileName(thumbnailName);
-                            // concatenate filename by ud
-                            objPhoto.PhotoImage = RandomFileName;
-                            string fileName = objPhoto.PhotoImage;
-                            //Get first thumbnail and save it to disk. It stores 480x360 image.
-                            thumbnailFile.SaveAs(galleryPath + "/" + fileName); // .jpg
 
-                            //Get the second thumbnail and save it to disk. It stores 120x120 preview image. 
-                            System.Drawing.Image PhotoImg = System.Drawing.Image.FromFile(galleryPath + "/" + fileName);
-                            System.Drawing.Image imgPhoto = Crop(PhotoImg, 100, 100, AnchorPosition.Center);
-                            imgPhoto.Save(galleryPathForThumbnails + "/" + fileName);
-                            imgPhoto.Dispose();
-                            PhotoImg.Dispose();
+                        // get the random number to concatenate with filename   by ud
 
-                        }
-                        if (i == 1)
+                        //thumbnailName = thumbnailName.Replace("_Thumbnail0.jpg", "");
+                        //RandomFileName = GetSafeFileName(thumbnailName);
+                        RandomFileName = "DSC" + DateTime.Now.ToString("yyyyMMddHHmmssffff")+".jpg";
+                        // concatenate filename by ud
+                        objPhoto.PhotoImage = RandomFileName;
+                        string fileName = objPhoto.PhotoImage;
+                        //Get first thumbnail and save it to disk. It stores 480x360 image.
+                        thumbnailFile.Save(galleryPath + "/" + fileName); // .jpg
+                        thumbnailFile.Dispose();
+                        //Get the second thumbnail and save it to disk. It stores 120x120 preview image. 
+                        System.Drawing.Image PhotoImg =
+                            System.Drawing.Image.FromFile(galleryPath + "/" + fileName);
+                        System.Drawing.Image imgPhoto = Crop(PhotoImg, 100, 100, AnchorPosition.Center);
+                        imgPhoto.Save(galleryPathForThumbnails + "/" + fileName);
+                        imgPhoto.Dispose();
+                        PhotoImg.Dispose();
+
+
+                        if (chbxhighResPhoto.Checked)
                         {
                             //Get second thumbnail and save it to disk. It stores 600x400 image.
 
-                            thumbnailName = thumbnailName.Replace("_Thumbnail1.jpg", "");
+                            //thumbnailName = thumbnailName.Replace("_Thumbnail1.jpg", "");
                             // conctenate filename with big image name by ud
-                            thumbnailName = "Big_" + RandomFileName;
+                            string bigfileName = "Big_" + RandomFileName;
                             string targetpath = galleryPathForBigImages;
                             DirectoryInfo objDir = new DirectoryInfo(targetpath);
                             if (!objDir.Exists) //if directory does not exists creates a directory
                                 objDir.Create();
-
-                            thumbnailFile.SaveAs(targetpath + "/" + thumbnailName);
+                            Bitmap bigFile = new Bitmap(Image.FromFile(tempPath + "//" + imageName.Trim()), new Size(1024, 680));
+                            bigFile.Save(targetpath + "/" + bigfileName);
+                            bigFile.Dispose();
                         }
 
-                        thumbnailNames[i] = thumbnailName;
+                        //thumbnailNames[i] = thumbnailName;
+                        //to get tribute id and name from session
+                        if (Session["PhotoAlbumTributeSession"] != null)
+                        {
+                            objTribute = Session["PhotoAlbumTributeSession"] as Tributes;
+                        }
+
+                        if (objTribute != null)
+                        {
+                            if (objTribute.TributeId > 0)
+                            {
+                                _tributeId = objTribute.TributeId;
+                                _tributeName = objTribute.TributeName;
+                                _tributeType = objTribute.TypeDescription;
+                                _tributeUrl = objTribute.TributeUrl;
+
+                            }
+                        }
+
+                        // set the ID to the last photo ID uploaded so that we can send the email in PhotoUploadPresenter
+                        objPhoto.PhotoId = UploadedPhotoID;
+                        if (objPhoto.PhotoCaption == null)
+                            objPhoto.PhotoCaption = string.Empty;
+                        //objPhoto.PhotoDesc = replaceSpecialCharacter(uploadedFile.Description.ToString());
+                        objPhoto.ModuleTypeName = MODULE_TYPE_NAME;
+                        objPhoto.UserTributeId = _tributeId;
+                        objPhoto.CreatedBy = _userId;
+                        objPhoto.CreatedDate = DateTime.Now;
+                        objPhoto.IsActive = true;
+                        objPhoto.IsDeleted = false;
+                        objPhoto.UserName = _userName;
+                        objPhoto.TributeName = _tributeName;
+                        objPhoto.TributeType = _tributeType;
+                        objPhoto.TributeUrl = _tributeUrl;
+                        objPhoto.PathToVisit = Request.ServerVariables["SERVER_NAME"] + Request.ApplicationPath;
+                        objPhoto.PhotoAlbumId = PhotoAlbumID;
+
+                        _presenter.SaveImageList(objPhoto, AddPhotoEmail);
+
+                        filecount--;
+                        if (filecount == 0)
+                        {
+                            Session["PhotoAlbumId"] = null;
+                            Session["PhotoAlbumName"] = null;
+                            if (WebConfig.ApplicationMode.Equals("local"))
+                                Session["PhotoAlbumTributeSession"] = null;
+                            Session["PhotoAlbumobjUserInfo"] = null;
+                            //HttpContext.Current.Session["AlbumName"] = null;
+                            //HttpContext.Current.Session["AlbumDesc"] = null;
+                        }
+                        if (UploadedPhotoID > 0)
+                        {
+                            AddPhotoEmail = false;
+                        }
+
+                        // Added by rupendra on June 20, 2011 to redirect on album aftwer updating the page
+                        if (Request.QueryString["photoAlbumId"] != null)
+                        {
+                            _photoAlbumId = 0;
+                            int.TryParse(Request.QueryString["photoAlbumId"], out _photoAlbumId);
+                            if (PhotoAlbumId > 0)
+                                Session["PhotoAlbumID2"] = _photoAlbumId;
+                        }
                     }
-                }
-                #endregion
-            }
-            //to get tribute id and name from session
-            if (Session["PhotoAlbumTributeSession"] != null)
-            {
-                objTribute = Session["PhotoAlbumTributeSession"] as Tributes;
-            }
-
-            if (objTribute != null)
-            {
-                if (objTribute.TributeId > 0)
-                {
-                    _tributeId = objTribute.TributeId;
-                    _tributeName = objTribute.TributeName;
-                    _tributeType = objTribute.TypeDescription;
-                    _tributeUrl = objTribute.TributeUrl;
-                  
+                    #endregion
                 }
             }
-        
-            // set the ID to the last photo ID uploaded so that we can send the email in PhotoUploadPresenter
-            objPhoto.PhotoId = UploadedPhotoID;
-            //objPhoto.PhotoCaption = replaceSpecialCharacter(uploadedFile.Package.PackageFields["Title_" + uploadedFile.Index]);
-            if (objPhoto.PhotoCaption == null)
-                objPhoto.PhotoCaption = string.Empty;
-            objPhoto.PhotoDesc = replaceSpecialCharacter(uploadedFile.Description.ToString());
-            objPhoto.ModuleTypeName = MODULE_TYPE_NAME;
-            objPhoto.UserTributeId = _tributeId;
-            objPhoto.CreatedBy = _userId;
-            objPhoto.CreatedDate = DateTime.Now;
-            objPhoto.IsActive = true;
-            objPhoto.IsDeleted = false;
-            objPhoto.UserName = _userName;
-            objPhoto.TributeName = _tributeName;
-            objPhoto.TributeType = _tributeType;
-            objPhoto.TributeUrl = _tributeUrl;
-            objPhoto.PathToVisit = Request.ServerVariables["SERVER_NAME"] + Request.ApplicationPath;
-            objPhoto.PhotoAlbumId = PhotoAlbumID;
-
-            _presenter.SaveImageList(objPhoto, AddPhotoEmail);
-           
-            filecount--;
-            if (filecount == 0)
+            DirectoryInfo dir = new DirectoryInfo(tempPath);
+            foreach (FileInfo files in dir.GetFiles())
             {
-                Session["PhotoAlbumId"] = null;
-                Session["PhotoAlbumName"] = null;
-                if (WebConfig.ApplicationMode.Equals("local"))
-                    Session["PhotoAlbumTributeSession"] = null;
-                Session["PhotoAlbumobjUserInfo"] = null;
-                HttpContext.Current.Session["AlbumName"] = null;
-                HttpContext.Current.Session["AlbumDesc"] = null;
-            }
-            if (UploadedPhotoID > 0)
-            {
-                AddPhotoEmail = false;
+                files.Delete();
             }
 
-			// Added by rupendra on June 20, 2011 to redirect on album aftwer updating the page
-            if (Request.QueryString["photoAlbumId"] != null)
+            if (_mode == PAGE_MODE_ADD_PHOTOS)
             {
-                _photoAlbumId = 0;
-                int.TryParse(Request.QueryString["photoAlbumId"], out _photoAlbumId);
-                if (PhotoAlbumId > 0)
-                    Session["PhotoAlbumID2"] = _photoAlbumId;
+                Response.Redirect("~/" + Session["TributeURL"] + "/photoalbum.aspx?photoAlbumId=" + _photoAlbumId, false);
             }
+            else
+            {
+                Response.Redirect("~/" + Session["TributeURL"] + "/photos.aspx", false);
+            }
+
             #endregion
         }
         catch (Exception ex)
         {
             LogError(ex.Message, ex.StackTrace);
+            if(ex.Message.Contains("The process cannot access the file"))
+            {
+                if (_mode == PAGE_MODE_ADD_PHOTOS)
+                {
+                    Response.Redirect("~/" + Session["TributeURL"] + "/photoalbum.aspx?photoAlbumId=" + _photoAlbumId, false);
+                }
+                else
+                {
+                    Response.Redirect("~/" + Session["TributeURL"] + "/photos.aspx", false);
+                } 
+            }
         }
-
     }
+
     // Ashu: MADE A METHOD to REPLACE SPECIAL CHARCAHTERS 
     private string replaceSpecialCharacter(string StrName)
     {
@@ -531,8 +547,6 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
         get
         {
             StateManager objStateManager = StateManager.Instance;
-
-            //string photoAlbumID = Request.Form["AlbumId"].ToString();
             int phAlbumId = 0;
 
             if (Request.QueryString["photoAlbumId"] != null)
@@ -615,14 +629,14 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
     /// </summary>
     private void SetValuesToControls()
     {
-        hPhoto.InnerText = ResourceText.GetString("lblPhotoHeader_MPA");
+
         stgRequired.InnerHtml = ResourceText.GetString("lblRequired_MPA") + "<em class='required'>* </em>";
         lblAlbumName.InnerHtml = "<em class='required'>* </em>" + ResourceText.GetString("lblAlbumName_MPA");
         lblAlbumDesc.InnerText = ResourceText.GetString("lblAlbumDesc_MPA");
         hUploadPhoto.InnerHtml = "<em class='required'>* </em>" + ResourceText.GetString("lblUploadPhoto_MPA");
         lbtnCancel.Text = ResourceText.GetString("lbtnCancel_MPA");
         liInstruction1.InnerText = ResourceText.GetString("txtInstruction1_MPA");
-        liInstruction2.InnerText = ResourceText.GetString("txtInstruction2_MPA");
+        //liInstruction2.InnerText = ResourceText.GetString("txtInstruction2_MPA");
         liInstruction3.InnerText = ResourceText.GetString("txtInstruction3_MPA");
 
         /*-- Done changes for breadcrums by Ashu ---*/
@@ -634,7 +648,7 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
 
         }
         string redirecturl = "";
-         if (_tributeUrl != null && _tributeType != null)
+        if (_tributeUrl != null && _tributeType != null)
         {
             if (WebConfig.ApplicationMode.Equals("local"))
             {
@@ -651,14 +665,34 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
         //to set the navigation string
         if (_mode == PAGE_MODE_ADD_PHOTOS)
         {
+            hPhoto.InnerText = "PHOTOS: UPDATE ALBUM";
+            divNavigation.InnerHtml = "<a href=" + redirecturl + "photoalbum.aspx?photoAlbumId=" + _photoAlbumId + ">< Back to Photo Album</a>";
+
+            secondLine.InnerText =
+                @"2. After you have finished uploading your photos, click 'Update photo album' at the bottom of the page to update the album.";
             if (_photoAlbumId != 0)
-                nvgCreateAlbum.InnerHtml = "<a href="+redirecturl+"> " + ResourceText.GetString("txtTributeHome_MPA") + "</a> <a href=" + redirecturl + "photos.aspx>" + ResourceText.GetString("txtPhotos_MPA") + "</a> <a href=" + redirecturl + "photoalbum.aspx?photoAlbumId=" + _photoAlbumId + ">" + _photoAlbumName + "</a> <span class='selected'>" + ResourceText.GetString("txtAddPhotos_MPA") + "</span>";
+            {
+                nvgCreateAlbum.InnerHtml = "<a href=" + redirecturl + "> " +
+                                           ResourceText.GetString("txtTributeHome_MPA") + "</a> <a href=" + redirecturl +
+                                           "photos.aspx>" + ResourceText.GetString("txtPhotos_MPA") + "</a> <a href=" +
+                                           redirecturl + "photoalbum.aspx?photoAlbumId=" + _photoAlbumId + ">" +
+                                           _photoAlbumName + "</a> <span class='selected'>" +
+                                           ResourceText.GetString("txtAddPhotos_MPA") + "</span>";
+            }
             else
-                nvgCreateAlbum.InnerHtml = "<a href=" + redirecturl + "> " + ResourceText.GetString("txtTributeHome_MPA") + "</a> <a href=" + redirecturl + "photos.aspx>" + ResourceText.GetString("txtPhotos_MPA") + "</a> <span class='selected'>" + ResourceText.GetString("txtCreateAlbum_MPA") + "</span>";
+            {
+                nvgCreateAlbum.InnerHtml = "<a href=" + redirecturl + "> " +
+                                           ResourceText.GetString("txtTributeHome_MPA") + "</a> <a href=" + redirecturl +
+                                           "photos.aspx>" + ResourceText.GetString("txtPhotos_MPA") +
+                                           "</a> <span class='selected'>" + ResourceText.GetString("txtCreateAlbum_MPA") +
+                                           "</span>";
+            }
         }
         else
         {
+            hPhoto.InnerText = ResourceText.GetString("lblPhotoHeader_MPA");
             nvgCreateAlbum.InnerHtml = "<a href=" + redirecturl + "> " + ResourceText.GetString("txtTributeHome_MPA") + "</a> <a href=" + redirecturl + "photos.aspx>" + ResourceText.GetString("txtPhotos_MPA") + "</a> <span class='selected'>" + ResourceText.GetString("txtCreateAlbum_MPA") + "</span>";
+            divNavigation.InnerHtml = "<a href=" + redirecturl + "photos.aspx>< Back to Photos</a>";
         }
     }
 
@@ -671,24 +705,11 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
         {
             LogError("GetSessionValues", "User session is null");
         }
-
         if (!Equals(objSessionValue, null))
         {
             _userId = objSessionValue.UserId;
-          
-        }
-       
-       
-        //to get tribute id and name from session
-        //objTribute = (Tributes)objStateManager.Get("TributeSession", StateManager.State.Session);
-        //if (!Equals(objTribute, null))
-        //{
-        //    _tributeId = objTribute.TributeId;
-        //    _tributeName = objTribute.TributeName;
-        //    _tributeType = objTribute.TypeDescription;
-        //    _tributeUrl = objTribute.TributeUrl;
-        //}
 
+        }
         if (!Equals(Request.QueryString["mode"], null))
         {
             _mode = Request.QueryString["mode"].ToString();
@@ -706,7 +727,7 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
         //to check if user is not loggedin
         if (_userId == 0) //if user is not a logged in user redirect to login page
         {
-           Response.Redirect(Redirect.RedirectToPage(Redirect.PageList.Inner2LoginPage.ToString()));
+            Response.Redirect(Redirect.RedirectToPage(Redirect.PageList.Inner2LoginPage.ToString()));
         }
 
         if (!Equals(Request.QueryString["result"], null))
@@ -754,15 +775,11 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
         {
             divAlbumName.Visible = false;
             divAlbumDesc.Visible = false;
-            //divCreateAlbum.Visible = false;
-            //divSavePhoto.Visible = true;
         }
         else
         {
             divAlbumName.Visible = true;
             divAlbumDesc.Visible = true;
-            //divCreateAlbum.Visible = true;
-            //divSavePhoto.Visible = false;
         }
 
         //displays error message if album name already exists if system goes to database on clicking create
@@ -787,7 +804,6 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
     {
         string[] getPath = CommonUtilities.GetPath();
         //to create directory for image.
-        //galleryPath = getPath[0] + "/" + getPath[1] + "/" + _tributeName.Replace(" ", "_") + "_" + _tributeType.Replace(" ", "_");
         if (Session["PhotoAlbumTributeSession"] != null)
         {
             objTribute = Session["PhotoAlbumTributeSession"] as Tributes;
@@ -817,15 +833,10 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
                 objBigImagesDir.Create();
 
             //to create directory for thumnail of that image.
-            //galleryPathForThumbnails = getPath[0] + "/" + getPath[1] + "/" + getPath[3] + "/" + _tributeName.Replace(" ", "_") + "_" + _tributeType.Replace(" ", "_");
             galleryPathForThumbnails = getPath[0] + "/" + getPath[1] + "/" + getPath[3] + "/" + _tributeUrl.Replace(" ", "_") + "_" + _tributeType.Replace(" ", "_");
             DirectoryInfo objThumbnailDir = new DirectoryInfo(galleryPathForThumbnails);
             if (!objThumbnailDir.Exists) //if directory does not exists creates a directory
                 objThumbnailDir.Create();
-        }
-        else
-        {
-           
         }
     }
     /// <summary>
@@ -834,17 +845,17 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
     /// <returns>Filled PhotoAlbum entity.</returns>
     private PhotoAlbum GetAlbumData()
     {
-        string albumName = "";
-        string albumDesc = "";
+        string albumName = txtAlbumName.Text;
+        string albumDesc = txtAlbumDesc.Text;
 
-        if (Session["AlbumName"] != null)
-        {
-            albumName = Session["AlbumName"].ToString();
-        }
-        if (Session["AlbumDesc"] != null)
-        {
-            albumDesc = Session["AlbumDesc"].ToString();
-        }
+        //if (Session["AlbumName"] != null)
+        //{
+        //    albumName = Session["AlbumName"].ToString();
+        //}
+        //if (Session["AlbumDesc"] != null)
+        //{
+        //    albumDesc = Session["AlbumDesc"].ToString();
+        //}
         PhotoAlbum objPhotoAlbum = new PhotoAlbum();
 
         objPhotoAlbum.PhotoAlbumId = PhotoAlbumID;
@@ -978,11 +989,11 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
             }
             if (!Equals(objSessionValue, null))
             {
-               
+
                 _userId = objSessionValue.UserId;
                 _userName = objSessionValue.FirstName == string.Empty ? objSessionValue.UserName : (objSessionValue.FirstName + " " + objSessionValue.LastName);
-             }
-           
+            }
+
             string strPath = "";
             if (Request.RawUrl.Contains("/"))
             {
@@ -1018,10 +1029,10 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
             //to check if user is not loggedin
             if (_userId == 0) //if user is not a logged in user redirect to login page
             {
-                 Response.Redirect(Redirect.RedirectToPage(Redirect.PageList.Inner2LoginPage.ToString()));
+                Response.Redirect(Redirect.RedirectToPage(Redirect.PageList.Inner2LoginPage.ToString()));
             }
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
             LogError(ex.Message, ex.StackTrace);
         }
@@ -1059,19 +1070,16 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
     /// <returns>Modified file name</returns>
     private string GetSafeFileName(string fileName)
     {
-       string newFileName = "";
-       newFileName = fileName;
-        int i=0;
+        string newFileName = "";
+        newFileName = fileName;
+        int i = 0;
         while (File.Exists(galleryPath + "/" + newFileName))
-        {           
+        {
             string file = Path.GetFileNameWithoutExtension(galleryPath + "/" + fileName);
             string fileExtension = Path.GetExtension(galleryPath + "/" + fileName);
             newFileName = file + "_" + (++i) + fileExtension;
         }
-      
-          //  newFileName = objRand.Next(MIN_RAND_VALUE_FOR_FILENAME, MAX_RAND_VALUE_FOR_FILENAME).ToString() + "_" + fileName;
-          //  newFileName = newFileName.Substring(0, newFileName.IndexOf('_') + 1);
-         return newFileName;
+        return newFileName;
     }
 
     // Check validation of album by Ashu
@@ -1085,8 +1093,8 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
         int.TryParse(HttpContext.Current.Session["Tributeid"].ToString(), out tributeid);
         name = replaceSpecialCharacter(name);
         desc = replaceSpecialCharacter(desc);
-        HttpContext.Current.Session["AlbumName"] = name;
-        HttpContext.Current.Session["AlbumDesc"] = desc;
+        //HttpContext.Current.Session["AlbumName"] = name;
+        //HttpContext.Current.Session["AlbumDesc"] = desc;
         HttpContext.Current.Session["FileCount"] = filecount;
 
         if (!(string.IsNullOrEmpty(name) && string.IsNullOrEmpty(desc)))
@@ -1120,8 +1128,8 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
         return PhotoAlbumCount;
     }
 
-     [Ajax.AjaxMethod(Ajax.HttpSessionStateRequirement.ReadWrite)]
-    public int CheckAlbumFileCount(int filecount,int ExistingFileCount)
+    [Ajax.AjaxMethod(Ajax.HttpSessionStateRequirement.ReadWrite)]
+    public int CheckAlbumFileCount(int filecount, int ExistingFileCount)
     {
         int PhotoAlbumCount = 0;
         if ((filecount + ExistingFileCount) > 60)
@@ -1131,7 +1139,7 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
         else
         {
             HttpContext.Current.Session["FileCount"] = filecount;
-       
+
         }
         return PhotoAlbumCount;
     }
@@ -1141,10 +1149,8 @@ public partial class Photo_ManagePhotoAlbum : PageBase, IManagePhotoAlbum
     [Ajax.AjaxMethod(Ajax.HttpSessionStateRequirement.ReadWrite)]
     public void SetAlbumNameDesc(string name, string desc)
     {
-        
         HttpContext.Current.Session["AlbumName"] = name;
         HttpContext.Current.Session["AlbumDesc"] = desc;
-
     }
 
     #endregion

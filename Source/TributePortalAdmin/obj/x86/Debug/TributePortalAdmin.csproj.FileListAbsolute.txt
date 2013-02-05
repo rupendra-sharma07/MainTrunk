@@ -19,24 +19,87 @@ E:\YourTribute\EnhancementPhase1\Source\TributePortalAdmin\obj\x86\Debug\Resolve
 E:\YourTribute\EnhancementPhase1\Source\TributePortalAdmin\obj\x86\Debug\TributePortalAdmin.dll
 E:\YourTribute\EnhancementPhase1\Source\TributePortalAdmin\obj\x86\Debug\TributePortalAdmin.pdb
 E:\YourTribute\EnhancementPhase1\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\TributePortalAdmin.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\TributePortalAdmin.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.CompositeWeb.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.ObjectBuilder.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessEntities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessLogic.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.Utilities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.ResourceAccess.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\TributePortalSecurity.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\log4net.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessEntities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessLogic.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.Utilities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.ResourceAccess.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\obj\x86\Debug\ResolveAssemblyReference.cache
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\obj\x86\Debug\TributePortalAdmin.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\TributePortalAdmin\obj\x86\Debug\TributePortalAdmin.pdb
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\TributePortalAdmin.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\TributePortalAdmin.pdb
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.CompositeWeb.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessLogic.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.Utilities.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\log4net.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\TributePortalSecurity.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.ResourceAccess.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.Utilities.pdb
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.ResourceAccess.pdb
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessLogic.pdb
+E:\TestYourTributeGit\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\TestYourTributeGit\Source\TributePortalAdmin\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\TestYourTributeGit\Source\TributePortalAdmin\obj\x86\Debug\TributePortalAdmin.dll
+E:\TestYourTributeGit\Source\TributePortalAdmin\obj\x86\Debug\TributePortalAdmin.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\TributePortalAdmin.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\TributePortalAdmin.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.CompositeWeb.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessLogic.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\log4net.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.ResourceAccess.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.ResourceAccess.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessLogic.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\obj\x86\Debug\TributePortalAdmin.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\TributePortalAdmin\obj\x86\Debug\TributePortalAdmin.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\TributePortalAdmin.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\TributePortalAdmin.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.CompositeWeb.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessLogic.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\log4net.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.ResourceAccess.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.ResourceAccess.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessLogic.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\obj\x86\Debug\TributePortalAdmin.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\TributePortalAdmin\obj\x86\Debug\TributePortalAdmin.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\TributePortalAdmin.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\TributePortalAdmin.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.CompositeWeb.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessLogic.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.ResourceAccess.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\log4net.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.ObjectBuilder.WCSFExtensions.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.BusinessLogic.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\TributesPortal.ResourceAccess.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\bin\x86\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\obj\x86\Debug\TributePortalAdmin.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\TributePortalAdmin\obj\x86\Debug\TributePortalAdmin.pdb

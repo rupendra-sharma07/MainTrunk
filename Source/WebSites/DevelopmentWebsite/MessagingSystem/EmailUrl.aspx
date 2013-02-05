@@ -26,6 +26,9 @@
 
     <script type="text/javascript" src="../Common/JavaScript/Common.js"></script>
 
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script src="../assets/scripts/BrowserOrTabCloseHandler.js" type="text/javascript"></script>
+
     <script type="text/javascript">
 	
     

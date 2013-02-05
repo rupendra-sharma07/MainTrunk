@@ -55,3 +55,27 @@ E:\YourTribute\EnhancementPhase1\Source\Modules\Shell\bin\Debug\Microsoft.Practi
 E:\YourTribute\EnhancementPhase1\Source\Modules\Shell\obj\Debug\ResolveAssemblyReference.cache
 E:\YourTribute\EnhancementPhase1\Source\Modules\Shell\obj\Debug\Shell.dll
 E:\YourTribute\EnhancementPhase1\Source\Modules\Shell\obj\Debug\Shell.pdb
+E:\TestYourTributeGit\Source\Modules\Shell\bin\Debug\Shell.dll
+E:\TestYourTributeGit\Source\Modules\Shell\bin\Debug\Shell.pdb
+E:\TestYourTributeGit\Source\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\TestYourTributeGit\Source\Modules\Shell\obj\Debug\ResolveAssemblyReference.cache
+E:\TestYourTributeGit\Source\Modules\Shell\obj\Debug\Shell.dll
+E:\TestYourTributeGit\Source\Modules\Shell\obj\Debug\Shell.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\Modules\Shell\bin\Debug\Shell.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\Modules\Shell\bin\Debug\Shell.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\Modules\Shell\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\Modules\Shell\obj\Debug\Shell.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\Modules\Shell\obj\Debug\Shell.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\Modules\Shell\bin\Debug\Shell.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\Modules\Shell\bin\Debug\Shell.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\Modules\Shell\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\Modules\Shell\obj\Debug\Shell.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\Modules\Shell\obj\Debug\Shell.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\Modules\Shell\bin\Debug\Shell.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\Modules\Shell\bin\Debug\Shell.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\Modules\Shell\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\Modules\Shell\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source_25Jan2013\Source\Modules\Shell\obj\Debug\Shell.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\Modules\Shell\obj\Debug\Shell.pdb

@@ -1,10 +1,21 @@
 <Modules>
-  <Module PersistentId="9E434219-B16C-4F56-AB76-9899A2D96C77" ModuleId="DevelopmentWebsite" />
-  <Module PersistentId="C6AC10CA-B459-4996-A954-03BC981669A9" ModuleId="BusinessLogic" />
-  <Module PersistentId="A6398B94-F757-4592-B5ED-2297B66D651D" ModuleId="BusinessEntities" />
-  <Module PersistentId="021D01CB-E0CF-4429-AC76-2CDA2F911D91" ModuleId="PortalUtilities" />
-  <Module PersistentId="A96C1929-4465-4C6E-8E4A-1B7F87409277" ModuleId="Tribute" />
-  <Module PersistentId="5E23E15A-C521-4B08-829C-E2A8D1FA4947" ModuleId="Miscellaneous" />
   <Module PersistentId="7925A672-F749-4675-9276-DF4DD33E334E" ModuleId="ResourceAccess" />
+  <Module PersistentId="A6398B94-F757-4592-B5ED-2297B66D651D" ModuleId="BusinessEntities" />
+  <Module PersistentId="9E434219-B16C-4F56-AB76-9899A2D96C77" ModuleId="DevelopmentWebsite" />
+  <Module PersistentId="9B55E34D-12C6-4277-8B75-45FD54A2B227" ModuleId="MyHome" />
+  <Module PersistentId="021D01CB-E0CF-4429-AC76-2CDA2F911D91" ModuleId="PortalUtilities" />
+  <Module PersistentId="C6AC10CA-B459-4996-A954-03BC981669A9" ModuleId="BusinessLogic" />
+  <Module PersistentId="CD09DDE1-7559-4536-A443-C7C337911318" ModuleId="Story" />
+  <Module PersistentId="A96C1929-4465-4C6E-8E4A-1B7F87409277" ModuleId="Tribute" />
+  <Module PersistentId="73AB3A8E-AD69-4EC8-B327-F604BC2AE1CB" ModuleId="Photo" />
+  <Module PersistentId="5E23E15A-C521-4B08-829C-E2A8D1FA4947" ModuleId="Miscellaneous" />
+  <Module PersistentId="9675A0B1-4824-4E3B-9373-3BB90C82C179" ModuleId="ActionlessForm" />
+  <Module PersistentId="1C4CC3B7-1E60-48E1-A68E-D5F3E8BD9F26" ModuleId="Shell" />
+  <Module PersistentId="1F26116B-5218-4CD5-B0DE-D90FD50B276A" ModuleId="Users" />
   <Module PersistentId="565C60D2-9B3B-4202-AF1D-6D6B6A5878A3" ModuleId="TributePortalAdmin" />
+  <Module PersistentId="91953D7F-A37C-4636-873C-F99CE1EBC398" ModuleId="Event" />
+  <Module PersistentId="3F4F5C6A-741E-4DFE-9E40-2AE25086C1E7" ModuleId="Notes" />
+  <Module PersistentId="8E03A694-279A-407D-B3CD-A77122541162" ModuleId="Gift" />
+  <Module PersistentId="6FA797D9-8B19-4ACF-A174-B63C27D223CF" ModuleId="Video" />
+  <Module PersistentId="DB41932E-6D89-42C5-A442-359C7FA665D2" ModuleId="GuestBook" />
 </Modules>

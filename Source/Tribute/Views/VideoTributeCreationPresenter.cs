@@ -446,7 +446,7 @@ namespace TributesPortal.Tribute.Views
 
 
         }
-        public void InsertCurrentCreditPoints(int NewUpdatedCredit, string CCIdentity, string confirmationId)
+        public void InsertCurrentCreditPoints(double NewUpdatedCredit, string CCIdentity, string confirmationId)
         {
             CreditPointTransaction objCreditTransaction = new CreditPointTransaction();
             objCreditTransaction.UserId = View.UserId;
@@ -477,17 +477,46 @@ namespace TributesPortal.Tribute.Views
                 objpackage.EndDate = System.DateTime.Now.AddMonths(1);
                 objpackage.AmountPaid = 0;
             }*Mohit*/
+            /*LHK: added new packages*/
+            if (View.PackageId == 14)
+            {
+                objpackage.StartDate = System.DateTime.Now;
+                objpackage.EndDate = System.DateTime.Now.AddDays(30);
+            }
+            if (View.PackageId == 13)
+            {
+                objpackage.StartDate = System.DateTime.Now;
+                objpackage.EndDate = System.DateTime.Now.AddDays(90);
+            }
+            if (View.PackageId == 12)
+            {
+                objpackage.StartDate = System.DateTime.Now;
+                objpackage.EndDate = System.DateTime.Now.AddMonths(12);
+            }
+            if (View.PackageId == 11)
+            {
+                objpackage.StartDate = System.DateTime.Now;
+                objpackage.EndDate = null;
+            }
+            if (View.PackageId == 10)
+            {
+                objpackage.StartDate = System.DateTime.Now;
+                objpackage.EndDate = System.DateTime.Now.AddDays(30);
+            }
+            if (View.PackageId == 9)
+            {
+                objpackage.StartDate = System.DateTime.Now.AddDays(90);
+                objpackage.EndDate = null;
+            }
             if (View.PackageId == 2)
             {
                 objpackage.StartDate = System.DateTime.Now;
                 objpackage.EndDate = System.DateTime.Now.AddMonths(12);
-
             }
             if (View.PackageId == 1)
             {
                 objpackage.StartDate = System.DateTime.Now;
                 objpackage.EndDate = null;
-
             }
             objpackage.AmountPaid = int.Parse(View.AmountPaid.ToString());
             objpackage.IsAutomaticRenew = View.NotifyBeforeRenew;

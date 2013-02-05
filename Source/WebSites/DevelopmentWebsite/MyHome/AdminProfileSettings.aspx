@@ -12,6 +12,9 @@
 
     <script type="text/javascript" src="<%=ConfigurationManager.AppSettings["Secured_APP_BASE_DOMAIN"].ToString()%>assets/scripts/mooRainbow/mooRainbow.js"></script>
 
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="<%=ConfigurationManager.AppSettings["Secured_APP_BASE_DOMAIN"].ToString()%>assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
     <!-- mooRainbow Color Picker LHK -->
     <link rel="stylesheet" type="text/css" href="<%=ConfigurationManager.AppSettings["Secured_APP_BASE_DOMAIN"].ToString()%>assets/scripts/mooRainbow/mooRainbow.css" />
 

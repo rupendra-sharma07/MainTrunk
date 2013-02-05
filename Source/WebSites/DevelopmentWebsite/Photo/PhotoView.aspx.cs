@@ -536,6 +536,12 @@ public partial class Photo_PhotoView : PageBase, IPhotoView
                 else
                     Master._OriginalImageUrl = value.PhotoImage;
             }
+
+            if (File.Exists(strBigImage))
+            {
+                strBigImage = value.PhotoImage;
+            }
+
             //getting package id
             StateManager objStateManager = StateManager.Instance;
             TributePackage objpackage = new TributePackage();
@@ -590,8 +596,6 @@ public partial class Photo_PhotoView : PageBase, IPhotoView
                 HtmlGenericControl _anchr = new HtmlGenericControl();
                 _anchr = (HtmlGenericControl)this.Master.FindControl("anchrVieFullPhoto");
                 if (_anchr != null)
-                //_anchr.HRef = value.PhotoImage;
-                //_anchr.HRef+= "return false;";
                 {
                     _anchr.InnerHtml = "<a href='" + strBigImage + "' target='_blank' href='" + value.PhotoImage + "'>View Full size Photo</a>";
                     _anchr.Visible = true;

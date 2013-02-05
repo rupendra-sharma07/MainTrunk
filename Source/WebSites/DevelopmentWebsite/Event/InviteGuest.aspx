@@ -321,7 +321,7 @@
                                                         ForeColor="#FF8000" ValidationGroup="LoginGroup">!</asp:RequiredFieldValidator>
                                                 </div>
                                                 <div class="yt-Form-Buttons">
-                                                    <div class="yt-Form-Submit">
+                                                    <div class="yt-Form-Submit" style="padding-right:20px; ">
                                                         <asp:LinkButton ID="lbtnLogin" runat="server" CssClass="yt-Button yt-ArrowButton"
                                                             ValidationGroup="LoginGroup" OnClientClick="doProgressIndicator();" OnClick="lbtnLogin_Click">Log 
                                                         in</asp:LinkButton>

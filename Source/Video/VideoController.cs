@@ -366,6 +366,11 @@ namespace TributesPortal.Video
             return FacadeManager.TributeManager.GetTrbDetailOnTributeId(tributeId);
         }
 
-        
+
+
+        internal int GetTributePackageId(int _tributeId)
+        {
+            return FacadeManager.BillingManager.TributePackageId(_tributeId);
+        }
     }//end class
 }//end namespace

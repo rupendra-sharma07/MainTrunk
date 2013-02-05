@@ -35,6 +35,9 @@ xml:lang="en" lang="en">
 
     <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/modalbox.js"></script>
 
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
     <script src="http://connect.facebook.net/en_US/all.js" type="text/javascript"></script>
 
     <script language="javascript" type="text/javascript">

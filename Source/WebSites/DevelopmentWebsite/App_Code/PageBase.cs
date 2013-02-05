@@ -40,10 +40,13 @@ public class
 
     public PageBase()
     {
-        this.Error += new EventHandler(PageBase_Error);
+        this.Error += new EventHandler(PageBase_Error);      
+
+        this.PreLoad += new EventHandler(PageBase_PreLoad);
+        
+        
     }
-
-
+   
     /// <summary>
     ///  Function Name     : OnPreInit
     ///  Purpose           : will set Theme of page.
@@ -163,6 +166,27 @@ public class
     private void PageBase_Error(object sender, EventArgs e)
     {
         
+    }
+
+    private void PageBase_PreLoad(object sender, EventArgs e)
+    {
+        // Code added by Varun for NoRedirection functionality - 28 Jan 2013
+        SessionValue _objSessionValue = null;
+
+        TributesPortal.Utilities.StateManager stateManager = StateManager.Instance;
+
+        // Validate if Query string contains NoRedirection -- true
+        string noRedirection = Convert.ToString(HttpContext.Current.Request.QueryString["NoRedirection"]);
+
+
+        if (noRedirection != null && noRedirection.ToLower() == "true")
+        {            
+            // Save NoRedirection value in Database           
+            UsersController _controller = new UsersController();
+            _objSessionValue = new SessionValue(true);
+            stateManager.Add("objSessionvalue", _objSessionValue, StateManager.State.Session);
+            _controller.SessionStore(_objSessionValue, HttpContext.Current.Session.SessionID);
+        }
     }
 
     ///<summary>
@@ -482,6 +506,13 @@ public class
 
                 if (obj.SessionKey == "UserImage")
                     objVal.UserImage = obj.SessionValues;
+
+                // Added by Varun on 25 Jan 2013 for NoRedirection functionality
+                if (obj.SessionKey == "NoRedirection")
+                {
+                    bool val;
+                    objVal.NoRedirection = bool.TryParse(obj.SessionValues, out val);
+                }
             }
 
             stateManager.Add("objSessionValue", objVal, StateManager.State.Session);

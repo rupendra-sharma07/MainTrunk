@@ -247,7 +247,7 @@
                 </div>
             </div>
         </div>
-        <% if (Session["UserPackageID"] != null && (Session["UserPackageID"].Equals(8) || Session["PackageId"].Equals(3)))
+        <% if (Session["UserPackageID"] != null && (Session["UserPackageID"].Equals(8) || Session["UserPackageID"].Equals(3)))
            { %>
         <div class="yt-GoogleOuter">
             <div class="yt-GoogleAdBox-BottomSmall" id="BannerAdBoxBottom" runat="server">

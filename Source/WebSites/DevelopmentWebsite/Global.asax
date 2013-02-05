@@ -156,17 +156,34 @@
 
             if (obj.SessionKey == "IsUsernameVisiable")
                 objVal.IsUsernameVisiable = Convert.ToBoolean(obj.SessionValues);
+            
+            // NoRedirection Session value -- Added by Varun (25/1/13)
+            if (obj.SessionKey == "NoRedirection")
+            {
+                bool val;
+                objVal.NoRedirection = bool.TryParse(obj.SessionValues, out val);
+            }
         }
         stateManager.Add("objSessionValue", objVal, StateManager.State.Session);
     }
-
+    
     void Session_End(object sender, EventArgs e)
     {
         // Code that runs when a session ends. 
         // Note: The Session_End event is raised only when the sessionstate mode
         // is set to InProc in the Web.config file. If session mode is set to StateServer 
         // or SQLServer, the event is not raised.
-    }
+        //if (HttpContext.Current != null)
+        //{
+        //    HttpContext.Current.Response.Cookies.Clear();
+        //}        
+       
+        //Session.RemoveAll();
+        //UsersController _controller = new UsersController();
+        //StateManager stateManager = StateManager.Instance;
+        //_controller.DeleteSessionDetails(Session.SessionID);                     
+    }  
+   
     protected void Application_AuthenticateRequest(Object sender, EventArgs e)
     {
         if (HttpContext.Current.User != null)

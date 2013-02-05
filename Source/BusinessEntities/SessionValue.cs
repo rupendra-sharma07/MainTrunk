@@ -28,6 +28,8 @@ namespace TributesPortal.BusinessEntities
         private string _UserTypeDescription;
         private bool _IsUsernameVisiable;
 
+        // Added by Varun to get No Redirection boolean on 25-Jan-2013
+        private bool _NoRedirection = false;
 
         // Added by rupendra to get user image on 24-june -2011
         private string _UserImage;
@@ -114,7 +116,12 @@ namespace TributesPortal.BusinessEntities
             get { return _UserImage; }
             set { _UserImage = value; }
         }
-
+        // Added by Varun to get No Redirection boolean on 25-Jan-2013
+        public bool NoRedirection
+        {
+            get { return _NoRedirection; }
+            set { _NoRedirection = value; }
+        }
 
         //Overloaded constructor
         public SessionValue(int _UserId,
@@ -137,7 +144,16 @@ namespace TributesPortal.BusinessEntities
             this._UserType = _UserType;
             this._UserTypeDescription = _UserTypeDescription;
             this._IsUsernameVisiable = _IsUsernameVisiable;
-            this.UserImage = _sUserImage;
+            this.UserImage = _sUserImage;            
+        }
+
+        //Overloaded constructor -- Added by Varun on 25 Jan 2013
+        public SessionValue(
+            // Added by Varun to get No Redirection boolean on 25-Jan-2013
+            bool _noRedirection
+            )
+        {            
+            this.NoRedirection = _noRedirection;
         }
 
         public SessionValue(int _UserId,

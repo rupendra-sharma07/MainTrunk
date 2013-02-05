@@ -8,13 +8,43 @@ E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\bin\x86\Debug\TributesPo
 E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\obj\x86\Debug\ResolveAssemblyReference.cache
 E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.dll
 E:\YourTribute\EnhancementPhase1\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\log4net.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.pdb
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\obj\x86\Debug\ResolveAssemblyReference.cache
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.dll
-E:\Project\YourTribute\New Git Repo\MainTrunk\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.pdb
+E:\TestYourTributeGit\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.dll
+E:\TestYourTributeGit\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.pdb
+E:\TestYourTributeGit\Source\PortalUtilities\bin\x86\Debug\log4net.dll
+E:\TestYourTributeGit\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.dll
+E:\TestYourTributeGit\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\TestYourTributeGit\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.pdb
+E:\TestYourTributeGit\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\TestYourTributeGit\Source\PortalUtilities\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\TestYourTributeGit\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.dll
+E:\TestYourTributeGit\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\PortalUtilities\bin\x86\Debug\log4net.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\PortalUtilities\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\PortalUtilities\bin\x86\Debug\log4net.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\PortalUtilities\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\PortalUtilities\bin\x86\Debug\TributesPortal.Utilities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\PortalUtilities\bin\x86\Debug\log4net.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\PortalUtilities\bin\x86\Debug\TributesPortal.BusinessEntities.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\PortalUtilities\bin\x86\Debug\TributePortalSecurity.pdb
+E:\Project\YourTribute\Source_25Jan2013\Source\PortalUtilities\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Project\YourTribute\Source_25Jan2013\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.dll
+E:\Project\YourTribute\Source_25Jan2013\Source\PortalUtilities\obj\x86\Debug\TributesPortal.Utilities.pdb

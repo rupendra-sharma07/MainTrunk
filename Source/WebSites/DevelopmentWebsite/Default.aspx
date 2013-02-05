@@ -32,7 +32,11 @@
             }
             else
             {
-                    Server.Transfer("Tribute/Home.aspx",true);
+                if (Request.QueryString["noredirection"] == null)
+                {
+                    Server.Transfer("Tribute/Home.aspx", true);
+                }
+                Server.Transfer("Tribute/Home.aspx?NoRedirection=" + Request.QueryString["noredirection"]);                    
            //     //Response.Redirect("Home.aspx");
             }
            // //Response.Redirect("Home.aspx");

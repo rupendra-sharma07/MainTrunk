@@ -134,7 +134,7 @@ public partial class UserControl_Header : System.Web.UI.UserControl
             else if (intUserType == 2)
             {
                 _userName = objSessionvalue.UserName;
-                int NetCreditPoints;
+                double NetCreditPoints;
                 UserRegistration _objUserReg = new UserRegistration();
                 Users objUsers = new Users();
                 objUsers.UserId = objSessionvalue.UserId;
