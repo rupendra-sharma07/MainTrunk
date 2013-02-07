@@ -24,7 +24,7 @@
 
     <script type="text/javascript" src="../assets/scripts/global.js"></script>
 
-    <script type="text/javascript" src="../assets/scripts/tributecreation.js"></script>
+    <script type="text/javascript" src="../assets/scripts/tributecreation.js"></script>    
     
     <script type="text/javascript">
     window.addEvent('load', function() {	
@@ -105,5 +105,7 @@
         </div>
         <!--yt-Container-->
     </form>
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
 </body>
 </html>

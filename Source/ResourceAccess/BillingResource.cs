@@ -203,12 +203,10 @@ namespace TributesPortal.ResourceAccess
                 }
                 return objCreditCostMapping;
             }
-
             catch (System.Data.SqlClient.SqlException ex)
             {
                 throw ex;
             }
-
         }
 
         public void GetCreditPointCount(object[] objValue)
@@ -222,13 +220,13 @@ namespace TributesPortal.ResourceAccess
                 if (_objDataSet.Tables[0].Rows.Count != 0)
                 {
                     CreditPointTransaction objTranDetails = new CreditPointTransaction();
-                    objTranDetails.TransactionId = Convert.ToInt32(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.TransactionId.ToString()].ToString());
-                    objTranDetails.UserId = Convert.ToInt32(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.UserId.ToString()].ToString());
-                    objTranDetails.NetCreditPoints = Convert.ToInt32(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.NetCreditPoints.ToString()].ToString());
-                    objTranDetails.AmountPaid = Convert.ToInt32(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.AmountPaid.ToString()].ToString());
-                    objTranDetails.CreditPackageId = Convert.ToInt32(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.CreditPackageId.ToString()].ToString());
+                    objTranDetails.TransactionId = !string.IsNullOrEmpty(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.TransactionId.ToString()].ToString()) ? Convert.ToInt32(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.TransactionId.ToString()].ToString()) : 0;
+                    objTranDetails.UserId = !string.IsNullOrEmpty(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.UserId.ToString()].ToString()) ? Convert.ToInt32(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.UserId.ToString()].ToString()) : 0;
+                    objTranDetails.NetCreditPoints = !string.IsNullOrEmpty(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.NetCreditPoints.ToString()].ToString()) ? Convert.ToDouble(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.NetCreditPoints.ToString()].ToString()) : 0;
+                    objTranDetails.AmountPaid = !string.IsNullOrEmpty(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.AmountPaid.ToString()].ToString()) ? Convert.ToInt32(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.AmountPaid.ToString()].ToString()) : 0;
+                    objTranDetails.CreditPackageId = !string.IsNullOrEmpty(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.CreditPackageId.ToString()].ToString()) ? Convert.ToInt32(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.CreditPackageId.ToString()].ToString()) : 0;
                     objTranDetails.PurchasedDate = DateTime.Parse(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.PurchasedDate.ToString()].ToString());
-                    objTranDetails.IsDeleted = bool.Parse(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.IsDeleted.ToString()].ToString());
+                    objTranDetails.IsDeleted = !string.IsNullOrEmpty(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.IsDeleted.ToString()].ToString()) ? bool.Parse(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.IsDeleted.ToString()].ToString()) : false;
                     if (!(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.ModifiedDate.ToString()] == null || _objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.ModifiedDate.ToString()].ToString() == ""))
                     {
                         objTranDetails.ModifiedDate = DateTime.Parse(_objDataSet.Tables[0].Rows[0][CreditPointTransaction.CreditPointDetails.ModifiedDate.ToString()].ToString());
@@ -289,7 +287,7 @@ namespace TributesPortal.ResourceAccess
                                                 };
                     DbType[] dbType ={
                                       DbType.Int64,                                      
-                                      DbType.Int64,
+                                      DbType.Double,
                                       DbType.Int64,
                                       DbType.Int64,
                                       DbType.DateTime,

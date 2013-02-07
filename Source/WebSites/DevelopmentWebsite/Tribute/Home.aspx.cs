@@ -34,25 +34,60 @@ using Facebook;
 public partial class Tribute_ParentHomepage :PageBase//System.Web.UI.Page
 {
     public string LinkOtherDomain = string.Empty;
+    private SessionValue objSessionValue = null;
+
     protected void Page_Load(object sender, EventArgs e)
     {
         //this.Form.Action = Request.RawUrl;
-
-        // Added by Ashu on Oct 11, 2011
-        if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower() == "yourmoments")
+        System.Diagnostics.Debug.WriteLine("In Tribute/Home -- Page_Load");
+         //code for YT Mobile redirections
+        string redirctMobileUrl = string.Empty;
+        if (!IsPostBack)
         {
-            YT2.Attributes["class"] = "blue";
-            YT4.Attributes["class"] = "blue";
-           // YT5.Attributes["class"] = "";
-            YMDiv.Attributes.Add("style", "display:block");
-            YTDiv.Attributes.Add("style", "display:none");
-            CreateBtn.Attributes["class"] = "actionbuttonBlue";
-            YMSlider.Attributes.Add("style", "display:block");
-            YTSlider.Attributes.Add("style", "display:none");
-            Bottombackground.Attributes.Add("style", "display:block;");
-            YTAnnouncement.Attributes.Add("style", "display:none;");
-            YT11.InnerHtml = @"Create your own Website for free!";
-            HomeTitle.InnerHtml= @"Your Moments Event Websites – Celebrate a wedding, baby, anniversary or other significant
+            System.Diagnostics.Debug.WriteLine("In Tribute/Home -- Postback");
+
+            DeviceManager deviceManager = new DeviceManager
+            {
+                UserAgent = Request.UserAgent,
+                IsMobileBrowser = Request.Browser.IsMobileDevice
+            };
+
+            // Added by Varun Goel on 25 Jan 2013 for NoRedirection functionality
+            TributesPortal.Utilities.StateManager stateManager = StateManager.Instance;
+
+            objSessionValue = (SessionValue)stateManager.Get("objSessionvalue", StateManager.State.Session);
+            System.Diagnostics.Debug.WriteLine("In Tribute/Home -- Validating");
+            if (objSessionValue != null)
+                System.Diagnostics.Debug.WriteLine("In Tribute/Home -- Validating redirection:"+ objSessionValue.NoRedirection);
+            if (objSessionValue == null || objSessionValue.NoRedirection == null || objSessionValue.NoRedirection == false)
+            {
+                System.Diagnostics.Debug.WriteLine("In Tribute/Home -- After validation inside if for redirection");
+                if (deviceManager.IsMobileDevice())
+                {   
+                    // Redirection URL
+                    redirctMobileUrl = string.Format("{0}{1}{2}", "https://www.", WebConfig.TopLevelDomain, "/mobile/Search.html");
+                    Response.Redirect(redirctMobileUrl, false);
+                }
+            }
+        }
+        if (string.IsNullOrEmpty(redirctMobileUrl))
+        {
+
+            // Added by Ashu on Oct 11, 2011
+            if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower() == "yourmoments")
+            {
+                YT2.Attributes["class"] = "blue";
+                YT4.Attributes["class"] = "blue";
+                // YT5.Attributes["class"] = "";
+                YMDiv.Attributes.Add("style", "display:block");
+                YTDiv.Attributes.Add("style", "display:none");
+                CreateBtn.Attributes["class"] = "actionbuttonBlue";
+                YMSlider.Attributes.Add("style", "display:block");
+                YTSlider.Attributes.Add("style", "display:none");
+                Bottombackground.Attributes.Add("style", "display:block;");
+                YTAnnouncement.Attributes.Add("style", "display:none;");
+                YT11.InnerHtml = @"Create your own Website for free!";
+                HomeTitle.InnerHtml = @"Your Moments Event Websites – Celebrate a wedding, baby, anniversary or other significant
         event.";
             if (TributesPortal.Utilities.WebConfig.TopLevelDomain.ToLower().Contains(".in"))
                 LinkOtherDomain = "http://www.yourtribute.in";
@@ -62,6 +97,7 @@ public partial class Tribute_ParentHomepage :PageBase//System.Web.UI.Page
         }
         else if (ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower() == "yourtribute")
         {
+            HomeTitle.InnerHtml = @"Your Tribute - Free Online Obituaries & Premium Memorial Websites";
             YT2.Attributes["class"] = "Purple-MT";
             YT4.Attributes["class"] = "Gray-MT";
            // YT5.Attributes["class"] = "Gray-MT";
@@ -199,10 +235,16 @@ public partial class Tribute_ParentHomepage :PageBase//System.Web.UI.Page
 //                                                features!";
 //                YT25.InnerHtml = " Anniversary Tribute:";
 
-//                lnkCreateBtn.HRef= Session["APP_BASE_DOMAIN"].ToString() + "pricing.aspx";
-//                lnkCreateBtn.Attributes["class"]="leftBigButton";
-//            }
-//        }
+            //                lnkCreateBtn.HRef= Session["APP_BASE_DOMAIN"].ToString() + "pricing.aspx";
+            //                lnkCreateBtn.Attributes["class"]="leftBigButton";
+            //            }
+            //        }
+        }
+        
+        else
+        {
+            Response.Redirect(redirctMobileUrl, false);
+        }
     }
     
     

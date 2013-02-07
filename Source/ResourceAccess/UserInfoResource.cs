@@ -71,6 +71,10 @@ namespace TributesPortal.ResourceAccess
                 else
                     _objTributeUserInfo.Tributes.Date2 = DateTime.Parse(ds.Tables[0].Rows[0]["Date2"].ToString());
 
+                if (!string.IsNullOrEmpty(ds.Tables[0].Rows[0]["CreatedDate"].ToString()))
+                    _objTributeUserInfo.Tributes.CreatedDate = DateTime.Parse(ds.Tables[0].Rows[0]["CreatedDate"].ToString());
+
+
                 _objTributeUserInfo.Tributes.PostMessage = ds.Tables[0].Rows[0]["PostMessage"].ToString();
                 _objTributeUserInfo.Tributes.MessageWithoutHtml = ds.Tables[0].Rows[0]["MessageWithoutHtml"].ToString();
 
@@ -1871,6 +1875,10 @@ namespace TributesPortal.ResourceAccess
                                     case 8:
                                         objMyTributes.Enddate = "Obituary (Lifetime)";// "Announce (Free)"; updated in yt phase 1
                                         break;
+                                    case 11:
+                                        if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                            objMyTributes.Enddate = "Video (Lifetime)";//
+                                        break;
                                     default:
                                         objMyTributes.Enddate = "Celebrate (Lifetime)";// +" (" + dr["Enddate"].ToString() + ")";
                                         break;
@@ -1904,6 +1912,26 @@ namespace TributesPortal.ResourceAccess
                                         case 8:
                                             objMyTributes.Enddate = "Obituary (Lifetime)";// "Announce (Free)"; updated in yt phase 1
                                             break;
+                                        case 9:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video Tribute (Expired)";
+                                            break;
+                                        case 10:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video Tribute (Expired)";
+                                            break;
+                                        case 12:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video (Expired)";
+                                            break;
+                                        case 13:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video (Expired)";
+                                            break;
+                                        case 14:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video (Expired)";
+                                            break;
                                         default:
                                             objMyTributes.ExpiredOn = date2.ToString("MMMM dd, yyyy");
                                             break;
@@ -1932,6 +1960,26 @@ namespace TributesPortal.ResourceAccess
                                             break;
                                         case 8:
                                             objMyTributes.Enddate = "Obituary (Lifetime)";// "Tribute Free Trial" + " (" + dr["Enddate"].ToString() + ")"; updated for phase 1
+                                            break;
+                                        case 9:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video Tribute" + " (" + dr["Enddate"].ToString() + ")";
+                                            break;
+                                        case 10:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video Tribute" + " (" + dr["Enddate"].ToString() + ")";
+                                            break;
+                                        case 12:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video " + " (" + dr["Enddate"].ToString() + ")";
+                                            break;
+                                        case 13:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video " + " (" + dr["Enddate"].ToString() + ")";
+                                            break;
+                                        case 14:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video " + " (" + dr["Enddate"].ToString() + ")";
                                             break;
                                         default:
                                             objMyTributes.ExpiredOn = date2.ToString("MMMM dd, yyyy");
@@ -2044,6 +2092,10 @@ namespace TributesPortal.ResourceAccess
                                     case 6:
                                         objMyTributes.Enddate = "Premium Obituary" + " (" + dr["Enddate"].ToString() + ")"; //"Photo Tribute" + " (" + dr["Enddate"].ToString() + ")"; updated in phase 1
                                         break;
+                                    case 11:
+                                        if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                            objMyTributes.Enddate = "Video " + " (" + dr["Enddate"].ToString() + ")";
+                                        break;
                                     default:
                                         objMyTributes.Enddate = "Celebrate" + " (" + dr["Enddate"].ToString() + ")";
                                         break;
@@ -2077,6 +2129,26 @@ namespace TributesPortal.ResourceAccess
                                         case 8:
                                             objMyTributes.Enddate = "Obituary (Lifetime)";// "Announce (Free)"; updated in yt phase 1
                                             break;
+                                        case 9:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video Tribute (Expired)";
+                                           break;
+                                        case 10:
+                                           if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                               objMyTributes.Enddate = "Video Tribute (Expired)";
+                                           break;
+                                        case 12:
+                                           if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                               objMyTributes.Enddate = "Video (Expired)";
+                                           break;
+                                        case 13:
+                                           if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                               objMyTributes.Enddate = "Video (Expired)";
+                                           break;
+                                        case 14:
+                                           if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                               objMyTributes.Enddate = "Video (Expired)";
+                                           break;
                                         default:
                                             objMyTributes.ExpiredOn = date2.ToString("MMMM dd, yyyy");
                                             break;
@@ -2106,6 +2178,26 @@ namespace TributesPortal.ResourceAccess
                                             break;
                                         case 8:
                                             objMyTributes.Enddate = "Obituary (Lifetime)";// "Tribute Free Trial" + " (" + dr["Enddate"].ToString() + ")"; updated for phase 1
+                                            break;
+                                        case 9:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video Tribute" + " (" + dr["Enddate"].ToString() + ")";
+                                            break;
+                                        case 10:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video Tribute" + " (" + dr["Enddate"].ToString() + ")";
+                                            break;
+                                        case 12:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video " + " (" + dr["Enddate"].ToString() + ")";
+                                            break;
+                                        case 13:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video " + " (" + dr["Enddate"].ToString() + ")";
+                                            break;
+                                        case 14:
+                                            if (dr["TypeDescription"].ToString().ToLower().Equals("video"))
+                                                objMyTributes.Enddate = "Video " + " (" + dr["Enddate"].ToString() + ")";
                                             break;
                                         default:
                                             objMyTributes.ExpiredOn = date2.ToString("MMMM dd, yyyy");

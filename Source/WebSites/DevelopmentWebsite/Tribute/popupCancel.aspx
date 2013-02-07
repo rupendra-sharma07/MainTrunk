@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Untitled Page</title>
-    <!--#include file="../analytics.asp"-->
+    <!--#include file="../analytics.asp"-->    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -117,5 +117,7 @@
             </tr>
         </table>
     </form>
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
 </body>
 </html>

@@ -98,5 +98,9 @@
         </div>
         <!--yt-Container-->
     </form>
+    
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script src="../assets/scripts/BrowserOrTabCloseHandler.js" type="text/javascript"></script>
+
 </body>
 </html>

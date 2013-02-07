@@ -786,5 +786,10 @@ namespace TributesPortal.Tribute
         {
             return FacadeManager.TributeManager.GetTributeAdmins(objtrb);
         }
+
+        internal bool GetIsMobileViewOn(Tributes oTribute)
+        {
+            return FacadeManager.TributeManager.GetIsMobileViewOn(oTribute);
+        }
     }//end class
 }//end namespace

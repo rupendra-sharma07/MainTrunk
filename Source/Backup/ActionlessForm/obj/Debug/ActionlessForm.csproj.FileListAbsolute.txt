@@ -1,5 +1,0 @@
-E:\YourTribute\EnhancementPhase1\Source\ActionlessForm\bin\Debug\ActionlessForm.dll
-E:\YourTribute\EnhancementPhase1\Source\ActionlessForm\bin\Debug\ActionlessForm.pdb
-E:\YourTribute\EnhancementPhase1\Source\ActionlessForm\obj\Debug\ResolveAssemblyReference.cache
-E:\YourTribute\EnhancementPhase1\Source\ActionlessForm\obj\Debug\ActionlessForm.dll
-E:\YourTribute\EnhancementPhase1\Source\ActionlessForm\obj\Debug\ActionlessForm.pdb

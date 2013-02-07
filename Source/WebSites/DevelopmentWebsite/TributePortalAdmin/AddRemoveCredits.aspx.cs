@@ -106,13 +106,13 @@ public partial class TributePortalAdmin_AddRemoveCredits : System.Web.UI.Page, I
         }
     }
 
-    public int updatedCreditCount
+    public double updatedCreditCount
     {
         set
         {
             if (rdoAdd.Checked)
             {
-                if (int.Parse(value.ToString()) < 0)
+                if (double.Parse(value.ToString()) < 0)
                 {
                     lblUpdatedCredit.Text = "Credits are now less than 0";
                 }
@@ -173,7 +173,7 @@ public partial class TributePortalAdmin_AddRemoveCredits : System.Web.UI.Page, I
         }
         if (txtCreditCount.Text != string.Empty && txtCreditCount.Text != "")
         {
-            objAddRemoveCreditInfo.CreditCount = int.Parse(txtCreditCount.Text);
+            objAddRemoveCreditInfo.CreditCount = double.Parse(txtCreditCount.Text);
         }
         return objAddRemoveCreditInfo;
     }

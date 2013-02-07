@@ -14,5 +14,8 @@
     <asp:Button ID="btnSubmit" runat="server" Text="Submit" 
         onclick="btnSubmit_Click" />
     </form>
+    
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
 </body>
 </html>

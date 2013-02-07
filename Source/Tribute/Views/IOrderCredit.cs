@@ -48,7 +48,7 @@ namespace TributesPortal.Tribute.Views
         string SponsorEmailAddress { get; }
         int TributePackageId { get; set; }
         int TransactionId { get; set; }
-        int NetCreditPoints { set; get; }
+        double NetCreditPoints { set; get; }
         IList<CreditCostMapping> CreditCostMappingList { set; }
     }
 }

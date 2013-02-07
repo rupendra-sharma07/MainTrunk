@@ -251,7 +251,6 @@ public partial class Photo_PhotoView : PageBase, IPhotoView
                                 string redirectScript = "<script>window.open('" + SmallImage + "');</script>";
                                 Response.Write(redirectScript);
                             }
-
                         }
                     }
                 }
@@ -536,6 +535,14 @@ public partial class Photo_PhotoView : PageBase, IPhotoView
                 else
                     Master._OriginalImageUrl = value.PhotoImage;
             }
+
+            string[] imageTest = strBigImage.Split('/');
+            string[] imagePath = CommonUtilities.GetPath();
+            string bigImage = imagePath[0] + "/" + imagePath[1] + "/" + _tributeUrl.Replace(" ", "_") + "_" + _tributeType.Replace(" ", "_") + "/" + imageTest[imageTest.Length-1];
+            if (!File.Exists(bigImage))
+            {
+                strBigImage = value.PhotoImage;
+            }
             //getting package id
             StateManager objStateManager = StateManager.Instance;
             TributePackage objpackage = new TributePackage();
@@ -590,8 +597,6 @@ public partial class Photo_PhotoView : PageBase, IPhotoView
                 HtmlGenericControl _anchr = new HtmlGenericControl();
                 _anchr = (HtmlGenericControl)this.Master.FindControl("anchrVieFullPhoto");
                 if (_anchr != null)
-                //_anchr.HRef = value.PhotoImage;
-                //_anchr.HRef+= "return false;";
                 {
                     _anchr.InnerHtml = "<a href='" + strBigImage + "' target='_blank' href='" + value.PhotoImage + "'>View Full size Photo</a>";
                     _anchr.Visible = true;

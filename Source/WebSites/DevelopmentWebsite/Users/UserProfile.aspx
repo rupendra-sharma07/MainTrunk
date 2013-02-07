@@ -758,5 +758,9 @@ function Summery()
             </tr>
         </table>
     </form>
+    
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
 </body>
 </html>

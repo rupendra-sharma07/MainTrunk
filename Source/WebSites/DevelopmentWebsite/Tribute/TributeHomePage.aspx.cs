@@ -108,26 +108,57 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
     protected void Page_Load(object sender, EventArgs e)
     {
         Ajax.Utility.RegisterTypeForAjax(typeof(Tribute_TributeHomePage_));
-
         //code for YT MObile redirections
-        //string redirctMobileUrl = string.Empty;
-        //if (!IsPostBack)
-        //{
-        //    DeviceManager deviceManager = new DeviceManager
-        //    {
-        //        UserAgent = Request.UserAgent,
-        //        IsMobileBrowser = Request.Browser.IsMobileDevice
-        //    };
-        //    if (deviceManager.IsMobileDevice())
-        //    {
-        //        if ((Request.QueryString["TributeUrl"] != null) && (Request.QueryString["TributeType"] != null))
-        //        {
-        //            redirctMobileUrl = string.Format("{0}{1}{2}{3}{4}{5}", "https://www.", WebConfig.TopLevelDomain, "/mobile/index.html?tributeurl=", Request.QueryString["TributeUrl"], "&tributetype=", Request.QueryString["TributeType"], "&page=home");
-        //        }
-        //    }
-        //}
-        //if (string.IsNullOrEmpty(redirctMobileUrl))
-        //{
+        string redirctMobileUrl = string.Empty;
+        string mTributeType = null;
+        if (!IsPostBack)
+        {
+            DeviceManager deviceManager = new DeviceManager
+                                              {
+                                                  UserAgent = Request.UserAgent,
+                                                  IsMobileBrowser = Request.Browser.IsMobileDevice
+                                              };
+            // Added by Varun Goel on 25 Jan 2013 for NoRedirection functionality
+            TributesPortal.Utilities.StateManager stateManager = StateManager.Instance;
+            objSessionValue = (SessionValue)stateManager.Get("objSessionvalue", StateManager.State.Session);
+            if (objSessionValue == null || objSessionValue.NoRedirection == null || objSessionValue.NoRedirection == false)
+            {
+                if (deviceManager.IsMobileDevice())
+                {
+                    Tributes oTribute = new Tributes();
+                    if ((Request.QueryString["TributeUrl"] != null) && (Request.QueryString["TributeType"] != null))
+                    {
+                        oTribute.TributeUrl = Request.QueryString["TributeUrl"];
+                        oTribute.TypeDescription = mTributeType = Request.QueryString["TributeType"];
+
+                        oTribute = _presenter.GetTributeUrlOnOldTributeUrl(oTribute,
+                                                                           WebConfig.ApplicationType.ToString());
+
+                        bool isMobileViewOn = _presenter.GetIsMobileViewOn(oTribute);
+                        bool IsMobileRedirectOn = false;
+                        bool.TryParse(WebConfig.IsMobileRedirectOn, out IsMobileRedirectOn);
+                        bool IsInIframe = false;
+                        if (HttpContext.Current.Session["isInIframe"] != null)
+                        {
+                            bool.TryParse(HttpContext.Current.Session["isInIframe"].ToString(), out IsInIframe);
+                        }
+
+                        if (isMobileViewOn && IsMobileRedirectOn && (mTributeType.ToLower().Equals("memorial")) && (!IsInIframe))
+                        {
+                            redirctMobileUrl = string.Format("{0}{1}{2}{3}{4}{5}", "https://www.", WebConfig.TopLevelDomain, "/mobile/index.html?tributeurl=", oTribute.TributeUrl, "&tributetype=", Request.QueryString["TributeType"], "&page=home");
+                        }
+                    }
+                    else
+                    {
+                        // Redirection URL
+                        redirctMobileUrl = string.Format("{0}{1}{2}", "https://www.", WebConfig.TopLevelDomain, "/mobile/Search.html");
+                        Response.Redirect(redirctMobileUrl, false);
+                    }
+                }
+            }
+        }
+        if (string.IsNullOrEmpty(redirctMobileUrl))
+        {
 
             Tributes objTrb = new Tributes();
             try
@@ -144,7 +175,8 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
 
                 //LHK:EmptyDivAboveMainPanel
                 StateManager stateTribute = StateManager.Instance;
-                SessionValue objSessvalue = (SessionValue)stateTribute.Get("objSessionvalue", StateManager.State.Session);
+                SessionValue objSessvalue =
+                    (SessionValue)stateTribute.Get("objSessionvalue", StateManager.State.Session);
 
                 if ((Request.QueryString["TributeUrl"] != null))
                 {
@@ -174,8 +206,9 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
                 }
                 //LHK:EmptyDivAboveMainPanel
 
-                StateManager stateManager = StateManager.Instance;
-                SessionValue objSessionvalue = (SessionValue)stateTribute.Get("objSessionvalue", StateManager.State.Session);
+                //StateManager stateManager = StateManager.Instance;
+                SessionValue objSessionvalue =
+                    (SessionValue)stateTribute.Get("objSessionvalue", StateManager.State.Session);
 
                 // Set the value of the seraching control from the resource access class
                 if (Request.QueryString["TributeType"] != null)
@@ -207,7 +240,8 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
 
                     StateManager stateManagerP = StateManager.Instance;
                     string PageName = "TributeHomePage";
-                    stateManagerP.Add(PortalEnums.SessionValueEnum.SearchPageName.ToString(), PageName, StateManager.State.Session);
+                    stateManagerP.Add(PortalEnums.SessionValueEnum.SearchPageName.ToString(), PageName,
+                                      StateManager.State.Session);
 
                     Announcement.Visible = false;
                     SaveMsg.Visible = false;
@@ -223,11 +257,14 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
 
                     if ((Request.QueryString["TributeUrl"] != null) && (Request.QueryString["TributeType"] != null))
                     {
-                        _presenter.GetTributeSessionForUrlAndType(Request.QueryString["TributeUrl"].ToString(), Request.QueryString["TributeType"].ToString(), WebConfig.ApplicationType.ToString());
+                        _presenter.GetTributeSessionForUrlAndType(Request.QueryString["TributeUrl"].ToString(),
+                                                                  Request.QueryString["TributeType"].ToString(),
+                                                                  WebConfig.ApplicationType.ToString());
                     }
                     else if (Request.QueryString["TributeUrl"] != null)
                     {
-                        _presenter.GetTributeSessionForUrlAndType(Request.QueryString["TributeUrl"].ToString(), null, WebConfig.ApplicationType.ToString());
+                        _presenter.GetTributeSessionForUrlAndType(Request.QueryString["TributeUrl"].ToString(), null,
+                                                                  WebConfig.ApplicationType.ToString());
                     }
                     else if (Request.QueryString["Id"] != null)
                     {
@@ -284,7 +321,8 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
                         }
 
                         StateManager stateTribure_ = StateManager.Instance;
-                        Tributes objTribute_ = (Tributes)stateTribure_.Get("TributeSession", StateManager.State.Session);
+                        Tributes objTribute_ =
+                            (Tributes)stateTribure_.Get("TributeSession", StateManager.State.Session);
                         if (!Equals(objTribute_.TributeName, null))
                         {
                             if (objTribute_.TributeId > 0)
@@ -303,7 +341,8 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
                                         obituaryBlock.Visible = false;
                                     }
                                 }
-                                _tributeTypeName = objTribute_.TypeDescription.ToLower().Replace("new baby", "newbaby");
+                                _tributeTypeName = objTribute_.TypeDescription.ToLower().Replace("new baby",
+                                                                                                 "newbaby");
                                 string folderName = this._presenter.GetExistingFolderName(objTribute_.TributeId);
                                 string appPath = string.Empty;
                                 if (WebConfig.ApplicationMode.ToLower().Equals("local"))
@@ -312,9 +351,12 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
                                 }
                                 else
                                 {
-                                    appPath = string.Format("{0}{1}{2}", "http://www.", WebConfig.TopLevelDomain, "/");
+                                    appPath = string.Format("{0}{1}{2}", "http://www.", WebConfig.TopLevelDomain,
+                                                            "/");
                                 }
-                                idSheet.Attributes.Add("href", appPath + "assets/themes/" + folderName + "/theme.css"); //to set the selected theme
+                                idSheet.Attributes.Add("href",
+                                                       appPath + "assets/themes/" + folderName + "/theme.css");
+                                //to set the selected theme
                                 Session["TributeTypeName"] = _tributeTypeName;
 
                                 //AG:18/03/10: Set package id value
@@ -354,14 +396,15 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
                             //check the creation date of the tribute.
                             // if the date is greater than the lanch date then donot show message box, else show the message modal
                             //show this message only till 6 months after the launch of the site
-                            if ((objTribute.CreatedDate < Convert.ToDateTime(WebConfig.Launch_Day.ToString())) && (DateTime.Today <= Convert.ToDateTime(WebConfig.Launch_Day.ToString()).AddDays(180)))
+                            if ((objTribute.CreatedDate < Convert.ToDateTime(WebConfig.Launch_Day.ToString())) &&
+                                (DateTime.Today <= Convert.ToDateTime(WebConfig.Launch_Day.ToString()).AddDays(180)))
                             {
                                 CommonUtilities utility = new CommonUtilities();
                                 //if (_UserID > 0 && _TribureId > 0)
                                 //{
                                 if (!utility.ReadCookie(_UserID))
                                 {
-                                    body.Attributes.Add("onload", "showWelcome();");
+                                    body.Attributes.Add("onload", "setIsInTopurl();");
                                     utility.CreateCookie(_UserID);
                                 }
                             }
@@ -379,10 +422,14 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
                                 divHomeAuthUser.Style.Add(HtmlTextWriterStyle.Display, "inline");
                                 divUnAuthUser.Style.Add(HtmlTextWriterStyle.Display, "none");
                                 StateManager objStateManager = StateManager.Instance;
-                                objSessionValue = (SessionValue)objStateManager.Get("objSessionvalue", StateManager.State.Session);
+                                objSessionValue =
+                                    (SessionValue)
+                                    objStateManager.Get("objSessionvalue", StateManager.State.Session);
                                 if (!Equals(objSessionValue, null))
                                 {
-                                    _userName = objSessionValue.FirstName == string.Empty ? objSessionValue.UserName : (objSessionValue.FirstName + " " + objSessionValue.LastName);
+                                    _userName = objSessionValue.FirstName == string.Empty
+                                                    ? objSessionValue.UserName
+                                                    : (objSessionValue.FirstName + " " + objSessionValue.LastName);
                                 }
 
                                 FacebookWebContext fbwebcon = new FacebookWebContext();
@@ -430,11 +477,13 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
                             Response.Redirect("~/Errors/Error404.aspx", false);
                         }
                     }
+
                     #endregion
 
                     lblPlusone.InnerHtml = "<a class='addthis_button_google_plusone' g:plusone:size='medium'></a>";
 
                     #region LHK: for GuestBook entry
+
                     if (_UserID == 0)
                     {
                         btnPost.Attributes.Add("onClick", "return setSessionMsg(); return false;");
@@ -443,6 +492,7 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
                     {
                         btnPost.Attributes.Add("onClick", "return validateInput(); return false;");
                     }
+
                     #endregion
 
                 }
@@ -461,14 +511,18 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
                 }
 
                 //Start - Modification on 9-Dec-09 for the enhancement 3 of the Phase 1
-                if (_tributeName != null) Page.Title = _tributeName + " | " + _tributeType + " " + ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString();
+                if (_tributeName != null)
+                    Page.Title = _tributeName + " | " + _tributeType + " " +
+                                 ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString();
 
                 if (!this.IsPostBack)
                 {
 
                     #region !post Back code
+
                     string nonLoggedIn = Request.QueryString["GuestBook_without_login"];
-                    if (Session["CommentsSession"] != null && !string.IsNullOrEmpty(Session["CommentsSession"].ToString()))
+                    if (Session["CommentsSession"] != null &&
+                        !string.IsNullOrEmpty(Session["CommentsSession"].ToString()))
                     {
 
                         // code here for save
@@ -502,6 +556,7 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
 
                     PageDesc.Content = TributeMessage.ToString();
                     PageThumb.Href = TributeImage.ToString();
+
                     #endregion
 
                     #region GetUpgradedUrl
@@ -515,7 +570,8 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
                         {
                             objTrb.TypeDescription = Request.QueryString["TributeType"].ToString();
                         }
-                        objTrb = _presenter.GetTributeUrlOnOldTributeUrl(objTrb, WebConfig.ApplicationType.ToString());
+                        objTrb = _presenter.GetTributeUrlOnOldTributeUrl(objTrb,
+                                                                         WebConfig.ApplicationType.ToString());
 
                         if (objTrb.TributeUrl != null)
                         {
@@ -551,13 +607,13 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
                 Response.Redirect("../Errors/Error404.aspx");
             }
 
-        //}
-        //else
-        //{
-        //    Response.Redirect(redirctMobileUrl, false);
-        //}
-
+        }
+        else
+        {
+            Response.Redirect(redirctMobileUrl, false);
+        }
     }
+
 
     private void SubDomainCheck()
     {
@@ -658,7 +714,7 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
         {
 
             string themeValue = this._presenter.GetExistingTheme(objTribute_.TributeId);
-            body.Attributes.Add("onload", "Themer_('" + themeValue + "');");
+            //body.Attributes.Add("onload", "Themer_('" + themeValue + "');");
 
         }
     }
@@ -1205,7 +1261,7 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
                 else if (this._presenter.View.PackageId == 3)
                 {
                     lblAccountExpire.InnerText = ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString() + " account type:";
-                    txtAccountExpire.InnerText =  ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString()+" (Free Trial)" ;//Obituary (Lifetime)"; // updated for phase 1
+                    txtAccountExpire.InnerText = ConfigurationManager.AppSettings["ApplicationWordForInternalUse"].ToString() + " (Free Trial)";//Obituary (Lifetime)"; // updated for phase 1
                     btnsponcer.Visible = true;
                     if (dt1 < DateTime.Now)
                     {
@@ -2478,5 +2534,11 @@ public partial class Tribute_TributeHomePage_ : PageBase, ITributeHomePage
         _arrComent.Insert(0, sname);
         _arrComent.Insert(1, smessg);
         HttpContext.Current.Session["CommentsSession"] = _arrComent;
+    }
+
+    [Ajax.AjaxMethod(Ajax.HttpSessionStateRequirement.ReadWrite)]
+    public void setIsInTopurl(bool inIframe)
+    {
+        HttpContext.Current.Session["isInIframe"] = inIframe;
     }
 }

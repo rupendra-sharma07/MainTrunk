@@ -32,16 +32,16 @@ namespace TributesPortal.BusinessLogic
 
             if(WebConfig.ApplicationType.ToLower()=="yourmoments")
             {
-                if ((Packageid == 3) || (Packageid == 8))
+                if ((Packageid == 3) || (Packageid == 8) || (Packageid == 9) || (Packageid == 10) || (Packageid == 13) || (Packageid == 14))
                     _EmailBody = objMail.CreationFree(userName, TributeType, TributeName, TributeUrl, TributeId);
-                else if ((Packageid == 2) || (Packageid == 5) || (Packageid == 7))
+                else if ((Packageid == 2) || (Packageid == 5) || (Packageid == 7) || (Packageid == 12))
                 {
                     if (Notifyme.Equals(true))
                         _EmailBody = objMail.Creation1YearAuto(userName, TributeType, TributeName, TributeUrl, TributeId);
                     else
                         _EmailBody = objMail.Creation1Year(userName, TributeType, TributeName, TributeUrl, TributeId);
                 }
-                else if ((Packageid == 1) || (Packageid == 4) || (Packageid == 6))
+                else if ((Packageid == 1) || (Packageid == 4) || (Packageid == 6) || (Packageid == 11))
                     _EmailBody = objMail.CreationLifeTime(userName, TributeType, TributeName, TributeUrl, TributeId);
                 //string _EmailBody = GetOwnerAdminBody(TributeId,TributeName);
                 if (HttpContext.Current.Session["FromVideoTributeCreation"] == null)
@@ -56,9 +56,9 @@ namespace TributesPortal.BusinessLogic
             else
             {
                 // Changes for new tribute packages in website upgrade phase 1 by UD
-                if (Packageid == 3)
+                if ((Packageid == 3) || (Packageid == 9) || (Packageid == 10) || (Packageid == 13) || (Packageid == 14))
                 {
-                    _EmailBody = objMail.CreationFree(userName, TributeType, TributeName, TributeUrl, TributeId);
+                    _EmailBody = objMail.CreationFree(Packageid, userName, TributeType, TributeName, TributeUrl, TributeId);
                 }
                 else if (Packageid == 8)
                 {
@@ -68,17 +68,24 @@ namespace TributesPortal.BusinessLogic
                 {
                     _EmailBody = objMail.CreationPremiumObituary(userName, TributeType, TributeName, TributeUrl, TributeId);
                 }
-                else if ((Packageid == 2) || (Packageid == 5))
+                else if ((Packageid == 2) || (Packageid == 5) || (Packageid == 12))
                 {
                     _EmailBody = objMail.CreationMemorialTribute1Year(userName, TributeType, TributeName, TributeUrl, TributeId);
                 }
-                else if ((Packageid == 1) || (Packageid == 4))
+                else if ((Packageid == 1) || (Packageid == 4) || (Packageid == 11))
                 {
                     _EmailBody = objMail.CreationMemorialLifeTime(userName, TributeType, TributeName, TributeUrl, TributeId);
                 }
 
-
-                if ((Packageid == 3) || (Packageid == 8) || (Packageid == 6) || (Packageid == 7))
+                if ((Packageid == 12) || (Packageid == 13) || (Packageid == 14))
+                {
+                    bool val = objEmail.SendMessages("Your " + WebConfig.ApplicationWord + " <" + TributeCreationAdmin + ">", TributeOwner, "Your Video Only Tribute has been created", _EmailBody, EmailMessages.TextFormat.Html.ToString());
+                }
+                else if ((Packageid == 9) || (Packageid == 10) || (Packageid == 1) || (Packageid == 2))
+                {
+                    bool val = objEmail.SendMessages("Your " + WebConfig.ApplicationWord + " <" + TributeCreationAdmin + ">", TributeOwner, "Your Video Tribute has been created", _EmailBody, EmailMessages.TextFormat.Html.ToString());
+                }
+                else if ((Packageid == 3) || (Packageid == 8) || (Packageid == 6) || (Packageid == 7))
                 {
                     bool val = objEmail.SendMessages("Your " + WebConfig.ApplicationWord + " <" + TributeCreationAdmin + ">", TributeOwner, "Your Obituary has been created", _EmailBody, EmailMessages.TextFormat.Html.ToString());
                 }

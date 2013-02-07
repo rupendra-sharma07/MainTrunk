@@ -76,19 +76,6 @@ public partial class Photo_PhotoAlbum : PageBase, IPhotoAlbum
                 appDomian = "http://" + _tributeType.ToLower().Replace("new baby", "newbaby") + "." + WebConfig.TopLevelDomain + "/";
             }
 
-
-
-
-            //if (!Equals(_TributePackageType, null))
-            //{
-            //    if (_TributePackageType.Contains("Announce"))
-            //    {
-            //        ScriptManager.RegisterStartupScript(Page, this.GetType(), "a", "fnExpiryNoticePopupClose();", true);
-
-            //        ScriptManager.RegisterStartupScript(Page, this.GetType(), "awe", "fnExpiryNoticePopup('location.href','document.title','NonMemo','" + _tributeId + "','" + appDomian + "','" + topHeight + "');", true);
-            //    }
-            //}
-            //Start - Modification on 9-Dec-09 for the enhancement 3 of the Phase 1
             if (_tributeName != null)
                 Page.Title = _tributeName + " | Photo Album";
             //End

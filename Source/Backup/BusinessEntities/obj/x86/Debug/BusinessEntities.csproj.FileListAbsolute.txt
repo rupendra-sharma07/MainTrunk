@@ -1,5 +1,0 @@
-E:\YourTribute\EnhancementPhase1\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.dll
-E:\YourTribute\EnhancementPhase1\Source\BusinessEntities\bin\Debug\TributesPortal.BusinessEntities.pdb
-E:\YourTribute\EnhancementPhase1\Source\BusinessEntities\obj\x86\Debug\ResolveAssemblyReference.cache
-E:\YourTribute\EnhancementPhase1\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.dll
-E:\YourTribute\EnhancementPhase1\Source\BusinessEntities\obj\x86\Debug\TributesPortal.BusinessEntities.pdb

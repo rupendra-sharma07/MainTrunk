@@ -165,7 +165,7 @@ namespace TributesPortal.ResourceAccess
 
             if (dsUsers.Tables[0].Rows.Count > 0)
             {
-                objAddRemoveCreditInfo.CreditCount = int.Parse(dsUsers.Tables[0].Rows[0]["NetCreditPoints"].ToString());
+                objAddRemoveCreditInfo.CreditCount = double.Parse(dsUsers.Tables[0].Rows[0]["NetCreditPoints"].ToString());
             }
 
             return objAddRemoveCreditInfo;

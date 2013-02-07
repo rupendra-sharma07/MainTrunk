@@ -129,7 +129,7 @@ namespace TributesPortal.Tribute.Views
             objUserReg.UserCreditcardDetails = objCCdetail;
             object[] param = { objUserReg, objSessionVal, objTribute, objpackage };
             //int CreditcardId = int.Parse((_controller.InsertCCDetails(param)).ToString());
-            int CreditcardId = (int.Parse)(_controller.InsertCCDetails(param).ToString());
+            int CreditcardId = int.Parse(_controller.InsertCCDetails(param).ToString());
             return CreditcardId;
         }
 
@@ -199,7 +199,7 @@ namespace TributesPortal.Tribute.Views
 
         }
 
-        public void InsertCurrentCreditPoints(int NewUpdatedCredit, string CCIdentity, string confirmationId)
+        public void InsertCurrentCreditPoints(double NewUpdatedCredit, string CCIdentity, string confirmationId)
         {
             CreditPointTransaction objCreditTransaction = new CreditPointTransaction();
             objCreditTransaction.UserId = View.UserID;

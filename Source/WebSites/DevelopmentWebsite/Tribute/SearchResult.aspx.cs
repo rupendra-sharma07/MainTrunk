@@ -55,6 +55,7 @@ public partial class Tribute_SearchResult : PageBase, ISearchResult
     private int _TotalRecordCount;
     private int _UserId;
     private string _Message = "";
+    private SessionValue objSessionValue = null;
 
     #endregion
 
@@ -81,6 +82,27 @@ public partial class Tribute_SearchResult : PageBase, ISearchResult
 
                 SetSelection();
 
+                //code for YT Mobile redirections
+                string redirctMobileUrl = string.Empty;
+
+                DeviceManager deviceManager = new DeviceManager
+                {
+                    UserAgent = Request.UserAgent,
+                    IsMobileBrowser = Request.Browser.IsMobileDevice
+                };
+
+                // Added by Varun Goel on 25 Jan 2013 for NoRedirection functionality
+                TributesPortal.Utilities.StateManager stateManager = StateManager.Instance;
+
+                objSessionValue = (SessionValue)stateManager.Get("objSessionvalue", StateManager.State.Session);
+                if (objSessionValue == null || objSessionValue.NoRedirection == null || objSessionValue.NoRedirection == false)
+                {
+                    if (deviceManager.IsMobileDevice())
+                    {
+                        // Redirection URL
+                        redirctMobileUrl = string.Format("{0}{1}{2}", "https://www.", WebConfig.TopLevelDomain, "/mobile/SearchResult.html");
+                    }
+                }   
             }
 
             // Set controls visibility on the basis of search result count

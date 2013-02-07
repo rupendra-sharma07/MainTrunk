@@ -9742,5 +9742,36 @@ float:right;margin-left: 5px;
     padding-left: 0px;
     padding-top: 3px;
 }
+.yt-GoogleAdBox-TopLarge
+{
+	
+    padding-left: 76px;
+    padding-bottom: 10px;
+    width: 738px;
+}
+.orderBannerVidOnly {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #CCCCCC;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 10px 0 10px 20px;
+}
 
+.videoOnlyFooter
+{
+	padding: 15px 0 5px 0px;
+	margin-left: 20px;
+    margin-right: 20px;
+}
+.divInnerVideo
+{
+	margin-left: 100px;
+	height: 480px; 
+	width: 720px;
+}
+.divVideoOnlyDisplay
+{
+	padding: 0 20px;	
+}
 /*   Till Here */

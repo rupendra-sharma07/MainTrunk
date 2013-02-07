@@ -78,7 +78,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
     string url = string.Empty;
     public List<Photos> PhotosList;
     //LHK: WordPress Integration
-    public  bool isInIframe = false;
+    public bool isInIframe = false;
     private string _TopUrl = string.Empty;
     public string PageUrl = string.Empty;
     public string PageTitle = string.Empty;
@@ -110,140 +110,140 @@ public partial class Shared_Story : System.Web.UI.MasterPage
             StateManager stateManager = StateManager.Instance;
             MiscellaneousController objMisc = new MiscellaneousController();
 
-          //-- Ashu(June2,2011) : Changes for jquery conflict issues & Javascript exception
+            //-- Ashu(June2,2011) : Changes for jquery conflict issues & Javascript exception
 
-        if (!(Request.Url.AbsolutePath.ToLower().EndsWith("managephotoalbum.aspx")))
-        {
-            DivScript.Visible = true;
-            divModalboxscript.Visible = true;
-        }
-        else
-        {
-            DivScript.Visible = false;
-            divModalboxscript.Visible = false;
-        }
-
-        app_domin = WebConfig.AppBaseDomain;
-        // to avoid redirection for create photo album page
-        if (!(Request.Url.AbsolutePath.ToLower().EndsWith("managephotoalbum.aspx")))
-        {
-            //if Tribute Type and Tribute Url are in querystring        
-            #region LHK:Redirection to upgradedUrl
-
-            if (!this.IsPostBack)
+            if (!(Request.Url.AbsolutePath.ToLower().EndsWith("managephotoalbum.aspx")))
             {
-                Tributes objTrb = new Tributes();
-                //GetUpgradedUrl
-                if ((Request.QueryString["TributeUrl"] != null))
+                DivScript.Visible = true;
+                divModalboxscript.Visible = true;
+            }
+            else
+            {
+                DivScript.Visible = false;
+                divModalboxscript.Visible = false;
+            }
+
+            app_domin = WebConfig.AppBaseDomain;
+            // to avoid redirection for create photo album page
+            if (!(Request.Url.AbsolutePath.ToLower().EndsWith("managephotoalbum.aspx")))
+            {
+                //if Tribute Type and Tribute Url are in querystring        
+                #region LHK:Redirection to upgradedUrl
+
+                if (!this.IsPostBack)
                 {
-                    _tributeUrl = Request.QueryString["TributeUrl"].ToString();
-                    objTrb.TributeUrl = _tributeUrl = Request.QueryString["TributeUrl"].ToString();
+                    Tributes objTrb = new Tributes();
+                    //GetUpgradedUrl
+                    if ((Request.QueryString["TributeUrl"] != null))
+                    {
+                        _tributeUrl = Request.QueryString["TributeUrl"].ToString();
+                        objTrb.TributeUrl = _tributeUrl = Request.QueryString["TributeUrl"].ToString();
 
-                    if (Request.QueryString["TributeType"] != null)
-                    {
-                        objTrb.TypeDescription = Request.QueryString["TributeType"].ToString();
-                    }                    
-                    else if (Session["PhotoAlbumTributeSession"] != null)
-                    {
-                        objTrb = Session["PhotoAlbumTributeSession"] as Tributes;
-                        if(objTrb != null)
-                            if(string.IsNullOrEmpty(objTrb.TypeDescription))
-                                Session["TributeType"] = objTrb.TypeDescription;
-                    }
-                    objTrb = objMisc.GetTributeUrlOnOldTributeUrl(objTrb, WebConfig.ApplicationType.ToString());
-                 
-                    if (Request.QueryString["TributeType"] != null)
-                    {
-                        objTrb.TypeDescription = Request.QueryString["TributeType"].ToString();
-                    }
-                   
-                    if (objTrb != null)
-                    {
-                        if (objTrb.TributeUrl != null)
+                        if (Request.QueryString["TributeType"] != null)
                         {
-                            if (!(string.IsNullOrEmpty(objTrb.TributeUrl.ToString())) && (!(_tributeUrl.Equals(objTrb.TributeUrl.ToString()))))
-                            {
-                                url = GetRedirectUrl();
-                                Response.Redirect(url, true);
+                            objTrb.TypeDescription = Request.QueryString["TributeType"].ToString();
+                        }
+                        else if (Session["PhotoAlbumTributeSession"] != null)
+                        {
+                            objTrb = Session["PhotoAlbumTributeSession"] as Tributes;
+                            if (objTrb != null)
+                                if (string.IsNullOrEmpty(objTrb.TypeDescription))
+                                    Session["TributeType"] = objTrb.TypeDescription;
+                        }
+                        objTrb = objMisc.GetTributeUrlOnOldTributeUrl(objTrb, WebConfig.ApplicationType.ToString());
 
+                        if (Request.QueryString["TributeType"] != null)
+                        {
+                            objTrb.TypeDescription = Request.QueryString["TributeType"].ToString();
+                        }
+
+                        if (objTrb != null)
+                        {
+                            if (objTrb.TributeUrl != null)
+                            {
+                                if (!(string.IsNullOrEmpty(objTrb.TributeUrl.ToString())) && (!(_tributeUrl.Equals(objTrb.TributeUrl.ToString()))))
+                                {
+                                    url = GetRedirectUrl();
+                                    Response.Redirect(url, true);
+
+                                }
                             }
                         }
                     }
                 }
-            }
-            #endregion
-
-            #region For Image uploader redirection
-            //LHK: redirection from main domain to subdomain- for image uploader
-            if (!(WebConfig.ApplicationMode.Equals("local")))
-            {
-
-                if (Request.QueryString["Type"] != null && Request.QueryString["TributeUrl"] != null)
-                {
-                    RediectUsingQueryString();
-                }
-                else
-                {
-                    RedirectUsingSession();
-                }
-            }
-            if (WebConfig.ApplicationMode.Equals("local"))
-            {
-                if (Request.QueryString["mode"] != null && Request.QueryString["TributeUrl"] != null)
-                {
-                    if (Request.QueryString["mode"].ToString() == "Create")
-                    {
-                        if (FacebookWebContext.Current.Session != null)
-                        {
-                            url = WebConfig.AppBaseDomain + Request.QueryString["TributeUrl"].ToString() + "/photos.aspx?post_on_facebook=True";
-                        }
-                        else
-                        {
-                            url = WebConfig.AppBaseDomain + Request.QueryString["TributeUrl"].ToString() + "/photos.aspx";
-
-                        }
-                    }
-                    else if (Request.QueryString["mode"].ToString() == "AddPhotos")
-                    {
-                        url = WebConfig.AppBaseDomain + Request.QueryString["TributeUrl"].ToString() + "/photoalbum.aspx?photoAlbumId=" + Request.QueryString["AlbumId"].ToString();
-                    }
-                    if(! string.IsNullOrEmpty(url))
-                        Response.Redirect(url, false);
-                }
-            }
                 #endregion
 
-        }
-        Tributes objTribute = new Tributes();
+                #region For Image uploader redirection
+                //LHK: redirection from main domain to subdomain- for image uploader
+                if (!(WebConfig.ApplicationMode.Equals("local")))
+                {
 
-        if ((Request.QueryString["TributeUrl"] != null) && (Request.QueryString["TributeType"] != null))
-        {
-            objTribute.TributeUrl = Request.QueryString["TributeUrl"].ToString();
-            objTribute.TypeDescription = Request.QueryString["TributeType"].ToString();
-            stateManager.Add("TributeSession", objMisc.GetTributeSessionForUrlAndType(objTribute, WebConfig.ApplicationType.ToString()), TributesPortal.Utilities.StateManager.State.Session);
-        }
+                    if (Request.QueryString["Type"] != null && Request.QueryString["TributeUrl"] != null)
+                    {
+                        RediectUsingQueryString();
+                    }
+                    else
+                    {
+                        RedirectUsingSession();
+                    }
+                }
+                if (WebConfig.ApplicationMode.Equals("local"))
+                {
+                    if (Request.QueryString["mode"] != null && Request.QueryString["TributeUrl"] != null)
+                    {
+                        if (Request.QueryString["mode"].ToString() == "Create")
+                        {
+                            if (FacebookWebContext.Current.Session != null)
+                            {
+                                url = WebConfig.AppBaseDomain + Request.QueryString["TributeUrl"].ToString() + "/photos.aspx?post_on_facebook=True";
+                            }
+                            else
+                            {
+                                url = WebConfig.AppBaseDomain + Request.QueryString["TributeUrl"].ToString() + "/photos.aspx";
 
-        else if (Request.QueryString["TributeUrl"] != null)
-        {
-            objTribute.TributeUrl = Request.QueryString["TributeUrl"].ToString();
+                            }
+                        }
+                        else if (Request.QueryString["mode"].ToString() == "AddPhotos")
+                        {
+                            url = WebConfig.AppBaseDomain + Request.QueryString["TributeUrl"].ToString() + "/photoalbum.aspx?photoAlbumId=" + Request.QueryString["AlbumId"].ToString();
+                        }
+                        if (!string.IsNullOrEmpty(url))
+                            Response.Redirect(url, false);
+                    }
+                }
+                #endregion
 
-            if (Session["TributeType"] != null)
-                objTribute.TypeDescription = Session["TributeType"].ToString();
-            else
-                objTribute.TypeDescription = null;
+            }
+            Tributes objTribute = new Tributes();
 
-            stateManager.Add("TributeSession", objMisc.GetTributeSessionForUrlAndType(objTribute, WebConfig.ApplicationType.ToString()), TributesPortal.Utilities.StateManager.State.Session);
+            if ((Request.QueryString["TributeUrl"] != null) && (Request.QueryString["TributeType"] != null))
+            {
+                objTribute.TributeUrl = Request.QueryString["TributeUrl"].ToString();
+                objTribute.TypeDescription = Request.QueryString["TributeType"].ToString();
+                stateManager.Add("TributeSession", objMisc.GetTributeSessionForUrlAndType(objTribute, WebConfig.ApplicationType.ToString()), TributesPortal.Utilities.StateManager.State.Session);
+            }
 
-        }
-        Tributes objTrib = (Tributes)stateManager.Get("TributeSession", StateManager.State.Session);
-        if (objTrib != null)
-        {
-            if (objTrib.CreatedDate != null)
-                Session["TributeCreatedDate"] = objTrib.CreatedDate;
-            if (objTrib.TributeUrl != null)
-                Session["TributeURL"] = objTrib.TributeUrl;
-        }
-           
+            else if (Request.QueryString["TributeUrl"] != null)
+            {
+                objTribute.TributeUrl = Request.QueryString["TributeUrl"].ToString();
+
+                if (Session["TributeType"] != null)
+                    objTribute.TypeDescription = Session["TributeType"].ToString();
+                else
+                    objTribute.TypeDescription = null;
+
+                stateManager.Add("TributeSession", objMisc.GetTributeSessionForUrlAndType(objTribute, WebConfig.ApplicationType.ToString()), TributesPortal.Utilities.StateManager.State.Session);
+
+            }
+            Tributes objTrib = (Tributes)stateManager.Get("TributeSession", StateManager.State.Session);
+            if (objTrib != null)
+            {
+                if (objTrib.CreatedDate != null)
+                    Session["TributeCreatedDate"] = objTrib.CreatedDate;
+                if (objTrib.TributeUrl != null)
+                    Session["TributeURL"] = objTrib.TributeUrl;
+            }
+
             TributePackage objpackage = new TributePackage();
             objpackage.UserTributeId = objTribute.TributeId;
 
@@ -261,9 +261,9 @@ public partial class Shared_Story : System.Web.UI.MasterPage
         }
         catch (Exception ex)
         {
-           throw ex;
+            throw ex;
         }
-       
+
     }
 
     public void RediectUsingQueryString()
@@ -314,7 +314,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
             else if (url.Contains("videogallery.aspx"))
                 url = "http://" + TypeDesc + "." + WebConfig.TopLevelDomain + "/" + Tributeurl + "/videos.aspx";
 
-            if(string.IsNullOrEmpty(url))
+            if (string.IsNullOrEmpty(url))
                 Response.Redirect(url, false);
         }
     }
@@ -363,7 +363,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                     else if (url.Contains("videogallery.aspx"))
                         url = "http://" + objTrb.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby") + "." + WebConfig.TopLevelDomain + "/" + objTrb.TributeUrl.ToString() + "/videos.aspx";
 
-                    if(string.IsNullOrEmpty(url))
+                    if (string.IsNullOrEmpty(url))
                         Response.Redirect(url, false);
                 }
             }
@@ -384,7 +384,12 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                 UserAgent = Request.UserAgent,
                 IsMobileBrowser = Request.Browser.IsMobileDevice
             };
-            if (deviceManager.IsMobileDevice())
+            // Added by Varun Goel for NoRedirection functionality on 28 Jan 2013
+            TributesPortal.Utilities.StateManager stateManager = StateManager.Instance;
+            objSessionValue = (SessionValue)stateManager.Get("objSessionvalue", StateManager.State.Session);
+
+            // Validate if Session value for NoRedirection is set
+            if (deviceManager.IsMobileDevice() && (objSessionValue == null || objSessionValue.NoRedirection == null || objSessionValue.NoRedirection == false))
             {
                 #region MObile Redirect
 
@@ -401,325 +406,363 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                 {
                     obTrb.TypeDescription = mTrbType = Request.QueryString["TributeType"].ToString();
                 }
-                bool IsMobileViewOn = objMisc.GetIsMobileViewOn(obTrb);
-
-                bool IsMobileRedirectOn = false;
-                bool.TryParse(WebConfig.IsMobileRedirectOn, out IsMobileRedirectOn);
-
-                if (!(string.IsNullOrEmpty(mTrbUrl)) && !(string.IsNullOrEmpty(mTrbType)) && IsMobileViewOn && IsMobileRedirectOn)
+                if (!(string.IsNullOrEmpty(mTrbUrl)) && !(string.IsNullOrEmpty(mTrbType)))
                 {
                     obTrb = objMisc.GetTributeUrlOnOldTributeUrl(obTrb, WebConfig.ApplicationType.ToString());
 
                     strStartUrl = string.Format("{0}{1}{2}{3}{4}{5}", "https://www.", WebConfig.TopLevelDomain, "/mobile/index.html?tributeurl=", obTrb.TributeUrl, "&tributetype=", mTrbType);
 
-                    string url = Request.Url.ToString().ToLower();
+                        string url = Request.Url.ToString().ToLower();
 
-                    #region story
-                    if (url.Contains("story.aspx"))
-                        redirctMobileUrl = strStartUrl + "&page=story"; 
-                    #endregion
-                    #region notes
-                    else if (url.Contains("notes.aspx"))
-                        redirctMobileUrl = strStartUrl + "&page=notes"; 
-                    #endregion
-                    #region note
-                    else if (url.Contains("notefullview.aspx"))
-                    {
-                        if ((Request.QueryString["noteId"] != null))
+                        #region story
+
+                        if (url.Contains("story.aspx"))
+                            redirctMobileUrl = strStartUrl + "&page=story";
+                            #endregion
+                            #region notes
+
+                        else if (url.Contains("notes.aspx"))
+                            redirctMobileUrl = strStartUrl + "&page=notes";
+                            #endregion
+                            #region note
+
+                        else if (url.Contains("notefullview.aspx"))
                         {
-                            if (int.TryParse(Request.QueryString["noteId"], out mTabId))
+                            if ((Request.QueryString["noteId"] != null))
                             {
-                                redirctMobileUrl = strStartUrl + "&page=note&id=" + mTabId.ToString();
+                                if (int.TryParse(Request.QueryString["noteId"], out mTabId))
+                                {
+                                    redirctMobileUrl = strStartUrl + "&page=note&id=" + mTabId.ToString();
+                                }
+                                else
+                                {
+                                    redirctMobileUrl = strStartUrl + "&page=notes";
+                                }
                             }
                             else
                             {
                                 redirctMobileUrl = strStartUrl + "&page=notes";
                             }
                         }
-                        else
+                            #endregion
+                            #region events
+
+                        else if (url.Contains("event.aspx"))
+                            redirctMobileUrl = strStartUrl + "&page=events";
+                            #endregion
+                            #region event
+
+                        else if (url.Contains("eventfullview.aspx"))
                         {
-                            redirctMobileUrl = strStartUrl + "&page=notes";
-                        }
-                    } 
-                    #endregion
-                    #region events
-                    else if (url.Contains("event.aspx"))
-                        redirctMobileUrl = strStartUrl + "&page=events"; 
-                    #endregion
-                    #region event
-                    else if (url.Contains("eventfullview.aspx"))
-                    {
-                        if ((Request.QueryString["EventID"] != null))
-                        {
-                            if (int.TryParse(Request.QueryString["EventID"], out mTabId))
+                            if ((Request.QueryString["EventID"] != null))
                             {
-                                redirctMobileUrl = strStartUrl + "&page=event&id=" + mTabId.ToString();
+                                if (int.TryParse(Request.QueryString["EventID"], out mTabId))
+                                {
+                                    redirctMobileUrl = strStartUrl + "&page=event&id=" + mTabId.ToString();
+                                }
+                                else
+                                {
+                                    redirctMobileUrl = strStartUrl + "&page=events";
+                                }
                             }
                             else
                             {
                                 redirctMobileUrl = strStartUrl + "&page=events";
                             }
                         }
-                        else
+                            #endregion
+                            #region guestbook
+
+                        else if (url.Contains("guestbook.aspx"))
+                            redirctMobileUrl = strStartUrl + "&page=guestbook";
+                            #endregion
+                            #region gift
+
+                        else if (url.Contains("gift.aspx"))
+                            redirctMobileUrl = strStartUrl + "&page=memorials";
+                            #endregion
+                            #region photogallery
+
+                        else if (url.Contains("photogallery.aspx"))
+                            redirctMobileUrl = strStartUrl + "&page=gallery";
+                            #endregion
+                            #region photoalbum
+
+                        else if (url.Contains("photoalbum.aspx"))
                         {
-                            redirctMobileUrl = strStartUrl + "&page=events";
-                        }
-                    } 
-                    #endregion
-                    #region guestbook
-                    else if (url.Contains("guestbook.aspx"))
-                        redirctMobileUrl = strStartUrl + "&page=guestbook"; 
-                    #endregion
-                    #region gift
-                    else if (url.Contains("gift.aspx"))
-                        redirctMobileUrl = strStartUrl + "&page=memorials"; 
-                    #endregion
-                    #region photogallery
-                    else if (url.Contains("photogallery.aspx"))
-                        redirctMobileUrl = strStartUrl + "&page=gallery"; 
-                    #endregion
-                    #region photoalbum
-                    else if (url.Contains("photoalbum.aspx"))
-                    {
-                        if ((Request.QueryString["PhotoAlbumId"] != null))
-                        {
-                            if (int.TryParse(Request.QueryString["PhotoAlbumId"], out mTabId))
+                            if ((Request.QueryString["PhotoAlbumId"] != null))
                             {
-                                redirctMobileUrl = strStartUrl + "&page=photoalbum&id=" + mTabId.ToString();
+                                if (int.TryParse(Request.QueryString["PhotoAlbumId"], out mTabId))
+                                {
+                                    redirctMobileUrl = strStartUrl + "&page=photoalbum&id=" + mTabId.ToString();
+                                }
+                                else
+                                {
+                                    redirctMobileUrl = strStartUrl + "&page=gallery";
+                                }
                             }
                             else
                             {
                                 redirctMobileUrl = strStartUrl + "&page=gallery";
                             }
                         }
-                        else
+                            #endregion
+                            #region photoview
+
+                        else if (url.Contains("photoview.aspx"))
                         {
-                            redirctMobileUrl = strStartUrl + "&page=gallery";
-                        }
-                    } 
-                    #endregion
-                    #region photoview
-                    else if (url.Contains("photoview.aspx"))
-                    {
-                        if ((Request.QueryString["PhotoId"] != null))
-                        {
-                            if (int.TryParse(Request.QueryString["PhotoId"], out mTabId))
+                            if ((Request.QueryString["PhotoId"] != null))
                             {
-                                redirctMobileUrl = strStartUrl + "&page=photo&id=" + mTabId.ToString();
+                                if (int.TryParse(Request.QueryString["PhotoId"], out mTabId))
+                                {
+                                    redirctMobileUrl = strStartUrl + "&page=photo&id=" + mTabId.ToString();
+                                }
+                                else
+                                {
+                                    redirctMobileUrl = strStartUrl + "&page=gallery";
+                                }
                             }
                             else
                             {
                                 redirctMobileUrl = strStartUrl + "&page=gallery";
                             }
                         }
-                        else
-                        {
+                            #endregion
+                            #region photoview
+
+                        else if (url.Contains("photoview.aspx"))
                             redirctMobileUrl = strStartUrl + "&page=gallery";
-                        }
-                    } 
-                    #endregion
-                    #region photoview
-                    else if (url.Contains("photoview.aspx"))
-                        redirctMobileUrl = strStartUrl + "&page=gallery"; 
-                    #endregion
-                    #region managevideo
-                    else if (url.ToLower().Contains("managevideo.aspx"))
-                    {
-                        if ((Request.QueryString["videoId"] != null))
+                            #endregion
+                            #region managevideo
+
+                        else if (url.ToLower().Contains("managevideo.aspx"))
                         {
-                            if (int.TryParse(Request.QueryString["videoId"], out mTabId))
+                            #region videoTribute
+
+                            if (url.ToLower().Contains("videotype=videotribute"))
                             {
-                                redirctMobileUrl = strStartUrl + "&page=video&id=" + mTabId.ToString();
+                                redirctMobileUrl = string.Empty;
+                            }
+                                #endregion
+
+                            else if ((Request.QueryString["videoId"] != null))
+                            {
+                                if (int.TryParse(Request.QueryString["videoId"], out mTabId))
+                                {
+                                    redirctMobileUrl = strStartUrl + "&page=video&id=" + mTabId.ToString();
+                                }
+                                else
+                                {
+                                    redirctMobileUrl = strStartUrl + "&page=gallery";
+                                }
                             }
                             else
                             {
                                 redirctMobileUrl = strStartUrl + "&page=gallery";
                             }
                         }
-                        else
+                            #endregion
+                            #region videos
+
+                        else if (url.ToLower().Contains("videogallery.aspx"))
                         {
                             redirctMobileUrl = strStartUrl + "&page=gallery";
                         }
-                    } 
-                    #endregion
-                    #region videos
-                    else if (url.ToLower().Contains("videogallery.aspx"))
-                    {
-                        redirctMobileUrl = strStartUrl + "&page=gallery";
+                            #endregion
+
+                        else
+                        {
+                            redirctMobileUrl = strStartUrl + "&page=home";
+                        }
                     }
+
                     #endregion
-                    else
-                    {
-                        redirctMobileUrl = strStartUrl + "&page=home";
-                    }
-                }
-                #endregion
+                
             }
         }
         if (string.IsNullOrEmpty(redirctMobileUrl))
-        {
-        try
-        {
-
-            PageUrl = GetRedirectUrl();
-            PageTitle = Page.Title.ToString();
-            codedURL = HttpUtility.UrlEncode(PageUrl).ToString();
-            codedtitle = HttpUtility.UrlEncode(PageTitle).ToString();
-
-            if (Request.QueryString["topurl"] != null)
             {
-                _TopUrl = Request.QueryString["topurl"].ToString();
-                Response.Cookies["topurl"].Value = _TopUrl;
-                Response.Cookies["topurl"].Domain = _TopUrl;
-                Response.Cookies["topurl"].Expires = DateTime.Now.AddHours(4);
-            }
-
-            if (Request.Cookies["topurl"] != null)
-            {
-                hdnTopUrl.Value = Request.Cookies["topurl"].Value.ToString();
-            }
-            if (Session["isInIframe"] != null)
-            {
-                isInIframe = bool.Parse(Session["isInIframe"].ToString());
-            }
-
-            // New code added on 07 june 2011 by rupendra to handle Apple safari problem
-            if (Request.Browser.Browser.ToString().Trim().Equals("AppleMAC-Safari"))
-            {
-            }
-
-            //LHK:EmptyDivAboveMainPanel
-            StateManager stateTribute = StateManager.Instance;
-            SessionValue objSessvalue = (SessionValue)stateTribute.Get("objSessionvalue", StateManager.State.Session);
-            if ((Request.QueryString["TributeUrl"] != null))
-            {
-                string _trbUrl = Request.QueryString["TributeUrl"].ToString();
-                GetCustomHeaderVisible(_trbUrl, WebConfig.ApplicationType.ToString());
-            }
-            if (!(objSessvalue != null))
-            {
-                if (!IsCustomHeaderOn)
+                try
                 {
-                    EmptyDivAboveMainPanel.Visible = true;
-                }
-            }
-            //LHK:EmptyDivAboveMainPanel
 
-            if (WebConfig.ApplicationMode.Equals("local"))
-            {
-                appDomian = WebConfig.AppBaseDomain.ToString();
+                    PageUrl = GetRedirectUrl();
+                    PageTitle = Page.Title.ToString();
+                    codedURL = HttpUtility.UrlEncode(PageUrl).ToString();
+                    codedtitle = HttpUtility.UrlEncode(PageTitle).ToString();
+
+                    if (Request.QueryString["topurl"] != null)
+                    {
+                        _TopUrl = Request.QueryString["topurl"].ToString();
+                        Response.Cookies["topurl"].Value = _TopUrl;
+                        Response.Cookies["topurl"].Domain = _TopUrl;
+                        Response.Cookies["topurl"].Expires = DateTime.Now.AddHours(4);
+                    }
+
+                    if (Request.Cookies["topurl"] != null)
+                    {
+                        hdnTopUrl.Value = Request.Cookies["topurl"].Value.ToString();
+                    }
+                    if (Session["isInIframe"] != null)
+                    {
+                        isInIframe = bool.Parse(Session["isInIframe"].ToString());
+                    }
+
+                    // New code added on 07 june 2011 by rupendra to handle Apple safari problem
+                    if (Request.Browser.Browser.ToString().Trim().Equals("AppleMAC-Safari"))
+                    {
+                    }
+
+                    //LHK:EmptyDivAboveMainPanel
+                    StateManager stateTribute = StateManager.Instance;
+                    SessionValue objSessvalue =
+                        (SessionValue)stateTribute.Get("objSessionvalue", StateManager.State.Session);
+                    if ((Request.QueryString["TributeUrl"] != null))
+                    {
+                        string _trbUrl = Request.QueryString["TributeUrl"].ToString();
+                        GetCustomHeaderVisible(_trbUrl, WebConfig.ApplicationType.ToString());
+                    }
+                    if (!(objSessvalue != null))
+                    {
+                        if (!IsCustomHeaderOn)
+                        {
+                            EmptyDivAboveMainPanel.Visible = true;
+                        }
+                    }
+                    //LHK:EmptyDivAboveMainPanel
+
+                    if (WebConfig.ApplicationMode.Equals("local"))
+                    {
+                        appDomian = WebConfig.AppBaseDomain.ToString();
+                    }
+                    else
+                    {
+                        StateManager stateManager = StateManager.Instance;
+                        Tributes objTrib = (Tributes)stateManager.Get("TributeSession", StateManager.State.Session);
+                        //Ashu 18 aug for session null
+                        if (objTrib != null)
+                        {
+                            if (objTrib.TypeDescription != null)
+                            {
+                                appDomian = "http://" +
+                                            objTrib.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby") +
+                                            "." + WebConfig.TopLevelDomain + "/";
+                            }
+                            else if (Session["PhotoAlbumTributeSession"] != null)
+                            {
+                                objTrib = Session["PhotoAlbumTributeSession"] as Tributes;
+                                if (objTrib.TypeDescription != null)
+                                    appDomian = "http://" +
+                                                objTrib.TypeDescription.ToString().ToLower().Replace("new baby",
+                                                                                                     "newbaby") + "." +
+                                                WebConfig.TopLevelDomain + "/";
+                            }
+                        }
+                        else if (Session["PhotoAlbumTributeSession"] != null)
+                        {
+                            objTrib = Session["PhotoAlbumTributeSession"] as Tributes;
+                            if (objTrib != null)
+                            {
+                                if (objTrib.TypeDescription != null)
+                                    appDomian = "http://" +
+                                                objTrib.TypeDescription.ToString().ToLower().Replace("new baby",
+                                                                                                     "newbaby") + "." +
+                                                WebConfig.TopLevelDomain + "/";
+                            }
+                        }
+                    }
+
+
+                    try
+                    {
+                        if (Request.QueryString["TributeType"] != null)
+                        {
+                            ytHeader.TributeType = Request.QueryString["TributeType"].ToString();
+                        }
+
+                        // get the Tribute and User detail from the Session           
+                        GetValuesFromSession();
+                        // Set the Class of the div according the Page Name
+                        SetClass();
+                        SetTabClass();
+                        // This function will set the Left Menu
+                        SetMenuOptions();
+                        SetMenuItemClass();
+                        // This Function will load themes in the left panel and loads the selected theme for the tribute.
+                        LoadThemes();
+                        //Method to check if tribute already in favorite list.
+                        CheckForFavorite();
+                        //to set affiliate link.
+                        AffiliateLinks(_tributeType);
+                        StateManager objStateManager = StateManager.Instance;
+                        if (objStateManager.Get("NoteSession", StateManager.State.Session) != null)
+                            _noteId =
+                                int.Parse(objStateManager.Get("NoteSession", StateManager.State.Session).ToString());
+                        if (objStateManager.Get("VideoSession", StateManager.State.Session) != null)
+                            _videoId =
+                                int.Parse(objStateManager.Get("VideoSession", StateManager.State.Session).ToString());
+                        if (objStateManager.Get("PhotoViewSession", StateManager.State.Session) != null)
+                            _photoId =
+                                int.Parse(objStateManager.Get("PhotoViewSession", StateManager.State.Session).ToString());
+                        if (objStateManager.Get("PhotoAlbumId", StateManager.State.Session) != null)
+                            _photoAlbumId =
+                                int.Parse(objStateManager.Get("PhotoAlbumId", StateManager.State.Session).ToString());
+                        if (objStateManager.Get("XmlFilePath", StateManager.State.Session) != null)
+                            //to get xml file name for slideshow
+                            _xmlFilePath = objStateManager.Get("XmlFilePath", StateManager.State.Session).ToString();
+                        //to get photo number from where to start slideshow.
+                        if (objStateManager.Get("SlideShowStartPhoto", StateManager.State.Session) != null)
+                            //to get start photo number in slideshow.
+                            _recordNumber =
+                                int.Parse(
+                                    objStateManager.Get("SlideShowStartPhoto", StateManager.State.Session).ToString());
+                        else
+                            _recordNumber = 0;
+
+                        // Set the controls value
+                        SetControlsValue();
+
+
+
+                        SetPageNameInSession(_typeName);
+                        if (!(string.IsNullOrEmpty(_tributeType)))
+                        {
+                            if (_tributeType == "Anniversary")
+                                _themeName = "AnniversaryDefault";
+                            else if (_tributeType == "Birthday")
+                                _themeName = "BirthdayDefault";
+                            else if (_tributeType == "Graduation")
+                                _themeName = "GraduationDefault";
+                            else if (_tributeType == "Memorial")
+                                _themeName = "MemorialDefault";
+                            else if (_tributeType == "New Baby")
+                                _themeName = "BabyDefault";
+                            else if (_tributeType == "Wedding")
+                                _themeName = "WeddingDefault";
+                        }
+
+                        //LHK: for photo upgrade changes
+                        if ((liAdd.Visible == false) && (liEdit.Visible == false) && (liView.Visible == false) &&
+                            (liDownloadalbum.Visible == false) && (liVieFullPhoto.Visible == false))
+                            divSubTool.Visible = false;
+                    }
+                    catch (Exception ex)
+                    {
+                        LogError(ex.Message, ex.StackTrace);
+                        throw ex;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    LogError(ex.Message, ex.StackTrace);
+                    throw ex;
+                }
             }
             else
             {
-                StateManager stateManager = StateManager.Instance;
-                Tributes objTrib = (Tributes)stateManager.Get("TributeSession", StateManager.State.Session);
-                //Ashu 18 aug for session null
-                if (objTrib != null)
-                {
-                    if (objTrib.TypeDescription != null)
-                    {
-                        appDomian = "http://" + objTrib.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby") + "." + WebConfig.TopLevelDomain + "/";
-                    }
-                    else if (Session["PhotoAlbumTributeSession"] != null)
-                    {
-                        objTrib = Session["PhotoAlbumTributeSession"] as Tributes;
-                        if (objTrib.TypeDescription != null)
-                            appDomian = "http://" + objTrib.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby") + "." + WebConfig.TopLevelDomain + "/";
-                    }
-                }
-                else if (Session["PhotoAlbumTributeSession"] != null)
-                {
-                    objTrib = Session["PhotoAlbumTributeSession"] as Tributes;
-                    if (objTrib != null)
-                    {
-                        if (objTrib.TypeDescription != null)
-                            appDomian = "http://" + objTrib.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby") + "." + WebConfig.TopLevelDomain + "/";
-                    }
-                }
-            }
-
-
-            try
-            {
-                if (Request.QueryString["TributeType"] != null)
-                {
-                    ytHeader.TributeType = Request.QueryString["TributeType"].ToString();
-                }
-
-                // get the Tribute and User detail from the Session           
-                GetValuesFromSession();
-                // Set the Class of the div according the Page Name
-                SetClass();
-                SetTabClass();
-                // This function will set the Left Menu
-                SetMenuOptions();
-                SetMenuItemClass();
-                // This Function will load themes in the left panel and loads the selected theme for the tribute.
-                LoadThemes();
-                //Method to check if tribute already in favorite list.
-                CheckForFavorite();
-                //to set affiliate link.
-                AffiliateLinks(_tributeType);
-                StateManager objStateManager = StateManager.Instance;
-                if (objStateManager.Get("NoteSession", StateManager.State.Session) != null)
-                    _noteId = int.Parse(objStateManager.Get("NoteSession", StateManager.State.Session).ToString());
-                if (objStateManager.Get("VideoSession", StateManager.State.Session) != null)
-                    _videoId = int.Parse(objStateManager.Get("VideoSession", StateManager.State.Session).ToString());
-                if (objStateManager.Get("PhotoViewSession", StateManager.State.Session) != null)
-                    _photoId = int.Parse(objStateManager.Get("PhotoViewSession", StateManager.State.Session).ToString());
-                if (objStateManager.Get("PhotoAlbumId", StateManager.State.Session) != null)
-                    _photoAlbumId = int.Parse(objStateManager.Get("PhotoAlbumId", StateManager.State.Session).ToString());
-                if (objStateManager.Get("XmlFilePath", StateManager.State.Session) != null) //to get xml file name for slideshow
-                    _xmlFilePath = objStateManager.Get("XmlFilePath", StateManager.State.Session).ToString();
-                //to get photo number from where to start slideshow.
-                if (objStateManager.Get("SlideShowStartPhoto", StateManager.State.Session) != null) //to get start photo number in slideshow.
-                    _recordNumber = int.Parse(objStateManager.Get("SlideShowStartPhoto", StateManager.State.Session).ToString());
-                else
-                    _recordNumber = 0;
-
-                // Set the controls value
-                SetControlsValue();
-
-
-
-                SetPageNameInSession(_typeName);
-                if (!(string.IsNullOrEmpty(_tributeType)))
-                {
-                    if (_tributeType == "Anniversary")
-                        _themeName = "AnniversaryDefault";
-                    else if (_tributeType == "Birthday")
-                        _themeName = "BirthdayDefault";
-                    else if (_tributeType == "Graduation")
-                        _themeName = "GraduationDefault";
-                    else if (_tributeType == "Memorial")
-                        _themeName = "MemorialDefault";
-                    else if (_tributeType == "New Baby")
-                        _themeName = "BabyDefault";
-                    else if (_tributeType == "Wedding")
-                        _themeName = "WeddingDefault";
-                }
-
-                //LHK: for photo upgrade changes
-                if ((liAdd.Visible == false) && (liEdit.Visible == false) && (liView.Visible == false) && (liDownloadalbum.Visible == false) && (liVieFullPhoto.Visible == false))
-                    divSubTool.Visible = false;
-            }
-            catch (Exception ex)
-            {
-                LogError(ex.Message, ex.StackTrace);
-                throw ex;
+                Response.Redirect(redirctMobileUrl, false);
             }
         }
-        catch (Exception ex)
-        {
-            LogError(ex.Message, ex.StackTrace);
-            throw ex;
-        }
-        }
-        else
-        {
-            Response.Redirect(redirctMobileUrl, false);
-        }
-    }
+    
 
     private void LogError(string errorMessage, string stackTrace)
     {
@@ -822,7 +865,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
         }
         catch (Exception ex)
         {
-           throw ex;
+            throw ex;
         }
     }
 
@@ -836,32 +879,32 @@ public partial class Shared_Story : System.Web.UI.MasterPage
             #region TributeNotes
             if (_typeName == "TributeNotes")
             {
-                    Response.Redirect("~/" + Session["TributeURL"] + "/managenote.aspx", false);
-                
+                Response.Redirect("~/" + Session["TributeURL"] + "/managenote.aspx", false);
+
             }
             #endregion
             #region VideoGallery
             else if (_typeName == "VideoGallery")
             {
 
-                    Response.Redirect("~/" + Session["TributeURL"] + "/addvideo.aspx", false);
-                
+                Response.Redirect("~/" + Session["TributeURL"] + "/addvideo.aspx", false);
+
             }
             #endregion
             #region Event
             else if (_typeName == PortalEnums.TributeContentEnum.Event.ToString())
             {
-                
-                    Response.Redirect("~/" + Session["TributeURL"] + "/manageevent.aspx", false);
-                
+
+                Response.Redirect("~/" + Session["TributeURL"] + "/manageevent.aspx", false);
+
             }
             #endregion
             #region EventFullView
             else if (_typeName == PortalEnums.TributeContentEnum.EventFullView.ToString())
             {
- 
-                    Response.Redirect(Session["APP_BASE_DOMAIN"].ToString() + Session["TributeURL"].ToString() + "/manageevent.aspx" + "?EventID=" + Session["EventIdForEdit"].ToString());
-                
+
+                Response.Redirect(Session["APP_BASE_DOMAIN"].ToString() + Session["TributeURL"].ToString() + "/manageevent.aspx" + "?EventID=" + Session["EventIdForEdit"].ToString());
+
 
             }
             #endregion
@@ -937,7 +980,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                             }
                             else
                             {
-                                appDomian = "http://www." + WebConfig.TopLevelDomain + "/" + Session["TributeURL"] + "/managephotoalbum.aspx?albummode=Create&Type=" + objTrb.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby");
+                                appDomian = "~/" + Session["TributeURL"] + "/managephotoalbum.aspx?albummode=Create&Type=" + objTrb.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby");
                                 Response.Redirect(appDomian, false);
 
                             }
@@ -958,12 +1001,12 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                         }
                         else
                         {
-                            appDomian = "http://www." + WebConfig.TopLevelDomain + "/" + Session["TributeURL"] + "/managephotoalbum.aspx?albummode=Create&Type=" + objTrb.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby");
+                            appDomian = "~/" + Session["TributeURL"] + "/managephotoalbum.aspx?albummode=Create&Type=" + objTrb.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby");
                             Response.Redirect(appDomian, false);
                         }
                     }
                 }
-            } 
+            }
             #endregion
             #region PhotoAlbum
             else if (_typeName == "PhotoAlbum")
@@ -979,16 +1022,16 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                     }
                     else
                     {
-                        appDomian = "http://www." + WebConfig.TopLevelDomain + "/" + Session["TributeURL"] + "/managephotoalbum.aspx" + "?mode=addphotos&photoAlbumId=" + _photoAlbumId + "&Type=" + objTrb.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby");
+                        appDomian = "~/" + Session["TributeURL"] + "/managephotoalbum.aspx" + "?mode=addphotos&photoAlbumId=" + _photoAlbumId + "&Type=" + objTrb.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby");
                         Response.Redirect(appDomian, false);
                     }
                 }
-            } 
+            }
             #endregion
         }
         catch (Exception ex)
         {
-           throw ex;
+            throw ex;
         }
     }
     protected void lbtnBackTo_Click(object sender, EventArgs e)
@@ -996,7 +1039,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
         string redirecturl = "";
         if (Session["PhotoAlbumTributeSession"] != null)
         {
-             objTribute = Session["PhotoAlbumTributeSession"] as Tributes;
+            objTribute = Session["PhotoAlbumTributeSession"] as Tributes;
             _tributeId = objTribute.TributeId;
             _tributeType = objTribute.TypeDescription;
             _tributeTypeName = objTribute.TypeDescription.ToLower().Replace("new baby", "newbaby");
@@ -1172,10 +1215,10 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                 }
                 isAllowedPhotoCheck = objMisc.IsAllowedPhotoCheck(_photoAlbumId);
 
-                if (((_packageId == 3) || (_packageId == 6) || (_packageId == 7) || (_packageId == 8)) ||((_packageId == 5) && !isAllowedPhotoCheck && (date2 < DateTime.Now)))
+                if (((_packageId == 3) || (_packageId == 6) || (_packageId == 7) || (_packageId == 8)) || ((_packageId == 5) && !isAllowedPhotoCheck && (date2 < DateTime.Now)))
                 {
                     #region popup
-		
+
                     if (Equals(objSessionValue, null))//when not logged in
                     {
                         if (IsCustomHeaderOn)
@@ -1205,8 +1248,8 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                         Tributes objTrib = (Tributes)stateManager.Get("TributeSession", StateManager.State.Session);
                         appDomian = "http://" + objTrib.TypeDescription.ToString().ToLower().Replace("new baby", "newbaby") + "." + WebConfig.TopLevelDomain + "/";
                     }
-                    ScriptManager.RegisterStartupScript(Page, this.GetType(), "awe", "fnReachLimitExpiryPopup('location.href','document.title','UpgradeAlbum','" + _tributeUrl + "','" + _tributeId + "','" + appDomian + "','" + topHeight + "');", true); 
-	#endregion
+                    ScriptManager.RegisterStartupScript(Page, this.GetType(), "awe", "fnReachLimitExpiryPopup('location.href','document.title','UpgradeAlbum','" + _tributeUrl + "','" + _tributeId + "','" + appDomian + "','" + topHeight + "');", true);
+                    #endregion
                 }
                 else
                 {
@@ -1313,7 +1356,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                         {
 
                         }
-                    } 
+                    }
                     #endregion
                 }
             }
@@ -1360,7 +1403,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                 }
                 isAllowedPhotoCheck = objMisc.IsAllowedPhotoCheck(_photoAlbumId);
 
-                if (((_packageId == 3) || (_packageId == 6) || (_packageId == 7) ||(_packageId == 8)) || ((_packageId == 5) && !isAllowedPhotoCheck && (date2 < DateTime.Now)))
+                if (((_packageId == 3) || (_packageId == 6) || (_packageId == 7) || (_packageId == 8)) || ((_packageId == 5) && !isAllowedPhotoCheck && (date2 < DateTime.Now)))
                 {
                     if (Equals(objSessionValue, null))//when not logged in
                     {
@@ -1410,7 +1453,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
 
                     }
                     else
-                     {
+                    {
                         //show small image
 
                         imagePath = getPath[2] + "/" + _tributeUrl + "_" + objTributes.TypeDescription + "/" + DirBigImage;
@@ -1571,7 +1614,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
         }
         catch (Exception ex)
         {
-             throw ex;
+            throw ex;
         }
     }
 
@@ -1695,14 +1738,14 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                     liEdit.Visible = false;
                     liAdd.Visible = false;
                     DivInternal.Visible = false;
-                    
+
                 }
-                
+
             }
             else if (_userId != 0)
             {
                 divYTMangeTools.Visible = false;
-                
+
                 liChangeSiteTheme.Visible = false;
                 liManageTribute.Visible = false;
                 liAddToFavorite.Visible = true;
@@ -1716,7 +1759,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                 {
                     liBackTo.Visible = true;
                     DivInternal.Visible = false;
-                    
+
                 }
                 else if (_typeName == "VideoGallery")
                 {
@@ -1736,7 +1779,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                     liBackTo.Visible = true;
                     DivInternal.Visible = false;
                     DivInternal.Visible = false;
-                    
+
                 }
                 else if (_typeName == "PhotoGallery")
                 {
@@ -1788,18 +1831,18 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                         liEdit.Visible = false;
                         liAdd.Visible = false;
                         DivInternal.Visible = false;
-                       
+
                     }
                 }
             }
             else
             {
                 divYTMangeTools.Visible = false;
-                
+
                 liChangeSiteTheme.Visible = false;
                 liManageTribute.Visible = false;
                 liAddToFavorite.Visible = false;
-               
+
                 liView.Visible = false;
                 if (_typeName == "TributeNotes" || _typeName == "NoteFullView" || _typeName == PortalEnums.TributeContentEnum.Story.ToString())
                     pLogin.Visible = false;
@@ -1840,8 +1883,8 @@ public partial class Shared_Story : System.Web.UI.MasterPage
 
                     }
                 }
-                
-                
+
+
 
             }
             //LHK: enhancement internal pages- 16 feb2012
@@ -1968,23 +2011,23 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                 else if (_typeName == "AddVideo" || _typeName == "EditVideo")
                 {
                     lbtnBackTo.Text = ResourceText.GetString("lbtnBackToVideos_Video_Master");
-                                    }
+                }
                 else if (_typeName == "VideoGallery")
                 {
                     pLogin.InnerHtml = ResourceText.GetString("lblLogin_VideoGallery_Master") + " <a href='javascript: void(0);' onclick='UserLoginModalpopup(location.href,document.title);'>Log in</a>" + ResourceText.GetString("lblOr_ST_Master") + "<a href='javascript: void(0);' onclick='UserSignupModalpopupFromSubDomain(location.href,document.title);'>Sign up</a>";
                     lbtnAdd.Text = ResourceText.GetString("lbtnAddVideo_Video_Master");
-                                    }
+                }
                 else if (_typeName == "ManageVideo")
                 {
                     pLogin.InnerHtml = ResourceText.GetString("lblLoginComment_ManageVideo_Master") + " <a href='javascript: void(0);' onclick='UserLoginModalpopup(location.href,document.title);'>Log in</a>" + ResourceText.GetString("lblOr_ST_Master") + "<a href='javascript: void(0);' onclick='UserSignupModalpopupFromSubDomain(location.href,document.title);'>Sign up</a>";
                     lbtnEdit.Text = ResourceText.GetString("lbtnEditVideo_Video_Master");
-                                    }
+                }
                 else if (_typeName == "ManageVideoTribute")
                 {
 
                     pLogin.InnerHtml = ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower() == "yourmoments" ? ResourceText.GetString("lblLoginComment_VideoTribute_Master1") : ResourceText.GetString("lblLoginComment_VideoTribute_Master") + " <a href='javascript: void(0);' onclick='UserLoginModalpopup(location.href,document.title);'>Log in</a>" + ResourceText.GetString("lblOr_ST_Master") + "<a href='javascript: void(0);' onclick='UserSignupModalpopupFromSubDomain(location.href,document.title);'>Sign up</a>";
                     lbtnEdit.Text = ResourceText.GetString("lbtnEditVideoTribute_MV");
-                                    }
+                }
                 #endregion
                 #region FOR PHOTO PAGES
                 else if (_typeName == "AddPhotoAlbum")
@@ -2133,7 +2176,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                     objEmail.EmailSubject = txtUserName.Text + " " + ResourceText.GetString("txtViewEmailWTA_SM_Master") + " a Video Tribute " + ResourceText.GetString("txtOnYT_SM_Master1");
                 else
                     objEmail.EmailSubject = txtUserName.Text + " " + ResourceText.GetString("txtViewEmail_SM_Master") + " " + PageName + " " + ResourceText.GetString("txtOnYT_SM_Master1");
-            
+
             }
             else
             {
@@ -2283,7 +2326,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
         try
         {
             StateManager stateManager = StateManager.Instance;
-             MiscellaneousController objMisc = new MiscellaneousController();
+            MiscellaneousController objMisc = new MiscellaneousController();
             string strPath = "";
             if (Request.RawUrl.Contains("/"))
             {
@@ -2312,13 +2355,13 @@ public partial class Shared_Story : System.Web.UI.MasterPage
 
             int existingTheme = GetExistingTheme().TemplateID;
             MiscellaneousController _controller = new MiscellaneousController();
-            List<Templates> lstThemes = _controller.GetThemesFolderList(objTributeType,WebConfig.ApplicationType);
+            List<Templates> lstThemes = _controller.GetThemesFolderList(objTributeType, WebConfig.ApplicationType);
 
             StringBuilder sbChangeSiteTheme = new StringBuilder();
             foreach (Templates objThemes in lstThemes)
             {
                 sbChangeSiteTheme.Append("<div class='yt-Form-Field yt-Form-Field-Radio' id='" + objThemes.ThemeCssClass + "'>"); // + objThemes.TemplateName.Remove(objThemes.TemplateName.IndexOf(" "), 1) + "'>");
-                                sbChangeSiteTheme.Append("<input name='rdoTheme' type='radio' runat='server' id='rdo" + objThemes.TemplateID + "' onclick='javascript:Themer(\"" + objThemes.ThemeValue + "\");GetSelectedTheme(" + objThemes.TemplateID + ",\"" + objThemes.ThemeValue + "\");' value='" + objThemes.ThemeValue + "'");
+                sbChangeSiteTheme.Append("<input name='rdoTheme' type='radio' runat='server' id='rdo" + objThemes.TemplateID + "' onclick='javascript:Themer(\"" + objThemes.ThemeValue + "\");GetSelectedTheme(" + objThemes.TemplateID + ",\"" + objThemes.ThemeValue + "\");' value='" + objThemes.ThemeValue + "'");
                 string appPath = string.Empty;
                 if (WebConfig.ApplicationMode.ToLower().Equals("local"))
                 {
@@ -2464,7 +2507,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                 Response.Redirect(Redirect.RedirectToPage(Redirect.PageList.Inner2LoginPage.ToString()), false);
             }
 
-                    if (Session["TributeCreatedDate"] != null && (Convert.ToDateTime(Session["TributeCreatedDate"])) < Convert.ToDateTime(WebConfig.Launch_Day) && DateTime.Today <= Convert.ToDateTime(WebConfig.Launch_Day).AddDays(180))
+            if (Session["TributeCreatedDate"] != null && (Convert.ToDateTime(Session["TributeCreatedDate"])) < Convert.ToDateTime(WebConfig.Launch_Day) && DateTime.Today <= Convert.ToDateTime(WebConfig.Launch_Day).AddDays(180))
             {
                 CommonUtilities utility = new CommonUtilities();
                 if (objSessionValue != null && objSessionValue.UserId > 0)
@@ -2478,7 +2521,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
                 {
                     if (!utility.ReadCookie(0))
                     {
-                        
+
                         utility.CreateCookie(-1);
                     }
                 }
@@ -2487,7 +2530,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
 
             if (!Equals(objSessionValue, null))
             {
-                
+
 
                 _userId = objSessionValue.UserId;
                 _userName = objSessionValue.UserName;
@@ -2605,13 +2648,13 @@ public partial class Shared_Story : System.Web.UI.MasterPage
         }
         catch (Exception ex)
         {
-         throw ex;
+            throw ex;
         }
     }
     private void SetExpiry()
     {
         #region commented patch2
-        
+
         #endregion
 
 
@@ -2709,10 +2752,10 @@ public partial class Shared_Story : System.Web.UI.MasterPage
         }
         catch (Exception ex)
         {
-           throw ex;
+            throw ex;
         }
     }
-    
+
 
     /// <summary>
     /// Method to show error message
@@ -2775,7 +2818,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
     {
         try
         {
-            
+
             //for popup window
             hEmailPage.InnerText = ResourceText.GetString("hEmailPage_EU");
             pRequired.InnerHtml = "<strong>" + ResourceText.GetString("lblRequired_EU") + "<em class=\"required\">*</em></strong>";
@@ -2790,7 +2833,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
         }
         catch (Exception ex)
         {
-          throw ex;
+            throw ex;
         }
     }
 
@@ -2809,8 +2852,8 @@ public partial class Shared_Story : System.Web.UI.MasterPage
             if (isInFavorite > 0)
             {
                 lbtnAddToFavorite.Text = ResourceText.GetString("lbtnRemoveFromFavourate_ST_Master");
-                toFav = ResourceText.GetString("txtRemoveFromFavorite_ST_Master");                 
-                toFavText = ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower() == "yourmoments" ? ResourceText.GetString("txtRemoveFavorite_ST_Master1"):ResourceText.GetString("txtRemoveFavorite_ST_Master");
+                toFav = ResourceText.GetString("txtRemoveFromFavorite_ST_Master");
+                toFavText = ConfigurationManager.AppSettings["ApplicationType"].ToString().ToLower() == "yourmoments" ? ResourceText.GetString("txtRemoveFavorite_ST_Master1") : ResourceText.GetString("txtRemoveFavorite_ST_Master");
             }
             else
             {
@@ -2972,7 +3015,7 @@ public partial class Shared_Story : System.Web.UI.MasterPage
     [Ajax.AjaxMethod(Ajax.HttpSessionStateRequirement.ReadWrite)]
     public void setIsInTopurl(bool inIframe)
     {
-      HttpContext.Current.Session["isInIframe"] = inIframe;
+        HttpContext.Current.Session["isInIframe"] = inIframe;
     }
     #endregion
 

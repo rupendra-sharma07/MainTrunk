@@ -1,9 +1,0 @@
-<?xml version="1.0" standalone="yes"?>
-<PhotoConfiguration>
-		<DriveNameOnServiceServer>C:</DriveNameOnServiceServer>
-		<DriveNameOnApplicationServer>C:</DriveNameOnApplicationServer>
-		<PhotoRootFolder>TributeVideo</PhotoRootFolder>
-		<SourceVideoTributePath>C:\Inetpub\ftproot\</SourceVideoTributePath>
-		<DestinationVideoTributePath>C:\Inetpub\wwwroot\TributeVideo\</DestinationVideoTributePath>
-		<VideoVirtualDirectory>http://localhost/tributevideo/</VideoVirtualDirectory>
-</PhotoConfiguration>

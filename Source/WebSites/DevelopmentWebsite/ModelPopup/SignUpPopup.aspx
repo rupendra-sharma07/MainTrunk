@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" media="print" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/print.css" />
     <!-- screen elements stylesheet should be here -->
     <link rel="stylesheet" type="text/css" media="screen, projection" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/screen.css" />
-    <link rel="stylesheet" type="text/css" media="screen, projection" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/LoginPopup.css" />
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/LoginPopup.css" />    
 
     <script language="javascript" type="text/javascript">
        
@@ -430,5 +430,7 @@ Sign up to Your <%=ConfigurationManager.AppSettings["ApplicationWord"].ToString(
         </div>
     </div>
     </form>
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
 </body> 
 </html>

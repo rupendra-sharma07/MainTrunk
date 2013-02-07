@@ -292,7 +292,13 @@ namespace TributesPortal.BusinessEntities
             set { _IsVisitCountHide = value; }
         }
 
+        private bool _isMobileViewOn;
 
+        public bool IsMobileViewOn
+        {
+            get { return _isMobileViewOn; }
+            set { _isMobileViewOn = value; }
+        }
 
 
 

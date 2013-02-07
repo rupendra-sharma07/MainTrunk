@@ -10,7 +10,7 @@
             <div class="yt-NavHeader">
                 <div class="floatLeft" id="divProfile" runat="server">
                     <a id="myprofile" runat="server">My Account</a>
-                    <uc:Inbox ID="Inbox1" runat="server" />
+                   <%-- <uc:Inbox ID="Inbox1" runat="server" />--%>
                     <%--<asp:LinkButton  style="color: #3EB7A8;" CssClass="headerCreditColor" ID="lbtnCreditCount" runat="server" 
                         onclick="lbtnCreditCount_Click"></asp:LinkButton>--%>
                     <a id="lnCreditCount" runat="server" href="~/ordercredit.aspx" style="color: #5BB4E5;">

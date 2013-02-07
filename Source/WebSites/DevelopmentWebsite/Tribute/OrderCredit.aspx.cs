@@ -45,7 +45,7 @@ public partial class Tribute_OrderCredit : PageBase, IOrderCredit
     private int _tributPackageId = 0;
     private string confirmationId = string.Empty;
     private string errorMesg = string.Empty;
-    private int _NetCreditCount;
+    private double _NetCreditCount;
     private IList<CreditCostMapping> _creditCostMappingList = null;
 
      #region BeanStream varriables
@@ -71,6 +71,7 @@ public partial class Tribute_OrderCredit : PageBase, IOrderCredit
         //        Response.Redirect(@"https://www." + WebConfig.TopLevelDomain + @"/TributeSponsor.aspx?TributeURL=" + tributeurl + "&TributeType=" + tributetype);
         //}
 
+        //lblCopyRight.Text = DateTime.Now.Year.ToString();
         if ((Request.QueryString["TributeUrl"] != null) && (Request.QueryString["TributeType"] != null))
             _presenter.GetTributeSessionForUrlAndType(Request.QueryString["TributeUrl"].ToString(), Request.QueryString["TributeType"].ToString(),WebConfig.ApplicationType.ToString());
 
@@ -716,7 +717,7 @@ public partial class Tribute_OrderCredit : PageBase, IOrderCredit
         }
     }
 
-    public int NetCreditPoints
+    public double NetCreditPoints
     {
         get
         {
@@ -762,7 +763,7 @@ public partial class Tribute_OrderCredit : PageBase, IOrderCredit
         String UserMail = string.Empty;
         string Firstname = string.Empty;
         string LastName = string.Empty;
-        int NewUpdatedCredit = 0;
+        double NewUpdatedCredit = 0;
         string strBillingTotal;
         StateManager statemail = StateManager.Instance;
         StateManager stateTribure = StateManager.Instance;
@@ -787,10 +788,10 @@ public partial class Tribute_OrderCredit : PageBase, IOrderCredit
 
             }
 
-            int Couponamount = 0;
+            double Couponamount = 0;
             // Getting Value from Billing span at the bootm of the page
             strBillingTotal = Convert.ToString(BillingTotal.InnerText);
-            Couponamount = Convert.ToInt32(strBillingTotal.Substring(1, strBillingTotal.Length - 1));
+            double.TryParse(strBillingTotal.ToString().Replace("$", ""), out Couponamount);
 
 
 
@@ -826,7 +827,7 @@ public partial class Tribute_OrderCredit : PageBase, IOrderCredit
 
                 // Get current credit Point in the User account
                 _presenter.GetCreditPointCount();
-                NewUpdatedCredit = int.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount;
+                NewUpdatedCredit = double.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount;
 
                 // Insert updated Credit Point in CreditPointTransaction Table
                 this._presenter.InsertCurrentCreditPoints(NewUpdatedCredit, CCIdentity.ToString(), confirmationId);
@@ -916,10 +917,20 @@ public partial class Tribute_OrderCredit : PageBase, IOrderCredit
             Label lblCreditPoint = (Label)e.Row.FindControl("lblCreditPoint");
             Label lblTotalCost = (Label)e.Row.FindControl("lblTotalCost");
             Label lblCostPercredit = (Label)e.Row.FindControl("lblCostPercredit");
-            lblTotalCost.Text = "$" + Convert.ToString(int.Parse(lblCreditPoint.Text) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
-            double CostPerCredit = double.Parse(lblCostPercredit.Text);
-            lblCostPercredit.Text = "$" + CostPerCredit.ToString("#.00") + "/credit";
+            if (e.Row.RowIndex > 0)
+            {
+                lblTotalCost.Text = "$" + Convert.ToString((int.Parse(lblCreditPoint.Text) * (double.Parse(lblCostPercredit.Text.ToString())) - double.Parse("0.05")));
+                double CostPerCredit = double.Parse(lblCostPercredit.Text);
 
+                lblCostPercredit.Text = "$" + CostPerCredit.ToString("#.00") + "/credit";
+            }
+            else
+            {
+                lblTotalCost.Text = "$" + Convert.ToString(int.Parse(lblCreditPoint.Text) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
+                double CostPerCredit = double.Parse(lblCostPercredit.Text);
+            
+            lblCostPercredit.Text = "$" + CostPerCredit.ToString("#.00") + "/credit";
+}
             // Check the First Radio Button initially
             if (e.Row.RowIndex.Equals(0))
             {
@@ -929,6 +940,7 @@ public partial class Tribute_OrderCredit : PageBase, IOrderCredit
                 BillingTotal.InnerHtml = lblTotalCost.Text.Remove(lblTotalCost.Text.Length - 3, 3);
                 Session["CreditPointSelected"] = int.Parse(lblCreditPoint.Text);
             }
+           
             //Setting the text of the label founded with the data we got it
             //  myLabel.Text = CreditPointValue;
 
@@ -956,7 +968,7 @@ public partial class Tribute_OrderCredit : PageBase, IOrderCredit
         Label lblCreditPoint = (Label)row.FindControl("lblCreditPoint");
         Label lblTotalCost = (Label)row.FindControl("lblTotalCost");
         Session["CreditPointSelected"] = int.Parse(lblCreditPoint.Text);
-        BillingTotal.InnerHtml = lblTotalCost.Text.Remove(lblTotalCost.Text.Length - 3, 3);
+        BillingTotal.InnerHtml = lblTotalCost.Text.ToString();
 
 
     }

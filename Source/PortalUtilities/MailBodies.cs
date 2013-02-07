@@ -58,7 +58,65 @@ namespace TributesPortal.Utilities
         }
 
 
+        /// <summary>
+        /// Mail body for Tribute Creation free.
+        /// </summary>
+        /// <param name="Creator"></param>
+        /// <param name="TributeType"></param>
+        /// <param name="TributeName"></param>
+        /// <param name="TributeUrl"></param>
+        /// <returns></returns>
+        public string CreationFree(int packageid, String Creator, string TributeType, string TributeName, string TributeUrl, string TributeId)
+        {
+            SessionValue objSessionValue = null;
+            TributesPortal.Utilities.StateManager stateManager = TributesPortal.Utilities.StateManager.Instance;
+            SessionValue objSessionvalue = (SessionValue)stateManager.Get("objSessionvalue", StateManager.State.Session);
 
+            string Servername = (string)stateManager.Get("SERVERNAME", TributesPortal.Utilities.StateManager.State.Session);
+
+            StringBuilder objStrb = new StringBuilder();
+            objStrb.Append("<font style='font-size: 12px; font-family:Lucida Sans;'><p> Dear " + Creator + ",</p>");
+            objStrb.Append("<p>The " + TributeType + " " + WebConfig.ApplicationWordForInternalUse + " for " + TributeName + " has been created! </p>");
+           switch(packageid)
+            {
+               case 3:
+                objStrb.Append("<p>Included is a 7-day free trial of all premium " +
+                               WebConfig.ApplicationWordForInternalUse.ToLower() +
+                               " features - Notes, Events, Photos and Videos. You can upgrade your " +
+                               WebConfig.ApplicationWordForInternalUse +
+                               " to a premium account at any time in your \"'<a href='http://www." +
+                               WebConfig.TopLevelDomain + "/log_in.aspx?PageName=myprofile'>My Profile</a>\" area.</p>");
+                    break;
+
+               case 8:
+               case 10:
+               case 14:
+                objStrb.Append("<p>Included is a 30-day free trial of all premium " +
+                               WebConfig.ApplicationWordForInternalUse.ToLower() +
+                               " features - Notes, Events, Photos and Videos. You can upgrade your " +
+                               WebConfig.ApplicationWordForInternalUse +
+                               " to a premium account at any time in your \"'<a href='http://www." +
+                               WebConfig.TopLevelDomain + "/log_in.aspx?PageName=myprofile'>My Profile</a>\" area.</p>");
+                    break;
+               case 9:
+               case 13:
+                    objStrb.Append("<p>Included is a 90-day free trial of all premium " +
+                               WebConfig.ApplicationWordForInternalUse.ToLower() +
+                               " features - Notes, Events, Photos and Videos. You can upgrade your " +
+                               WebConfig.ApplicationWordForInternalUse +
+                               " to a premium account at any time in your \"'<a href='http://www." +
+                               WebConfig.TopLevelDomain + "/log_in.aspx?PageName=myprofile'>My Profile</a>\" area.</p>");
+                    break;
+            }
+            objStrb.Append("<p><Strong>Managing Your " + TributeType + " " + WebConfig.ApplicationWordForInternalUse + " </Strong><br/>");
+            objStrb.Append("• Sign in to your account at <a href='http://www." + WebConfig.TopLevelDomain + "/log_in.aspx'>http://www." + WebConfig.TopLevelDomain + "</a> <br/>");
+            objStrb.Append("• View your " + WebConfig.ApplicationWordForInternalUse.ToLower() + " at <a href='http://" + TributeType.Replace(" ", "").ToLower() + "." + WebConfig.TopLevelDomain + "/" + TributeUrl + "'> http://" + TributeType.Replace(" ", "").ToLower() + "." + WebConfig.TopLevelDomain + "/" + TributeUrl + "</a> <br/>");
+            objStrb.Append("• Add, modify or delete content at any time—in your \"<a href='http://www." + WebConfig.TopLevelDomain + "/log_in.aspx?PageName=myprofile'>My Profile</a>\" area, you can add additional administrators to assist in managing your " + WebConfig.ApplicationWordForInternalUse.ToLower() + " and choose to be notified by email when visitors add content to your " + WebConfig.ApplicationWordForInternalUse.ToLower() + " <br/>");
+            objStrb.Append("• Find help, managing your " + WebConfig.ApplicationWordForInternalUse.ToLower() + " or adding content, at the bottom of any page </p>");
+            objStrb.Append("<p>-----<br/>");
+            objStrb.Append("Your " + WebConfig.ApplicationWord + " Team</p></font>");
+            return objStrb.ToString();
+        }
 
         /// <summary>
         /// Mail body for Tribute Creation free. : Created for new tribute packages in website upgrade phase 1 by UD

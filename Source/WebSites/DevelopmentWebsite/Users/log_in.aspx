@@ -50,7 +50,7 @@
     <script type="text/javascript" src="../assets/scripts/styleSwitcher.js"></script>
 
     <script type="text/javascript" src="../Common/JavaScript/Common.js"></script>
-
+    
     <!--<script src="https://connect.facebook.net/en_US/all.js" type="text/javascript"></script>-->
 
     <script src="https://connect.facebook.net/en_US/all.js" type="text/javascript"></script>
@@ -427,6 +427,10 @@
     </div>
     <!--yt-upgrade-->
     </form>
+    
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
 </body>
 
 <script type="text/javascript" src="../assets/scripts/modalbox.js"></script>

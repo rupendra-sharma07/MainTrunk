@@ -43,8 +43,8 @@ namespace TributesPortal.BusinessEntities
             set { _creditOrDebit = value; }
         }
 
-        private int _creditCount;
-        public int CreditCount
+        private double _creditCount;
+        public double CreditCount
         {
             get { return _creditCount; }
             set { _creditCount = value; }

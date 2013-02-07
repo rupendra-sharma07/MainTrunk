@@ -52,7 +52,7 @@ public partial class Shared_TributeCreation : System.Web.UI.MasterPage
                 if (Request.QueryString["Type"] != null)
                 {
                     ytHeader.TributeType = Request.QueryString["Type"].ToString();
-                    int NetCreditPoints;
+                    double NetCreditPoints;
                     StateManager stateManager = StateManager.Instance;
                     SessionValue objSessionvalue = (SessionValue)stateManager.Get("objSessionvalue", StateManager.State.Session);
                     UserRegistration _objUserReg = new UserRegistration();

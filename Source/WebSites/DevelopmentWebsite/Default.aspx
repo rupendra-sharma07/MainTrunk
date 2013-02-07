@@ -32,7 +32,18 @@
             }
             else
             {
-                    Server.Transfer("Tribute/Home.aspx",true);
+                // Validate for Mobile
+                if (Request.Browser.IsMobileDevice)
+                {
+                    if (Request.QueryString["NoRedirection"] == null)
+                    {
+                        Server.Transfer("Tribute/Home.aspx", false);
+                    }
+                    else
+                    {
+                        Server.Transfer("Tribute/Home.aspx?NoRedirection=" + Request.QueryString["NoRedirection"]);
+                    }
+                }
            //     //Response.Redirect("Home.aspx");
             }
            // //Response.Redirect("Home.aspx");

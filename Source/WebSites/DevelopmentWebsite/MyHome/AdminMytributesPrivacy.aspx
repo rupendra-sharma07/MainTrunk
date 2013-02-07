@@ -1025,7 +1025,7 @@ function ConfirmDelete()
                                                                 Font-Size="Medium" ForeColor="#FF8000" ValidationGroup="TributeDetails"> </asp:RequiredFieldValidator>
                                                             <asp:RegularExpressionValidator ID="revTributeName" runat="server" ErrorMessage="Please provide a valid Tribute Name."
                                                                 ControlToValidate="txtTributeName" ValidationGroup="TributeDetails" Font-Bold="True"
-                                                                Font-Size="Medium" ForeColor="#FF8000" Text="!" ValidationExpression="^[a-zA-Z0-9_,\#,\-.\s,]*$"></asp:RegularExpressionValidator>
+                                                                Font-Size="Medium" ForeColor="#FF8000" Text="!" ValidationExpression="^[a-zA-Z0-9_,\-\'\&quot;)(.\s,]*$"></asp:RegularExpressionValidator>
                                                             <%--<asp:CustomValidator ID="cvTributeName" runat="server" ErrorMessage="Invalid Tribute Name,* and ? is not allowed,Please try again. "
                                                                 ClientValidationFunction="ValidateTributeName" ControlToValidate="txtTributeName"
                                                                 Font-Bold="True" Font-Size="Medium" ForeColor="#FF8000" ValidationGroup="TributeDetails"
@@ -1219,6 +1219,9 @@ function ConfirmDelete()
     <script type="text/javascript">
 executeBeforeLoad();
     </script>
+    
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="<%=Session["SECURED_APP_SCRIPT_PATH"]%>assets/scripts/BrowserOrTabCloseHandler.js"></script>
 
 </body>
 </html>

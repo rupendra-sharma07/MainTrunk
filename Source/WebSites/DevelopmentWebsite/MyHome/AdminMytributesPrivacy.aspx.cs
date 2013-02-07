@@ -394,6 +394,10 @@ public partial class MyHome_AdminMytributesPrivacy : PageBase, IAdminMytributesP
                 AccounttypeInfo.InnerText = "This tribute currently has a Premium Obituary (Lifetime) account, which will never expire. (Lucky you!)";
             else if (lbtnexpiresdate.Text.Equals("Video Tribute (Never)"))
                 AccounttypeInfo.InnerText = "This tribute currently has a Video Tribute (Lifetime) account, which will never expire. (Lucky you!)";
+            else if (lbtnexpiresdate.Text.Equals("Video Tribute (Lifetime)"))
+                AccounttypeInfo.InnerText = "This tribute currently has a Video Tribute (Lifetime) account, which will never expire. (Lucky you!)";
+            else if (lbtnexpiresdate.Text.Equals("Video (Lifetime)"))
+                AccounttypeInfo.InnerText = "This tribute currently has a Video (Lifetime) account, which will never expire. (Lucky you!)";
             else 
             _presenter.TriputePackageInfo();
             if (this._presenter.View.IsSponsor == true)
@@ -430,7 +434,8 @@ public partial class MyHome_AdminMytributesPrivacy : PageBase, IAdminMytributesP
                 AccounttypeInfo.InnerText = "This tribute currently has an Premium Obituary(Expired) account. Click “Upgrade Account” to upgrade your tribute.";
             else if (lbtnexpiresdate.Text.Equals("Video Tribute (Expired)"))
                 AccounttypeInfo.InnerText = "This tribute currently has an Video Tribute (Expired) account. Click “Upgrade Account” to upgrade your tribute.";
-
+            else if (lbtnexpiresdate.Text.Equals("Video (Expired)"))
+                AccounttypeInfo.InnerText = "This tribute currently has an Video (Expired) account. Click “Upgrade Account” to upgrade your tribute.";
             tblccounttype.Visible = true;
             Accounttype = 1;
             AccountTypeDesc.Visible = false;
@@ -533,7 +538,16 @@ public partial class MyHome_AdminMytributesPrivacy : PageBase, IAdminMytributesP
                 DateTime date2 = new DateTime(int.Parse(_Setenddate[2]), int.Parse(_Setenddate[0]), int.Parse(_Setenddate[1]));
                 SetInfofor1year(date1, date2);
             }
-            
+            else if (lbtnexpiresdate.Text.Contains("Video"))
+            {
+                if (lbtnexpiresdate.Text.IndexOf("Video (L") <= 0)
+                {
+                    datePart = lbtnexpiresdate.Text.Substring(8, 10);
+                    _Setenddate = datePart.Split('/'); //lbtnexpiresdate.Text.Split('/');
+                }
+                DateTime date2 = new DateTime(int.Parse(_Setenddate[2]), int.Parse(_Setenddate[0]), int.Parse(_Setenddate[1]));
+                SetInfofor1year(date1, date2);
+            }
         }
 
     }
@@ -587,6 +601,26 @@ public partial class MyHome_AdminMytributesPrivacy : PageBase, IAdminMytributesP
             AccounttypeInfo.InnerText = "This tribute currently has a 1 Year account, which expires on " + date2.ToString("MMMM dd, yyyy") + ".";
             tblccounttype.Visible = true;
             Accounttype = this._presenter.View.PackageId;
+            switch (Accounttype)
+            {
+                case 9:
+                    AccounttypeInfo.InnerText = "This tribute currently has a Video Tribute (90Days) account, which expires on " + date2.ToString("MMMM dd, yyyy") + ".";
+                    break;
+                case 10:
+                    AccounttypeInfo.InnerText = "This tribute currently has a Video Tribute (30Days) account, which expires on " + date2.ToString("MMMM dd, yyyy") + ".";
+                    break;
+                case 12:
+                    AccounttypeInfo.InnerText = "This tribute currently has a Video (1 year) account, which expires on " + date2.ToString("MMMM dd, yyyy") + ".";
+                    break;
+                case 13:
+                    AccounttypeInfo.InnerText = "This tribute currently has a Video (90Days), which expires on " + date2.ToString("MMMM dd, yyyy") + ".";
+                    break;
+                case 14:
+                    AccounttypeInfo.InnerText = "This tribute currently has a Video (30Days), which expires on " + date2.ToString("MMMM dd, yyyy") + ".";
+                    break;
+                default:
+                    break;
+            }
             AccountTypeDesc.Visible = false;
         }
     }

@@ -970,7 +970,7 @@ namespace TributesPortal.Tribute.Views
             View.CreditCostMappingList = _controller.GetCreditCostMapping();
         }
 
-        public void InsertCurrentCreditPoints(int NewUpdatedCredit, string CCIdentity, string confirmationId)
+        public void InsertCurrentCreditPoints(double NewUpdatedCredit, string CCIdentity, string confirmationId)
         {
             CreditPointTransaction objCreditTransaction = new CreditPointTransaction();
             objCreditTransaction.UserId = View.UserId;

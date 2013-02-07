@@ -16,7 +16,6 @@ namespace TributesPortal.TributePortalAdmin.Views
 {
     public class AddRemoveCreditPresenter : Presenter<IAddRemoveCredit>
     {
-
         // NOTE: Uncomment the following code if you want ObjectBuilder to inject the module controller
 
         private TributePortalAdminController _controller;
@@ -46,10 +45,6 @@ namespace TributesPortal.TributePortalAdmin.Views
         {
             AddRemoveCreditInfo objAddRemoveCreditInfo = _controller.AddOrDebitCredits(objUser);
             this.View.updatedCreditCount = objAddRemoveCreditInfo.CreditCount;
-
         }
-
-      
-       
     }
 }

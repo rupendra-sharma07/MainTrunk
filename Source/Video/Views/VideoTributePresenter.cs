@@ -267,6 +267,11 @@ namespace TributesPortal.Video.Views
         {
             this._controller.AddTributeCount(tributeId);
         }
+
+        public int GetTributePackageId(int _tributeId)
+        {
+            return _controller.GetTributePackageId(_tributeId);
+        }
     }//end class
 }//end namespace
 

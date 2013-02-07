@@ -82,7 +82,14 @@ xml:lang="en" lang="en">
     <!-- End Google Ads Code -->
 
     <script type="text/javascript">
-
+    var IsInTopurl;
+    {
+    IsInTopurl = (window.location != window.parent.location);
+            if(IsInTopurl)
+            {
+                Tribute_TributeHomePage_.setIsInTopurl(IsInTopurl);
+            };
+    }
     App_Domain = "<%=Session["APP_BASE_DOMAIN"]%>";
     function hideWideRows() {
 	    $$('.yt-colWide').each( function(a) {
@@ -92,6 +99,7 @@ xml:lang="en" lang="en">
 		    a.removeClass('yt-Open');
 	    });
     }
+    
     function showWideRows() {
 	    $$('.yt-colWide').each( function(a) {
 		    a.getParent().removeClass('yt-HiddenRow');
@@ -100,6 +108,16 @@ xml:lang="en" lang="en">
 		    a.addClass('yt-Open');
 	    });
     }
+
+
+        function setIsInTopurl() {
+         // LHK: for topurl WordPress
+            IsInTopurl = (window.location != window.parent.location);
+            if(IsInTopurl)
+            {
+                Tribute_TributeHomePage_.setIsInTopurl(IsInTopurl);
+            }
+        }
 
     function showDetails(theButton) {
 	    if(theButton.hasClass('yt-Open')) {
@@ -801,6 +819,9 @@ function Themer(theSelect)
 
 
     </script>
+    
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="<%=Session["APP_PATH"]%>assets/scripts/BrowserOrTabCloseHandler.js"></script>
 
 </body>
 </html>

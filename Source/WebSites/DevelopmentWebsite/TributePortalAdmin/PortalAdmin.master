@@ -12,7 +12,7 @@
     <meta name="MSSmartTagsPreventParsing" content="true" />
     <link rel="stylesheet" type="text/css" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/screen.css" />
     <link rel="stylesheet" type="text/css" href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/admin.css" />
-    <link href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/Siteadmin.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/<%= ConfigurationManager.AppSettings["CssDir"].ToString() %>/Siteadmin.css" rel="stylesheet" type="text/css" />    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -81,6 +81,9 @@
                         <div class="MenuText" style="margin-top:2px;">
                             <a href="UpdateTribute.aspx">Update Tribute</a>
                         </div>
+                        <div class="MenuText" style="margin-top:2px;">
+                            <a href="UpdateMobileView.aspx">Update User Tributes Mobile View</a>
+                        </div>
                  
             </div>
             <div style="float:left;">
@@ -92,5 +95,7 @@
         </div>
     </div>
     </form>
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
 </body>
 </html>

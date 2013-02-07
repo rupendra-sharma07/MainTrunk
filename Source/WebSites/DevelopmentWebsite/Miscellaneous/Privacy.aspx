@@ -28,6 +28,7 @@
     <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/mootools-1.11.js"></script>
     <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/global.js"></script>
     <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/styleSwitcher.js"></script>
+    
     <script src="https://connect.facebook.net/en_US/all.js" type="text/javascript"></script>
     <!--#include file="../analytics.asp"-->
 </head>
@@ -268,6 +269,10 @@ window.fbAsyncInit = function() {
       <% } %>                    
      </script>
     <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/modalbox.js"></script>     
+    
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
 </body>
 </html>
 

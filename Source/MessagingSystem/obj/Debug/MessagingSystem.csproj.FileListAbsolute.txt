@@ -103,3 +103,60 @@ E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\obj\Debug\ResolveAssembl
 E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\obj\Debug\MessagingSystem.dll
 E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\obj\Debug\MessagingSystem.pdb
 E:\YourTribute\EnhancementPhase1\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\MessagingSystem.dll
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\MessagingSystem.pdb
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\TributesPortal.Utilities.dll
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\log4net.dll
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\TributePortalSecurity.dll
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\TributesPortal.Utilities.pdb
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\TestYourTributeGit\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\TestYourTributeGit\Source\MessagingSystem\obj\Debug\ResolveAssemblyReference.cache
+E:\TestYourTributeGit\Source\MessagingSystem\obj\Debug\MessagingSystem.dll
+E:\TestYourTributeGit\Source\MessagingSystem\obj\Debug\MessagingSystem.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\MessagingSystem.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\MessagingSystem.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\log4net.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\obj\Debug\MessagingSystem.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source\MessagingSystem\obj\Debug\MessagingSystem.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\MessagingSystem.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\MessagingSystem.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\TributesPortal.Utilities.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\log4net.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\TributePortalSecurity.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\TributesPortal.Utilities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\TributesPortal.ResourceAccess.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessLogic.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\bin\Debug\TributesPortal.BusinessEntities.pdb
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\obj\Debug\MessagingSystem.dll
+E:\Projects\YourTribute\YourTribute Phase 1\Source_Sprint2_CHanges\Source\MessagingSystem\obj\Debug\MessagingSystem.pdb

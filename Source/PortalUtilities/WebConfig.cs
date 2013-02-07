@@ -175,6 +175,10 @@ namespace TributesPortal.Utilities
         public static string MaxPhotoCommentsLimit = ConfigurationManager.AppSettings["MaxPhotoCommentsLimit"];
         public static string MaxVideoCommentsLimit = ConfigurationManager.AppSettings["MaxVideoCommentsLimit"];
         public static string MaxVideoTributeCommentsLimit = ConfigurationManager.AppSettings["MaxVideoTributeCommentsLimit"];
+        public static string IsMobileRedirectOn = ConfigurationManager.AppSettings["IsMobileRedirectOn"];
+
+        public static string CreditCostNinetyDays = ConfigurationManager.AppSettings["NinetyDays_CreditCost"];
+        public static string NinetyDaysAmount = ConfigurationManager.AppSettings["NinetyDaysAmount"];
 
     }
 }

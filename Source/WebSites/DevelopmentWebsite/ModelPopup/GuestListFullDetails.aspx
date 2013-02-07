@@ -151,7 +151,7 @@
                 <div class="adModalButtons">
                     <div class="yt-Form-SubmitRight">
                         <asp:LinkButton ID="lbtnDeleteRsvp" Text="DELETE RSVP" runat="server" CssClass="yt-Button yt-ModalButton"
-                            OnClick="lbtnDeleteRsvp_Click" />
+                            OnClick="lbtnDeleteRsvp_Click" CausesValidation="false"/>
                         <asp:LinkButton ID="lbtnSaveRsvp" Text="SAVE RSVP" runat="server" CssClass="yt-Button yt-ModalButton"
                             OnClick="lbtnSaveRsvp_Click" />
                     </div>
@@ -162,5 +162,9 @@
     </div>
     <!--yt-Container-->
     </form>
+    
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="../assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
 </body>
 </html>

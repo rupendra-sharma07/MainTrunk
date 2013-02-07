@@ -111,6 +111,17 @@ function SelectAccountType(source, args)
            args.IsValid=true;
  }
 
+ function SelectVideoAccountType(source, args) {
+     var rdb1 = $('ctl00_TributePlaceHolder_rdoMembershipYearly');
+     var rdb2 = $('ctl00_TributePlaceHolder_rdoMembershipLifetime');
+     var rdb3 = $('ctl00_TributePlaceHolder_rdoMembershipThirty');
+     var rdb4 = $('ctl00_TributePlaceHolder_rdoMembershipNinety');
+     if ((!rdb1.checked) && (!rdb2.checked) && (!rdb3.checked) && (!rdb4.checked))
+         args.IsValid = false;
+     else
+         args.IsValid = true;
+ }
+
 function TributeNameValidate(s)
 {    
     var i;

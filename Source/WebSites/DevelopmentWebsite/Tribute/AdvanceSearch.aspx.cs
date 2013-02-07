@@ -44,7 +44,8 @@ public partial class Tribute_AdvanceSearch : PageBase, IAdvanceSearch
     #region CLASS VARIABLES
 
     private AdvanceSearchPresenter _presenter;
-    
+    private SessionValue objSessionValue = null;
+
     #endregion
 
 
@@ -74,6 +75,30 @@ public partial class Tribute_AdvanceSearch : PageBase, IAdvanceSearch
                 //To Set State
 
                 SetControlsValue();
+
+                //code for YT Mobile redirections
+                string redirctMobileUrl = string.Empty;
+
+                DeviceManager deviceManager = new DeviceManager
+                {
+                    UserAgent = Request.UserAgent,
+                    IsMobileBrowser = Request.Browser.IsMobileDevice
+                };
+
+                // Added by Varun Goel on 28 Jan 2013 for NoRedirection functionality
+                TributesPortal.Utilities.StateManager stateManager = StateManager.Instance;
+
+                objSessionValue = (SessionValue)stateManager.Get("objSessionvalue", StateManager.State.Session);
+                if (objSessionValue == null || objSessionValue.NoRedirection == null || objSessionValue.NoRedirection == false)
+                {
+                    if (deviceManager.IsMobileDevice())
+                    {
+                        // Redirection URL
+                        redirctMobileUrl = string.Format("{0}{1}{2}", "https://www.", WebConfig.TopLevelDomain, "/mobile/AdvancedSearch.html");
+                        Response.Redirect(redirctMobileUrl, false);
+                    }
+                }  
+
             }
 
             this._presenter.OnViewLoaded();

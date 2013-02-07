@@ -307,5 +307,9 @@
     <div id="txtHint" visible="false">
         <b></b>
     </div>
+    
+    <!-- Included for Mobile Redirection functionality -- Detect Browser close and delete NoRedirection keyvalue from database -->
+    <script type="text/javascript" src="<%=Session["APP_BASE_DOMAIN"]%>assets/scripts/BrowserOrTabCloseHandler.js"></script>
+
 </body>
 </html>

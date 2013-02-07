@@ -8836,3 +8836,44 @@ h1.NormalFont
 	font-weight: normal;
 	font-size: 145%;
 }
+
+/*  Your Tribuite Phase 2 LHK*/
+
+.createTextP4
+{
+	margin: 0 2px 0 3px;
+}
+.boldTextStyle
+{
+	font-size: 105%!important;	
+	line-height: 10px;	
+}
+.underText
+{
+	font-size: 14px;
+}
+.bottomBlock
+{
+	font: 24px georgia,serif;
+    margin-top: 12px;
+    color: #6B5982;
+    margin-bottom: 12px;
+}
+#btmPricingLink
+{
+	font-size: 15px;
+	color: #6B5982;
+}
+.pricingText
+{
+    float: left;
+    font-size: 98%;
+    margin-left: 3px;
+    width: 145px;
+}
+.pricingStar
+{
+    float: left;
+}
+
+/*  Your Tribuite Phase 2 LHK till here*/

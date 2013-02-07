@@ -1,6 +1,9 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="FooterHome.ascx.cs" Inherits="UserControl_FooterHome" %>
+
 <script type="text/javascript" language="javascript" src="../Common/JavaScript/FooterControl.js"></script>
+
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
 <script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
 
 <script type="text/javascript" language="Javascript">
@@ -10,6 +13,12 @@
         var dot = ".";
         var lat = str.indexOf(at);
         var lstr = str.length;
+
+        if (str.indexOf(dot) == lstr - 1) {
+            alert("Invalid E-mail ID");
+            return false;
+        }
+
         if (str.indexOf(at) == -1) {
             alert("Invalid E-mail ID");
             return false;
@@ -48,6 +57,18 @@
         return true;
     }
 
+
+    function validateEmail(email) {
+
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        var address = email.value;
+        if (reg.test(address) == false) {
+
+            alert('Invalid Email Address');
+            return false;
+        }
+    }
+
     function ValidateForm() {
         var emailID = document.getElementById("<%= txtEmailAddress.ClientID%>");
         if ((emailID.value == null) || (emailID.value == "")) {
@@ -79,32 +100,34 @@
     }
     
 </script>
+
 <div class="hack-clearBoth">
 </div>
 <div class="yt-FooterContainer">
     <div id="yourtributeFooter" runat="server" class="yt-FooterFH">
-        <div class="yt-FooterNewsletter">      
-          <div style="float:left;height: 40px;width: 350px;">
-          <a href="<%= HomeUrl() %>" title="<%= LogoTitle() %>" id="yt-logoImage" ></a>  
-          </div>
-          <div style="float:left;height: 30px;width: 350px;">
-            <h6 class="OceanBlue-MT">
-                Subscribe to our Newsletter</h6>            
-                </div>
-                <div style="float:left;height: 52px;width: 350px;">
-            <asp:TextBox ID="txtEmailAddress" runat="server" Text="Enter your email address"
-                CssClass="yt-Txt"></asp:TextBox>
-            <asp:Button ID="btnSubscribe" runat="server" Text="Subscribe" CssClass="yt-Btn" OnClick="btnSubscribe_Click" />
-            <!--Script to clear the text box on focus-->
+        <div class="yt-FooterNewsletter">
+            <div style="float: left; height: 40px; width: 350px;">
+                <a href="<%= HomeUrl() %>" title="<%= LogoTitle() %>" id="yt-logoImage"></a>
+            </div>
+            <div style="float: left; height: 30px; width: 350px;">
+                <h6 class="OceanBlue-MT">
+                    Subscribe to our Newsletter</h6>
+            </div>
+            <div style="float: left; height: 52px; width: 350px;">
+                <asp:TextBox ID="txtEmailAddress" runat="server" Text="Enter your email address"
+                    CssClass="yt-Txt"></asp:TextBox>
+                <asp:Button ID="btnSubscribe" runat="server" Text="Subscribe" CssClass="yt-Btn" OnClick="btnSubscribe_Click" />
+                <!--Script to clear the text box on focus-->
 
-            <script type="text/javascript">
+                <script type="text/javascript">
 
-                var txtbox = document.getElementById("<%= txtEmailAddress.ClientID%>");
-                txtbox.onfocus = function() {
-                    if (this.defaultValue == this.value) ;
-                    this.value = "";
-                };
-            </script>
+                    var txtbox = document.getElementById("<%= txtEmailAddress.ClientID%>");
+                    txtbox.onfocus = function() {
+                        if (this.defaultValue == this.value);
+                        this.value = "";
+                    };
+                </script>
+
             </div>
             <div style="min-height: 35px; width: 350px; color: Red;">
                 <asp:Label ID="lblResult" runat="server"></asp:Label>
@@ -131,18 +154,15 @@
             <div class="yt-FooterNavColumn-MT">
                 <h6 class="Purple-MT">
                     Explore</h6>
-                <ul>                    
+                <ul>
                     <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>tour.aspx">Tour</a></li>
-                    <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>features.aspx">
-                        Features</a></li>
-                    <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>themes.aspx">
-                        Themes</a></li>
-                    <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>pricing.aspx">
-                        Pricing & Sign Up</a></li>
-                    <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>advancedsearch.aspx">
-                        Advanced Search</a></li>
-                        <li class="FooterLi"><a href="http://support.yourtribute.com" target="_blank">
-                        Help</a></li>
+                    <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>features.aspx">Features</a></li>
+                    <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>themes.aspx">Themes</a></li>
+                    <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>pricing.aspx">Pricing &
+                        Sign Up</a></li>
+                    <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>advancedsearch.aspx">Advanced
+                        Search</a></li>
+                    <li class="FooterLi"><a href="http://support.yourtribute.com" target="_blank">Help</a></li>
                 </ul>
             </div>
             <div class="yt-FooterNavColumn-MT">
@@ -150,23 +170,21 @@
                     Connect</h6>
                 <ul>
                     <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>about.aspx">About Us</a></li>
-                    <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>contact.aspx">
-                        Contact Us</a></li>
-                    <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>advertise.aspx">
-                        Advertising</a></li>
-                    <li class="FooterLi"><a href="http://resources.yourtribute.com/" target="_blank">
-                        Funeral Resources</a></li>
+                    <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>contact.aspx">Contact Us</a></li>
+                    <li class="FooterLi"><a href="<%=Session["APP_BASE_DOMAIN"]%>advertise.aspx">Advertising</a></li>
+                    <li class="FooterLi"><a href="http://resources.yourtribute.com/" target="_blank">Funeral
+                        Resources</a></li>
                     <li class="FooterLi"><a href="http://resources.yourtribute.com/grief-and-loss/" target="_blank">
                         Grief and Loss</a></li>
-                    <li class="FooterLi"><a href="http://resources.yourtribute.com/funeral-planning/" target="_blank">
-                        Funeral Planning</a></li>
+                    <li class="FooterLi"><a href="http://resources.yourtribute.com/funeral-planning/"
+                        target="_blank">Funeral Planning</a></li>
                 </ul>
             </div>
             <div class="yt-FooterNavColumn-MT">
                 <h6 class="Purple-MT">
                     Follow</h6>
                 <ul>
-                <li class="FooterLi">
+                    <li class="FooterLi">
                         <div class="facebook-yt">
                         </div>
                         <div class="Footer_links">
@@ -178,7 +196,6 @@
                         <div class="Footer_links">
                             <a href="http://www.twitter.com/yourtribute" target="_blank">Twitter</a></div>
                     </li>
-                    
                     <li class="FooterLi">
                         <div class="googlePlus-yt">
                         </div>
@@ -218,14 +235,14 @@
             <asp:TextBox ID="TextBox1" runat="server" Text="Enter your email address" CssClass="ym-Txt"></asp:TextBox>
             <asp:Button ID="Button1" runat="server" Text="Subscribe" CssClass="ym-Btn" OnClientClick="return ValidateForm1();"
                 OnClick="btnSubscribe_Click" />
-                        <!--Script to clear the text box on focus-->
+            <!--Script to clear the text box on focus-->
 
             <script type="text/javascript">
 
                 var txtbox = document.getElementById("<%= txtEmailAddress.ClientID%>");
                 txtbox.onfocus = function() {
                     if (this.defaultValue == this.value)
-                    this.value = "";
+                        this.value = "";
                 };
                             
             </script>
@@ -233,7 +250,7 @@
             <div>
                 <a href="https://www.bbb.org/online/consumer/cks.aspx?id=10906081881" target="_blank">
                     <img alt="BBB" src="../assets/images/copyrightImage.gif" class="copyrightImg" />
-                </a>             
+                </a>
             </div>
         </div>
         <div class="ym-FooterSitemap">
@@ -310,25 +327,25 @@
         </div>
     </div>
 </div>
-<div id="CopyRightDiv" style="font-size: 10px;float:right">
+<div id="CopyRightDiv" style="font-size: 10px; float: right">
     <div id="CopyRightSize" runat="server">
-        <div style="float:left">
-        &copy;<asp:Label ID="lblCopyRight" runat="server" Text=""></asp:Label>&nbsp;<span
-            id="copyRight" runat="server">Your Tribute, Inc. All Rights Reserved.</span>
-            </div>
-            <%if (ConfigurationManager.AppSettings["ApplicationType"].ToLower() == "yourtribute") %>
-    <%{%>    
-    <div class="copyRightDivLinks">
+        <div style="float: left">
+            &copy;<asp:Label ID="lblCopyRight" runat="server" Text=""></asp:Label>&nbsp;<span
+                id="copyRight" runat="server">Your Tribute, Inc. All Rights Reserved.</span>
+        </div>
+        <%if (ConfigurationManager.AppSettings["ApplicationType"].ToLower() == "yourtribute")%>
+        <%{%>
+        <div class="copyRightDivLinks">
             <ul class="yt-FloatLeft">
                 <li id="copyRightDivLiHome"><a href="<%=Session["APP_BASE_DOMAIN"]%>">Home</a></li>
-                <li id="copyRightDivLiTerms"><a href="<%=Session["APP_BASE_DOMAIN"]%>termsofuse.aspx">Terms of Use</a></li>
-                <li id="copyRightDivLiPrivacy" ><a href="<%=Session["APP_BASE_DOMAIN"]%>privacy.aspx">Privacy Policy</a></li>
+                <li id="copyRightDivLiTerms"><a href="<%=Session["APP_BASE_DOMAIN"]%>termsofuse.aspx">
+                    Terms of Use</a></li>
+                <li id="copyRightDivLiPrivacy"><a href="<%=Session["APP_BASE_DOMAIN"]%>privacy.aspx">
+                    Privacy Policy</a></li>
             </ul>
-        </div> 
-    
-    
-        
+        </div>
         <% } %>
-        <span id="copyRightYM" runat="server" visible="false">Your Moments, Inc. All
-            Rights Reserved.</span></div>
+        <span id="copyRightYM" runat="server" visible="false">Your Moments, Inc. All Rights
+            Reserved.</span></div>
 </div>
+

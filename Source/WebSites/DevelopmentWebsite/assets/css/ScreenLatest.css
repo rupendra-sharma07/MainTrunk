@@ -6724,6 +6724,7 @@ Screen media CSS common to all stylesheets.
 	.brownHeading p
 	{
 		margin-bottom: 0.0em;
+		width:140px;
 	}
 
 	#BottomGrass
@@ -7567,7 +7568,7 @@ a.bottomButtonTakeTour
 .leftOfTableRow
 {
 	font: 600 12px "Lucida Sans" , "Lucida Grande" , sans-serif;
-	padding: 5px 0px 3px 20px;
+	padding: 5px 0px 3px 10px;
 	background-color: #E3DFE9;
 	color: #494949;
 	border: 1px solid #6b5982;
@@ -7620,7 +7621,7 @@ a.bottomButtonTakeTour
 	border-top: none;
 	margin: 0;
 	min-height: 18px;
-	position: relative;
+	/*position: relative;*/
 	width: 163px;
 }
 
@@ -7714,15 +7715,14 @@ a.bottomButtonTakeTour
 {
 	border: 1px solid #6b5982;
 	border-top: none;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding: 8px;
+	
 }
 .rightOfTableRowLastSignUpMiddle
 {
-	border-left: 4px solid #5E939A;
-	border-right: 4px solid #5E939A;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	border: 1px solid #6b5982;
+	border-top: none;
+	padding: 10px;
 }
 
 .brownHeading, .blueHeading
@@ -8218,7 +8218,6 @@ a.videoSelectButton
 	width: 116px;
 	height: 56px;
 	display: block;
-	margin-left: 16px;
 }
 
 a.videoSelectButton:hover
@@ -8839,11 +8838,11 @@ html > body .yt-Panel-Primary-MT
 }
 .TopBoldBorder
 {
-	border-top: solid 2px #6B5982;
+	border-top: solid 2px #6B5982!important;
 }
 .TopDottedBorder
 {
-	border-top: dotted 2px #6B5982;
+	border-top: dotted 2px #6B5982!important;
 }
 .LeftMargin15
 {
@@ -9759,3 +9758,62 @@ a.ytselectButton
 /*Pricing Page changes*/
 
 /*  Your Tribuite Phase 1 UAttri*/
+
+/*  Your Tribuite Phase 2 LHK*/
+
+.createTextP4
+{
+	margin: 0 2px 0 3px;
+}
+.boldTextStyle
+{
+	font-size: 105%!important;	
+	line-height: 10px;	
+}
+.underText
+{
+	font-size: 14px;
+}
+.bottomBlock
+{
+	font: 24px georgia,serif;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: #6B5982;
+}
+#btmPricingLink
+{
+	font-size: 15px;
+	color: #6B5982;
+}
+.bgBlue
+{
+	background-color:#5CB4E4;	
+}
+.lightBgBlue
+{
+	background-color:#D3E9F6;
+	border-color: -moz-use-text-color #6B5982 #6B5982;
+    border-image: none;
+    border-right: 1px solid #6B5982;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;		
+}
+.textCap
+{
+	width:140px;
+	padding: 0px!important;	
+}
+.pricingText
+{
+    float: left;
+    font-size: 98%;
+    margin-left: 3px;
+    width: 145px;
+}
+.pricingStar
+{
+    float: left;
+}
+
+/*  Your Tribuite Phase 2 LHK till here*/

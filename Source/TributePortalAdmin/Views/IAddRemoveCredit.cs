@@ -10,6 +10,6 @@ namespace TributesPortal.TributePortalAdmin.Views
     {      
        
         AddRemoveCreditInfo AddRemoveEntries { set; }       
-        int updatedCreditCount { set; }
+        double updatedCreditCount { set; }
     }
 }

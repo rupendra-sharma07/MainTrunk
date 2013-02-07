@@ -74,14 +74,14 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
     private string confirmationId = string.Empty;
     private string errorMesg = string.Empty;
     private string _amount = string.Empty;
-    private int _NetCreditCount;
+    private Double _NetCreditCount;
     private IList<CreditCostMapping> _creditCostMappingList = null;
     //private int rowOneCredit;     // commented by Ud to remove warning
      
     private string _postMessage = string.Empty;
     private string _messageWithoutHtml = string.Empty;
     private int _defaultTheme;
-
+    public int _accountType = 0;
     #region BeanStream varriables
     string sBeanStreamResponce = string.Empty;
     #endregion
@@ -94,6 +94,24 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         this.Form.Action = Request.RawUrl;
         if (!IsPostBack)
         {
+            rdoMembershipThirty.Text = @"Video Tribute (30 Days)";
+            rdoMembershipNinety.Text = @"Video Tribute (90 Days)";
+            rdoMembershipYearly.Text = @"Video Tribute (1 Year)";
+            rdoMembershipLifetime.Text = @"Video Tribute (Lifetime)";
+            step6Msg.InnerHtml = "Video";
+            if (Request.QueryString["AccountType"] != null)
+            {
+                int.TryParse(Request.QueryString["AccountType"], out _accountType);
+                if (_accountType == 1)
+                {
+                    step6Msg.InnerHtml = "Video only";
+                    divOrderDvdStep3.Visible = false;
+                    rdoMembershipThirty.Text = @"Video (30 Days)";
+                    rdoMembershipNinety.Text = @"Video (90 Days)";
+                    rdoMembershipYearly.Text = @"Video (1 Year)";
+                    rdoMembershipLifetime.Text = @"Video (Lifetime)";
+                }
+            }
             SetErrorHeader12();
             StateManager stateManager = StateManager.Instance;
             SessionValue objSessionvalue = (SessionValue)stateManager.Get("objSessionvalue", StateManager.State.Session);
@@ -324,8 +342,9 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         Indecator1.Visible = false;
         Indecator2.Visible = false;
 
+        //(DateTime.TryParseExact(text, "dd-MM-yyyy",CultureInfo.InvariantCulture,DateTimeStyles.AssumeUniversal,out value))
 
-        DateTime.TryParse(  ddlMonth2.SelectedValue + "-" +ddlDay2.SelectedValue+ "-" + txtYear2.Text, out objDod);
+        DateTime.TryParse(ddlMonth2.SelectedValue + "-" + ddlDay2.SelectedValue + "-" + txtYear2.Text, out objDod);
         if ((objDod.Year > 1800) && ((objDod.Date - DateTime.Today.Date).Days < 0))
         {
             pass2 = true;
@@ -338,7 +357,7 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         }
         if ((!string.IsNullOrEmpty(txtYear.Text.Trim())) || (!string.IsNullOrEmpty(ddlDay.SelectedValue.Trim())) || (!string.IsNullOrEmpty(ddlMonth.SelectedValue.Trim())))
         {
-            pass1 = DateTime.TryParse( ddlMonth.SelectedValue + "-" + ddlDay.SelectedValue + "-" +txtYear.Text, out objDob);
+            pass1 = DateTime.TryParse(ddlMonth.SelectedValue + "-" + ddlDay.SelectedValue + "-" + txtYear.Text, out objDob);
             if ((objDob.Year > 1800) && ((objDob.Date - DateTime.Today.Date).Days < 0))
             {
                 if ((objDod.Date - objDob.Date).Days >= 0)
@@ -436,6 +455,7 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
 
             else if (_Themename == "Memorial")
             {
+                #region Memorial
 
                 if ((_DateTimeone != null) && _DateTimeone > DateTime.Now)
                 {
@@ -551,7 +571,8 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
                     lblErrMsg.InnerHtml = SetHeaderMessage("Please enter valid date.", PortalValidationSummary.HeaderText);
                     lblErrMsg.Visible = true;
                 }
-            }
+            } 
+                #endregion
             # endregion
         }
         else
@@ -658,7 +679,7 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
                     }
                 }
             }
-            else if (rdoMembershipLifetime.Checked || rdoMembershipYearly.Checked)
+            else if (rdoMembershipLifetime.Checked || rdoMembershipYearly.Checked || rdoMembershipThirty.Checked ||rdoMembershipNinety.Checked)
             {
                 if (CreateTribute())
                 {
@@ -826,9 +847,97 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         CreateTributeView.ActiveViewIndex = 2;
         SetErrorHeader3();
     }
+
+    protected void rdoMembershipThirty_CheckedChanged(object sender, EventArgs e)
+    {
+        divEmptyHeight.Visible = false;
+        creditMsg.Visible = false;
+        ScriptManager.RegisterClientScriptBlock(rdoMembershipYearly, GetType(), "HidePanel", "hideWideRows();", true);
+        lblTotalCredit.Text = "0";
+        BillingTotal.InnerHtml = "$ 0";
+        //Getting current Credit points in the user account
+        //_presenter.GetCreditPointCount();
+
+        ////Getting credit cost mapping list to display in a tabular form.
+        //_presenter.GetCreditCostMapping();
+
+        ////Rebinding the grid to update as per the package type selected.
+        //grdCreditCostTable.DataSource = _creditCostMappingList;
+        //grdCreditCostTable.DataBind();
+
+        ////Display Panel if enough credits are not available
+        //if (_NetCreditCount == 0)
+        //{
+        //    DisplayBillingPanel();
+        //}
+        ////if NetCredit count avialable is less than required
+        //else if (_NetCreditCount < Double.Parse("0"))
+        //{
+        //    DisplayBillingPanel();
+        //}
+        //else
+        {
+            PanelBillingInfo.Visible = false;
+            PnlPaymentDetails.Visible = false;
+
+        }
+
+        PanelFreeTrial.Visible = false;
+
+        SpanExpirDate.Visible = false;
+
+        //_presenter.GetCrditCardDetails();
+        //_presenter.GetSelectedPaymentMode();
+
+    }
+
+    protected void rdoMembershipNinety_CheckedChanged(object sender, EventArgs e)
+    {
+        divEmptyHeight.Visible = false;
+        creditMsg.Visible = true;
+        ScriptManager.RegisterClientScriptBlock(rdoMembershipYearly, GetType(), "HidePanel", "hideWideRows();", true);
+        lblTotalCredit.Text = WebConfig.CreditCostNinetyDays;
+        BillingTotal.InnerHtml = WebConfig.NinetyDaysAmount;
+        //Getting current Credit points in the user account
+        _presenter.GetCreditPointCount();
+
+        //Getting credit cost mapping list to display in a tabular form.
+        _presenter.GetCreditCostMapping();
+
+        //Rebinding the grid to update as per the package type selected.
+        grdCreditCostTable.DataSource = _creditCostMappingList;
+        grdCreditCostTable.DataBind();
+
+        //Display Panel if enough credits are not available
+        if (_NetCreditCount == 0)
+        {
+            DisplayBillingPanel();
+            divEmptyHeight.Visible = true;
+        }
+        //if NetCredit count avialable is less than required
+        else if (_NetCreditCount < Double.Parse(WebConfig.CreditCostNinetyDays))
+        {
+            DisplayBillingPanel();
+            divEmptyHeight.Visible = true;
+        }
+        else
+        {
+            PanelBillingInfo.Visible = false;
+            PnlPaymentDetails.Visible = false;
+        }
+        PanelFreeTrial.Visible = false;
+
+        SpanExpirDate.Visible = false;
+
+        _presenter.GetCrditCardDetails();
+        _presenter.GetSelectedPaymentMode();
+
+    }
+
     protected void rdoMembershipLifetime_CheckedChanged(object sender, EventArgs e)
     {
-
+        divEmptyHeight.Visible = false;
+        creditMsg.Visible = true;
         ScriptManager.RegisterClientScriptBlock(rdoMembershipLifetime, GetType(), "HidePanel", "hideWideRows();", true);
         lblTotalCredit.Text = WebConfig.LifeTimeCreditCost;
         BillingTotal.InnerHtml = WebConfig.LifeTimeAmount;
@@ -846,13 +955,14 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         if (_NetCreditCount == 0)
         {
             DisplayBillingPanel();
-
+            divEmptyHeight.Visible = true;
         }
 
         //if NetCredit count avialable is less than required
-        else if (_NetCreditCount < int.Parse(WebConfig.LifeTimeCreditCost))
+        else if (_NetCreditCount < Double.Parse(WebConfig.LifeTimeCreditCost))
         {
             DisplayBillingPanel();
+            divEmptyHeight.Visible = true;
         }
         else
         {
@@ -870,6 +980,8 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
 
     protected void rdoMembershipYearly_CheckedChanged(object sender, EventArgs e)
     {
+        divEmptyHeight.Visible = false;
+        creditMsg.Visible = true;
         ScriptManager.RegisterClientScriptBlock(rdoMembershipYearly, GetType(), "HidePanel", "hideWideRows();", true);
         lblTotalCredit.Text = WebConfig.OneYearCreditCost;
         BillingTotal.InnerHtml = WebConfig.OneyearAmount;
@@ -887,11 +999,13 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         if (_NetCreditCount == 0)
         {
             DisplayBillingPanel();
+            divEmptyHeight.Visible = true;
         }
         //if NetCredit count avialable is less than required
-        else if (_NetCreditCount < int.Parse(WebConfig.OneYearCreditCost))
+        else if (_NetCreditCount < Double.Parse(WebConfig.OneYearCreditCost))
         {
             DisplayBillingPanel();
+            divEmptyHeight.Visible = true;
         }
         else
         {
@@ -906,6 +1020,7 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         _presenter.GetSelectedPaymentMode();
 
     }
+
     protected void ddlCCCountry_SelectedIndexChanged(object sender, EventArgs e)
     {
         this._presenter.GetCCStateList();
@@ -1153,7 +1268,7 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         string LastName = string.Empty;
         int Couponamount = 0;
         string strBillingTotal;
-        int NewUpdatedCredit = 0;
+        Double NewUpdatedCredit = 0;
 
         StateManager statemail = StateManager.Instance;
         try
@@ -1181,6 +1296,15 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
                 {
                     // MG Get 1 year credit  from Web Config
                     amount = WebConfig.OneYearCreditCost;
+
+                    // MG Get cost to be charged from Billing span at the bottom
+                    strBillingTotal = Convert.ToString(BillingTotal.InnerText);
+                    Couponamount = Convert.ToInt32(strBillingTotal.Substring(1, strBillingTotal.Length - 1));
+                }
+                if (rdoMembershipYearly.Checked)
+                {
+                    // MG Get 1 year credit  from Web Config
+                    amount = WebConfig.CreditCostNinetyDays;
 
                     // MG Get cost to be charged from Billing span at the bottom
                     strBillingTotal = Convert.ToString(BillingTotal.InnerText);
@@ -1241,22 +1365,34 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
                 {
                     if (rdoMembershipYearly.Checked)
                     {
-                        NewUpdatedCredit = int.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - int.Parse(WebConfig.OneYearCreditCost);
+                        NewUpdatedCredit = Double.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - Double.Parse(WebConfig.OneYearCreditCost);
                     }
                     else if (rdoMembershipLifetime.Checked)
                     {
-                        NewUpdatedCredit = int.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - int.Parse(WebConfig.LifeTimeCreditCost);
+                        NewUpdatedCredit = Double.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - Double.Parse(WebConfig.LifeTimeCreditCost);
+                    }
+                    else if (rdoMembershipNinety.Checked)
+                    {
+                        NewUpdatedCredit = Double.Parse(Session["CreditPointSelected"].ToString()) + _NetCreditCount - Double.Parse(WebConfig.CreditCostNinetyDays);
                     }
                 }
                 else
                 {
                     if (rdoMembershipYearly.Checked)
                     {
-                        NewUpdatedCredit = _NetCreditCount - int.Parse(WebConfig.OneYearCreditCost);
+                        NewUpdatedCredit = _NetCreditCount - Double.Parse(WebConfig.OneYearCreditCost);
                     }
                     else if (rdoMembershipLifetime.Checked)
                     {
-                        NewUpdatedCredit = _NetCreditCount - int.Parse(WebConfig.LifeTimeCreditCost);
+                        NewUpdatedCredit = _NetCreditCount - Double.Parse(WebConfig.LifeTimeCreditCost);
+                    }
+                    else if (rdoMembershipNinety.Checked)
+                    {
+                        NewUpdatedCredit = _NetCreditCount - Double.Parse(WebConfig.CreditCostNinetyDays);
+                    }
+                    else if (rdoMembershipThirty.Checked)
+                    {
+                        NewUpdatedCredit = _NetCreditCount;
                     }
                 }
 
@@ -2134,7 +2270,7 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
             {
                 //DateTime _DateTime2 = new DateTime(int.Parse(txtYear2.Text), ddlMonth2.SelectedIndex, ddlDay2.SelectedIndex);
                 DateTime _DateTime2;
-                DateTime.TryParse(  ddlMonth2.SelectedValue + "-" + ddlDay2.SelectedValue + "-" + txtYear2.Text, out _DateTime2);
+                DateTime.TryParse(ddlMonth2.SelectedValue + "-" + ddlDay2.SelectedValue + "-" + txtYear2.Text, out _DateTime2);
                 return _DateTime2;
             }
             else
@@ -2327,7 +2463,7 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         get { return txtCCZipCode.Text; }
     }
 
-    public int NetCreditPoints
+    public Double NetCreditPoints
     {
         get
         {
@@ -2342,7 +2478,7 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
                 {
                     NetCreditCount.InnerHtml = "<img src='../assets/images/error_pic.png' style='margin-right:4px' alt='error'/><b>You have <span class='bold_red'>no credits</span> in your account!</b> &nbsp;You can order more credits below:";
                 }
-                else if (_NetCreditCount < int.Parse(WebConfig.LifeTimeCreditCost))
+                else if (_NetCreditCount < double.Parse(WebConfig.LifeTimeCreditCost))
                 {
                     NetCreditCount.InnerHtml = "<img src='../assets/images/error_pic.png' style='margin-right:4px' alt='error'/><b>You do not have <span class='bold_red'>enough credits</span> in your account!</b> &nbsp;You can order more credits below:";
                 }
@@ -2358,13 +2494,13 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
                     }
                 }
             }
-            if (rdoMembershipYearly.Checked == true)
+            else if (rdoMembershipYearly.Checked == true)
             {
                 if ((_NetCreditCount == 0))// || (_NetCreditCount == null)) // commented by Ud cause a value of type int is never equal to null of type int
                 {
                     NetCreditCount.InnerHtml = "<img src='../assets/images/error_pic.png' style='margin-right:4px' alt='error'/><b>You have <span class='bold_red'>no credits</span> in your account!</b>&nbsp; You can order more credits below:";
                 }
-                else if (_NetCreditCount < int.Parse(WebConfig.OneYearCreditCost))
+                else if (_NetCreditCount < double.Parse(WebConfig.OneYearCreditCost))
                 {
                     NetCreditCount.InnerHtml = "<img src='../assets/images/error_pic.png' style='margin-right:4px' alt='error'/><b>You do not have <span class='bold_red'>enough credits</span> in your account!</b> &nbsp;You can order more credits below:";
                 }
@@ -2380,8 +2516,33 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
                     }
                 }
             }
-
-
+            else if (rdoMembershipNinety.Checked == true)
+            {
+                if ((_NetCreditCount == 0))// || (_NetCreditCount == null)) // commented by Ud cause a value of type int is never equal to null of type int
+                {
+                    NetCreditCount.InnerHtml = "<img src='../assets/images/error_pic.png' style='margin-right:4px' alt='error'/><b>You have <span class='bold_red'>no credits</span> in your account!</b>&nbsp; You can order more credits below:";
+                }
+                else if (_NetCreditCount < double.Parse(WebConfig.CreditCostNinetyDays))
+                {
+                    NetCreditCount.InnerHtml = "<img src='../assets/images/error_pic.png' style='margin-right:4px' alt='error'/><b>You do not have <span class='bold_red'>enough credits</span> in your account!</b> &nbsp;You can order more credits below:";
+                }
+                else
+                {
+                    if (_NetCreditCount == 1)
+                    {
+                        NetCreditCount.InnerHtml = "<img src='../assets/images/dollor-pic.png' style='margin-right:4px' alt='dollor'/><b> You have <span class='bold_green'>" + _NetCreditCount.ToString() + " credit</span> in your account!</b>";
+                    }
+                    else
+                    {
+                        NetCreditCount.InnerHtml = "<img src='../assets/images/dollor-pic.png' style='margin-right:4px' alt='dollor'/><b> You have <span class='bold_green'>" + _NetCreditCount.ToString() + " credits</span> in your account!</b>";
+                    }
+                }
+            }
+            else if (rdoMembershipThirty.Checked == true)
+            {
+                NetCreditCount.InnerHtml = "<img src='../assets/images/dollor-pic.png' style='margin-right:4px' alt='dollor'/><b> You have <span class='bold_green'>" + _NetCreditCount.ToString() + " credits</span> in your account!</b>";
+            }
+            
         }
     }
     public string ObPostMessage
@@ -2679,18 +2840,53 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
     {
         get
         {
+            if (Request.QueryString["AccountType"] != null)
+            {
+                int.TryParse(Request.QueryString["AccountType"], out _accountType);
+            }
+
             int _packageid = 0;
             /*Mohit  if (rdoMembershipFree.Checked)
              {
                  _packageid = 3;
              }*/
-            if (rdoMembershipYearly.Checked)
+            if (_accountType == 1)
             {
-                _packageid = 2;
+                if (rdoMembershipThirty.Checked)
+                {
+                    _packageid = 14;
+                }
+                if (rdoMembershipNinety.Checked)
+                {
+                    _packageid = 13;
+                }
+                if (rdoMembershipYearly.Checked)
+                {
+                    _packageid = 12;
+                }
+                if (rdoMembershipLifetime.Checked)
+                {
+                    _packageid = 11;
+                }
             }
-            if (rdoMembershipLifetime.Checked)
+            else
             {
-                _packageid = 1;
+                if (rdoMembershipThirty.Checked)
+                {
+                    _packageid = 10;
+                }
+                if (rdoMembershipNinety.Checked)
+                {
+                    _packageid = 9;
+                }
+                if (rdoMembershipYearly.Checked)
+                {
+                    _packageid = 2;
+                }
+                if (rdoMembershipLifetime.Checked)
+                {
+                    _packageid = 1;
+                }
             }
             return _packageid;
         }
@@ -3121,36 +3317,48 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         {
             ((RadioButton)e.Row.FindControl("rbtnCreditSelection")).Checked = true;
 
-            int rowOneCredit = int.Parse(lblCreditPoint.Text);
+            double rowOneCredit = double.Parse(lblCreditPoint.Text);
             if (rdoMembershipLifetime.Checked)
             {
-                if (_NetCreditCount < int.Parse(WebConfig.LifeTimeCreditCost))
+                if (_NetCreditCount < Double.Parse(WebConfig.LifeTimeCreditCost))
                 {
-                    lblCreditPoint.Text = Convert.ToString(rowOneCredit * (int.Parse(WebConfig.LifeTimeCreditCost) - _NetCreditCount));
-                    lblTotalCost.Text = "$" + Convert.ToString(int.Parse(lblCreditPoint.Text.ToString()) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
+                    lblCreditPoint.Text = Convert.ToString(rowOneCredit * (double.Parse(WebConfig.LifeTimeCreditCost) - _NetCreditCount));
+                    lblTotalCost.Text = "$" + Convert.ToString(double.Parse(lblCreditPoint.Text.ToString()) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
                 }
                 else
                 {
-                    lblTotalCost.Text = "$" + Convert.ToString(int.Parse(lblCreditPoint.Text.ToString()) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
+                    lblTotalCost.Text = "$" + Convert.ToString(double.Parse(lblCreditPoint.Text.ToString()) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
                 }
             }
             if (rdoMembershipYearly.Checked)
             {
-                if (_NetCreditCount < int.Parse(WebConfig.OneYearCreditCost))
+                if (_NetCreditCount < Double.Parse(WebConfig.OneYearCreditCost))
                 {
-                    lblCreditPoint.Text = Convert.ToString(rowOneCredit * (int.Parse(WebConfig.OneYearCreditCost) - _NetCreditCount));
-                    lblTotalCost.Text = "$" + Convert.ToString(int.Parse(lblCreditPoint.Text.ToString()) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
+                    lblCreditPoint.Text = Convert.ToString(rowOneCredit * (double.Parse(WebConfig.OneYearCreditCost) - _NetCreditCount));
+                    lblTotalCost.Text = "$" + Convert.ToString(double.Parse(lblCreditPoint.Text.ToString()) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
                 }
                 else
                 {
-                    lblTotalCost.Text = "$" + Convert.ToString(int.Parse(lblCreditPoint.Text.ToString()) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
+                    lblTotalCost.Text = "$" + Convert.ToString(double.Parse(lblCreditPoint.Text.ToString()) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
                 }
             }
-            Session["CreditPointSelected"] = int.Parse(lblCreditPoint.Text);
+            if (rdoMembershipNinety.Checked)
+            {
+                if (_NetCreditCount < Double.Parse(WebConfig.CreditCostNinetyDays))
+                {
+                    lblCreditPoint.Text = Convert.ToString(rowOneCredit * (double.Parse(WebConfig.CreditCostNinetyDays) - _NetCreditCount));
+                    lblTotalCost.Text = "$" + Convert.ToString(double.Parse(lblCreditPoint.Text.ToString()) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
+                }
+                else
+                {
+                    lblTotalCost.Text = "$" + Convert.ToString(double.Parse(lblCreditPoint.Text.ToString()) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
+                }
+            }
+            Session["CreditPointSelected"] = double.Parse(lblCreditPoint.Text);
         }
         if (e.Row.RowIndex > 0)
         {
-            lblTotalCost.Text = "$" + Convert.ToString(int.Parse(lblCreditPoint.Text.ToString()) * (double.Parse(lblCostPercredit.Text.ToString()))) + ".00";
+            lblTotalCost.Text = "$" + Convert.ToString((double.Parse(lblCreditPoint.Text.ToString()) * (double.Parse(lblCostPercredit.Text.ToString())))- double.Parse("0.05")) ;
         }
         if (e.Row.RowIndex >= 0)
         {
@@ -3179,9 +3387,9 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
         ((RadioButton)row.FindControl("rbtnCreditSelection")).Checked = true;
         Label lblCreditPoint = (Label)row.FindControl("lblCreditPoint");
         Label lblTotalCost = (Label)row.FindControl("lblTotalCost");
-        Session["CreditPointSelected"] = int.Parse(lblCreditPoint.Text);
-        BillingTotal.InnerHtml = lblTotalCost.Text.Remove(lblTotalCost.Text.Length - 3, 3);
-
+        Session["CreditPointSelected"] = double.Parse(lblCreditPoint.Text);
+        //BillingTotal.InnerHtml = lblTotalCost.Text.Remove(lblTotalCost.Text.Length - 3, 3);
+        BillingTotal.InnerHtml = lblTotalCost.Text;
 
     }
     // Display the billing panel when enough credits are not available with the Tribute Creator.
@@ -3194,7 +3402,10 @@ public partial class Tribute_TributeCreation : PageBase, ITributeCreation
             if (((RadioButton)row.FindControl("rbtnCreditSelection")).Checked)
             {
                 Label lblTotalCost = (Label)row.FindControl("lblTotalCost");
-                BillingTotal.InnerHtml = lblTotalCost.Text.Remove(lblTotalCost.Text.Length - 3, 3);
+                if (lblTotalCost.Text.Length > 0)
+                {
+                    BillingTotal.InnerHtml = lblTotalCost.Text.Remove(lblTotalCost.Text.Length - 3, 3);
+                }
             }
         }
 

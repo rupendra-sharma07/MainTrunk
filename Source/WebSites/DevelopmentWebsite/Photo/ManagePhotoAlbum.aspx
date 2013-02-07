@@ -1,39 +1,16 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ManagePhotoAlbum.aspx.cs"
     Inherits="Photo_ManagePhotoAlbum" Title="ManagePhotoAlbum" MasterPageFile="~/Shared/Story.master" %>
 
-<%@ Register Assembly="System.Web.Extensions" Namespace="System.Web.UI" TagPrefix="asp" %>
-<%@ Register Assembly="Aurigma.ImageUploader" Namespace="Aurigma.ImageUploader" TagPrefix="cc1" %>
 <asp:Content ID="content1" ContentPlaceHolderID="TabContentPlaceHolder" runat="Server">
-    <%--  <script src="~/assets/scripts/multipledescriptions.js" type="text/javascript"></script>--%>
+    <%--    <script src="../assets/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
 
-    <script src="../assets/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
-
-    <script src="../assets/scripts/jquery-ui-1.8.6.custom.min.js" type="text/javascript"></script>
+    <script src="../assets/scripts/jquery-ui-1.8.6.custom.min.js" type="text/javascript"></script>--%>
 
     <script src="../assets/scripts/ExecuteBeforeLoad.js" type="text/javascript"></script>
 
+    <script type="text/javascript" src="../MultiPowAssests/swfobject.js"></script>
+
     <script language="javascript" type="text/javascript">
-
-        //to restrict the value of Video Descritpion to 1000 characters
-        function DescmaxLength() {
-            var txtId = document.getElementById('<%= txtAlbumDesc.ClientID %>');
-            if (txtId != null) {
-                var txtVal = txtId.value;
-                if (txtVal != "" && txtVal.length > 0)
-                    return chkForMaxLength(1000, txtVal.length);
-                else return 0;
-            }
-        }
-
-        function maxLength() {
-            var txtId = document.getElementById('<%= txtAlbumDesc.ClientID %>');
-            if (txtId != null) {
-                var txtVal = txtId.value;
-                if (txtVal != "" && txtVal.length > 0)
-                    return chkForMaxLength(1000, txtVal.length);
-                else return 0;
-            }
-        }
 
         function validateData() {
 
@@ -41,60 +18,6 @@
             var valAlbumId = $('ctl00_ModuleContentPlaceHolder_hdnAlbumId').value;
             var valPhotoCount = $('ctl00_ModuleContentPlaceHolder_hdnPhotoCount').value;
 
-            var error = "";
-            if (!isEmpty(valAlbumId)) {
-                var valAlbumName = $('ctl00_ModuleContentPlaceHolder_txtAlbumName').value;
-                var valAlbumDesc = $('ctl00_ModuleContentPlaceHolder_txtAlbumDesc').value;
-                var spanAlbumName = document.getElementById('spnAlbumName');
-                var spanAlbumDesc = document.getElementById('spnAlbumDesc');
-                var spanUploadPhoto = document.getElementById('spnUploadPhoto');
-
-                if (!isEmpty(valAlbumName)) {
-                    error = "error";
-                    errorMessage += "<ul>";
-                    errorMessage += "<li>";
-                    errorMessage += "Album name is required field."
-                    errorMessage += "</li>";
-                    errorMessage += "</ul>";
-                    //alert("Test1 " + spnAlbumName.style.visibility);
-                    spanAlbumName.style.visibility = "visible";
-
-                }
-                else {
-                    //alert("Test2 " + spnAlbumName.style.visibility);
-                    spanAlbumName.style.visibility = "hidden";
-                }
-
-                //to check for duplicate album name.
-                var txtName = $('ctl00_ModuleContentPlaceHolder_txtAlbumName').value;
-                if (isEmpty(txtName)) {
-                    var txtAlbumList = $('ctl00_ModuleContentPlaceHolder_hdnAlbumList').value;
-                    if (!isUnique(txtName, txtAlbumList)) {
-                        error = "error";
-                        errorMessage += "<ul>";
-                        errorMessage += "<li>";
-                        errorMessage += "Album name already exists."
-                        errorMessage += "</li>";
-                        errorMessage += "</ul>";
-                        if (spanAlbumName.style.visibility != "visible")
-                            spanAlbumName.style.visibility = "visible";
-                    }
-                }
-
-                //to check album descritpion length.
-                if (!chkForMaxLength(1000, valAlbumDesc.length)) {
-                    error = "error";
-                    errorMessage += "<ul>";
-                    errorMessage += "<li>";
-                    errorMessage += "Album description is exceeding it's maximum limit of 1000 characters."
-                    errorMessage += "</li>";
-                    errorMessage += "</ul>";
-                    spanAlbumDesc.style.visibility = "visible";
-                }
-                else {
-                    spanAlbumDesc.style.visibility = "hidden";
-                }
-            }
 
             if (isEmpty(valAlbumId)) {
                 var spanUploadPhoto = document.getElementById('spnUploadPhoto');
@@ -160,18 +83,7 @@
             }
 
         }
-
-        // function to add value of album name and album desc textbox to session by UD
-        function setSessionAlbum() {
-            if (document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumName') != null && document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumDesc')) {
-                albumName = document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumName').value;
-                albumDesc = document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumDesc').value;
-
-
-                Photo_ManagePhotoAlbum.SetAlbumNameDesc(albumName, albumDesc);
-            }
-
-        }
+        
     </script>
 
     <script type="text/javascript" language="javascript">
@@ -181,14 +93,10 @@
             if (pageurl.indexOf('#') >= 0) {
                 pageurl = pageurl.replace("#1", "");
             }
-            var uploader = $au.uploader(uploaderID);
-            var f = uploader.files(),
-				fileCount = f.count(),
-				guids = {},
-				i;
             var albumName;
             var albumDesc;
             var result = 0;
+            var fileCount = 0;
 
             //-- Check validations of album by Ashu
             if (document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumName') != null && document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumDesc') != null) {
@@ -216,6 +124,7 @@
                     hdnFilecount = document.getElementById('<% =hdnPhotoCount.ClientID%>').value;
                 }
                 result = Photo_ManagePhotoAlbum.CheckAlbumFileCount(fileCount, hdnFilecount);
+
             }
             if (result.value < 0) {
                 if (document.getElementById('ctl00_ModuleContentPlaceHolder_lblErrMsg') != null)
@@ -270,7 +179,6 @@
                 return false;
             }
             else {
-
                 if (document.getElementById('ctl00_ModuleContentPlaceHolder_lblErrMsg') != null) {
                     document.getElementById('ctl00_ModuleContentPlaceHolder_lblErrMsg').innerHTML = "";
                     document.getElementById('ctl00_ModuleContentPlaceHolder_lblErrMsg').style.display = 'none';
@@ -282,10 +190,8 @@
                 if (document.getElementById('ctl00_ModuleContentPlaceHolder_spnUploadPhoto') != null)
                     document.getElementById('ctl00_ModuleContentPlaceHolder_spnUploadPhoto').style.display = 'none';
             }
+            return true;
         }
-
-        //        multidescription till here
-
 
         function AfterImageUpload() {
 
@@ -301,15 +207,19 @@
 
                 }
             }
-        }      
-        
-    </script>
+        }
 
-    <script type="text/javascript">
+        // function to add value of album name and album desc textbox to session by UD
+        function setSessionAlbum() {
+            if (document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumName') != null && document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumDesc')) {
+                albumName = document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumName').value;
+                albumDesc = document.getElementById('ctl00_ModuleContentPlaceHolder_txtAlbumDesc').value;
 
-        var uploaderID = '<%= Uploader1.ClientID %>';
 
-
+                Photo_ManagePhotoAlbum.SetAlbumNameDesc(albumName, albumDesc);
+            }
+        }
+       
     </script>
 
     <div class="yt-Breadcrumbs" id="nvgCreateAlbum" runat="server">
@@ -320,9 +230,12 @@
     </div>
 </asp:Content>
 <asp:Content ID="content2" ContentPlaceHolderID="ModuleContentPlaceHolder" runat="Server">
+    <asp:HiddenField ID="hdnImageNames" runat="server" />
     <div style="" id="divShowModalPopup">
     </div>
     <div class="yt-ContentPrimary">
+        <div id="divNavigation" runat="server">
+        </div>
         <input id="hdnAlbumName" name="hdnAlbumName" type="hidden" />
         <asp:HiddenField ID="hdnAlbumList" runat="server" />
         <asp:HiddenField ID="hdnResult" runat="server" />
@@ -330,7 +243,7 @@
         <div id="lblErrMsg" runat="server" class="yt-Error" style="display: none; font-size: 12px;
             text-align: left;">
         </div>
-        <div class="yt-Panel-Primary">
+        <div class="yt-Panel-Primary" style="width: 852px;">
             <h2 id="hPhoto" runat="server">
             </h2>
             <strong id="stgRequired" runat="server"></strong>
@@ -359,7 +272,7 @@
                             <div class="yt-Form-AlbumDescDiv">
                                 <asp:TextBox ID="txtAlbumDesc" runat="server" CssClass="yt-Form-Textarea-XLong" Columns="50"
                                     Rows="6" MaxLength="1000" TextMode="MultiLine" onkeyup="javascript:setSessionAlbum();"
-                                    TabIndex="1"></asp:TextBox>
+                                    TabIndex="1" Width="846px"></asp:TextBox>
                             </div>
                             <div class="YT-Form-Error">
                                 <span id="spnAlbumDesc" runat="server" style="color: #FF8000; font-size: Medium;
@@ -372,53 +285,217 @@
                         <div class="yt-UploadTool">
                             <ul class="yt-Instructions">
                                 <li id="liInstruction1" runat="server"></li>
-                                <li id="liInstruction2" runat="server"></li>
                                 <li id="liInstruction3" runat="server"></li>
                             </ul>
-                            <!-- insert Aurigma Upload Plugin here (sample placeholder graphic below) -->
-                            <!-- Ashu (7june,2011) : Add TreePane for leftpanel on safari -->
-                            <%-- Add Cropping Functionality By Ashu(21 June,2011)--%>
-                            <div id="UploadPaneFrame">
-                                <div class="yt-Form-UploadDiv">
-                                    <div id="UploadPane" class="yt-UploadTool">
-                                        <cc1:Uploader ID="Uploader1" runat="server" OnFileUploaded="Uploader1_FileUploaded"
-                                            Height="420" Width="630px" LicenseKey="<%$ AppSettings:ImageUploaderLicenseKey %>"
-                                            EnableUploadPane="false" EnableDragAndDrop="false" EnableDescriptionEditor="true"
-                                            EnableImageEditor="True" EnableOriginalFilesDeletion="False">
-                                            <TreePane Width="210" />
-                                            <Converters>
-                                                <%--<cc1:Converter Mode="*.*=SourceFile" />--%>
-                                                <cc1:Converter Mode="*.*=Thumbnail" ThumbnailWidth="640" ThumbnailHeight="480" ThumbnailApplyCrop="true" />
-                                                <cc1:Converter Mode="*.*=Thumbnail" ThumbnailWidth="1946" ThumbnailHeight="1459"
-                                                    ThumbnailApplyCrop="true" />
-                                            </Converters>
-                                            <ClientEvents>
-                                                <cc1:ClientEvent EventName="BeforeUpload" HandlerName="onBeforeUpload" />
-                                                <%-- <cc1:ClientEvent EventName="UploadFileCountChange" HandlerName="onUploadFileCountChange" />--%>
-                                                <cc1:ClientEvent EventName="AfterUpload" HandlerName="AfterImageUpload" />
-                                            </ClientEvents>
-                                            <Restrictions FileMask="*.jpg;*.jpeg;*.png;*.gif" MaxFileCount="60" />
-                                            <UploadSettings />
-                                            <%--<UploadSettings ActionUrl="http://localhost:4941/DevelopmentWebsite/photo/ManagePhotoAlbum.aspx"   RedirectUrl="Photos.aspx?post_on_facebook=True" />--%>
-                                        </cc1:Uploader>
-                                        <cc1:InstallationProgress ID="InstallationProgress1" TargetControlID="Uploader1"
-                                            runat="server" ProgressCssClass="ip-progress" InstructionsCssClass="ip-instructions">
-                                        </cc1:InstallationProgress>
-                                        <%-- <ul id="<%= Uploader1.ClientID %>_UploadPane" class="upload-pane" />--%>
+                            <h4 id="hHighResolPhotos" runat="server">
+                                <asp:CheckBox ID="chbxhighResPhoto" runat="server" />
+                                Upload High-Resolution Photos
+                            </h4>
+                            <ul class="yt-Instructions">
+                                <li id="li1" runat="server">High Resolution Photos can only be viewed on paid accounts.
+                                    Only select this option if you have a premium account or plan to upgrade.</li>
+                                <li id="li2" runat="server">Uploading high-resolution photos will significantly increase
+                                    the time taken to upload the photos.</li>
+                            </ul>
+                            <br />
+                            <p>
+                                1. Click "Add Files..."to select your photos, then click "Upload". You can
+                                then add or remove photos as necessary.
+                            </p>
+                            <p id="secondLine" runat="server">
+                                2. After you have finished uploading your photos, click "Create photo album" at
+                                the bottom of the page to create the album.</p>
+                            <br />
+                            <div id="multiPowUpload">
+                                <div>
+                                   <!-- text below wil be shown if JavaScript disabled at browser -->
+                                    <span id="noscriptdiv" style="border: 1px  solid #FF0000; display: block; padding: 5px;
+                                        text-align: left; background: #FDF2F2; color: #000;">Active Scripting (JavaScript)
+                                        should be enabled in your browser for this application to function properly!</span>
+
+                                    <script type="text/javascript">
+                                        document.getElementById('noscriptdiv').style.visibility = 'hidden';
+                                        document.getElementById('noscriptdiv').style.height = 0;
+                                        document.getElementById('noscriptdiv').style.padding = 0;
+                                        document.getElementById('noscriptdiv').style.border = 0;
+                                    </script>
+                                    <br>
+                                    <br>
+                                    <div id="MultiPowUpload_holder">
+                                        <strong>You need at least 10 version of Flash player!</strong> <a href="http://www.adobe.com/go/getflashplayer">
+                                            &nbsp;<img border="0" src="../MultiPowAssests/CMS_plugins/Wordpress-plugin/multipowupload/get_flash_player.gif"
+                                                alt="Get Adobe Flash player" /></a>
                                     </div>
+                                    <script type="text/javascript" src="../MultiPowAssests/swfobject.js"></script>
+                                    <script type="text/javascript">
+                                        var params = {
+                                            BGColor: "#FFFFFF"
+                                        };
+
+                                        var attributes = {
+                                            id: "MultiPowUpload",
+                                            name: "MultiPowUpload"
+                                        };
+
+                                        // get count of uploaded photos 
+                                        if (document.getElementById('<% =hdnPhotoCount.ClientID%>') != null) {
+                                            hdnFilecount = document.getElementById('<% =hdnPhotoCount.ClientID%>').value;
+                                        }
+                                        var total = 60;
+                                        total = total - hdnFilecount;
+                                        
+                                        var flashvars = {
+                                            "language.autoDetect": "true",
+                                            "serialNumber": "",
+                                            "uploadUrl": "../Photo/uploadfiles.aspx?stayHere=true",
+                                            "fileFilter.types": "Images|*.jpg:*.jpeg:*.gif:*.png:*.bmp",
+                                            "fileFilter.maxCount": total,
+                                            "messages.filesCountExceeded": "Number of photos in album exceeding its maximum limit of 60 photos.",
+                                            "fileFilter.maxSize": "3145728",
+                                            "sendThumbnails": "true",
+                                            "sendOriginalImages": "false",
+                                            "uploadButton.action": "2",
+                                            "fileView.defaultView": "thumbnails",
+                                            "useExternalInterface": "true",
+                                            "thumbnail.width": "100",
+                                            "thumbnail.height": "100",
+                                            "thumbnail.resizeMode": "fit",
+                                            "thumbnail.format": "JPG",
+                                            "thumbnail.jpgQuality": "85",
+                                            "thumbnail.backgroundColor": "#000000",
+                                            "thumbnail.transparentBackground": "true",
+                                            "thumbnail.autoRotate": "true",
+                                            "readImageMetadata": "true",
+                                            "thumbnailView.allowRotate": "true",
+                                            "thumbnailView.allowCrop": "true",
+                                            //"thumbnailView.topPanel.inputTextBox.visible": "true", 
+                                            "thumbnailView.bottomPanel.showEditIcon": "true",
+                                            "listView.description.visible": "true",
+                                            "progressBar.visible": "true",
+                                            "statusLabel.visible": "true"
+
+                                        };
+
+                                        swfobject.embedSWF("../MultiPowAssests/ElementITMultiPowUpload.swf", "MultiPowUpload_holder", "600", "450", "10.0.0", "../MultiPowAssests/expressInstall.swf", flashvars, params, attributes);
+                                    </script>
+
+                                    <script type="text/javascript">
+                                        var path_to_file = "";
+                                        var cancelled = false;
+                                        var currentCycle = 0;
+                                        var sizes = new Array();
+                                        var prefixes;
+
+                                        function MultiPowUpload_onButtonClick(buttonName) {
+                                            switch (buttonName) {
+                                                case "uploadButton":
+                                                    {
+                                                        if (onBeforeUpload()) {
+                                                            MultiPowUpload.uploadAll();
+                                                        }
+                                                        break;
+                                                    }
+                                            }
+                                        }
+
+                                        function MultiPowUpload_onStart() {
+                                            cancelled = false;
+                                            // High Resolution Photos
+                                            var chbx = document.getElementById("ctl00_ModuleContentPlaceHolder_chbxhighResPhoto");
+                                            //dimensions for different thumbnails
+                                            sizes[0] = new Array(100, 100);
+                                            sizes[1] = new Array(600, 480);
+                                            if (chbx.checked == true) {
+                                                sizes[2] = new Array(1024, 768);
+                                                //prefixes for different thumbnails
+                                                prefixes = new Array("thumbnail_", "DSC_", "Big_");
+                                            }
+                                            else {
+                                                prefixes = new Array("thumbnail_", "DSC_");
+                                            }
+                                            setThumbailDimensions(currentCycle);
+                                        }
+
+                                        function MultiPowUpload_onCancel() {
+                                            cancelled = true;
+                                        }
+
+                                        function MultiPowUpload_onMovieLoad() {
+                                            //set initial thumbnails dimensions
+                                            //setThumbailDimensions(currentCycle);
+                                        }
+
+                                        function setThumbailDimensions(index) {
+                                            if (sizes.length > index) {
+                                                MultiPowUpload.setParameter("thumbnail.height", sizes[index][0]);
+                                                MultiPowUpload.setParameter("thumbnail.width", sizes[index][1]);
+                                                MultiPowUpload.setParameter("thumbnail.fileName", prefixes[index] + "<FILENAME>");
+                                            }
+                                        }
+                                        function MultiPowUpload_onComplete() {
+                                            //upload finished let's check what we shpould do now
+                                            currentCycle++;
+                                            setThumbailDimensions(currentCycle);
+                                            if (sizes.length > currentCycle) {
+                                                if (!cancelled)
+                                                    MultiPowUpload.uploadAll();
+                                            }
+                                            else {
+                                                currentCycle = 0;
+                                                setThumbailDimensions(currentCycle);
+                                            }
+                                        }
+
+                                        function MultiPowUpload_onThumbnailUploadComplete(li, response) {
+                                            //after first cycle reset crop rect
+                                            /*if(currentCycle == 0)
+                                            MultiPowUpload.resetImageCrop(li.id);*/
+
+                                            //get current file processing script and combine path to file
+                                            path_to_file = MultiPowUpload.getParameter("uploadUrl");
+                                            path_to_file = path_to_file.substring(0, path_to_file.lastIndexOf("/") + 1) + "UploadedFiles/";
+
+                                            //Here we need parse server response
+                                            //and find url to uploaded thumbnails	
+
+                                            var keyword = 'File ';
+                                            var keywor_end = " was successfully uploaded";
+                                            var ind = response.indexOf(keyword, 0);
+                                            while (ind >= 0) {
+                                                url = response.substring(ind + keyword.length, response.indexOf(keywor_end, ind));
+                                                //addThumbnail(url);
+                                                ind = response.indexOf(keyword, ind + keyword.length + 1);
+                                            }
+                                        }
+                                        function addThumbnail(source) {
+                                            var Img = document.createElement("img");
+                                            Img.style.margin = "5px";
+                                            Img.src = path_to_file + source + "?" + (new Date()).getTime();
+                                            document.getElementById("thumbnails").appendChild(Img);
+                                        }
+                                    </script>
+
                                 </div>
-                                <div class="YT-Form-Error">
-                                    <span id="spnUploadPhoto" runat="server" style="color: #FF8000; font-size: Medium;
-                                        font-weight: bold; display: none;">!</span>
-                                </div>
-                                <br style="clear: both;" />
                             </div>
+                            <div class="YT-Form-Error">
+                                <span id="spnUploadPhoto" runat="server" style="color: #FF8000; font-size: Medium;
+                                    font-weight: bold; display: none;">!</span>
+                            </div>
+                            <br style="clear: both;" />
                             <!-- please note that for "Add Photos" and "Add All Photos" buttons in Aurigma tool, we will restyle with yt-MiniButton style or similar effect -->
                         </div>
                         <div class="yt-Form-Buttons">
                             <div class="yt-Form-Cancel">
                                 <asp:LinkButton ID="lbtnCancel" runat="server" CausesValidation="false" OnClick="lbtnCancel_Click"
                                     TabIndex="4" />
+                            </div>
+                            <div style="margin-right: 15px;">
+                                <!-- If page is "Edit Album": -->
+                                <div class="yt-Form-Submit">
+                                    <asp:LinkButton ID="lbtnSavePhoto" runat="server" OnClientClick="return onBeforeUpload();"
+                                        OnClick="lbtnCreateAlbum_Click" CausesValidation="true" CssClass="yt-Button yt-ArrowButton"
+                                        TabIndex="3" />
+                                </div>
                             </div>
                         </div>
                     </ContentTemplate>
