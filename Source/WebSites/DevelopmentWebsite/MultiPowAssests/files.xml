@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<files>    	
+
+	<file name="fish.jpg" size="98687" id="1234" modificationDate="Tue, 06 Mar 2012 13:52:25 +0400">
+		<url>Images/sampleImages/fish.jpg</url>	
+		<thumbnailUrl>Images/sampleImages/thumbnail_fish.jpg</thumbnailUrl>	
+	</file>
+	<file name="frog.jpg" size="45119" id="1234567" modificationDate="Fri, 16 Mar 2012 11:42:12 +0400">
+		<url>Images/sampleImages/frog.jpg</url>	
+		<thumbnailUrl>Images/sampleImages/thumbnail_frog.jpg</thumbnailUrl>	
+	</file>
+
+</files>

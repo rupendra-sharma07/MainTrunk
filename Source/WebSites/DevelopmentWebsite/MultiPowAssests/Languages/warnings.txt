@@ -1,0 +1,53 @@
+Language Latin
+Element param, value "<b> EXIF​​ 정보 </b> : <a> 보려면 클릭하세요 </a>". Placeholder 1 is not found
+Element param, value "<b> EXIF​​ 정보 </b> : <a> 보려면 클릭하세요 </a>". Placeholder 2 is not found
+Element param, value "<b> EXIF​​ 정보 </b> : <a> 보려면 클릭하세요 </a>". Placeholder 3 is not found
+Element param, value "<b> 일 </b> : <FILEDATE>". Placeholder 1 is not found
+Element param, value "<b> 일 </b> : <FILEDATE>". Placeholder 2 is not found
+Element param, value "<b> 이름 </b> : <FILENAME>". Placeholder 1 is not found
+Element param, value "<b> 이름 </b> : <FILENAME>". Placeholder 2 is not found
+Element param, value "<b> 사이즈 </b> : <FILESIZE>". Placeholder 1 is not found
+Element param, value "<b> 사이즈 </b> : <FILESIZE>". Placeholder 2 is not found
+Element param, value "<b> 현황 </b> : <FILESTATUS>". Placeholder 1 is not found
+Element param, value "<b> 현황 </b> : <FILESTATUS>". Placeholder 2 is not found
+Element param, value "<b> 이미지 높이 </b> : <IMAGEHEIGHT>". Placeholder 1 is not found
+Element param, value "<b> 이미지 높이 </b> : <IMAGEHEIGHT>". Placeholder 2 is not found
+Element param, value "<b> 이미지 너비 </b> : <IMAGEWIDTH>". Placeholder 1 is not found
+Element param, value "<b> 이미지 너비 </b> : <IMAGEWIDTH>". Placeholder 2 is not found
+Element param, value "<b> 초기화 : <PERCENT> % </b>". Placeholder 1 is not found
+Element param, value "<b> 초기화 : <PERCENT> % </b>". Placeholder 2 is not found
+Element param, value "다음과 같은 종류가있는 파일 : <FILETYPES> 업로드할 수 없습니다! <COUNTINVALIDFILES> 파일은 무시되었다!". Placeholder 1 is not found
+Element param, value "이하 전용 파일 <MAXFILESIZE> 사용할 수 있습니다. <COUNTINVALIDFILES> 파일은 무시되었다!". Placeholder 1 is not found
+Element param, value "이상의 전용 파일 <MINFILESIZE> 사용할 수 있습니다. <COUNTINVALIDFILES> 파일은 무시되었다!". Placeholder 1 is not found
+Element param, value "업로드 허용 전용 <MAXFILECOUNT> 파일! <COUNTINVALIDFILES> 파일은 무시되었다!". Placeholder 1 is not found
+Element param, value "<center> HTTP 오류는 '<ERRORCODE>'가 발생했습니다. <DESCRIPTION><br> 참조하시기 바랍니다 <font color='#0000FF'> <a title='Error description' target='_blank' href='<W3WLINK>'> <W3WLINK> </a> </font> 자세한 내용은 오류 코드 정의. </center>". Placeholder 1 is not found
+Element param, value "<center> HTTP 오류는 '<ERRORCODE>'가 발생했습니다. <DESCRIPTION><br> 참조하시기 바랍니다 <font color='#0000FF'> <a title='Error description' target='_blank' href='<W3WLINK>'> <W3WLINK> </a> </font> 자세한 내용은 오류 코드 정의. </center>". Placeholder 2 is not found
+Element param, value "<center> HTTP 오류는 '<ERRORCODE>'가 발생했습니다. <DESCRIPTION><br> 참조하시기 바랍니다 <font color='#0000FF'> <a title='Error description' target='_blank' href='<W3WLINK>'> <W3WLINK> </a> </font> 자세한 내용은 오류 코드 정의. </center>". Placeholder 1 is not found
+Element param, value "<center> HTTP 오류는 '<ERRORCODE>'가 발생했습니다. <DESCRIPTION><br> 참조하시기 바랍니다 <font color='#0000FF'> <a title='Error description' target='_blank' href='<W3WLINK>'> <W3WLINK> </a> </font> 자세한 내용은 오류 코드 정의. </center>". Placeholder 2 is not found
+Element param, value "<center> HTTP 오류는 '<ERRORCODE>'가 발생했습니다. <DESCRIPTION><br> 참조하시기 바랍니다 <font color='#0000FF'> <a title='Error description' target='_blank' href='<W3WLINK>'> <W3WLINK> </a> </font> 자세한 내용은 오류 코드 정의. </center>". Placeholder 3 is not found
+Element param, value "<center> HTTP 오류는 '<ERRORCODE>'가 발생했습니다. <DESCRIPTION><br> 참조하시기 바랍니다 <font color='#0000FF'> <a title='Error description' target='_blank' href='<W3WLINK>'> <W3WLINK> </a> </font> 자세한 내용은 오류 코드 정의. </center>". Placeholder 4 is not found
+Element param, value "<center> HTTP 오류는 '<ERRORCODE>'가 발생했습니다. <DESCRIPTION><br> 참조하시기 바랍니다 <font color='#0000FF'> <a title='Error description' target='_blank' href='<W3WLINK>'> <W3WLINK> </a> </font> 자세한 내용은 오류 코드 정의. </center>". Placeholder 5 is not found
+Element param, value "이미지는 다음 조건을 만족해야합니다 : 폭 <MAXWIDTH> 픽셀 <MINWIDTH> 출신<br> 높이 <MINHEIGHT> <MAXHEIGHT> 픽셀에서이다.<br> <COUNTINVALIDFILES> 파일은 무시되었다!". Placeholder 1 is not found
+Element param, value "이미지는 다음 조건을 만족해야합니다 : 폭 <MAXWIDTH> 픽셀 <MINWIDTH> 출신<br> 높이 <MINHEIGHT> <MAXHEIGHT> 픽셀에서이다.<br> <COUNTINVALIDFILES> 파일은 무시되었다!". Placeholder 1 is not found
+Element param, value "필수 입력란에 '<FIELDNAME>'의 값은 파일 <FILENAME>에 누락되었습니다!". Placeholder 1 is not found
+Element param, value "다음과 같은 유형만이 파일 : <FILETYPES> 업로드 금지! <COUNTINVALIDFILES> 파일은 무시되었다!". Placeholder 1 is not found
+Element param, value "다운로드 완료! 경과 시간 : <ELAPSEDHOUR> : <ELAPSEDMIN> : <ELAPSEDSEC>". Placeholder 1 is not found
+Element param, value "다운로드 완료! 경과 시간 : <ELAPSEDHOUR> : <ELAPSEDMIN> : <ELAPSEDSEC>". Placeholder 2 is not found
+Element param, value "파일의 개수 : <FILESCOUNT> (<TOTALSIZE>)". Placeholder 1 is not found
+Element param, value "업로드 완료! <UPLOADEDFILESCOUNT> 파일 (<TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE>), 경과 시간 : <ELAPSEDHOUR> : <ELAPSEDMIN> : <ELAPSEDSEC>". Placeholder 1 is not found
+Element param, value "업로드 완료! <UPLOADEDFILESCOUNT> 파일 (<TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE>), 경과 시간 : <ELAPSEDHOUR> : <ELAPSEDMIN> : <ELAPSEDSEC>". Placeholder 2 is not found
+Element param, value "업로드 완료! <UPLOADEDFILESCOUNT> 파일 (<TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE>), 경과 시간 : <ELAPSEDHOUR> : <ELAPSEDMIN> : <ELAPSEDSEC>". Placeholder 3 is not found
+Element param, value "업로드 완료! <UPLOADEDFILESCOUNT> 파일 (<TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE>), 경과 시간 : <ELAPSEDHOUR> : <ELAPSEDMIN> : <ELAPSEDSEC>". Placeholder 4 is not found
+Element param, value "업로드 완료! <UPLOADEDFILESCOUNT> 파일 (<TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE>), 경과 시간 : <ELAPSEDHOUR> : <ELAPSEDMIN> : <ELAPSEDSEC>". Placeholder 5 is not found
+Element param, value "총 : <PERCENT> % (<FILESNUM> / <FILESTOUPLOADCOUNT>) <TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE> (<RATEVALUE> / 초, 시간이 남아 <LEFTHOUR> : <LEFTMIN> : <LEFTSEC>)". Placeholder 1 is not found
+Element param, value "총 : <PERCENT> % (<FILESNUM> / <FILESTOUPLOADCOUNT>) <TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE> (<RATEVALUE> / 초, 시간이 남아 <LEFTHOUR> : <LEFTMIN> : <LEFTSEC>)". Placeholder 2 is not found
+Element param, value "총 : <PERCENT> % (<FILESNUM> / <FILESTOUPLOADCOUNT>) <TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE> (<RATEVALUE> / 초, 시간이 남아 <LEFTHOUR> : <LEFTMIN> : <LEFTSEC>)". Placeholder 3 is not found
+Element param, value "총 : <PERCENT> % (<FILESNUM> / <FILESTOUPLOADCOUNT>) <TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE> (<RATEVALUE> / 초, 시간이 남아 <LEFTHOUR> : <LEFTMIN> : <LEFTSEC>)". Placeholder 4 is not found
+Element param, value "총 : <PERCENT> % (<FILESNUM> / <FILESTOUPLOADCOUNT>) <TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE> (<RATEVALUE> / 초, 시간이 남아 <LEFTHOUR> : <LEFTMIN> : <LEFTSEC>)". Placeholder 5 is not found
+Element param, value "총 : <PERCENT> % (<FILESNUM> / <FILESTOUPLOADCOUNT>) <TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE> (<RATEVALUE> / 초, 시간이 남아 <LEFTHOUR> : <LEFTMIN> : <LEFTSEC>)". Placeholder 6 is not found
+Element param, value "총 : <PERCENT> % (<FILESNUM> / <FILESTOUPLOADCOUNT>) <TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE> (<RATEVALUE> / 초, 시간이 남아 <LEFTHOUR> : <LEFTMIN> : <LEFTSEC>)". Placeholder 7 is not found
+Element param, value "총 : <PERCENT> % (<FILESNUM> / <FILESTOUPLOADCOUNT>) <TOTALUPLOADEDSIZE> / <TOTALUPLOADSIZE> (<RATEVALUE> / 초, 시간이 남아 <LEFTHOUR> : <LEFTMIN> : <LEFTSEC>)". Placeholder 8 is not found
+Element param, value "정지 업로드합니다. 업로드된 바이트 : <TOTALUPLOADEDSIZE>, 경과 시간 : <ELAPSEDHOUR> : <ELAPSEDMIN> : <ELAPSEDSEC>". Placeholder 1 is not found
+Element param, value "정지 업로드합니다. 업로드된 바이트 : <TOTALUPLOADEDSIZE>, 경과 시간 : <ELAPSEDHOUR> : <ELAPSEDMIN> : <ELAPSEDSEC>". Placeholder 2 is not found
+Element param, value "정지 업로드합니다. 업로드된 바이트 : <TOTALUPLOADEDSIZE>, 경과 시간 : <ELAPSEDHOUR> : <ELAPSEDMIN> : <ELAPSEDSEC>". Placeholder 3 is not found
+
